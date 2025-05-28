@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Test Orchestrator - Football Bot
-Test script to connect step1 → step2 → step3 pipeline
+Test script to connect step1 → step2 → step3 → step4 pipeline
 """
 
 import asyncio
@@ -11,11 +11,13 @@ import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-# Add step2 and step3 to path so we can import them
+# Add step2, step3, and step4 to path so we can import them
 sys.path.append(os.path.join(os.path.dirname(__file__), 'step2'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'step3'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'step4'))
 from step2 import extract_merge_summarize
 from step3 import json_summary
+from step4 import match_extracts
 
 async def test_orchestrator():
     print("🤖 Test Orchestrator Starting...")
@@ -87,10 +89,38 @@ async def test_orchestrator():
             stats = categories.get('statistics', {})
             print(f"📈 Stats: {stats.get('with_odds', 0)} with odds, {stats.get('with_events', 0)} with events")
         
+    except Exception as e:
+        print(f"❌ Error in step3 processing: {e}")
+        return False
+
+    print("\n🔄 Running Step 4 processing...")
+    print("-" * 30)
+    
+    # Run step4 processing
+    try:
+        extract_data = await match_extracts(summary_data)
+        print(f"✅ Step 4 completed successfully")
+        print(f"🏈 Generated match extracts for {extract_data.get('total_matches', 0)} matches")
+        
+        # Check if step4.json was created
+        if os.path.exists("step4/step4.json"):
+            print("✅ step4.json file created successfully")
+        else:
+            print("⚠️  step4.json file not found")
+        
+        # Show extract stats
+        stats = extract_data.get('statistics', {})
+        if stats:
+            print(f"📊 Extract stats: {stats.get('matches_with_odds', 0)} with odds, {stats.get('matches_with_environment', 0)} with environment")
+            status_breakdown = stats.get('by_status', {})
+            if status_breakdown:
+                status_summary = ", ".join([f"{status}: {count}" for status, count in status_breakdown.items()])
+                print(f"📈 Status breakdown: {status_summary}")
+        
         return True
         
     except Exception as e:
-        print(f"❌ Error in step3 processing: {e}")
+        print(f"❌ Error in step4 processing: {e}")
         return False
 
 def main():
@@ -104,7 +134,7 @@ def main():
         print("\n" + "=" * 60)
         if success:
             print("🎉 Test orchestration completed successfully!")
-            print("✅ Step1 → Step2 → Step3 pipeline working")
+            print("✅ Step1 → Step2 → Step3 → Step4 pipeline working")
         else:
             print("❌ Test orchestration failed")
             print("💡 Check the error messages above")
