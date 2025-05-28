@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Football Bot - Multi-Step Data Processing Pipeline
 
 A sophisticated Football Bot system that fetches live football match data from TheSports API and processes it through a multi-step pipeline to generate structured summaries and organized JSON outputs.
@@ -142,3 +143,6 @@ Created with GitHub Copilot assistance for automated football data processing an
 ## 📝 License
 
 This project is for educational and development purposes.
+=======
+# Copilot_Claude4
+>>>>>>> 0f6aea7ee8e70e1927a1d707658d9cf4ab69d101
