@@ -119,14 +119,16 @@ def categorize_matches(matches):
     }
     
     for match_id, match in matches.items():
-        # Categorize by status
+        # Categorize by status using comprehensive mapping
         status_id = match.get("status", {}).get("id")
-        if status_id in [2, 3, 4, 5, 6, 7]:  # Live statuses
+        if status_id in [2, 3, 4, 5, 6]:  # Live statuses (First half, Half-time, Second half, Extra time, Penalty shootout)
             categories["by_status"]["live"].append(match_id)
-        elif status_id == 1:  # Upcoming
+        elif status_id == 1:  # Not started
             categories["by_status"]["upcoming"].append(match_id)
-        elif status_id in [8, 9, 10, 11, 12, 13]:  # Finished
+        elif status_id in [7, 8]:  # Finished statuses
             categories["by_status"]["finished"].append(match_id)
+        elif status_id in [9, 10, 11, 12, 13, 14]:  # Postponed, Canceled, TBA, Interrupted, Abandoned, Suspended
+            categories["by_status"]["other"].append(match_id)
         else:
             categories["by_status"]["other"].append(match_id)
         

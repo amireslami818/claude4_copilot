@@ -1,0 +1,2776 @@
+Step 6: Starting pretty print match display...
+Step 6: Processing 111 matches for display
+Data generated at: 05/28/2025 05:09:45 PM EDT
+
+================================================================================
+FOOTBALL BETTING DATA - MATCH SUMMARIES
+================================================================================
+
+================================================================================
+MATCH 1 of 111
+Match ID: y0or5jh8l922qwz
+================================================================================
+Competition: Finnish Women's Ykkonen (Finland)
+Match: PPJ (W) vs VJS Vantaa (w)
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +170
+  Draw: +270
+  Away Win: +115
+Spread: No odds available
+Over/Under:
+  3.0: Over -137 / Under -109
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 16°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 2 of 111
+Match ID: dn1m1ghl4254moe
+================================================================================
+Competition: International Friendly (None)
+Match: Catalonia vs Costa Rica
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 24°C
+Wind: Gentle Breeze, 9.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 3 of 111
+Match ID: 8yomo4h171v1q0j
+================================================================================
+Competition: Danish 4th Division (Denmark)
+Match: Hobro IK 2 vs SfB Oure
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +120
+  Draw: +258
+  Away Win: +196
+Spread:
+  Handicap: 0.25
+  Home: -108
+  Away: -118
+Over/Under:
+  2.75: Over -118 / Under -108
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 14°C
+Wind: Moderate Breeze, 14.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 4 of 111
+Match ID: 1l4rjnh440k5m7v
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SPG Wels vs Wallern
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Light Rain
+Temperature: 15°C
+Wind: Gentle Breeze, 13.0 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 5 of 111
+Match ID: 965mkyhyyxnyr1g
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SV Wildon vs DSV Leoben
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -286
+  Draw: +495
+  Away Win: +479
+Spread:
+  Handicap: 1.5
+  Home: -109
+  Away: -115
+Over/Under:
+  4.0: Over -109 / Under -116
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 21°C
+Wind: Light Air, 2.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 6 of 111
+Match ID: 318q66hwwpj1qo9
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: Union Gurten vs USV RB Weindorf St.Anna
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Light Rain
+Temperature: 15°C
+Wind: Moderate Breeze, 14.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 7 of 111
+Match ID: dj2ryoh110nzq1z
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SK Vorwarts Steyr vs SC Weiz
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Thunder
+Temperature: 14°C
+Wind: Gentle Breeze, 12.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 8 of 111
+Match ID: 23xmvkh632d9qg8
+================================================================================
+Competition: Bolivian Reserve Cup (Bolivia)
+Match: Destroyers vs Goteon FC
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -111
+  Draw: +280
+  Away Win: +225
+Spread:
+  Handicap: 0.5
+  Home: -115
+  Away: -130
+Over/Under:
+  3.25: Over -130 / Under -115
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 19°C
+Wind: Fresh Breeze, 24.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 9 of 111
+Match ID: 4wyrn4h68xjeq86
+================================================================================
+Competition: International Friendly (None)
+Match: Kosovo U21 vs North Macedonia U21
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +117
+  Draw: +199
+  Away Win: +232
+Spread:
+  Handicap: 0.25
+  Home: -115
+  Away: -115
+Over/Under:
+  2.25: Over -132 / Under -104
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 18°C
+Wind: Light Breeze, 6.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 10 of 111
+Match ID: l5ergph4owzvr8k
+================================================================================
+Competition: International Friendly (None)
+Match: Cote d'Ivoire(W) U17 vs Korea Rep. (w) U17
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 11 of 111
+Match ID: l7oqdehgnovlr51
+================================================================================
+Competition: International Friendly (None)
+Match: Guatemala (w) vs Puerto Rico (w)
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 26°C
+Wind: Gentle Breeze, 11.4 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 12 of 111
+Match ID: k82rekhwkj0erep
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Jonkopings Sodra IF vs Hassleholms IF
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -135
+  Draw: +229
+  Away Win: +433
+Spread:
+  Handicap: 0.75
+  Home: +102
+  Away: -120
+Over/Under:
+  2.25: Over -101 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 16°C
+Wind: Light Breeze, 4.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 13 of 111
+Match ID: 318q66hwe363qo9
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Ljungskile vs IFK Skovde FK
+Score: 3 - 0 (HT: 3 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -500
+  Draw: +592
+  Away Win: +1034
+Spread:
+  Handicap: 0.75
+  Home: -122
+  Away: +103
+Over/Under:
+  4.0: Over -105 / Under -114
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 15°C
+Wind: Gentle Breeze, 11.4 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 14 of 111
+Match ID: dn1m1gh2jgpdmoe
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Lunds BK vs Eskilsminne IF
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +105
+  Draw: +239
+  Away Win: +259
+Spread:
+  Handicap: 0.5
+  Home: +106
+  Away: -127
+Over/Under:
+  2.5: Over +101 / Under -120
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 15°C
+Wind: Moderate Breeze, 15.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 15 of 111
+Match ID: jw2r09h2zg6zrz8
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Skovde AIK vs Husqvarna
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -108
+  Draw: +299
+  Away Win: +241
+Spread:
+  Handicap: 0.5
+  Home: -105
+  Away: -111
+Over/Under:
+  2.75: Over -122 / Under +101
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 16°C
+Wind: Gentle Breeze, 9.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 16 of 111
+Match ID: dj2ryohlkpj8q1z
+================================================================================
+Competition: Moldova Women's Cup (Moldova)
+Match: Agarista CSF Anenii Noi (w) vs Nistru Cioburciu (W)
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -526
+  Draw: +500
+  Away Win: +1000
+Spread:
+  Handicap: 1.75
+  Home: -122
+  Away: -122
+Over/Under:
+  3.0: Over -125 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 17 of 111
+Match ID: 1l4rjnh96l3gm7v
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: SSV Reutlingen 05 vs Pforzheim
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 18 of 111
+Match ID: 2y8m4zh537z0ql0
+================================================================================
+Competition: Paraguayan Cup (Paraguay)
+Match: Capitan Figari vs Sport Colonial
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +300
+  Draw: +270
+  Away Win: -139
+Spread:
+  Handicap: -0.5
+  Home: -104
+  Away: -143
+Over/Under:
+  2.5: Over -159 / Under +105
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 19 of 111
+Match ID: 318q66hwejgxqo9
+================================================================================
+Competition: Norwegian Eliteserien (Norway)
+Match: Fredrikstad vs Rosenborg
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +379
+  Draw: +329
+  Away Win: -164
+Spread:
+  Handicap: 0.0
+  Home: -123
+  Away: +109
+Over/Under:
+  3.5: Over +106 / Under -122
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 14°C
+Wind: Moderate Breeze, 18.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 20 of 111
+Match ID: n54qllhn27xgqvy
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: Blau Weiss Karbach vs Rot-Weiss Koblenz
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Light Rain
+Temperature: 14°C
+Wind: Gentle Breeze, 10.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 21 of 111
+Match ID: l5ergph4ok18r8k
+================================================================================
+Competition: International Friendly (None)
+Match: Morocco U18 vs England U18
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 22 of 111
+Match ID: l7oqdehgydlnr51
+================================================================================
+Competition: Sweden Division 2 (Sweden)
+Match: Ahlafors IF vs Grebbestads IF
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -120
+  Draw: +258
+  Away Win: +247
+Spread:
+  Handicap: 0.5
+  Home: -120
+  Away: -110
+Over/Under:
+  2.75: Over -132 / Under -103
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 16°C
+Wind: Gentle Breeze, 10.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 23 of 111
+Match ID: ednm9whwk53zryo
+================================================================================
+Competition: Finland U20 League (Finland)
+Match: GrIFK U20 vs HJK Helsinki U20
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +151
+  Draw: +325
+  Away Win: +106
+Spread:
+  Handicap: -0.25
+  Home: -114
+  Away: -104
+Over/Under:
+  4.25: Over -106 / Under -114
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 17°C
+Wind: Light Breeze, 7.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 24 of 111
+Match ID: 2y8m4zh6ljpdql0
+================================================================================
+Competition: Egyptian Premier League (Egypt)
+Match: Al Ahly FC vs Pharco
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -526
+  Draw: +513
+  Away Win: +1497
+Spread:
+  Handicap: 1.75
+  Home: -120
+  Away: +100
+Over/Under:
+  3.0: Over -102 / Under -118
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 28°C
+Wind: Moderate Breeze, 14.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 25 of 111
+Match ID: 8yomo4h3nk4oq0j
+================================================================================
+Competition: Egyptian Premier League (Egypt)
+Match: Ceramica Cleopatra FC vs Pyramids FC
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +183
+  Draw: +211
+  Away Win: +160
+Spread:
+  Handicap: 0.0
+  Home: +101
+  Away: -119
+Over/Under:
+  2.25: Over -118 / Under -102
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 26°C
+Wind: Gentle Breeze, 11.4 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 26 of 111
+Match ID: 6ypq3nh3x5nymd7
+================================================================================
+Competition: Egyptian Premier League (Egypt)
+Match: Petrojet vs Bank El Ahly
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +187
+  Draw: +251
+  Away Win: +134
+Spread:
+  Handicap: -0.25
+  Home: -125
+  Away: +105
+Over/Under:
+  3.0: Over +100 / Under -120
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 28°C
+Wind: Moderate Breeze, 14.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 27 of 111
+Match ID: pxwrxlh5d134ryk
+================================================================================
+Competition: Egyptian Premier League (Egypt)
+Match: Al Masry vs Haras El Hodood
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -400
+  Draw: +423
+  Away Win: +1147
+Spread:
+  Handicap: 1.5
+  Home: -118
+  Away: +100
+Over/Under:
+  2.75: Over -108 / Under -111
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 29°C
+Wind: Moderate Breeze, 15.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 28 of 111
+Match ID: 8yomo4h1789zq0j
+================================================================================
+Competition: Mexico Liga Premier  (Mexico)
+Match: Héroes de Zaci FC vs Dragones de Oaxaca
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +118
+  Draw: +148
+  Away Win: +295
+Spread:
+  Handicap: 0.25
+  Home: -123
+  Away: -109
+Over/Under:
+  2.25: Over +100 / Under -135
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 29°C
+Wind: Gentle Breeze, 8.3 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 29 of 111
+Match ID: k82rekhgv251rep
+================================================================================
+Competition: Mauritania Ligue 1 (Mauritania)
+Match: ASC Gendrim vs FC Inter Nouakchott
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 30 of 111
+Match ID: l5ergphwwxy0r8k
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SC Imst vs Kufstein
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 31 of 111
+Match ID: 3glrw7h77260qdy
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: FC Kitzbuhel vs SC Schwaz
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 32 of 111
+Match ID: dj2ryohlklgeq1z
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: Altona 93 vs SV Hemelingen
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 33 of 111
+Match ID: 2y8m4zh53586ql0
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: FC Schoningen08 vs Heider SV
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 34 of 111
+Match ID: 3glrw7hnw7l8qdy
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: HJK Helsinki vs JaPS
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -526
+  Draw: +599
+  Away Win: +891
+Spread:
+  Handicap: 2.0
+  Home: -115
+  Away: -111
+Over/Under:
+  3.75: Over -114 / Under -110
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 16°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 35 of 111
+Match ID: zp5rzgh537gdq82
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SC Gleisdorf vs Wolfsberger AC Amateure
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +188
+  Draw: +314
+  Away Win: +106
+Spread:
+  Handicap: -0.25
+  Home: -108
+  Away: -118
+Over/Under:
+  3.25: Over -112 / Under -112
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 15°C
+Wind: Light Breeze, 5.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 36 of 111
+Match ID: 8yomo4h3dg7kq0j
+================================================================================
+Competition: Sweden Division 2 (Sweden)
+Match: Torns IF vs Lileluo
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -185
+  Draw: +304
+  Away Win: +350
+Spread:
+  Handicap: 1.0
+  Home: -109
+  Away: -123
+Over/Under:
+  2.75: Over -130 / Under -104
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 15°C
+Wind: Moderate Breeze, 15.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 37 of 111
+Match ID: y39mp1h63o34moj
+================================================================================
+Competition: Senegal Premier League Cup (Senegal)
+Match: ASC Wally Daan vs Diambars
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 19°C
+Wind: Light Breeze, 5.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 38 of 111
+Match ID: y0or5jhnpd04qwz
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Enkoping vs IFK Stocksund
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -135
+  Draw: +324
+  Away Win: +295
+Spread:
+  Handicap: 0.75
+  Home: -105
+  Away: -112
+Over/Under:
+  3.25: Over -103 / Under -116
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 19°C
+Wind: Light Breeze, 6.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 39 of 111
+Match ID: y0or5jh8l544qwz
+================================================================================
+Competition: German Regionalliga (Germany)
+Match: FC Lokomotive Leipzig vs Havelse
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 14°C
+Wind: Gentle Breeze, 10.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 40 of 111
+Match ID: 4jwq2ghn4wk0m0v
+================================================================================
+Competition: Argentine Reserve League (Argentina)
+Match: Chacarita Juniors Reserves vs All Boys Reserves
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 41 of 111
+Match ID: k82rekhwkd8jrep
+================================================================================
+Competition: Sweden Division 1 (Sweden)
+Match: Vasalunds IF vs Sollentuna United
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -196
+  Draw: +318
+  Away Win: +499
+Spread:
+  Handicap: 1.0
+  Home: -110
+  Away: -108
+Over/Under:
+  2.75: Over -115 / Under -104
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 16°C
+Wind: Light Breeze, 5.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 42 of 111
+Match ID: y0or5jhnn54zqwz
+================================================================================
+Competition: Danish U19 Youth League (Denmark)
+Match: Aalborg BK U19 vs Esbjerg U19
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +113
+  Draw: +304
+  Away Win: +150
+Spread:
+  Handicap: 0.25
+  Home: -108
+  Away: -125
+Over/Under:
+  3.75: Over -125 / Under -108
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 13°C
+Wind: Moderate Breeze, 13.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 43 of 111
+Match ID: vjxm8ghll6pjr6o
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: LASK (Youth) vs Askoe Oedt
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Thunder
+Temperature: 15°C
+Wind: Gentle Breeze, 11.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 44 of 111
+Match ID: 8yomo4h3d3dvq0j
+================================================================================
+Competition: Sweden Division 2 (Sweden)
+Match: Taftea IK vs Friska Viljor FC
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 45 of 111
+Match ID: n54qllh776jdqvy
+================================================================================
+Competition: Austrian 3.Liga (Austria)
+Match: SV Ried B vs Deutschlandsberger SC
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Snow
+Temperature: 14°C
+Wind: Moderate Breeze, 15.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 46 of 111
+Match ID: l7oqdehgnxd4r51
+================================================================================
+Competition: Austrian Landesliga (Austria)
+Match: FC Alberschwende vs FC Wolfurt
+Score: 0 - 2 (HT: 0 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 12°C
+Wind: Gentle Breeze, 10.1 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 47 of 111
+Match ID: 23xmvkh6323kqg8
+================================================================================
+Competition: Finnish Kolmonen (Finland)
+Match: Kings vs Zulimanit
+Score: 5 - 1 (HT: 5 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -588
+  Draw: +650
+  Away Win: +694
+Spread:
+  Handicap: 1.0
+  Home: -123
+  Away: -109
+Over/Under:
+  5.25: Over -103 / Under -130
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 16°C
+Wind: Gentle Breeze, 10.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 48 of 111
+Match ID: 4wyrn4h68yv6q86
+================================================================================
+Competition: Russian Premier League (Russia)
+Match: FC Sochi vs FC Pari Nizhniy Novgorod
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -112
+  Draw: +223
+  Away Win: +318
+Spread:
+  Handicap: 0.5
+  Home: -110
+  Away: -104
+Over/Under:
+  2.25: Over +100 / Under -118
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 19°C
+Wind: Light Breeze, 7.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 49 of 111
+Match ID: y0or5jh8l5e4qwz
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: TUS Geretsried vs TSV Schwabmunchen
+Score: 4 - 0 (HT: 4 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 50 of 111
+Match ID: pxwrxlhygn99ryk
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: FSV Stadeln vs TuS Frammersbach
+Score: 3 - 0 (HT: 3 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 51 of 111
+Match ID: 3glrw7hnw9jyqdy
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: SpVgg Unterhaching Am vs DJK Gebenbach
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 52 of 111
+Match ID: x7lm7phjkv5pm2w
+================================================================================
+Competition: Austrian Landesliga (Austria)
+Match: ASKO Kottmannsdorf vs KAC 1909
+Score: 2 - 0 (HT: 2 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -139
+  Draw: +266
+  Away Win: +280
+Spread:
+  Handicap: 0.75
+  Home: -108
+  Away: -123
+Over/Under:
+  3.0: Over -105 / Under -127
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 18°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 53 of 111
+Match ID: jw2r09hkl37nrz8
+================================================================================
+Competition: Austrian Landesliga (Austria)
+Match: SV Kraig vs SC St Stefan
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +105
+  Draw: +260
+  Away Win: +210
+Spread:
+  Handicap: 0.25
+  Home: -135
+  Away: -110
+Over/Under:
+  3.25: Over -122 / Under -122
+
+--- MATCH ENVIRONMENT ---
+Weather: Snow
+Temperature: 17°C
+Wind: Light Breeze, 5.1 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 54 of 111
+Match ID: l7oqdehgng03r51
+================================================================================
+Competition: Danish 4th Division (Denmark)
+Match: Kjellerup vs Horsens Freja
+Score: 0 - 2 (HT: 0 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 55 of 111
+Match ID: l5ergphw98kpr8k
+================================================================================
+Competition: Sweden Division 2 (Sweden)
+Match: IFK Lulea vs Skelleftea FF
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 10°C
+Wind: Gentle Breeze, 11.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 56 of 111
+Match ID: 3glrw7hnw9kdqdy
+================================================================================
+Competition: Netherlands Youth Eredivisie (Netherlands)
+Match: FC Utrecht U19 vs FC Twente/Heracles U19
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -101
+  Draw: +275
+  Away Win: +184
+Spread:
+  Handicap: 0.5
+  Home: +100
+  Away: -119
+Over/Under:
+  3.25: Over -111 / Under -109
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 15°C
+Wind: Gentle Breeze, 13.0 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 57 of 111
+Match ID: vjxm8ghe404vr6o
+================================================================================
+Competition: Netherlands Youth Eredivisie (Netherlands)
+Match: FC Zwolle (Youth) vs Feyenoord U19
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +1550
+  Draw: +950
+  Away Win: -2500
+Spread:
+  Handicap: -1.75
+  Home: -103
+  Away: -115
+Over/Under:
+  4.5: Over -115 / Under -105
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 16°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 58 of 111
+Match ID: l7oqdehgnxnzr51
+================================================================================
+Competition: Senegal Premier League Cup (Senegal)
+Match: Generation Foot vs AS Douanes Dakar
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 27°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 59 of 111
+Match ID: 8yomo4h3ll2yq0j
+================================================================================
+Competition: Sierra Leone Premier League (Sierra Leone)
+Match: SLIFA vs Abacha City
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 32°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 60 of 111
+Match ID: 965mkyhydxpjr1g
+================================================================================
+Competition: Sierra Leone Premier League (Sierra Leone)
+Match: Freetown City vs Wilberforce Strikers
+Score: 0 - 1 (HT: 0 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 32°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 61 of 111
+Match ID: vjxm8ghe40jvr6o
+================================================================================
+Competition: International Friendly (None)
+Match: Jordan (w) vs Indonesia (w)
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 21°C
+Wind: Moderate Breeze, 18.3 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 62 of 111
+Match ID: x7lm7phjkv0km2w
+================================================================================
+Competition: International Friendly (None)
+Match: Oman vs Lebanon
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 34°C
+Wind: Light Breeze, 4.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 63 of 111
+Match ID: y0or5jh8l5e0qwz
+================================================================================
+Competition: Poland Liga 3 (Poland)
+Match: Piast Strzelce Opolskie vs LZS Starowice Dolne
+Score: 0 - 2 (HT: 0 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +999
+  Draw: +765
+  Away Win: -833
+Spread:
+  Handicap: -2.25
+  Home: -111
+  Away: -122
+Over/Under:
+  3.75: Over -130 / Under -103
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 17°C
+Wind: Light Breeze, 6.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 64 of 111
+Match ID: x7lm7phjkz0dm2w
+================================================================================
+Competition: German Bundesliga 5 (Germany)
+Match: RSV Eintracht vs Grimma
+Score: 3 - 1 (HT: 3 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Snow
+Temperature: 17°C
+Wind: Gentle Breeze, 11.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 65 of 111
+Match ID: y0or5jh8lnekqwz
+================================================================================
+Competition: Poland Liga 3 (Poland)
+Match: Wigry Suwalki vs OKS Stomil Olsztyn
+Score: 1 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread:
+  Handicap: 0.0
+  Home: -108
+  Away: -139
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 20°C
+Wind: Gentle Breeze, 8.3 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 66 of 111
+Match ID: 965mkyhypx5zr1g
+================================================================================
+Competition: Georgia Erovnuli Liga 2 (Georgia)
+Match: FC Gonio vs Merani Martvili
+Score: 3 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -112
+  Draw: +271
+  Away Win: +216
+Spread:
+  Handicap: 0.5
+  Home: -112
+  Away: -118
+Over/Under:
+  2.75: Over -125 / Under -108
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 15°C
+Wind: Light Breeze, 7.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 67 of 111
+Match ID: 6ypq3nhv0k9pmd7
+================================================================================
+Competition: Czech First League (Czech Republic)
+Match: Vyskov vs Dukla Prague
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +300
+  Draw: +223
+  Away Win: -114
+Spread:
+  Handicap: -0.5
+  Home: -105
+  Away: -111
+Over/Under:
+  2.25: Over -112 / Under -106
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 13°C
+Wind: Moderate Breeze, 15.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 68 of 111
+Match ID: n54qllhn240lqvy
+================================================================================
+Competition: Finnish Kolmonen (Finland)
+Match: Saaksjarven Loiske vs TPV/2
+Score: 1 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +192
+  Draw: +370
+  Away Win: -127
+Spread:
+  Handicap: -0.5
+  Home: -105
+  Away: -127
+Over/Under:
+  4.25: Over -112 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Thunder
+Temperature: 14°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 69 of 111
+Match ID: 4wyrn4h68w0zq86
+================================================================================
+Competition: Austrian Landesliga (Austria)
+Match: USK Anif vs SV Burmoos
+Score: 1 - 3 (HT: 1 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +205
+  Draw: +215
+  Away Win: +109
+Spread:
+  Handicap: -0.25
+  Home: -102
+  Away: -116
+Over/Under:
+  2.25: Over -109 / Under -111
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 13°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 70 of 111
+Match ID: l5ergph4od2or8k
+================================================================================
+Competition: Croatian U19 League (Croatia)
+Match: Zagreb locomotive U19 vs Sesvete U19
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -169
+  Draw: +312
+  Away Win: +346
+Spread:
+  Handicap: 1.0
+  Home: -108
+  Away: -125
+Over/Under:
+  3.5: Over -108 / Under -123
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 21°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 71 of 111
+Match ID: jw2r09h287w6rz8
+================================================================================
+Competition: Georgia Erovnuli Liga (Georgia)
+Match: Dila Gori vs Dinamo Tbilisi
+Score: 2 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -213
+  Draw: +274
+  Away Win: +639
+Spread:
+  Handicap: 1.0
+  Home: -114
+  Away: -106
+Over/Under:
+  2.25: Over -103 / Under -120
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 19°C
+Wind: Gentle Breeze, 13.0 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 72 of 111
+Match ID: 318q66hw958yqo9
+================================================================================
+Competition: Iraq Stars League (Iraq)
+Match: Duhok SC vs Naft Missan
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 31°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 73 of 111
+Match ID: k82rekhwe5w3rep
+================================================================================
+Competition: Rwandan National League (Rwanda)
+Match: APR FC vs Musanze FC
+Score: 1 - 1 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -400
+  Draw: +375
+  Away Win: +1100
+Spread:
+  Handicap: 1.5
+  Home: -109
+  Away: -125
+Over/Under:
+  2.25: Over -123 / Under -101
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 22°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 74 of 111
+Match ID: x7lm7phjkjw4m2w
+================================================================================
+Competition: ALG U21 (Algeria)
+Match: NC Magra U21 vs CS Constantine U21
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +475
+  Draw: +280
+  Away Win: -189
+Spread:
+  Handicap: -1.0
+  Home: -109
+  Away: -137
+Over/Under:
+  2.75: Over -133 / Under -111
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 33°C
+Wind: Light Breeze, 5.1 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 75 of 111
+Match ID: vjxm8ghe4l27r6o
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: HJS Akatemia vs PK-35 Vantaa
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +1300
+  Draw: +810
+  Away Win: -1111
+Spread:
+  Handicap: -1.5
+  Home: +100
+  Away: -111
+Over/Under:
+  4.75: Over -103 / Under -110
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 16°C
+Wind: Light Breeze, 7.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 76 of 111
+Match ID: x7lm7phjkz5dm2w
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: TPV Tampere vs KuPs
+Score: 0 - 1 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +1083
+  Draw: +797
+  Away Win: -769
+Spread:
+  Handicap: -2.5
+  Home: -122
+  Away: -106
+Over/Under:
+  4.0: Over -119 / Under -106
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 12°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 77 of 111
+Match ID: y0or5jh8ln0kqwz
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: Jazz Pori vs GBK Kokkola
+Score: 3 - 1 (HT: 2 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -526
+  Draw: +669
+  Away Win: +830
+Spread:
+  Handicap: 2.0
+  Home: -118
+  Away: -109
+Over/Under:
+  3.75: Over -118 / Under -108
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 12°C
+Wind: Light Breeze, 7.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 78 of 111
+Match ID: pxwrxlhyg528ryk
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: KuPS (Youth) vs Mikkelin Palloilijat
+Score: 1 - 4 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +235
+  Draw: +278
+  Away Win: -104
+Spread:
+  Handicap: -0.5
+  Home: -122
+  Away: -104
+Over/Under:
+  3.0: Over -104 / Under -122
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 16°C
+Wind: Gentle Breeze, 10.7 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 79 of 111
+Match ID: 318q66hw53nzqo9
+================================================================================
+Competition: Estonian Premium Liiga (Estonia)
+Match: Nomme JK Kalju vs Paide Linnameeskond
+Score: 0 - 1 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +126
+  Draw: +243
+  Away Win: +206
+Spread:
+  Handicap: 0.25
+  Home: -102
+  Away: -115
+Over/Under:
+  2.75: Over +102 / Under -123
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 18°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 80 of 111
+Match ID: dn1m1gh2wgk4moe
+================================================================================
+Competition: Estonian Premium Liiga (Estonia)
+Match: Levadia Tallinn vs Parnu JK Vaprus
+Score: 2 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -526
+  Draw: +516
+  Away Win: +1478
+Spread:
+  Handicap: 1.75
+  Home: -122
+  Away: +101
+Over/Under:
+  3.0: Over +100 / Under -120
+
+--- MATCH ENVIRONMENT ---
+Weather: Partly Cloudy
+Temperature: 18°C
+Wind: Light Breeze, 4.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 81 of 111
+Match ID: 4jwq2ghn4w40m0v
+================================================================================
+Competition: Gambia League Second Division  (Gambia)
+Match: Tallinding United vs Essau United
+Score: 1 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -189
+  Draw: +235
+  Away Win: +600
+Spread:
+  Handicap: 1.0
+  Home: -111
+  Away: -133
+Over/Under:
+  2.0: Over -125 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 82 of 111
+Match ID: ednm9whwkok6ryo
+================================================================================
+Competition: Gambia League Second Division  (Gambia)
+Match: Latrikunda Utd vs Kanifing East FC
+Score: 2 - 0 (HT: 1 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +175
+  Draw: +170
+  Away Win: +170
+Spread: No odds available
+Over/Under:
+  1.5: Over -119 / Under -125
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 83 of 111
+Match ID: 965mkyhk7w75r1g
+================================================================================
+Competition: Gambia League Second Division  (Gambia)
+Match: Colley Stars vs Samger FC
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +160
+  Draw: +175
+  Away Win: +180
+Spread: No odds available
+Over/Under:
+  1.5: Over -133 / Under -111
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 84 of 111
+Match ID: 318q66hxog43qo9
+================================================================================
+Competition: Czech First League (Czech Republic)
+Match: Pardubice vs Chrudim
+Score: 1 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -238
+  Draw: +307
+  Away Win: +559
+Spread:
+  Handicap: 1.25
+  Home: -105
+  Away: -111
+Over/Under:
+  2.75: Over -101 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Thunder
+Temperature: 16°C
+Wind: Fresh Breeze, 19.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 85 of 111
+Match ID: zp5rzghgjo7xq82
+================================================================================
+Competition: Argentine Reserve League (Argentina)
+Match: CA San Telmo Reserves vs Estudiantes de Buenos Aires Reserves
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 86 of 111
+Match ID: 1l4rjnh96g1em7v
+================================================================================
+Competition: Argentine Reserve League (Argentina)
+Match: UAI Urquiza Reserves vs CA Brown de Adrogue Reserves
+Score: 0 - 0 (HT: 0 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +167
+  Draw: +183
+  Away Win: +180
+Spread:
+  Handicap: 0.0
+  Home: -120
+  Away: -110
+Over/Under:
+  2.0: Over -112 / Under -118
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 87 of 111
+Match ID: dj2ryoh1w30eq1z
+================================================================================
+Competition: Czech Third League (Czech Republic)
+Match: Arsenal Ceska Lipa vs Mlada Boleslav B
+Score: 2 - 1 (HT: 1 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -476
+  Draw: +516
+  Away Win: +1001
+Spread:
+  Handicap: 0.75
+  Home: -110
+  Away: -115
+Over/Under:
+  4.0: Over -115 / Under -110
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 13°C
+Wind: Gentle Breeze, 9.2 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 88 of 111
+Match ID: 8yomo4h17yp8q0j
+================================================================================
+Competition: Serbian Super liga (Serbia)
+Match: Mladost Novi Sad vs FK Napredak Krusevac
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +410
+  Draw: +207
+  Away Win: -147
+Spread:
+  Handicap: -0.75
+  Home: -127
+  Away: -106
+Over/Under:
+  1.75: Over -118 / Under -112
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 23°C
+Wind: Gentle Breeze, 11.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 89 of 111
+Match ID: y0or5jh8l9p2qwz
+================================================================================
+Competition: Finnish Kolmonen (Finland)
+Match: Kultsu Lappeenranta vs Mikkelin Palloilijat II
+Score: 2 - 0 (HT: 2 - 0)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -500
+  Draw: +544
+  Away Win: +690
+Spread:
+  Handicap: 2.25
+  Home: -114
+  Away: -120
+Over/Under:
+  5.0: Over -114 / Under -116
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 20°C
+Wind: Gentle Breeze, 8.3 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 90 of 111
+Match ID: pxwrxlhygyygryk
+================================================================================
+Competition: CA U17 C (None)
+Match: Uzbekistan U17 vs Iran U17
+Score: 4 - 2 (HT: 0 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 91 of 111
+Match ID: y0or5jh8l974qwz
+================================================================================
+Competition: Belarusian Cup (Belarus)
+Match: Krechet vs Osipovichy
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 92 of 111
+Match ID: n54qllhn24vxqvy
+================================================================================
+Competition: Belarusian Cup (Belarus)
+Match: Neman Mosty vs FK BumProm Gomel
+Score: 0 - 4 (HT: 0 - 2)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 93 of 111
+Match ID: x7lm7phz4dw3m2w
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: AS Binah vs FC Espoir Tsevie
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 94 of 111
+Match ID: 23xmvkh63y7kqg8
+================================================================================
+Competition: Belarusian Cup (Belarus)
+Match: Svisloch vs Kommunalnik Slonim
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 95 of 111
+Match ID: l7oqdehgnoe2r51
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: AC Oulu vs Vantaa
+Score: 2 - 1 (HT: 0 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -179
+  Draw: +400
+  Away Win: +315
+Spread:
+  Handicap: 2.0
+  Home: -109
+  Away: -115
+Over/Under:
+  4.75: Over -106 / Under -119
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 12°C
+Wind: Light Breeze, 5.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 96 of 111
+Match ID: dj2ryohlk1dxq1z
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: KPV vs KTP Kotka
+Score: 2 - 0 (HT: 2 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +239
+  Draw: +296
+  Away Win: -110
+Spread:
+  Handicap: -0.5
+  Home: -114
+  Away: -110
+Over/Under:
+  3.0: Over -114 / Under -110
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 15°C
+Wind: Light Breeze, 5.8 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 97 of 111
+Match ID: 2y8m4zh5364wql0
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: SJK Seinajoen vs Atlantis
+Score: 3 - 2 (HT: 2 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -303
+  Draw: +494
+  Away Win: +524
+Spread:
+  Handicap: 1.5
+  Home: -110
+  Away: -116
+Over/Under:
+  3.75: Over -120 / Under -105
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 98 of 111
+Match ID: 23xmvkh87zk1qg8
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: Etoile Filante de Lomé vs AC Barracuda
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 99 of 111
+Match ID: 8yomo4h17353q0j
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: Gnistan Helsinki vs Ilves Tampere
+Score: 3 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +221
+  Draw: +254
+  Away Win: +109
+Spread:
+  Handicap: -0.25
+  Home: -105
+  Away: -120
+Over/Under:
+  2.75: Over -118 / Under -108
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 17°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 100 of 111
+Match ID: 6ypq3nhv034vmd7
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: HAPK vs OLS Oulu
+Score: 1 - 4 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 12°C
+Wind: Gentle Breeze, 13.0 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 101 of 111
+Match ID: 1l4rjnh4vpxwm7v
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: Entente 2 vs AS OTR
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 102 of 111
+Match ID: pxwrxlhyg52lryk
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: Honka Espoo vs Ekenas IF Fotboll
+Score: 0 - 1 (HT: 0 - 1)
+Status: Live
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +320
+  Draw: +327
+  Away Win: -154
+Spread:
+  Handicap: -0.75
+  Home: -108
+  Away: -118
+Over/Under:
+  2.75: Over -130 / Under +101
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 18°C
+Wind: Gentle Breeze, 8.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 103 of 111
+Match ID: 3glrw7hnw7l9qdy
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: P-Iirot vs Vaasa VPS
+Score: 1 - 4 (HT: 1 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +817
+  Draw: +492
+  Away Win: -417
+Spread:
+  Handicap: -1.75
+  Home: -110
+  Away: -116
+Over/Under:
+  3.75: Over -109 / Under -116
+
+--- MATCH ENVIRONMENT ---
+Weather: Sunny
+Temperature: 12°C
+Wind: Gentle Breeze, 12.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 104 of 111
+Match ID: 8yomo4h3nj0gq0j
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: Doumbe FC vs Tambo FC
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 105 of 111
+Match ID: 23xmvkh87z41qg8
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: ASKO Kara vs Gomido FC
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 106 of 111
+Match ID: ednm9wh71lg1ryo
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: Gbohloesu vs ASC Kara
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 107 of 111
+Match ID: x7lm7phz4d52m2w
+================================================================================
+Competition: Togolese Premier Division (Togo)
+Match: Unisport de Sokode vs CDF Haknour
+Score: 0 - 0 (HT: 0 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result: No odds available
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Unknown
+Temperature: None
+Wind: Calm, None None
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 108 of 111
+Match ID: l5ergph4ow55r8k
+================================================================================
+Competition: Finland Suomen Cup (Finland)
+Match: FC Haka vs Union Plaani
+Score: 6 - 0 (HT: 2 - 0)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: -10000
+  Draw: +2900
+  Away Win: +5800
+Spread: No odds available
+Over/Under: No odds available
+
+--- MATCH ENVIRONMENT ---
+Weather: Cloudy
+Temperature: 14°C
+Wind: Gentle Breeze, 11.9 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 109 of 111
+Match ID: pxwrxlhyp89jryk
+================================================================================
+Competition: North Macedonia Cup (North Macedonia)
+Match: FC Struga vs FC Vardar Skopje
+Score: 0 - 2 (HT: 0 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +390
+  Draw: +196
+  Away Win: -137
+Spread:
+  Handicap: -0.75
+  Home: -119
+  Away: +100
+Over/Under:
+  1.75: Over -127 / Under +103
+
+--- MATCH ENVIRONMENT ---
+Weather: Rain
+Temperature: 16°C
+Wind: Light Air, 2.5 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 110 of 111
+Match ID: 3glrw7hnk2n8qdy
+================================================================================
+Competition: Romanian Cup (Romania)
+Match: Hermannstadt vs CFR Cluj
+Score: 2 - 3 (HT: 1 - 2)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +390
+  Draw: +210
+  Away Win: -130
+Spread:
+  Handicap: -0.75
+  Home: -122
+  Away: +103
+Over/Under:
+  2.0: Over -116 / Under -103
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 13°C
+Wind: Gentle Breeze, 9.6 mph
+
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH 111 of 111
+Match ID: 6ypq3nh327zpmd7
+================================================================================
+Competition: Uruguay Primera Division (Uruguay)
+Match: Cerro Montevideo vs Nacional Montevideo
+Score: 0 - 4 (HT: 0 - 1)
+Status: Finished
+
+--- MATCH BETTING ODDS ---
+Full Time Result:
+  Home Win: +706
+  Draw: +345
+  Away Win: -278
+Spread:
+  Handicap: -1.25
+  Home: +101
+  Away: -118
+Over/Under:
+  2.75: Over +103 / Under -122
+
+--- MATCH ENVIRONMENT ---
+Weather: Foggy
+Temperature: 20°C
+Wind: Light Breeze, 6.5 mph
+
+Step 6: Successfully displayed 111 matches

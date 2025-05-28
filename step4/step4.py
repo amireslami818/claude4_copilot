@@ -59,17 +59,28 @@ def extract_match_summary(match_id, match_data):
     status_info = match_info.get("status", {})
     status_id = status_info.get("id", 0)
     
-    # Determine status based on ID
-    if status_id == 1:
-        status = "Upcoming"
-    elif 2 <= status_id <= 7:
-        status = "Live"
-    elif status_id >= 8:
-        status = "Finished"
-    else:
-        status = "Unknown"
+    # Determine status based on ID using comprehensive mapping
+    status_mapping = {
+        1: "Not started",
+        2: "First half", 
+        3: "Half-time break",
+        4: "Second half",
+        5: "Extra time",
+        6: "Penalty shootout",
+        7: "Finished",
+        8: "Finished", 
+        9: "Postponed",
+        10: "Canceled",
+        11: "To be announced",
+        12: "Interrupted",
+        13: "Abandoned",
+        14: "Suspended"
+    }
+    
+    status = status_mapping.get(status_id, "Unknown")
     
     summary["status"] = status
+    summary["status_id"] = status_id  # Preserve raw status_id for detailed descriptions
     
     # Odds fields - Updated for our step3 odds structure
     odds = match_data.get("odds", {})

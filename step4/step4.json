@@ -16755,10 +16755,1036 @@
           "start_time": null
         }
       }
+    },
+    {
+      "generated_at": "05/28/2025 05:54:49 PM EDT",
+      "source_timestamp": "05/28/2025 05:54:49 PM EDT",
+      "total_matches": 12,
+      "statistics": {
+        "matches_with_odds": 9,
+        "matches_with_environment": 12,
+        "by_status": {
+          "Half-time break": 1,
+          "Second half": 3,
+          "Abandoned": 1,
+          "Finished": 7
+        }
+      },
+      "matches": {
+        "3glrw7hnw9yyqdy": {
+          "match_id": "3glrw7hnw9yyqdy",
+          "competition_id": "p3glrw7h2vqdyjv",
+          "competition": "Colombian Copa BetPlay DIMAYOR",
+          "country": "Colombia",
+          "home_team": "Llaneros FC",
+          "away_team": "Atletico FC",
+          "score": "1 - 0 (HT: 1 - 0)",
+          "status": "Half-time break",
+          "status_id": 3,
+          "full_time_result": {
+            "home": 4.04,
+            "draw": 2.98,
+            "away": 2.09,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.25,
+            "home": 1.08,
+            "away": 0.78,
+            "time": "6"
+          },
+          "over_under": {
+            "2.0": {
+              "line": 2.0,
+              "over": 0.88,
+              "under": 0.95,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Cloudy",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure_value": 761.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 70.0
+          },
+          "venue": "kjw2r09hwo3rz84",
+          "start_time": null
+        },
+        "8yomo4h3nzlnq0j": {
+          "match_id": "8yomo4h3nzlnq0j",
+          "competition_id": "vl7oqdeh6v4r510",
+          "competition": "Ecuadorian Campeonato Serie B",
+          "country": "Ecuador",
+          "home_team": "CD Independiente Juniors",
+          "away_team": "CD Vargas Torres",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.6,
+            "wind_unit": "m/s",
+            "pressure_value": 768.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 54.0
+          },
+          "venue": "56ypq3nhjnemd7o",
+          "start_time": null
+        },
+        "y39mp1h63o54moj": {
+          "match_id": "y39mp1h63o54moj",
+          "competition_id": "l965mkyh37lr1ge",
+          "competition": "Peruvian Liga 2",
+          "country": "Peru",
+          "home_team": "Club Ada Jaen",
+          "away_team": "Univ.Cesar Vallejo",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": {
+            "home": 2.61,
+            "draw": 3.11,
+            "away": 2.44,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.0,
+            "home": 0.93,
+            "away": 0.8,
+            "time": "6"
+          },
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 0.79,
+              "under": 0.94,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind_description": "Gentle Breeze",
+            "wind_value": 5.6,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 59.0
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "pxwrxlhygnj9ryk": {
+          "match_id": "pxwrxlhygnj9ryk",
+          "competition_id": "p3glrw7h2vqdyjv",
+          "competition": "Colombian Copa BetPlay DIMAYOR",
+          "country": "Colombia",
+          "home_team": "Leones",
+          "away_team": "La Equidad",
+          "score": "1 - 2 (HT: 0 - 2)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": {
+            "home": 1.61,
+            "draw": 3.68,
+            "away": 5.75,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.75,
+            "home": 0.82,
+            "away": 1.03,
+            "time": "6"
+          },
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 1.02,
+              "under": 0.81,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Light Rain",
+            "temperature": "22°C",
+            "temperature_value": 22.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 3.2,
+            "wind_unit": "m/s",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 74.0
+          },
+          "venue": "d23xmvkhwd5qg8n",
+          "start_time": null
+        },
+        "8yomo4h3wg47q0j": {
+          "match_id": "8yomo4h3wg47q0j",
+          "competition_id": "vl7oqdehwxr510j",
+          "competition": "Peruvian Liga 1",
+          "country": "Peru",
+          "home_team": "Cusco FC",
+          "away_team": "Cienciano",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Abandoned",
+          "status_id": 13,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "dj2ryohlvpz2q1z": {
+          "match_id": "dj2ryohlvpz2q1z",
+          "competition_id": "d23xmvkhjoqg8ny",
+          "competition": "Copa Argentina",
+          "country": "Argentina",
+          "home_team": "Excursionistas",
+          "away_team": "Argentinos Juniors",
+          "score": "0 - 3 (HT: 0 - 0)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 10.44,
+            "draw": 4.27,
+            "away": 1.35,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -1.25,
+            "home": 0.94,
+            "away": 0.9,
+            "time": "6"
+          },
+          "over_under": {
+            "2.25": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.83,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "11°C",
+            "temperature_value": 11.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure_value": 769.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 62.0
+          },
+          "venue": "4zp5rzghlonq82w",
+          "start_time": null
+        },
+        "318q66hxo897qo9": {
+          "match_id": "318q66hxo897qo9",
+          "competition_id": "kn54qllh8g0qvy9",
+          "competition": "Mauritania Ligue 1",
+          "country": "Mauritania",
+          "home_team": "ASC Snim",
+          "away_team": "Al-Hilal Omdurman",
+          "score": "0 - 1 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.5,
+            "draw": 3.4,
+            "away": 1.6,
+            "time": "6"
+          },
+          "spread": null,
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 1.2,
+              "under": 0.57,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "4wyrn4h68w4pq86": {
+          "match_id": "4wyrn4h68w4pq86",
+          "competition_id": "gpxwrxlhe3ryk0j",
+          "competition": "Switzerland Divison 1 League",
+          "country": "Switzerland",
+          "home_team": "Meyrin",
+          "away_team": "Grasshoppers U21",
+          "score": "1 - 1 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "4wyrn4h68yv6q86": {
+          "match_id": "4wyrn4h68yv6q86",
+          "competition_id": "8y39mp1hwxmojxg",
+          "competition": "Russian Premier League",
+          "country": "Russia",
+          "home_team": "FC Sochi",
+          "away_team": "FC Pari Nizhniy Novgorod",
+          "score": "1 - 2 (HT: 1 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 1.89,
+            "draw": 3.23,
+            "away": 4.18,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.5,
+            "home": 0.91,
+            "away": 0.96,
+            "time": "6"
+          },
+          "over_under": {
+            "2.25": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.85,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Partly Cloudy",
+            "temperature": "18°C",
+            "temperature_value": 18.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure_value": 759.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 93.0
+          },
+          "venue": "gpxwrxlh807ryk0",
+          "start_time": null
+        },
+        "pxwrxlhyp89jryk": {
+          "match_id": "pxwrxlhyp89jryk",
+          "competition_id": "yl5ergph72r8k0o",
+          "competition": "North Macedonia Cup",
+          "country": "North Macedonia",
+          "home_team": "FC Struga",
+          "away_team": "FC Vardar Skopje",
+          "score": "0 - 2 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.9,
+            "draw": 2.96,
+            "away": 1.73,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.75,
+            "home": 0.84,
+            "away": 1.0,
+            "time": "6"
+          },
+          "over_under": {
+            "1.75": {
+              "line": 1.75,
+              "over": 0.79,
+              "under": 1.03,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Rain",
+            "temperature": "16°C",
+            "temperature_value": 16.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Air",
+            "wind_value": 1.1,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 91.0
+          },
+          "venue": "j1l4rjnh1djm7vx",
+          "start_time": null
+        },
+        "3glrw7hnk2n8qdy": {
+          "match_id": "3glrw7hnk2n8qdy",
+          "competition_id": "z8yomo4hg9q0j6l",
+          "competition": "Romanian Cup",
+          "country": "Romania",
+          "home_team": "Hermannstadt",
+          "away_team": "CFR Cluj",
+          "score": "2 - 3 (HT: 1 - 2)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.9,
+            "draw": 3.1,
+            "away": 1.77,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.75,
+            "home": 0.82,
+            "away": 1.03,
+            "time": "6"
+          },
+          "over_under": {
+            "2.0": {
+              "line": 2.0,
+              "over": 0.86,
+              "under": 0.97,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Foggy",
+            "temperature": "13°C",
+            "temperature_value": 13.0,
+            "temperature_unit": "°C",
+            "wind_description": "Gentle Breeze",
+            "wind_value": 4.3,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 55.0
+          },
+          "venue": "j1l4rjnh1jem7vx",
+          "start_time": null
+        },
+        "6ypq3nh327zpmd7": {
+          "match_id": "6ypq3nh327zpmd7",
+          "competition_id": "v2y8m4zhydql074",
+          "competition": "Uruguay Primera Division",
+          "country": "Uruguay",
+          "home_team": "Cerro Montevideo",
+          "away_team": "Nacional Montevideo",
+          "score": "0 - 4 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 8.06,
+            "draw": 4.45,
+            "away": 1.36,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -1.25,
+            "home": 1.01,
+            "away": 0.85,
+            "time": "6"
+          },
+          "over_under": {
+            "2.75": {
+              "line": 2.75,
+              "over": 1.03,
+              "under": 0.82,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Foggy",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 63.0
+          },
+          "venue": "9vjxm8ghg7pr6od",
+          "start_time": null
+        }
+      }
+    },
+    {
+      "generated_at": "05/28/2025 05:55:24 PM EDT",
+      "source_timestamp": "05/28/2025 05:55:24 PM EDT",
+      "total_matches": 12,
+      "statistics": {
+        "matches_with_odds": 9,
+        "matches_with_environment": 12,
+        "by_status": {
+          "Half-time break": 1,
+          "Second half": 3,
+          "Abandoned": 1,
+          "Finished": 7
+        }
+      },
+      "matches": {
+        "3glrw7hnw9yyqdy": {
+          "match_id": "3glrw7hnw9yyqdy",
+          "competition_id": "p3glrw7h2vqdyjv",
+          "competition": "Colombian Copa BetPlay DIMAYOR",
+          "country": "Colombia",
+          "home_team": "Llaneros FC",
+          "away_team": "Atletico FC",
+          "score": "1 - 0 (HT: 1 - 0)",
+          "status": "Half-time break",
+          "status_id": 3,
+          "full_time_result": {
+            "home": 4.04,
+            "draw": 2.98,
+            "away": 2.09,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.25,
+            "home": 1.08,
+            "away": 0.78,
+            "time": "6"
+          },
+          "over_under": {
+            "2.0": {
+              "line": 2.0,
+              "over": 0.88,
+              "under": 0.95,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Cloudy",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure_value": 761.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 70.0
+          },
+          "venue": "kjw2r09hwo3rz84",
+          "start_time": null
+        },
+        "8yomo4h3nzlnq0j": {
+          "match_id": "8yomo4h3nzlnq0j",
+          "competition_id": "vl7oqdeh6v4r510",
+          "competition": "Ecuadorian Campeonato Serie B",
+          "country": "Ecuador",
+          "home_team": "CD Independiente Juniors",
+          "away_team": "CD Vargas Torres",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.6,
+            "wind_unit": "m/s",
+            "pressure_value": 768.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 54.0
+          },
+          "venue": "56ypq3nhjnemd7o",
+          "start_time": null
+        },
+        "y39mp1h63o54moj": {
+          "match_id": "y39mp1h63o54moj",
+          "competition_id": "l965mkyh37lr1ge",
+          "competition": "Peruvian Liga 2",
+          "country": "Peru",
+          "home_team": "Club Ada Jaen",
+          "away_team": "Univ.Cesar Vallejo",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": {
+            "home": 2.61,
+            "draw": 3.11,
+            "away": 2.44,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.0,
+            "home": 0.93,
+            "away": 0.8,
+            "time": "6"
+          },
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 0.79,
+              "under": 0.94,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind_description": "Gentle Breeze",
+            "wind_value": 5.6,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 59.0
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "pxwrxlhygnj9ryk": {
+          "match_id": "pxwrxlhygnj9ryk",
+          "competition_id": "p3glrw7h2vqdyjv",
+          "competition": "Colombian Copa BetPlay DIMAYOR",
+          "country": "Colombia",
+          "home_team": "Leones",
+          "away_team": "La Equidad",
+          "score": "1 - 2 (HT: 0 - 2)",
+          "status": "Second half",
+          "status_id": 4,
+          "full_time_result": {
+            "home": 1.61,
+            "draw": 3.68,
+            "away": 5.75,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.75,
+            "home": 0.82,
+            "away": 1.03,
+            "time": "6"
+          },
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 1.02,
+              "under": 0.81,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Light Rain",
+            "temperature": "22°C",
+            "temperature_value": 22.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 3.2,
+            "wind_unit": "m/s",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 74.0
+          },
+          "venue": "d23xmvkhwd5qg8n",
+          "start_time": null
+        },
+        "8yomo4h3wg47q0j": {
+          "match_id": "8yomo4h3wg47q0j",
+          "competition_id": "vl7oqdehwxr510j",
+          "competition": "Peruvian Liga 1",
+          "country": "Peru",
+          "home_team": "Cusco FC",
+          "away_team": "Cienciano",
+          "score": "0 - 0 (HT: 0 - 0)",
+          "status": "Abandoned",
+          "status_id": 13,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "dj2ryohlvpz2q1z": {
+          "match_id": "dj2ryohlvpz2q1z",
+          "competition_id": "d23xmvkhjoqg8ny",
+          "competition": "Copa Argentina",
+          "country": "Argentina",
+          "home_team": "Excursionistas",
+          "away_team": "Argentinos Juniors",
+          "score": "0 - 3 (HT: 0 - 0)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 10.44,
+            "draw": 4.27,
+            "away": 1.35,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -1.25,
+            "home": 0.94,
+            "away": 0.9,
+            "time": "6"
+          },
+          "over_under": {
+            "2.25": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.83,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Sunny",
+            "temperature": "11°C",
+            "temperature_value": 11.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure_value": 769.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 62.0
+          },
+          "venue": "4zp5rzghlonq82w",
+          "start_time": null
+        },
+        "318q66hxo897qo9": {
+          "match_id": "318q66hxo897qo9",
+          "competition_id": "kn54qllh8g0qvy9",
+          "competition": "Mauritania Ligue 1",
+          "country": "Mauritania",
+          "home_team": "ASC Snim",
+          "away_team": "Al-Hilal Omdurman",
+          "score": "0 - 1 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.5,
+            "draw": 3.4,
+            "away": 1.6,
+            "time": "6"
+          },
+          "spread": null,
+          "over_under": {
+            "2.5": {
+              "line": 2.5,
+              "over": 1.2,
+              "under": 0.57,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "4wyrn4h68w4pq86": {
+          "match_id": "4wyrn4h68w4pq86",
+          "competition_id": "gpxwrxlhe3ryk0j",
+          "competition": "Switzerland Divison 1 League",
+          "country": "Switzerland",
+          "home_team": "Meyrin",
+          "away_team": "Grasshoppers U21",
+          "score": "1 - 1 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": null,
+          "spread": null,
+          "over_under": null,
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind_description": "Calm",
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity_value": null
+          },
+          "venue": null,
+          "start_time": null
+        },
+        "4wyrn4h68yv6q86": {
+          "match_id": "4wyrn4h68yv6q86",
+          "competition_id": "8y39mp1hwxmojxg",
+          "competition": "Russian Premier League",
+          "country": "Russia",
+          "home_team": "FC Sochi",
+          "away_team": "FC Pari Nizhniy Novgorod",
+          "score": "1 - 2 (HT: 1 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 1.89,
+            "draw": 3.23,
+            "away": 4.18,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": 0.5,
+            "home": 0.91,
+            "away": 0.96,
+            "time": "6"
+          },
+          "over_under": {
+            "2.25": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.85,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Partly Cloudy",
+            "temperature": "18°C",
+            "temperature_value": 18.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure_value": 759.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 93.0
+          },
+          "venue": "gpxwrxlh807ryk0",
+          "start_time": null
+        },
+        "pxwrxlhyp89jryk": {
+          "match_id": "pxwrxlhyp89jryk",
+          "competition_id": "yl5ergph72r8k0o",
+          "competition": "North Macedonia Cup",
+          "country": "North Macedonia",
+          "home_team": "FC Struga",
+          "away_team": "FC Vardar Skopje",
+          "score": "0 - 2 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.9,
+            "draw": 2.96,
+            "away": 1.73,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.75,
+            "home": 0.84,
+            "away": 1.0,
+            "time": "6"
+          },
+          "over_under": {
+            "1.75": {
+              "line": 1.75,
+              "over": 0.79,
+              "under": 1.03,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Rain",
+            "temperature": "16°C",
+            "temperature_value": 16.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Air",
+            "wind_value": 1.1,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 91.0
+          },
+          "venue": "j1l4rjnh1djm7vx",
+          "start_time": null
+        },
+        "3glrw7hnk2n8qdy": {
+          "match_id": "3glrw7hnk2n8qdy",
+          "competition_id": "z8yomo4hg9q0j6l",
+          "competition": "Romanian Cup",
+          "country": "Romania",
+          "home_team": "Hermannstadt",
+          "away_team": "CFR Cluj",
+          "score": "2 - 3 (HT: 1 - 2)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 4.9,
+            "draw": 3.1,
+            "away": 1.77,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -0.75,
+            "home": 0.82,
+            "away": 1.03,
+            "time": "6"
+          },
+          "over_under": {
+            "2.0": {
+              "line": 2.0,
+              "over": 0.86,
+              "under": 0.97,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Foggy",
+            "temperature": "13°C",
+            "temperature_value": 13.0,
+            "temperature_unit": "°C",
+            "wind_description": "Gentle Breeze",
+            "wind_value": 4.3,
+            "wind_unit": "m/s",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 55.0
+          },
+          "venue": "j1l4rjnh1jem7vx",
+          "start_time": null
+        },
+        "6ypq3nh327zpmd7": {
+          "match_id": "6ypq3nh327zpmd7",
+          "competition_id": "v2y8m4zhydql074",
+          "competition": "Uruguay Primera Division",
+          "country": "Uruguay",
+          "home_team": "Cerro Montevideo",
+          "away_team": "Nacional Montevideo",
+          "score": "0 - 4 (HT: 0 - 1)",
+          "status": "Finished",
+          "status_id": 8,
+          "full_time_result": {
+            "home": 8.06,
+            "draw": 4.45,
+            "away": 1.36,
+            "time": "6"
+          },
+          "spread": {
+            "handicap": -1.25,
+            "home": 1.01,
+            "away": 0.85,
+            "time": "6"
+          },
+          "over_under": {
+            "2.75": {
+              "line": 2.75,
+              "over": 1.03,
+              "under": 0.82,
+              "time": "6"
+            }
+          },
+          "both_teams_to_score": null,
+          "environment": {
+            "weather_description": "Foggy",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind_description": "Light Breeze",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity_value": 63.0
+          },
+          "venue": "9vjxm8ghg7pr6od",
+          "start_time": null
+        }
+      }
     }
   ],
-  "last_updated": "05/28/2025 04:53:37 PM EDT",
-  "total_entries": 4,
-  "latest_match_count": 111,
-  "ny_timestamp": "05/28/2025 04:53:37 PM EDT"
+  "last_updated": "05/28/2025 05:55:24 PM EDT",
+  "total_entries": 6,
+  "latest_match_count": 12,
+  "ny_timestamp": "05/28/2025 05:55:24 PM EDT"
 }

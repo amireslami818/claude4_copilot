@@ -48159,10 +48159,2774 @@
           "injuries": {}
         }
       }
+    },
+    {
+      "generated_at": "05/28/2025 05:54:49 PM EDT",
+      "source_timestamp": "2025-05-28T17:54:47.913709-04:00",
+      "match_count": 12,
+      "categories": {
+        "by_status": {
+          "live": [
+            "3glrw7hnw9yyqdy",
+            "8yomo4h3nzlnq0j",
+            "y39mp1h63o54moj",
+            "pxwrxlhygnj9ryk"
+          ],
+          "upcoming": [],
+          "finished": [
+            "dj2ryohlvpz2q1z",
+            "318q66hxo897qo9",
+            "4wyrn4h68w4pq86",
+            "4wyrn4h68yv6q86",
+            "pxwrxlhyp89jryk",
+            "3glrw7hnk2n8qdy",
+            "6ypq3nh327zpmd7"
+          ],
+          "other": [
+            "8yomo4h3wg47q0j"
+          ]
+        },
+        "by_competition": {
+          "Colombian Copa BetPlay DIMAYOR": [
+            "3glrw7hnw9yyqdy",
+            "pxwrxlhygnj9ryk"
+          ],
+          "Ecuadorian Campeonato Serie B": [
+            "8yomo4h3nzlnq0j"
+          ],
+          "Peruvian Liga 2": [
+            "y39mp1h63o54moj"
+          ],
+          "Peruvian Liga 1": [
+            "8yomo4h3wg47q0j"
+          ],
+          "Copa Argentina": [
+            "dj2ryohlvpz2q1z"
+          ],
+          "Mauritania Ligue 1": [
+            "318q66hxo897qo9"
+          ],
+          "Switzerland Divison 1 League": [
+            "4wyrn4h68w4pq86"
+          ],
+          "Russian Premier League": [
+            "4wyrn4h68yv6q86"
+          ],
+          "North Macedonia Cup": [
+            "pxwrxlhyp89jryk"
+          ],
+          "Romanian Cup": [
+            "3glrw7hnk2n8qdy"
+          ],
+          "Uruguay Primera Division": [
+            "6ypq3nh327zpmd7"
+          ]
+        },
+        "statistics": {
+          "total": 12,
+          "with_odds": 9,
+          "with_events": 0,
+          "by_weather": {
+            "Cloudy": 1,
+            "Sunny": 3,
+            "Light Rain": 1,
+            "Unknown": 3,
+            "Partly Cloudy": 1,
+            "Rain": 1,
+            "Foggy": 2
+          }
+        }
+      },
+      "matches": {
+        "3glrw7hnw9yyqdy": {
+          "match_id": "3glrw7hnw9yyqdy",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 3,
+              "description": "",
+              "match_time": 1748466000
+            },
+            "venue": "kjw2r09hwo3rz84",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "p3glrw7h2vqdyjv",
+            "name": "Colombian Copa BetPlay DIMAYOR",
+            "country": "Colombia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Llaneros FC",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "15",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/f83a93401d7a60595338bae0337d344c.png"
+            },
+            "away": {
+              "name": "Atletico FC",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "15",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/2efb310d5e0ffe6cd96dcf192ae06624.jpg"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.04,
+              "draw": 2.98,
+              "away": 2.09,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.0,
+              "over": 0.88,
+              "under": 0.95,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.25,
+              "home": 1.08,
+              "away": 0.78,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 3,
+              "pressure": "761mmHg",
+              "temperature": "28°C",
+              "wind": "2.0m/s",
+              "humidity": "70%"
+            },
+            "weather": 3,
+            "weather_description": "Cloudy",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind": "2.0m/s",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure": "761mmHg",
+            "pressure_value": 761.0,
+            "pressure_unit": "mmHg",
+            "humidity": "70%",
+            "humidity_value": 70.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "8yomo4h3nzlnq0j": {
+          "match_id": "8yomo4h3nzlnq0j",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748464200
+            },
+            "venue": "56ypq3nhjnemd7o",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "vl7oqdeh6v4r510",
+            "name": "Ecuadorian Campeonato Serie B",
+            "country": "Ecuador",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "CD Independiente Juniors",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "10",
+              "country": "Ecuador",
+              "logo_url": "https://img.thesports.com/football/team/784732b83e10369eca2deed4bb4b79c2.png"
+            },
+            "away": {
+              "name": "CD Vargas Torres",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "8",
+              "country": "Ecuador",
+              "logo_url": "https://img.thesports.com/football/team/5ba3582d40295a433f5a947d601188b1.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "768mmHg",
+              "temperature": "20°C",
+              "wind": "2.6m/s",
+              "humidity": "54%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind": "2.6m/s",
+            "wind_value": 2.6,
+            "wind_unit": "m/s",
+            "pressure": "768mmHg",
+            "pressure_value": 768.0,
+            "pressure_unit": "mmHg",
+            "humidity": "54%",
+            "humidity_value": 54.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "y39mp1h63o54moj": {
+          "match_id": "y39mp1h63o54moj",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748464200
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "l965mkyh37lr1ge",
+            "name": "Peruvian Liga 2",
+            "country": "Peru",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Club Ada Jaen",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  1,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "",
+              "country": null,
+              "logo_url": "https://img.thesports.com/football/team/02760121e8fe6f90aa6ab8cca4c785cd.png"
+            },
+            "away": {
+              "name": "Univ.Cesar Vallejo",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/6ce6801ee631ce04c9bc9df54a85bf87.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 2.61,
+              "draw": 3.11,
+              "away": 2.44,
+              "timestamp": 1748464413,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 0.79,
+              "under": 0.94,
+              "timestamp": 1748464424,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.0,
+              "home": 0.93,
+              "away": 0.8,
+              "timestamp": 1748464413,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "762mmHg",
+              "temperature": "28°C",
+              "wind": "5.6m/s",
+              "humidity": "59%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind": "5.6m/s",
+            "wind_value": 5.6,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "59%",
+            "humidity_value": 59.0,
+            "humidity_unit": "%",
+            "wind_description": "Gentle Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "pxwrxlhygnj9ryk": {
+          "match_id": "pxwrxlhygnj9ryk",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "d23xmvkhwd5qg8n",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "p3glrw7h2vqdyjv",
+            "name": "Colombian Copa BetPlay DIMAYOR",
+            "country": "Colombia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Leones",
+              "score": {
+                "current": 1,
+                "halftime": 0,
+                "detailed": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "9",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/e5dc58845ec4d74525de5bf71bd21e61.png"
+            },
+            "away": {
+              "name": "La Equidad",
+              "score": {
+                "current": 2,
+                "halftime": 2,
+                "detailed": [
+                  2,
+                  2,
+                  0,
+                  3,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "20",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/941d154df4d52cab518d2deae12dc83b.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 1.61,
+              "draw": 3.68,
+              "away": 5.75,
+              "timestamp": 1748462713,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 1.02,
+              "under": 0.81,
+              "timestamp": 1748462713,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.75,
+              "home": 0.82,
+              "away": 1.03,
+              "timestamp": 1748462712,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 6,
+              "pressure": "764mmHg",
+              "temperature": "22°C",
+              "wind": "3.2m/s",
+              "humidity": "74%"
+            },
+            "weather": 6,
+            "weather_description": "Light Rain",
+            "temperature": "22°C",
+            "temperature_value": 22.0,
+            "temperature_unit": "°C",
+            "wind": "3.2m/s",
+            "wind_value": 3.2,
+            "wind_unit": "m/s",
+            "pressure": "764mmHg",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity": "74%",
+            "humidity_value": 74.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "8yomo4h3wg47q0j": {
+          "match_id": "8yomo4h3wg47q0j",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 13,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "vl7oqdehwxr510j",
+            "name": "Peruvian Liga 1",
+            "country": "Peru",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Cusco FC",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "6",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/709fd97eaf9a55aa43638746010d287a.png"
+            },
+            "away": {
+              "name": "Cienciano",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "10",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/e868bb2eac1923c5aecaddd492860b32.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "dj2ryohlvpz2q1z": {
+          "match_id": "dj2ryohlvpz2q1z",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "4zp5rzghlonq82w",
+            "referee": "",
+            "neutral": true,
+            "start_time": null
+          },
+          "competition": {
+            "id": "d23xmvkhjoqg8ny",
+            "name": "Copa Argentina",
+            "country": "Argentina",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Excursionistas",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "9",
+              "country": "Argentina",
+              "logo_url": "https://img.thesports.com/football/team/e55c4e513733efe6baf71d4914d4ce64.png"
+            },
+            "away": {
+              "name": "Argentinos Juniors",
+              "score": {
+                "current": 3,
+                "halftime": 0,
+                "detailed": [
+                  3,
+                  0,
+                  0,
+                  0,
+                  8,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Argentina",
+              "logo_url": "https://img.thesports.com/football/team/5d8f8c8c289dbb2d67203988c8275cbc.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 10.44,
+              "draw": 4.27,
+              "away": 1.35,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.83,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -1.25,
+              "home": 0.94,
+              "away": 0.9,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "769mmHg",
+              "temperature": "11°C",
+              "wind": "2.0m/s",
+              "humidity": "62%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "11°C",
+            "temperature_value": 11.0,
+            "temperature_unit": "°C",
+            "wind": "2.0m/s",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure": "769mmHg",
+            "pressure_value": 769.0,
+            "pressure_unit": "mmHg",
+            "humidity": "62%",
+            "humidity_value": 62.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "318q66hxo897qo9": {
+          "match_id": "318q66hxo897qo9",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748461800
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "kn54qllh8g0qvy9",
+            "name": "Mauritania Ligue 1",
+            "country": "Mauritania",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "ASC Snim",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "12",
+              "country": "Mauritania",
+              "logo_url": "https://img.thesports.com/football/team/5b345ce8b1439ac76d3c56e27a81f494.png"
+            },
+            "away": {
+              "name": "Al-Hilal Omdurman",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  3,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Sudan",
+              "logo_url": "https://img.thesports.com/football/team/2f264db3d38dab4ce8b1ac558f168f8e.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.5,
+              "draw": 3.4,
+              "away": 1.6,
+              "timestamp": 1748462349,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 1.2,
+              "under": 0.57,
+              "timestamp": 1748462349,
+              "match_time": "6"
+            },
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "4wyrn4h68w4pq86": {
+          "match_id": "4wyrn4h68w4pq86",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748457000
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "gpxwrxlhe3ryk0j",
+            "name": "Switzerland Divison 1 League",
+            "country": "Switzerland",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Meyrin",
+              "score": {
+                "current": 1,
+                "halftime": 0,
+                "detailed": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "13",
+              "country": "Switzerland",
+              "logo_url": "https://img.thesports.com/football/team/20207471c3c1bbcec8685b35c5f38c26.png"
+            },
+            "away": {
+              "name": "Grasshoppers U21",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "21",
+              "country": "Switzerland",
+              "logo_url": "https://img.thesports.com/football/team/61b7e7f5df677a2e5645885ecae5bbfa.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "4wyrn4h68yv6q86": {
+          "match_id": "4wyrn4h68yv6q86",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748449800
+            },
+            "venue": "gpxwrxlh807ryk0",
+            "referee": "z318q66hol5qo9j",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "8y39mp1hwxmojxg",
+            "name": "Russian Premier League",
+            "country": "Russia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "FC Sochi",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  1,
+                  3,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "5",
+              "country": "Russia",
+              "logo_url": "https://img.thesports.com/football/team/6f2f50342dc0a240f8d65efd7e3023aa.png"
+            },
+            "away": {
+              "name": "FC Pari Nizhniy Novgorod",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  0,
+                  2,
+                  11,
+                  0,
+                  0
+                ]
+              },
+              "position": "13",
+              "country": "Russia",
+              "logo_url": "https://img.thesports.com/football/team/267376df2e50a8c39e1f90130c2bc016.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 1.89,
+              "draw": 3.23,
+              "away": 4.18,
+              "timestamp": 1748450204,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.85,
+              "timestamp": 1748450205,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.5,
+              "home": 0.91,
+              "away": 0.96,
+              "timestamp": 1748450204,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 2,
+              "pressure": "759mmHg",
+              "temperature": "18°C",
+              "wind": "2.9m/s",
+              "humidity": "93%"
+            },
+            "weather": 2,
+            "weather_description": "Partly Cloudy",
+            "temperature": "18°C",
+            "temperature_value": 18.0,
+            "temperature_unit": "°C",
+            "wind": "2.9m/s",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure": "759mmHg",
+            "pressure_value": 759.0,
+            "pressure_unit": "mmHg",
+            "humidity": "93%",
+            "humidity_value": 93.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "pxwrxlhyp89jryk": {
+          "match_id": "pxwrxlhyp89jryk",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1747850400
+            },
+            "venue": "j1l4rjnh1djm7vx",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "yl5ergph72r8k0o",
+            "name": "North Macedonia Cup",
+            "country": "North Macedonia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "FC Struga",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "4",
+              "country": "North Macedonia",
+              "logo_url": "https://img.thesports.com/football/team/74d3ed50a961f8b45079ebc3806c7eb8.png"
+            },
+            "away": {
+              "name": "FC Vardar Skopje",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  0,
+                  2,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "5",
+              "country": "North Macedonia",
+              "logo_url": "https://img.thesports.com/football/team/a795ca8b09c4c90198fe8e23b73b0c96.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.9,
+              "draw": 2.96,
+              "away": 1.73,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 1.75,
+              "over": 0.79,
+              "under": 1.03,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.75,
+              "home": 0.84,
+              "away": 1.0,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 7,
+              "pressure": "762mmHg",
+              "temperature": "16°C",
+              "wind": "1.1m/s",
+              "humidity": "91%"
+            },
+            "weather": 7,
+            "weather_description": "Rain",
+            "temperature": "16°C",
+            "temperature_value": 16.0,
+            "temperature_unit": "°C",
+            "wind": "1.1m/s",
+            "wind_value": 1.1,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "91%",
+            "humidity_value": 91.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Air"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "3glrw7hnk2n8qdy": {
+          "match_id": "3glrw7hnk2n8qdy",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1747243800
+            },
+            "venue": "j1l4rjnh1jem7vx",
+            "referee": "",
+            "neutral": true,
+            "start_time": null
+          },
+          "competition": {
+            "id": "z8yomo4hg9q0j6l",
+            "name": "Romanian Cup",
+            "country": "Romania",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Hermannstadt",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  1,
+                  7,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Romania",
+              "logo_url": "https://img.thesports.com/football/team/732ac055b269060b9864fe152a82c9cf.png"
+            },
+            "away": {
+              "name": "CFR Cluj",
+              "score": {
+                "current": 3,
+                "halftime": 2,
+                "detailed": [
+                  3,
+                  2,
+                  1,
+                  6,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "2",
+              "country": "Romania",
+              "logo_url": "https://img.thesports.com/football/team/6f927eb040bdd5c972a9343fd9c8b873.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.9,
+              "draw": 3.1,
+              "away": 1.77,
+              "timestamp": 1747244229,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.0,
+              "over": 0.86,
+              "under": 0.97,
+              "timestamp": 1747244215,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.75,
+              "home": 0.82,
+              "away": 1.03,
+              "timestamp": 1747244228,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 5,
+              "pressure": "762mmHg",
+              "temperature": "13°C",
+              "wind": "4.3m/s",
+              "humidity": "55%"
+            },
+            "weather": 5,
+            "weather_description": "Foggy",
+            "temperature": "13°C",
+            "temperature_value": 13.0,
+            "temperature_unit": "°C",
+            "wind": "4.3m/s",
+            "wind_value": 4.3,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "55%",
+            "humidity_value": 55.0,
+            "humidity_unit": "%",
+            "wind_description": "Gentle Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "6ypq3nh327zpmd7": {
+          "match_id": "6ypq3nh327zpmd7",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1746304200
+            },
+            "venue": "9vjxm8ghg7pr6od",
+            "referee": "kdj2ryohj8xq1zp",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "v2y8m4zhydql074",
+            "name": "Uruguay Primera Division",
+            "country": "Uruguay",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Cerro Montevideo",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "11",
+              "country": "Uruguay",
+              "logo_url": "https://img.thesports.com/football/team/327368d0bd89e670a231bf92bb790675.png"
+            },
+            "away": {
+              "name": "Nacional Montevideo",
+              "score": {
+                "current": 4,
+                "halftime": 1,
+                "detailed": [
+                  4,
+                  1,
+                  0,
+                  2,
+                  8,
+                  0,
+                  0
+                ]
+              },
+              "position": "2",
+              "country": "Uruguay",
+              "logo_url": "https://img.thesports.com/football/team/aa97d18606e06696fd770ed04a5d040b.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 8.06,
+              "draw": 4.45,
+              "away": 1.36,
+              "timestamp": 1746304540,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.75,
+              "over": 1.03,
+              "under": 0.82,
+              "timestamp": 1746304541,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -1.25,
+              "home": 1.01,
+              "away": 0.85,
+              "timestamp": 1746304540,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 5,
+              "pressure": "764mmHg",
+              "temperature": "20°C",
+              "wind": "2.9m/s",
+              "humidity": "63%"
+            },
+            "weather": 5,
+            "weather_description": "Foggy",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind": "2.9m/s",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure": "764mmHg",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity": "63%",
+            "humidity_value": 63.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        }
+      }
+    },
+    {
+      "generated_at": "05/28/2025 05:55:24 PM EDT",
+      "source_timestamp": "2025-05-28T17:54:47.913709-04:00",
+      "match_count": 12,
+      "categories": {
+        "by_status": {
+          "live": [
+            "3glrw7hnw9yyqdy",
+            "8yomo4h3nzlnq0j",
+            "y39mp1h63o54moj",
+            "pxwrxlhygnj9ryk"
+          ],
+          "upcoming": [],
+          "finished": [
+            "dj2ryohlvpz2q1z",
+            "318q66hxo897qo9",
+            "4wyrn4h68w4pq86",
+            "4wyrn4h68yv6q86",
+            "pxwrxlhyp89jryk",
+            "3glrw7hnk2n8qdy",
+            "6ypq3nh327zpmd7"
+          ],
+          "other": [
+            "8yomo4h3wg47q0j"
+          ]
+        },
+        "by_competition": {
+          "Colombian Copa BetPlay DIMAYOR": [
+            "3glrw7hnw9yyqdy",
+            "pxwrxlhygnj9ryk"
+          ],
+          "Ecuadorian Campeonato Serie B": [
+            "8yomo4h3nzlnq0j"
+          ],
+          "Peruvian Liga 2": [
+            "y39mp1h63o54moj"
+          ],
+          "Peruvian Liga 1": [
+            "8yomo4h3wg47q0j"
+          ],
+          "Copa Argentina": [
+            "dj2ryohlvpz2q1z"
+          ],
+          "Mauritania Ligue 1": [
+            "318q66hxo897qo9"
+          ],
+          "Switzerland Divison 1 League": [
+            "4wyrn4h68w4pq86"
+          ],
+          "Russian Premier League": [
+            "4wyrn4h68yv6q86"
+          ],
+          "North Macedonia Cup": [
+            "pxwrxlhyp89jryk"
+          ],
+          "Romanian Cup": [
+            "3glrw7hnk2n8qdy"
+          ],
+          "Uruguay Primera Division": [
+            "6ypq3nh327zpmd7"
+          ]
+        },
+        "statistics": {
+          "total": 12,
+          "with_odds": 9,
+          "with_events": 0,
+          "by_weather": {
+            "Cloudy": 1,
+            "Sunny": 3,
+            "Light Rain": 1,
+            "Unknown": 3,
+            "Partly Cloudy": 1,
+            "Rain": 1,
+            "Foggy": 2
+          }
+        }
+      },
+      "matches": {
+        "3glrw7hnw9yyqdy": {
+          "match_id": "3glrw7hnw9yyqdy",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 3,
+              "description": "",
+              "match_time": 1748466000
+            },
+            "venue": "kjw2r09hwo3rz84",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "p3glrw7h2vqdyjv",
+            "name": "Colombian Copa BetPlay DIMAYOR",
+            "country": "Colombia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Llaneros FC",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "15",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/f83a93401d7a60595338bae0337d344c.png"
+            },
+            "away": {
+              "name": "Atletico FC",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "15",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/2efb310d5e0ffe6cd96dcf192ae06624.jpg"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.04,
+              "draw": 2.98,
+              "away": 2.09,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.0,
+              "over": 0.88,
+              "under": 0.95,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.25,
+              "home": 1.08,
+              "away": 0.78,
+              "timestamp": 1748466248,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 3,
+              "pressure": "761mmHg",
+              "temperature": "28°C",
+              "wind": "2.0m/s",
+              "humidity": "70%"
+            },
+            "weather": 3,
+            "weather_description": "Cloudy",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind": "2.0m/s",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure": "761mmHg",
+            "pressure_value": 761.0,
+            "pressure_unit": "mmHg",
+            "humidity": "70%",
+            "humidity_value": 70.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "8yomo4h3nzlnq0j": {
+          "match_id": "8yomo4h3nzlnq0j",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748464200
+            },
+            "venue": "56ypq3nhjnemd7o",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "vl7oqdeh6v4r510",
+            "name": "Ecuadorian Campeonato Serie B",
+            "country": "Ecuador",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "CD Independiente Juniors",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "10",
+              "country": "Ecuador",
+              "logo_url": "https://img.thesports.com/football/team/784732b83e10369eca2deed4bb4b79c2.png"
+            },
+            "away": {
+              "name": "CD Vargas Torres",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "8",
+              "country": "Ecuador",
+              "logo_url": "https://img.thesports.com/football/team/5ba3582d40295a433f5a947d601188b1.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "768mmHg",
+              "temperature": "20°C",
+              "wind": "2.6m/s",
+              "humidity": "54%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind": "2.6m/s",
+            "wind_value": 2.6,
+            "wind_unit": "m/s",
+            "pressure": "768mmHg",
+            "pressure_value": 768.0,
+            "pressure_unit": "mmHg",
+            "humidity": "54%",
+            "humidity_value": 54.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "y39mp1h63o54moj": {
+          "match_id": "y39mp1h63o54moj",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748464200
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "l965mkyh37lr1ge",
+            "name": "Peruvian Liga 2",
+            "country": "Peru",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Club Ada Jaen",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  1,
+                  2,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "",
+              "country": null,
+              "logo_url": "https://img.thesports.com/football/team/02760121e8fe6f90aa6ab8cca4c785cd.png"
+            },
+            "away": {
+              "name": "Univ.Cesar Vallejo",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  2,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/6ce6801ee631ce04c9bc9df54a85bf87.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 2.61,
+              "draw": 3.11,
+              "away": 2.44,
+              "timestamp": 1748464413,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 0.79,
+              "under": 0.94,
+              "timestamp": 1748464424,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.0,
+              "home": 0.93,
+              "away": 0.8,
+              "timestamp": 1748464413,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "762mmHg",
+              "temperature": "28°C",
+              "wind": "5.6m/s",
+              "humidity": "59%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "28°C",
+            "temperature_value": 28.0,
+            "temperature_unit": "°C",
+            "wind": "5.6m/s",
+            "wind_value": 5.6,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "59%",
+            "humidity_value": 59.0,
+            "humidity_unit": "%",
+            "wind_description": "Gentle Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "pxwrxlhygnj9ryk": {
+          "match_id": "pxwrxlhygnj9ryk",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 4,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "d23xmvkhwd5qg8n",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "p3glrw7h2vqdyjv",
+            "name": "Colombian Copa BetPlay DIMAYOR",
+            "country": "Colombia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Leones",
+              "score": {
+                "current": 1,
+                "halftime": 0,
+                "detailed": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "9",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/e5dc58845ec4d74525de5bf71bd21e61.png"
+            },
+            "away": {
+              "name": "La Equidad",
+              "score": {
+                "current": 2,
+                "halftime": 2,
+                "detailed": [
+                  2,
+                  2,
+                  0,
+                  3,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "20",
+              "country": "Colombia",
+              "logo_url": "https://img.thesports.com/football/team/941d154df4d52cab518d2deae12dc83b.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 1.61,
+              "draw": 3.68,
+              "away": 5.75,
+              "timestamp": 1748462713,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 1.02,
+              "under": 0.81,
+              "timestamp": 1748462713,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.75,
+              "home": 0.82,
+              "away": 1.03,
+              "timestamp": 1748462712,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 6,
+              "pressure": "764mmHg",
+              "temperature": "22°C",
+              "wind": "3.2m/s",
+              "humidity": "74%"
+            },
+            "weather": 6,
+            "weather_description": "Light Rain",
+            "temperature": "22°C",
+            "temperature_value": 22.0,
+            "temperature_unit": "°C",
+            "wind": "3.2m/s",
+            "wind_value": 3.2,
+            "wind_unit": "m/s",
+            "pressure": "764mmHg",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity": "74%",
+            "humidity_value": 74.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "8yomo4h3wg47q0j": {
+          "match_id": "8yomo4h3wg47q0j",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 13,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "vl7oqdehwxr510j",
+            "name": "Peruvian Liga 1",
+            "country": "Peru",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Cusco FC",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "6",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/709fd97eaf9a55aa43638746010d287a.png"
+            },
+            "away": {
+              "name": "Cienciano",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "10",
+              "country": "Peru",
+              "logo_url": "https://img.thesports.com/football/team/e868bb2eac1923c5aecaddd492860b32.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "dj2ryohlvpz2q1z": {
+          "match_id": "dj2ryohlvpz2q1z",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748462400
+            },
+            "venue": "4zp5rzghlonq82w",
+            "referee": "",
+            "neutral": true,
+            "start_time": null
+          },
+          "competition": {
+            "id": "d23xmvkhjoqg8ny",
+            "name": "Copa Argentina",
+            "country": "Argentina",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Excursionistas",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "9",
+              "country": "Argentina",
+              "logo_url": "https://img.thesports.com/football/team/e55c4e513733efe6baf71d4914d4ce64.png"
+            },
+            "away": {
+              "name": "Argentinos Juniors",
+              "score": {
+                "current": 3,
+                "halftime": 0,
+                "detailed": [
+                  3,
+                  0,
+                  0,
+                  0,
+                  8,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Argentina",
+              "logo_url": "https://img.thesports.com/football/team/5d8f8c8c289dbb2d67203988c8275cbc.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 10.44,
+              "draw": 4.27,
+              "away": 1.35,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.83,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -1.25,
+              "home": 0.94,
+              "away": 0.9,
+              "timestamp": 1748462742,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 1,
+              "pressure": "769mmHg",
+              "temperature": "11°C",
+              "wind": "2.0m/s",
+              "humidity": "62%"
+            },
+            "weather": 1,
+            "weather_description": "Sunny",
+            "temperature": "11°C",
+            "temperature_value": 11.0,
+            "temperature_unit": "°C",
+            "wind": "2.0m/s",
+            "wind_value": 2.0,
+            "wind_unit": "m/s",
+            "pressure": "769mmHg",
+            "pressure_value": 769.0,
+            "pressure_unit": "mmHg",
+            "humidity": "62%",
+            "humidity_value": 62.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "318q66hxo897qo9": {
+          "match_id": "318q66hxo897qo9",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748461800
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "kn54qllh8g0qvy9",
+            "name": "Mauritania Ligue 1",
+            "country": "Mauritania",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "ASC Snim",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "12",
+              "country": "Mauritania",
+              "logo_url": "https://img.thesports.com/football/team/5b345ce8b1439ac76d3c56e27a81f494.png"
+            },
+            "away": {
+              "name": "Al-Hilal Omdurman",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  3,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Sudan",
+              "logo_url": "https://img.thesports.com/football/team/2f264db3d38dab4ce8b1ac558f168f8e.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.5,
+              "draw": 3.4,
+              "away": 1.6,
+              "timestamp": 1748462349,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.5,
+              "over": 1.2,
+              "under": 0.57,
+              "timestamp": 1748462349,
+              "match_time": "6"
+            },
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "4wyrn4h68w4pq86": {
+          "match_id": "4wyrn4h68w4pq86",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748457000
+            },
+            "venue": "",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "gpxwrxlhe3ryk0j",
+            "name": "Switzerland Divison 1 League",
+            "country": "Switzerland",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Meyrin",
+              "score": {
+                "current": 1,
+                "halftime": 0,
+                "detailed": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "13",
+              "country": "Switzerland",
+              "logo_url": "https://img.thesports.com/football/team/20207471c3c1bbcec8685b35c5f38c26.png"
+            },
+            "away": {
+              "name": "Grasshoppers U21",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": "21",
+              "country": "Switzerland",
+              "logo_url": "https://img.thesports.com/football/team/61b7e7f5df677a2e5645885ecae5bbfa.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": false,
+            "full_time_result": {},
+            "primary_over_under": {},
+            "spread": {},
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {},
+            "weather": null,
+            "weather_description": "Unknown",
+            "temperature": null,
+            "temperature_value": null,
+            "temperature_unit": null,
+            "wind": null,
+            "wind_value": null,
+            "wind_unit": null,
+            "pressure": null,
+            "pressure_value": null,
+            "pressure_unit": null,
+            "humidity": null,
+            "humidity_value": null,
+            "humidity_unit": null,
+            "wind_description": "Calm"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "4wyrn4h68yv6q86": {
+          "match_id": "4wyrn4h68yv6q86",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1748449800
+            },
+            "venue": "gpxwrxlh807ryk0",
+            "referee": "z318q66hol5qo9j",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "8y39mp1hwxmojxg",
+            "name": "Russian Premier League",
+            "country": "Russia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "FC Sochi",
+              "score": {
+                "current": 1,
+                "halftime": 1,
+                "detailed": [
+                  1,
+                  1,
+                  1,
+                  3,
+                  2,
+                  0,
+                  0
+                ]
+              },
+              "position": "5",
+              "country": "Russia",
+              "logo_url": "https://img.thesports.com/football/team/6f2f50342dc0a240f8d65efd7e3023aa.png"
+            },
+            "away": {
+              "name": "FC Pari Nizhniy Novgorod",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  0,
+                  2,
+                  11,
+                  0,
+                  0
+                ]
+              },
+              "position": "13",
+              "country": "Russia",
+              "logo_url": "https://img.thesports.com/football/team/267376df2e50a8c39e1f90130c2bc016.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 1.89,
+              "draw": 3.23,
+              "away": 4.18,
+              "timestamp": 1748450204,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.25,
+              "over": 1.0,
+              "under": 0.85,
+              "timestamp": 1748450205,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": 0.5,
+              "home": 0.91,
+              "away": 0.96,
+              "timestamp": 1748450204,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 2,
+              "pressure": "759mmHg",
+              "temperature": "18°C",
+              "wind": "2.9m/s",
+              "humidity": "93%"
+            },
+            "weather": 2,
+            "weather_description": "Partly Cloudy",
+            "temperature": "18°C",
+            "temperature_value": 18.0,
+            "temperature_unit": "°C",
+            "wind": "2.9m/s",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure": "759mmHg",
+            "pressure_value": 759.0,
+            "pressure_unit": "mmHg",
+            "humidity": "93%",
+            "humidity_value": 93.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "pxwrxlhyp89jryk": {
+          "match_id": "pxwrxlhyp89jryk",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1747850400
+            },
+            "venue": "j1l4rjnh1djm7vx",
+            "referee": "",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "yl5ergph72r8k0o",
+            "name": "North Macedonia Cup",
+            "country": "North Macedonia",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "FC Struga",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "4",
+              "country": "North Macedonia",
+              "logo_url": "https://img.thesports.com/football/team/74d3ed50a961f8b45079ebc3806c7eb8.png"
+            },
+            "away": {
+              "name": "FC Vardar Skopje",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  0,
+                  2,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "5",
+              "country": "North Macedonia",
+              "logo_url": "https://img.thesports.com/football/team/a795ca8b09c4c90198fe8e23b73b0c96.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.9,
+              "draw": 2.96,
+              "away": 1.73,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 1.75,
+              "over": 0.79,
+              "under": 1.03,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.75,
+              "home": 0.84,
+              "away": 1.0,
+              "timestamp": 1747851269,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 7,
+              "pressure": "762mmHg",
+              "temperature": "16°C",
+              "wind": "1.1m/s",
+              "humidity": "91%"
+            },
+            "weather": 7,
+            "weather_description": "Rain",
+            "temperature": "16°C",
+            "temperature_value": 16.0,
+            "temperature_unit": "°C",
+            "wind": "1.1m/s",
+            "wind_value": 1.1,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "91%",
+            "humidity_value": 91.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Air"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "3glrw7hnk2n8qdy": {
+          "match_id": "3glrw7hnk2n8qdy",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1747243800
+            },
+            "venue": "j1l4rjnh1jem7vx",
+            "referee": "",
+            "neutral": true,
+            "start_time": null
+          },
+          "competition": {
+            "id": "z8yomo4hg9q0j6l",
+            "name": "Romanian Cup",
+            "country": "Romania",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Hermannstadt",
+              "score": {
+                "current": 2,
+                "halftime": 1,
+                "detailed": [
+                  2,
+                  1,
+                  1,
+                  7,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "position": "1",
+              "country": "Romania",
+              "logo_url": "https://img.thesports.com/football/team/732ac055b269060b9864fe152a82c9cf.png"
+            },
+            "away": {
+              "name": "CFR Cluj",
+              "score": {
+                "current": 3,
+                "halftime": 2,
+                "detailed": [
+                  3,
+                  2,
+                  1,
+                  6,
+                  5,
+                  0,
+                  0
+                ]
+              },
+              "position": "2",
+              "country": "Romania",
+              "logo_url": "https://img.thesports.com/football/team/6f927eb040bdd5c972a9343fd9c8b873.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 4.9,
+              "draw": 3.1,
+              "away": 1.77,
+              "timestamp": 1747244229,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.0,
+              "over": 0.86,
+              "under": 0.97,
+              "timestamp": 1747244215,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -0.75,
+              "home": 0.82,
+              "away": 1.03,
+              "timestamp": 1747244228,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 5,
+              "pressure": "762mmHg",
+              "temperature": "13°C",
+              "wind": "4.3m/s",
+              "humidity": "55%"
+            },
+            "weather": 5,
+            "weather_description": "Foggy",
+            "temperature": "13°C",
+            "temperature_value": 13.0,
+            "temperature_unit": "°C",
+            "wind": "4.3m/s",
+            "wind_value": 4.3,
+            "wind_unit": "m/s",
+            "pressure": "762mmHg",
+            "pressure_value": 762.0,
+            "pressure_unit": "mmHg",
+            "humidity": "55%",
+            "humidity_value": 55.0,
+            "humidity_unit": "%",
+            "wind_description": "Gentle Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        },
+        "6ypq3nh327zpmd7": {
+          "match_id": "6ypq3nh327zpmd7",
+          "fetched_at": "05/28/2025 05:54:47 PM EDT",
+          "match_info": {
+            "status": {
+              "id": 8,
+              "description": "",
+              "match_time": 1746304200
+            },
+            "venue": "9vjxm8ghg7pr6od",
+            "referee": "kdj2ryohj8xq1zp",
+            "neutral": false,
+            "start_time": null
+          },
+          "competition": {
+            "id": "v2y8m4zhydql074",
+            "name": "Uruguay Primera Division",
+            "country": "Uruguay",
+            "season": null
+          },
+          "teams": {
+            "home": {
+              "name": "Cerro Montevideo",
+              "score": {
+                "current": 0,
+                "halftime": 0,
+                "detailed": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "position": "11",
+              "country": "Uruguay",
+              "logo_url": "https://img.thesports.com/football/team/327368d0bd89e670a231bf92bb790675.png"
+            },
+            "away": {
+              "name": "Nacional Montevideo",
+              "score": {
+                "current": 4,
+                "halftime": 1,
+                "detailed": [
+                  4,
+                  1,
+                  0,
+                  2,
+                  8,
+                  0,
+                  0
+                ]
+              },
+              "position": "2",
+              "country": "Uruguay",
+              "logo_url": "https://img.thesports.com/football/team/aa97d18606e06696fd770ed04a5d040b.png"
+            }
+          },
+          "scores": {},
+          "statistics": {},
+          "odds": {
+            "has_odds": true,
+            "full_time_result": {
+              "home": 8.06,
+              "draw": 4.45,
+              "away": 1.36,
+              "timestamp": 1746304540,
+              "match_time": "6"
+            },
+            "primary_over_under": {
+              "line": 2.75,
+              "over": 1.03,
+              "under": 0.82,
+              "timestamp": 1746304541,
+              "match_time": "6"
+            },
+            "spread": {
+              "handicap": -1.25,
+              "home": 1.01,
+              "away": 0.85,
+              "timestamp": 1746304540,
+              "match_time": "6"
+            },
+            "both_teams_to_score": {}
+          },
+          "events": [],
+          "environment": {
+            "raw": {
+              "weather": 5,
+              "pressure": "764mmHg",
+              "temperature": "20°C",
+              "wind": "2.9m/s",
+              "humidity": "63%"
+            },
+            "weather": 5,
+            "weather_description": "Foggy",
+            "temperature": "20°C",
+            "temperature_value": 20.0,
+            "temperature_unit": "°C",
+            "wind": "2.9m/s",
+            "wind_value": 2.9,
+            "wind_unit": "m/s",
+            "pressure": "764mmHg",
+            "pressure_value": 764.0,
+            "pressure_unit": "mmHg",
+            "humidity": "63%",
+            "humidity_value": 63.0,
+            "humidity_unit": "%",
+            "wind_description": "Light Breeze"
+          },
+          "lineups": {},
+          "injuries": {}
+        }
+      }
     }
   ],
-  "last_updated": "05/28/2025 04:53:36 PM EDT",
-  "total_entries": 4,
-  "latest_match_count": 111,
-  "ny_timestamp": "05/28/2025 04:53:36 PM EDT"
+  "last_updated": "05/28/2025 05:55:24 PM EDT",
+  "total_entries": 6,
+  "latest_match_count": 12,
+  "ny_timestamp": "05/28/2025 05:55:24 PM EDT"
 }
