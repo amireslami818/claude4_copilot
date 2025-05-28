@@ -72,6 +72,7 @@ def organize_match_summary(match):
         "competition": {
             "id": match.get("competition", {}).get("id"),
             "name": match.get("competition", {}).get("name"),
+            "country": match.get("competition", {}).get("country"),
             "season": match.get("competition", {}).get("season")
         },
         
