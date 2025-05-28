@@ -38,9 +38,11 @@ def extract_summary_fields(match: dict) -> dict:
     home_scores = match.get("home_scores", [])
     away_scores = match.get("away_scores", [])
     if home_scores and home_live == 0:
-        home_live = sum(home_scores)
+        # Extract only the goal score (index 0), not sum of entire array
+        home_live = home_scores[0] if isinstance(home_scores, list) and len(home_scores) > 0 else 0
     if away_scores and away_live == 0:
-        away_live = sum(away_scores)
+        # Extract only the goal score (index 0), not sum of entire array
+        away_live = away_scores[0] if isinstance(away_scores, list) and len(away_scores) > 0 else 0
 
     return {
         "match_id": match.get("match_id") or match.get("id"),

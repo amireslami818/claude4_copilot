@@ -80,9 +80,11 @@ def extract_match_summary(match_id, match_data):
         summary["full_time_result"] = {
             "home": full_time_result.get("home"),
             "draw": full_time_result.get("draw"),
-            "away": full_time_result.get("away"),
-            "has_odds": full_time_result.get("has_odds", False)
+            "away": full_time_result.get("away")
         }
+        # Add time only if it exists
+        if full_time_result.get("match_time"):
+            summary["full_time_result"]["time"] = full_time_result.get("match_time")
     else:
         summary["full_time_result"] = None
     
@@ -92,7 +94,8 @@ def extract_match_summary(match_id, match_data):
         summary["spread"] = {
             "handicap": spread.get("handicap"),
             "home": spread.get("home"),
-            "away": spread.get("away")
+            "away": spread.get("away"),
+            "time": spread.get("match_time")
         }
     else:
         summary["spread"] = None
@@ -106,7 +109,8 @@ def extract_match_summary(match_id, match_data):
             str(line): {
                 "line": line,
                 "over": primary_ou.get("over"),
-                "under": primary_ou.get("under")
+                "under": primary_ou.get("under"),
+                "time": primary_ou.get("match_time")
             }
         }
     else:
@@ -117,7 +121,8 @@ def extract_match_summary(match_id, match_data):
     if btts and btts.get("yes") is not None:
         summary["both_teams_to_score"] = {
             "yes": btts.get("yes"),
-            "no": btts.get("no")
+            "no": btts.get("no"),
+            "time": btts.get("match_time")
         }
     else:
         summary["both_teams_to_score"] = None
