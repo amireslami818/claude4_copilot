@@ -1,0 +1,37 @@
+[Unit]
+Description=Football Bot Continuous Pipeline
+Documentation=https://github.com/football-bot/pipeline
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/CascadeProjects/Football_bot
+ExecStart=/usr/bin/python3 /root/CascadeProjects/Football_bot/continuous_orchestrator.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=football-bot
+
+# Environment variables
+Environment=PYTHONPATH=/root/CascadeProjects/Football_bot
+Environment=PYTHONUNBUFFERED=1
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=50%
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/root/CascadeProjects/Football_bot
+
+# Logging
+LogRateLimitIntervalSec=0
+
+[Install]
+WantedBy=multi-user.target

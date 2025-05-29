@@ -189,7 +189,7 @@ class HealthMonitor:
             "step3/step3.json",
             "step4/step4.json",
             "step5/step5.json",
-            "step6_matches.log"
+            "step6/step6_matches.log"
         ]
         
         file_status = {}

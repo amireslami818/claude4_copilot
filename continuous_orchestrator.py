@@ -28,6 +28,20 @@ import subprocess
 PROJECT_ROOT = Path(__file__).parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+# Add step directories to path for imports
+sys.path.append(str(PROJECT_ROOT / 'step2'))
+sys.path.append(str(PROJECT_ROOT / 'step3'))
+sys.path.append(str(PROJECT_ROOT / 'step4'))
+sys.path.append(str(PROJECT_ROOT / 'step5'))
+sys.path.append(str(PROJECT_ROOT / 'step6'))
+
+# Import step functions
+from step2 import extract_merge_summarize
+from step3 import json_summary
+from step4 import match_extracts
+from step5 import odds_environment_converter
+from step6 import pretty_print_matches
+
 class ContinuousOrchestrator:
     """
     Continuous Pipeline Orchestrator for Football Bot
@@ -116,55 +130,79 @@ class ContinuousOrchestrator:
         self.logger.info(f"🛑 Received {signal_name}, initiating graceful shutdown...")
         self.running = False
     
-    async def execute_step(self, step_num: int) -> Dict[str, Any]:
+    async def execute_step(self, step_num: int, step_data=None, pipeline_start_time=None) -> Dict[str, Any]:
         """
-        Execute a single pipeline step
+        Execute a single pipeline step by calling functions directly
         
         Args:
             step_num: Step number (1-6)
+            step_data: Data from previous step (for steps 2-6)
             
         Returns:
             Dict with execution results
         """
         step_info = self.steps[step_num]
-        script_path = self.project_root / step_info["script"]
-        
         start_time = time.time()
         
         try:
             self.logger.debug(f"  📋 Executing Step {step_num}: {step_info['desc']}")
             
-            # Execute step script
-            process = await asyncio.create_subprocess_exec(
-                sys.executable, str(script_path),
-                stdout=asyncio.subprocess.PIPE,
-                stderr=asyncio.subprocess.PIPE,
-                cwd=str(self.project_root)
-            )
+            result_data = None
             
-            stdout, stderr = await process.communicate()
+            if step_num == 1:
+                # Step 1: Run as subprocess (API fetcher)
+                script_path = self.project_root / step_info["script"]
+                process = await asyncio.create_subprocess_exec(
+                    sys.executable, str(script_path),
+                    stdout=asyncio.subprocess.PIPE,
+                    stderr=asyncio.subprocess.PIPE,
+                    cwd=str(self.project_root)
+                )
+                stdout, stderr = await process.communicate()
+                
+                if process.returncode != 0:
+                    raise Exception(f"Step 1 failed: {stderr.decode('utf-8')}")
+                    
+                # Load step1 data for next steps
+                step1_file = self.project_root / "step1.json"
+                if step1_file.exists():
+                    with open(step1_file, 'r') as f:
+                        result_data = json.load(f)
+                        
+            elif step_num == 2:
+                # Step 2: Data processor
+                result_data = await extract_merge_summarize(step_data)
+                
+            elif step_num == 3:
+                # Step 3: JSON summary generator
+                result_data = await json_summary(step_data)
+                
+            elif step_num == 4:
+                # Step 4: Match summary extractor
+                result_data = await match_extracts(step_data)
+                
+            elif step_num == 5:
+                # Step 5: Odds & environment converter
+                result_data = odds_environment_converter()
+                
+            elif step_num == 6:
+                # Step 6: Pretty print display with pipeline timing
+                pipeline_time = None
+                if pipeline_start_time is not None:
+                    pipeline_time = time.time() - pipeline_start_time
+                result_data = pretty_print_matches(pipeline_time)
+            
             execution_time = time.time() - start_time
+            self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
             
-            if process.returncode == 0:
-                self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
-                return {
-                    "success": True,
-                    "step": step_num,
-                    "execution_time": execution_time,
-                    "stdout": stdout.decode('utf-8'),
-                    "stderr": stderr.decode('utf-8')
-                }
-            else:
-                self.logger.error(f"  ❌ Step {step_num} failed (exit code: {process.returncode})")
-                self.logger.error(f"  Error output: {stderr.decode('utf-8')}")
-                return {
-                    "success": False,
-                    "step": step_num,
-                    "execution_time": execution_time,
-                    "exit_code": process.returncode,
-                    "stdout": stdout.decode('utf-8'),
-                    "stderr": stderr.decode('utf-8')
-                }
+            return {
+                "success": True,
+                "step": step_num,
+                "execution_time": execution_time,
+                "data": result_data,
+                "stdout": f"Step {step_num} completed successfully",
+                "stderr": ""
+            }
                 
         except Exception as e:
             execution_time = time.time() - start_time
@@ -174,7 +212,10 @@ class ContinuousOrchestrator:
                 "step": step_num,
                 "execution_time": execution_time,
                 "exception": str(e),
-                "traceback": traceback.format_exc()
+                "traceback": traceback.format_exc(),
+                "data": None,
+                "stdout": "",
+                "stderr": str(e)
             }
     
     async def execute_full_pipeline(self) -> Dict[str, Any]:
@@ -196,37 +237,35 @@ class ContinuousOrchestrator:
         
         self.logger.info(f"🔄 Starting Pipeline Cycle #{self.cycle_count}")
         
-        # Execute each step sequentially
+        # Execute steps sequentially, passing data between them
+        step_data = None
+        
         for step_num in range(1, 7):
             if not self.running:
                 self.logger.info("🛑 Shutdown requested, aborting pipeline")
                 break
                 
-            step_result = await self.execute_step(step_num)
+            step_result = await self.execute_step(step_num, step_data, pipeline_start)
             results["steps"][step_num] = step_result
             
             if not step_result["success"]:
                 self.logger.error(f"💥 Pipeline failed at Step {step_num}")
                 break
+                
+            # Pass data to next step
+            step_data = step_result.get("data")
+            
         else:
             # All steps completed successfully
             results["success"] = True
             self.last_success = datetime.now()
             self.consecutive_errors = 0
             
-            # Extract match count from step output if available
-            if 6 in results["steps"] and results["steps"][6]["success"]:
-                try:
-                    # Try to extract match count from step6 output
-                    step6_output = results["steps"][6]["stdout"]
-                    if "matches" in step6_output.lower():
-                        # Simple regex to find number of matches
-                        import re
-                        matches = re.findall(r'(\d+)\s+matches?', step6_output.lower())
-                        if matches:
-                            results["matches_processed"] = int(matches[-1])
-                except Exception:
-                    pass
+            # Extract match count from final step data
+            if step_data and isinstance(step_data, dict):
+                results["matches_processed"] = step_data.get("total_matches", 0)
+                if not results["matches_processed"] and "match_count" in step_data:
+                    results["matches_processed"] = step_data.get("match_count", 0)
         
         results["total_time"] = time.time() - pipeline_start
         

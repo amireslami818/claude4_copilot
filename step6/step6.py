@@ -27,7 +27,7 @@ STEP5_JSON = BASE_DIR.parent / "step5" / "step5.json"
 # Setup logger
 def setup_logger():
     """Setup logger to write formatted match summaries to file"""
-    log_file = BASE_DIR.parent / "step6_matches.log"
+    log_file = BASE_DIR / "step6_matches.log"  # Changed to write in step6 folder
     
     # Create logger
     logger = logging.getLogger('step6_matches')
@@ -282,8 +282,11 @@ def log_and_print(message):
     """Print message to console and log to file"""
     print(message)
     match_logger.info(message)
+    # Force flush to ensure immediate writing
+    for handler in match_logger.handlers:
+        handler.flush()
 
-def write_main_header(fetch_count, total_matches, generated_at):
+def write_main_header(fetch_count, total_matches, generated_at, pipeline_time=None):
     """Write the main header for the fetch set"""
     current_time = get_eastern_time()
     
@@ -292,6 +295,21 @@ def write_main_header(fetch_count, total_matches, generated_at):
     log_and_print(f"FOOTBALL BETTING DATA - SUMMARY FETCH: #{fetch_count}".center(80))
     log_and_print(f"Fetch Time: {current_time}".center(80))
     log_and_print(f"Total Matches: {total_matches}".center(80))
+    if pipeline_time is not None:
+        log_and_print(f"Pipeline Execution Time: {pipeline_time:.2f}s".center(80))
+    log_and_print("="*80)
+
+def write_main_footer(fetch_count, total_matches, generated_at, pipeline_time=None):
+    """Write the main footer for the fetch set"""
+    current_time = get_eastern_time()
+    
+    # Center text within 80 character width
+    log_and_print("\n" + "="*80)
+    log_and_print(f"END OF SUMMARY FETCH: #{fetch_count}".center(80))
+    log_and_print(f"Fetch Time: {current_time}".center(80))
+    log_and_print(f"Total Matches: {total_matches}".center(80))
+    if pipeline_time is not None:
+        log_and_print(f"Pipeline Execution Time: {pipeline_time:.2f}s".center(80))
     log_and_print("="*80)
 
 def process_match(match, match_num, total_matches):
@@ -371,9 +389,10 @@ def process_match(match, match_num, total_matches):
     for line in summarize_environment(env_data):
         log_and_print(line)
 
-def pretty_print_matches():
+def pretty_print_matches(pipeline_time=None):
     """Main function to load step5 data and display formatted matches"""
     print("Step 6: Starting pretty print match display...")
+    print(f"Step 6: Received pipeline_time: {pipeline_time}")
     
     # Load step5 data
     if not STEP5_JSON.exists():
@@ -402,9 +421,10 @@ def pretty_print_matches():
     print(f"Step 6: Processing {total_matches} matches for display")
     print(f"Data generated at: {generated_at}")
     print(f"This is fetch #{fetch_count} for today")
+    print(f"Step 6: About to write header with pipeline_time: {pipeline_time}")
     
     # Write main header to log
-    write_main_header(fetch_count, total_matches, generated_at)
+    write_main_header(fetch_count, total_matches, generated_at, pipeline_time)
     
     # Process each match
     match_num = 1
@@ -417,6 +437,14 @@ def pretty_print_matches():
             print("\n" + "-"*80)
     
     print(f"\nStep 6: Successfully displayed {total_matches} matches")
+    
+    # Write main footer to log
+    write_main_footer(fetch_count, total_matches, generated_at, pipeline_time)
+    
+    # Ensure all log data is written to file
+    for handler in match_logger.handlers:
+        handler.flush()
+    
     return True
 
 if __name__ == "__main__":
