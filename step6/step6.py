@@ -36,8 +36,8 @@ def setup_logger():
     # Remove existing handlers to avoid duplicates
     logger.handlers.clear()
     
-    # Create file handler
-    file_handler = logging.FileHandler(log_file, mode='w', encoding='utf-8')
+    # Create file handler with append mode to preserve previous runs
+    file_handler = logging.FileHandler(log_file, mode='a', encoding='utf-8')
     file_handler.setLevel(logging.INFO)
     
     # Create formatter (just the message, no timestamp prefix)
@@ -389,6 +389,52 @@ def process_match(match, match_num, total_matches):
     for line in summarize_environment(env_data):
         log_and_print(line)
 
+# Status priority mapping for sorting (lower number = higher priority)
+STATUS_PRIORITY = {
+    2: 1,   # First half (most urgent)
+    3: 2,   # Half-time break 
+    4: 3,   # Second half
+    5: 4,   # Extra time first half
+    6: 5,   # Extra time break
+    7: 6,   # Extra time second half
+    11: 7,  # Penalty shootout
+    1: 8,   # Not started
+    8: 9,   # Finished
+    9: 10,  # Postponed
+    13: 11, # Abandoned
+    10: 12, # Cancelled
+}
+
+def sort_matches_by_priority(matches):
+    """
+    Sort matches by status priority and recency.
+    Returns list of (match_id, match_data) tuples sorted by:
+    1. Status priority (first half, half-time, second half, etc.)
+    2. Match start time (most recent first within same status)
+    """
+    match_list = list(matches.items())
+    
+    def get_sort_key(match_item):
+        match_id, match_data = match_item
+        
+        # Get status ID for priority (handle both dict and direct value)
+        status = match_data.get('status', {})
+        if isinstance(status, dict):
+            status_id = status.get('id', 999)
+        else:
+            status_id = status if isinstance(status, int) else 999
+            
+        priority = STATUS_PRIORITY.get(status_id, 999)
+        
+        # Get match start time for secondary sort (negative for reverse chronological)
+        start_time = match_data.get('start_time', 0)
+        if start_time is None:
+            start_time = 0
+            
+        return (priority, -start_time)  # Negative start_time for most recent first
+    
+    return sorted(match_list, key=get_sort_key)
+
 def pretty_print_matches(pipeline_time=None):
     """Main function to load step5 data and display formatted matches"""
     print("Step 6: Starting pretty print match display...")
@@ -426,9 +472,27 @@ def pretty_print_matches(pipeline_time=None):
     # Write main header to log
     write_main_header(fetch_count, total_matches, generated_at, pipeline_time)
     
-    # Process each match
+    # Sort matches by status priority and recency
+    sorted_matches = sort_matches_by_priority(matches)
+    
+    # Process each match in sorted order with status group headers
     match_num = 1
-    for match_id, match_data in matches.items():
+    current_status = None
+    
+    for match_id, match_data in sorted_matches:
+        # Check if we need a new status group header
+        status = match_data.get('status', {})
+        if isinstance(status, dict):
+            match_status = status.get('id')
+            status_desc = status.get('description', '')
+        else:
+            match_status = status if isinstance(status, int) else None
+            status_desc = ''
+            
+        if match_status != current_status:
+            current_status = match_status
+            write_status_group_header(match_status, status_desc)
+        
         process_match(match_data, match_num, total_matches)
         match_num += 1
         
@@ -446,6 +510,31 @@ def pretty_print_matches(pipeline_time=None):
         handler.flush()
     
     return True
+
+def write_status_group_header(status_id, status_description):
+    """Write a status group header to separate matches by status"""
+    status_groups = {
+        2: "🔴 LIVE - FIRST HALF",
+        3: "⏸️  HALF-TIME BREAK", 
+        4: "🔴 LIVE - SECOND HALF",
+        5: "⚡ EXTRA TIME - FIRST HALF",
+        6: "⏸️  EXTRA TIME BREAK",
+        7: "⚡ EXTRA TIME - SECOND HALF", 
+        11: "🥅 PENALTY SHOOTOUT",
+        1: "⏰ NOT STARTED",
+        8: "✅ FINISHED",
+        9: "📅 POSTPONED",
+        13: "❌ ABANDONED",
+        10: "🚫 CANCELLED"
+    }
+    
+    group_name = status_groups.get(status_id, f"STATUS {status_id}")
+    
+    header = f"\n{'='*80}\n"
+    header += f"                    {group_name}\n"
+    header += f"{'='*80}\n"
+    
+    match_logger.info(header)
 
 if __name__ == "__main__":
     pretty_print_matches()
