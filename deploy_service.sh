@@ -1,14 +1,14 @@
 #!/bin/bash
-"""
-Football Bot Deployment Script
-=============================
-
-Deploys the Football Bot continuous pipeline as a systemd service
-for 24/7 operation with automatic startup on boot.
-
-Usage: sudo bash deploy_service.sh [action]
-Actions: install, start, stop, restart, status, logs, uninstall
-"""
+#
+# Football Bot Deployment Script
+# =============================
+#
+# Deploys the Football Bot continuous pipeline as a systemd service
+# for 24/7 operation with automatic startup on boot.
+#
+# Usage: sudo bash deploy_service.sh [action]
+# Actions: install, start, stop, restart, status, logs, uninstall
+#
 
 set -e
 
@@ -53,15 +53,11 @@ check_root() {
 install_dependencies() {
     print_info "Installing Python dependencies..."
     
-    # Ensure pip is available
-    if ! command -v pip3 &> /dev/null; then
-        print_info "Installing pip3..."
-        apt-get update
-        apt-get install -y python3-pip
-    fi
+    # Update package list
+    apt-get update -qq
     
-    # Install required packages
-    pip3 install aiohttp asyncio requests beautifulsoup4 lxml
+    # Install required system packages
+    apt-get install -y python3-pip python3-aiohttp python3-requests python3-bs4 python3-lxml python3-psutil
     
     print_success "Dependencies installed"
 }

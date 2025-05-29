@@ -27,7 +27,7 @@ STEP5_JSON = BASE_DIR.parent / "step5" / "step5.json"
 # Setup logger
 def setup_logger():
     """Setup logger to write formatted match summaries to file"""
-    log_file = BASE_DIR / "step6_matches.log"
+    log_file = BASE_DIR.parent / "step6_matches.log"
     
     # Create logger
     logger = logging.getLogger('step6_matches')
