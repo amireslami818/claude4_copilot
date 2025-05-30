@@ -34,6 +34,7 @@ sys.path.append(str(PROJECT_ROOT / 'step3'))
 sys.path.append(str(PROJECT_ROOT / 'step4'))
 sys.path.append(str(PROJECT_ROOT / 'step5'))
 sys.path.append(str(PROJECT_ROOT / 'step6'))
+sys.path.append(str(PROJECT_ROOT / 'step7'))
 
 # Import step functions
 from step2 import extract_merge_summarize
@@ -41,13 +42,14 @@ from step3 import json_summary
 from step4 import match_extracts
 from step5 import odds_environment_converter
 from step6 import pretty_print_matches
+from step7 import live_match_filter
 
 class ContinuousOrchestrator:
     """
     Continuous Pipeline Orchestrator for Football Bot
     
     Features:
-    - Full pipeline execution (Steps 1-6)
+    - Full pipeline execution (Steps 1-7)
     - 60-second interval scheduling
     - Comprehensive error handling
     - Graceful shutdown handling
@@ -191,6 +193,13 @@ class ContinuousOrchestrator:
                 if pipeline_start_time is not None:
                     pipeline_time = time.time() - pipeline_start_time
                 result_data = pretty_print_matches(pipeline_time)
+                
+            elif step_num == 7:
+                # Step 7: Live match filter - active games only
+                pipeline_time = None
+                if pipeline_start_time is not None:
+                    pipeline_time = time.time() - pipeline_start_time
+                result_data = live_match_filter(pipeline_time)
             
             execution_time = time.time() - start_time
             self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
@@ -240,7 +249,7 @@ class ContinuousOrchestrator:
         # Execute steps sequentially, passing data between them
         step_data = None
         
-        for step_num in range(1, 7):
+        for step_num in range(1, 8):
             if not self.running:
                 self.logger.info("🛑 Shutdown requested, aborting pipeline")
                 break
@@ -272,16 +281,8 @@ class ContinuousOrchestrator:
         # Update metrics
         self.update_metrics(results)
         
-        if results["success"]:
-            self.logger.info(f"✅ Pipeline Cycle #{self.cycle_count} completed successfully in {results['total_time']:.2f}s")
-            if results["matches_processed"]:
-                self.logger.info(f"📊 Processed {results['matches_processed']} matches")
-        else:
-            self.logger.error(f"❌ Pipeline Cycle #{self.cycle_count} failed after {results['total_time']:.2f}s")
-            self.consecutive_errors += 1
-        
         return results
-    
+
     def update_metrics(self, results: Dict[str, Any]):
         """Update performance metrics"""
         self.metrics["total_cycles"] += 1
@@ -319,39 +320,59 @@ class ContinuousOrchestrator:
         """
         Main continuous operation loop
         
-        Runs the pipeline every 60 seconds with error handling and monitoring
+        Smart timing: If pipeline takes ≥2 minutes, start next immediately.
+        Otherwise maintain 60-second intervals.
         """
         self.running = True
         self.start_time = time.time()
         
         self.logger.info("🌟 Starting Football Bot Continuous Pipeline")
-        self.logger.info("⏰ Running every 60 seconds - Press Ctrl+C to stop gracefully")
+        self.logger.info("⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min")
         
         while self.running:
             try:
                 self.cycle_count += 1
+                cycle_start_time = time.time()
                 
-                # Execute pipeline
-                results = await self.execute_full_pipeline()
+                self.logger.info(f"🔄 Starting Pipeline Cycle #{self.cycle_count}")
+                
+                # Execute pipeline and measure time
+                try:
+                    results = await self.execute_full_pipeline()
+                    cycle_time = time.time() - cycle_start_time
+                    self.logger.info(f"✅ Pipeline Cycle #{self.cycle_count} completed successfully in {cycle_time:.2f}s")
+                    
+                    # Smart timing logic
+                    if cycle_time >= 120:  # 2 minutes or more
+                        self.logger.warning(f"⚠️  Pipeline took {cycle_time:.1f}s, no wait time!")
+                        wait_time = 0
+                    else:
+                        wait_time = max(0, 60 - cycle_time)
+                        if wait_time > 0:
+                            self.logger.info(f"⏳ Waiting {wait_time:.1f}s until next cycle...")
+                    
+                except Exception as e:
+                    cycle_time = time.time() - cycle_start_time
+                    self.logger.error(f"❌ Pipeline Cycle #{self.cycle_count} failed after {cycle_time:.2f}s")
+                    self.logger.error(f"  💥 Error: {str(e)}")
+                    self.error_count += 1
+                    self.consecutive_errors += 1
+                    wait_time = 60  # Standard wait on error
                 
                 # Check for excessive consecutive errors
                 if self.consecutive_errors >= 5:
                     self.logger.error(f"🚨 Too many consecutive errors ({self.consecutive_errors}), implementing backoff")
                     await asyncio.sleep(300)  # 5-minute backoff
                     self.consecutive_errors = 0  # Reset after backoff
+                    continue
                 
                 # Log status report every 10 cycles
                 if self.cycle_count % 10 == 0:
                     self.log_status_report()
                 
-                # Wait for next cycle (60 seconds total, minus execution time)
-                if self.running:
-                    wait_time = max(0, 60 - results["total_time"])
-                    if wait_time > 0:
-                        self.logger.debug(f"⏳ Waiting {wait_time:.1f}s until next cycle...")
-                        await asyncio.sleep(wait_time)
-                    else:
-                        self.logger.warning(f"⚠️  Pipeline took {results['total_time']:.1f}s, no wait time!")
+                # Wait for next cycle
+                if self.running and wait_time > 0:
+                    await asyncio.sleep(wait_time)
                 
             except Exception as e:
                 self.logger.error(f"💥 Orchestrator error: {str(e)}")

@@ -1,40 +1,23 @@
 #!/bin/bash
+##############################################################################
+#                        FOOTBALL BOT STARTUP (LEGACY)                      #
+##############################################################################
+# 
+# DEPRECATED: This file is kept for compatibility
+# Please use: ./startup/start.sh instead
 #
-# Quick Start Script for Football Bot
-# ==================================
-# One-command service management
-#
+##############################################################################
 
-cd "$(dirname "$0")"
-
-# Source aliases
-source systemd/aliases.sh
-
+echo "⚠️  DEPRECATED: This start.sh is no longer used"
 echo ""
-echo "🚀 Football Bot Quick Start"
-echo "=========================="
+echo "Please use the new centralized startup system:"
+echo "  ./startup/start.sh start     # Start pipeline"
+echo "  ./startup/start.sh status    # Check status"
+echo "  ./startup/start.sh stop      # Stop pipeline"
+echo "  ./startup/start.sh logs      # View logs"
 echo ""
-echo "Service Management:"
-echo "  fb-start     # Start the service"
-echo "  fb-stop      # Stop the service"  
-echo "  fb-restart   # Restart the service"
-echo "  fb-status    # Check service status"
-echo "  fb-logs      # View recent logs"
-echo "  fb-follow    # Follow live logs"
-echo ""
-echo "Full Deployment:"
-echo "  sudo ./systemd/deploy_service.sh install"
+echo "Redirecting to new startup system..."
 echo ""
 
-# Show current status
-echo "Current Status:"
-echo "==============="
-if systemctl is-active --quiet football-bot; then
-    echo "✅ Service is RUNNING"
-    echo ""
-    fb-status
-else
-    echo "❌ Service is STOPPED"
-    echo ""
-    echo "To start: fb-start"
-fi
+# Redirect to new startup system
+exec ./startup/start.sh "$@"
