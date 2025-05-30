@@ -159,7 +159,17 @@ def save_match_summaries(summaries: list, output_file: str = "step2.json") -> bo
     path = os.path.join(os.path.dirname(__file__), output_file)
     try:
         data = {"history": []}
-        if os.path.exists(path): data = json.load(open(path)) if isinstance(json.load(open(path)), dict) and json.load(open(path)).get("history") else {"history": [json.load(open(path))]}
+        if os.path.exists(path):
+            with open(path, 'r') as f:
+                loaded_data = json.load(f)
+            data = loaded_data if isinstance(loaded_data, dict) and loaded_data.get("history") else {"history": [loaded_data]}
+        
+        # Implement history rotation to prevent unlimited accumulation
+        MAX_HISTORY_ENTRIES = 100
+        if len(data["history"]) >= MAX_HISTORY_ENTRIES:
+            print(f"Step 2: Rotating history, keeping last {MAX_HISTORY_ENTRIES} entries")
+            data["history"] = data["history"][-MAX_HISTORY_ENTRIES:]
+        
         data["history"].append(batch)
         data.update({"last_updated": batch["timestamp"], "total_entries": len(data["history"]), "latest_match_count": batch["total_matches"]})
         
