@@ -3,6 +3,10 @@
 
 """Step 2 – Extract, Merge, Summarize
 This module consumes raw match payloads and produces cleaned-up summary dictionaries.
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 from datetime import datetime

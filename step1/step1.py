@@ -4,6 +4,10 @@ STEP 1 – DATA FETCHER
 --------------------
 Fetches data from TheSports API and returns it as a dictionary.
 No loops, no queues, no scheduling - runs once and exits.
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 import asyncio

@@ -5,6 +5,10 @@ Extracts specific match fields for structured output and analysis
 
 This module processes the Step 3 JSON summaries and extracts key match information
 including scores, odds, status, and environment data in a simplified format.
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 import json

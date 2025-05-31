@@ -12,6 +12,10 @@ easier to:
 The original version wrote the generated summaries to ``step3.json`` and a
 separate log file.  This lightweight version simply returns the summary data
 without any logging or file output.
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 import json

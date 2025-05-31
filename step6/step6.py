@@ -8,6 +8,10 @@ This module processes Step 5 JSON data and:
 2. Displays betting odds in organized tables
 3. Shows environment data with proper formatting
 4. Provides comprehensive match summaries for display
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 import json

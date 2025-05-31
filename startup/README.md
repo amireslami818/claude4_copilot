@@ -2,42 +2,58 @@
 
 ## Overview
 
-Centralized startup and management system for the Football Bot Pipeline. This replaces all previous systemd and cron-based approaches with a simple shell-based solution.
+Centralized startup and management system for the Football Bot Pipeline. This system uses tmux for better process control, monitoring, and logging.
 
 ## Architecture
 
 The startup system uses:
+- **tmux sessions** for process isolation and monitoring
+- **Multi-pane display** for real-time monitoring of different components
 - **Direct process execution** (no systemd/cron dependencies)
 - **PID-based process management** for clean start/stop operations
 - **Background execution** with proper logging
 - **Graceful shutdown** handling with SIGTERM/SIGKILL fallback
+
+## tmux Session Layout
+
+The pipeline runs in a tmux session named "football-pipeline" with three panes:
+1. Main pane (left): Orchestrator process
+2. Top-right pane: Live log tail
+3. Bottom-right pane: Process monitoring
+
+### Interacting with tmux
+
+- `tmux attach -t football-pipeline` to connect to the session
+- `Ctrl+B` then arrow keys to switch between panes
+- `Ctrl+B` then `d` to detach (pipeline keeps running)
+- `Ctrl+C` in a pane to stop that component
 
 ## Usage
 
 ### Basic Commands
 
 ```bash
-# Start the pipeline
-./startup/start.sh start
+# Start the pipeline in tmux
+./startup/manage_pipeline.sh start
 
-# Check status
-./startup/start.sh status
+# Check pipeline status and recent logs
+./startup/manage_pipeline.sh status
 
-# View live logs
-./startup/start.sh logs
+# View detailed logs
+./startup/manage_pipeline.sh logs
 
-# Stop the pipeline
-./startup/start.sh stop
+# Stop the pipeline gracefully
+./startup/manage_pipeline.sh stop
 
-# Restart the pipeline
-./startup/start.sh restart
+# Attach to running pipeline session
+tmux attach -t football-pipeline
 ```
 
 ### Quick Start
 
 ```bash
 cd /root/CascadeProjects/Football_bot
-./startup/start.sh start
+./startup/manage_pipeline.sh start
 ```
 
 The pipeline will:

@@ -4,8 +4,12 @@ Football Bot Continuous Pipeline Orchestrator
 ============================================
 
 A robust continuous operation system that runs the complete football betting
-data pipeline (Steps 1-6) at 60-second intervals with comprehensive error
+data pipeline (Steps 1-7) at 60-second intervals with comprehensive error
 handling, logging, and graceful shutdown capabilities.
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 
 Author: GitHub Copilot
 Version: 1.0.0
@@ -42,7 +46,7 @@ from step3 import json_summary
 from step4 import match_extracts
 from step5 import odds_environment_converter
 from step6 import pretty_print_matches
-from step7 import live_match_filter
+from step7 import run_status_filter
 
 class ContinuousOrchestrator:
     """
@@ -76,7 +80,8 @@ class ContinuousOrchestrator:
             3: {"script": "step3/step3.py", "desc": "JSON Summary Generator"},
             4: {"script": "step4/step4.py", "desc": "Match Summary Extractor"},
             5: {"script": "step5/step5.py", "desc": "Odds & Environment Converter"},
-            6: {"script": "step6/step6.py", "desc": "Pretty Print Display"}
+            6: {"script": "step6/step6.py", "desc": "Pretty Print Display"},
+            7: {"script": "step7.py", "desc": "Match Status Filter (2,3,4,5,6,7)"}
         }
         
         # Performance metrics
@@ -195,11 +200,12 @@ class ContinuousOrchestrator:
                 result_data = pretty_print_matches(pipeline_time)
                 
             elif step_num == 7:
-                # Step 7: Live match filter - active games only
+                # Step 7: Match Status Filter - Only matches with status_id 2,3,4,5,6,7 (actively playing)
                 pipeline_time = None
                 if pipeline_start_time is not None:
                     pipeline_time = time.time() - pipeline_start_time
-                result_data = live_match_filter(pipeline_time)
+                self.logger.debug(f"  🔍 About to call run_status_filter() with pipeline_time={pipeline_time}")
+                result_data = run_status_filter(pipeline_time)
             
             execution_time = time.time() - start_time
             self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")

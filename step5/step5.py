@@ -8,6 +8,10 @@ This module processes Step 4 JSON data and:
 2. Formats temperature data from Celsius to Fahrenheit  
 3. Summarizes environment data with detailed wind classifications
 4. Prepares data for final display/print step
+
+IMPORTANT TERMINOLOGY:
+- LIVE MATCHES = All matches from /match/detail_live API endpoint (broader category)
+- IN-PLAY MATCHES = Only matches with status_id 2,3,4,5,6 (actively playing subset of live matches)
 """
 
 import json
