@@ -169,30 +169,145 @@ def write_status_group_header(status_id: int, status_desc: str):
     )
     log_and_print(header)
 
+def format_american_odds(odds_value):
+    """Format odds value for display with proper +/- prefix"""
+    if not odds_value or odds_value == 0:
+        return "N/A"
+    
+    try:
+        # Handle string odds that already have +/- formatting
+        if isinstance(odds_value, str):
+            if odds_value.startswith(('+', '-')):
+                return odds_value
+            # Try to convert to number for formatting
+            try:
+                num_val = float(odds_value)
+                if num_val > 0:
+                    return f"+{int(num_val)}"
+                else:
+                    return str(int(num_val))
+            except ValueError:
+                return odds_value
+        
+        # Handle numeric odds
+        odds_num = float(odds_value)
+        if odds_num > 0:
+            return f"+{int(odds_num)}"
+        else:
+            return str(int(odds_num))
+    except (ValueError, TypeError):
+        return str(odds_value) if odds_value else "N/A"
+
+def format_betting_odds(match_data: dict) -> str:
+    """Format betting odds display for ML, Spread, and O/U"""
+    odds_lines = []
+    
+    # Money Line (ML) odds
+    full_time = match_data.get("full_time_result")
+    if full_time and isinstance(full_time, dict):
+        home_ml = format_american_odds(full_time.get('home'))
+        draw_ml = format_american_odds(full_time.get('draw'))
+        away_ml = format_american_odds(full_time.get('away'))
+        time_stamp = full_time.get('time', '0')
+        odds_lines.append(f"│ ML:     │ Home: {home_ml:>6} │ Draw: {draw_ml:>6} │ Away: {away_ml:>7} │ (@{time_stamp}')")
+    
+    # Spread odds
+    spread = match_data.get("spread")
+    if spread and isinstance(spread, dict):
+        home_spread = format_american_odds(spread.get('home'))
+        handicap = spread.get('handicap', 0)
+        away_spread = format_american_odds(spread.get('away'))
+        time_stamp = spread.get('time', '0')
+        odds_lines.append(f"│ Spread: │ Home: {home_spread:>6} │ Hcap: {handicap:>6} │ Away: {away_spread:>7} │ (@{time_stamp}')")
+    
+    # Over/Under odds
+    over_under = match_data.get("over_under")
+    if over_under and isinstance(over_under, dict):
+        # Get the first (and typically only) line
+        for line_value, line_data in over_under.items():
+            if isinstance(line_data, dict):
+                over_odds = format_american_odds(line_data.get('over'))
+                line_num = line_data.get('line', line_value)
+                under_odds = format_american_odds(line_data.get('under'))
+                time_stamp = line_data.get('time', '0')
+                odds_lines.append(f"│ O/U:    │ Over: {over_odds:>6} │ Line: {line_num:>6} │ Under: {under_odds:>6} │ (@{time_stamp}')")
+                break  # Only show first line
+    
+    if not odds_lines:
+        return "No betting odds available"
+    
+    return "\n".join(odds_lines)
+
+def format_environment_data(match_data: dict) -> str:
+    """Format match environment data"""
+    environment = match_data.get("environment", {})
+    if not environment:
+        return "No environment data available"
+    
+    # Extract environment data with safe defaults
+    weather = environment.get("weather_description", "Unknown")
+    temp_c = environment.get("temperature_value", 0)
+    temp_unit = environment.get("temperature_unit") or "°C"
+    wind_desc = environment.get("wind_description", "Unknown")
+    wind_value = environment.get("wind_value", 0)
+    wind_unit = environment.get("wind_unit") or "m/s"
+    
+    # Convert temperature to Fahrenheit if needed
+    if temp_unit == "°C" and temp_c:
+        temp_f = (temp_c * 9/5) + 32
+        temp_display = f"{temp_f:.1f}°F"
+    else:
+        temp_display = f"{temp_c}°{temp_unit.replace('°', '') if temp_unit else 'C'}"
+    
+    # Convert wind to mph if needed
+    if wind_unit == "m/s" and wind_value:
+        wind_mph = wind_value * 2.237
+        wind_display = f"{wind_desc}, {wind_mph:.1f} mph"
+    else:
+        wind_display = f"{wind_desc}, {wind_value} {wind_unit}"
+    
+    return f"Weather: {weather}\nTemperature: {temp_display}\nWind: {wind_display}"
+
 def process_match(match_data: dict, match_num: int, total_matches: int):
     """
-    Given one match's data, print + log its details:
-    - competition, teams, score, status text,
-    (For brevity, we're only printing competition, teams, score, status here.)
+    Given one match's data, print + log its comprehensive details:
+    - competition, teams, score, status
+    - competition ID
+    - betting odds (ML, Spread, O/U)
+    - match environment (Weather, Temperature, Wind)
     """
+    # Match header
     blk = (
         f"\n{'='*80}\n"
-        f"STATUS-FILTER MATCH {match_num} of {total_matches}\n"
-        f"Match ID: {match_data.get('match_id', 'N/A')}\n"
+        f"                                 MATCH {match_num} of {total_matches}\n"
+        f"                      Filtered: {get_eastern_time()}\n"
+        f"                           Match ID: {match_data.get('match_id', 'N/A')}\n"
+        f"                        Competition ID: {match_data.get('competition_id', 'N/A')}\n"
         f"{'='*80}\n"
     )
     log_and_print(blk)
 
+    # Basic match information
     comp_line = f"Competition: {match_data.get('competition', 'Unknown')} ({match_data.get('country', 'Unknown')})"
     teams_line = f"Match: {match_data.get('home_team', 'Unknown')} vs {match_data.get('away_team', 'Unknown')}"
-    log_and_print(comp_line)
-    log_and_print(teams_line)
-
     score = match_data.get("score", "N/A")
     status_id = match_data.get("status_id", None)
     status_desc = get_status_description(status_id)
-    status_line = f"Score: {score}   |   Status: {status_desc} (ID: {status_id})"
+    status_line = f"Score: {score}\nStatus: {status_desc} (ID: {status_id})"
+    
+    log_and_print(comp_line)
+    log_and_print(teams_line)
     log_and_print(status_line)
+
+    # Betting odds section
+    log_and_print("\n--- MATCH BETTING ODDS ---")
+    betting_odds = format_betting_odds(match_data)
+    log_and_print(betting_odds)
+
+    # Environment section
+    log_and_print("\n--- MATCH ENVIRONMENT ---")
+    environment_data = format_environment_data(match_data)
+    log_and_print(environment_data)
 
     log_and_print("")  # blank line after each match
 
