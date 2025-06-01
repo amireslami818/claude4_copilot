@@ -256,6 +256,10 @@ def save_step4_json(step4_data):
         existing_data["latest_match_count"] = step4_data.get("total_matches", 0)
         existing_data["ny_timestamp"] = get_eastern_time()
         
+        # Add status summary
+        if "statistics" in step4_data and "by_status" in step4_data["statistics"]:
+            existing_data["status_summary"] = step4_data["statistics"]["by_status"]
+        
         # Save updated data
         with open(STEP4_JSON, 'w') as f:
             json.dump(existing_data, f, indent=2, ensure_ascii=False)

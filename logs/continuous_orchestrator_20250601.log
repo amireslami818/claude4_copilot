@@ -1,0 +1,2668 @@
+2025-06-01 00:58:28 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 00:58:28 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 00:58:28 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 00:58:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 00:58:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 00:58:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 00:59:51 [   DEBUG]   ✅ Step 1 completed in 82.90s
+2025-06-01 00:59:51 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 00:59:57 [   DEBUG]   ✅ Step 2 completed in 6.30s
+2025-06-01 00:59:57 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:00:04 [   DEBUG]   ✅ Step 3 completed in 6.41s
+2025-06-01 01:00:04 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:00:09 [   DEBUG]   ✅ Step 4 completed in 5.44s
+2025-06-01 01:00:09 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:00:16 [   DEBUG]   ✅ Step 5 completed in 7.02s
+2025-06-01 01:00:16 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:00:18 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 01:00:18 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:00:18 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=109.55187797546387
+2025-06-01 01:00:19 [   DEBUG]   ✅ Step 7 completed in 1.53s
+2025-06-01 01:00:19 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 111.08s
+2025-06-01 01:00:19 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:00:19 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:00:19 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:01:41 [   DEBUG]   ✅ Step 1 completed in 82.27s
+2025-06-01 01:01:41 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:01:48 [   DEBUG]   ✅ Step 2 completed in 6.48s
+2025-06-01 01:01:48 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:01:54 [   DEBUG]   ✅ Step 3 completed in 6.25s
+2025-06-01 01:01:54 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:01:59 [   DEBUG]   ✅ Step 4 completed in 4.97s
+2025-06-01 01:01:59 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:02:06 [   DEBUG]   ✅ Step 5 completed in 7.13s
+2025-06-01 01:02:06 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:02:08 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 01:02:08 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:02:08 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=108.60339212417603
+2025-06-01 01:02:09 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 01:02:09 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 110.13s
+2025-06-01 01:02:09 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:02:09 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:02:09 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:03:31 [   DEBUG]   ✅ Step 1 completed in 81.68s
+2025-06-01 01:03:31 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:03:37 [   DEBUG]   ✅ Step 2 completed in 6.18s
+2025-06-01 01:03:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:03:44 [   DEBUG]   ✅ Step 3 completed in 6.56s
+2025-06-01 01:03:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:03:49 [   DEBUG]   ✅ Step 4 completed in 5.10s
+2025-06-01 01:03:49 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:03:56 [   DEBUG]   ✅ Step 5 completed in 6.84s
+2025-06-01 01:03:56 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:03:57 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 01:03:57 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:03:57 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=107.86966252326965
+2025-06-01 01:03:59 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 01:03:59 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 109.39s
+2025-06-01 01:03:59 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:03:59 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:03:59 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:05:29 [   DEBUG]   ✅ Step 1 completed in 90.05s
+2025-06-01 01:05:29 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:05:35 [   DEBUG]   ✅ Step 2 completed in 6.11s
+2025-06-01 01:05:35 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:05:41 [   DEBUG]   ✅ Step 3 completed in 6.57s
+2025-06-01 01:05:41 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:05:47 [   DEBUG]   ✅ Step 4 completed in 5.11s
+2025-06-01 01:05:47 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:05:54 [   DEBUG]   ✅ Step 5 completed in 7.04s
+2025-06-01 01:05:54 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:05:55 [   DEBUG]   ✅ Step 6 completed in 1.45s
+2025-06-01 01:05:55 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:05:55 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=116.31928896903992
+2025-06-01 01:05:57 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:05:57 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 117.88s
+2025-06-01 01:05:57 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:05:57 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:05:57 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:07:31 [   DEBUG]   ✅ Step 1 completed in 94.42s
+2025-06-01 01:07:31 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:07:37 [   DEBUG]   ✅ Step 2 completed in 6.12s
+2025-06-01 01:07:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:07:44 [   DEBUG]   ✅ Step 3 completed in 6.76s
+2025-06-01 01:07:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:07:49 [   DEBUG]   ✅ Step 4 completed in 5.26s
+2025-06-01 01:07:49 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:07:56 [   DEBUG]   ✅ Step 5 completed in 7.20s
+2025-06-01 01:07:56 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:07:58 [   DEBUG]   ✅ Step 6 completed in 1.55s
+2025-06-01 01:07:58 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:07:58 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=121.3131034374237
+2025-06-01 01:07:59 [   DEBUG]   ✅ Step 7 completed in 1.52s
+2025-06-01 01:07:59 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 122.85s
+2025-06-01 01:07:59 [ WARNING] ⚠️  Pipeline took 122.8s, no wait time!
+2025-06-01 01:07:59 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:07:59 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:07:59 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:09:33 [   DEBUG]   ✅ Step 1 completed in 93.58s
+2025-06-01 01:09:33 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:09:39 [   DEBUG]   ✅ Step 2 completed in 6.26s
+2025-06-01 01:09:39 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:09:46 [   DEBUG]   ✅ Step 3 completed in 6.47s
+2025-06-01 01:09:46 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:09:51 [   DEBUG]   ✅ Step 4 completed in 5.02s
+2025-06-01 01:09:51 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:09:58 [   DEBUG]   ✅ Step 5 completed in 7.65s
+2025-06-01 01:09:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:10:00 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 01:10:00 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:10:00 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=120.48550748825073
+2025-06-01 01:10:01 [   DEBUG]   ✅ Step 7 completed in 1.50s
+2025-06-01 01:10:01 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 122.00s
+2025-06-01 01:10:01 [ WARNING] ⚠️  Pipeline took 122.0s, no wait time!
+2025-06-01 01:10:01 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:10:01 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:10:01 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:11:35 [   DEBUG]   ✅ Step 1 completed in 94.01s
+2025-06-01 01:11:35 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:11:42 [   DEBUG]   ✅ Step 2 completed in 6.56s
+2025-06-01 01:11:42 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:11:48 [   DEBUG]   ✅ Step 3 completed in 6.40s
+2025-06-01 01:11:48 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:11:54 [   DEBUG]   ✅ Step 4 completed in 5.37s
+2025-06-01 01:11:54 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:12:01 [   DEBUG]   ✅ Step 5 completed in 7.19s
+2025-06-01 01:12:01 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:12:02 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 01:12:02 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:12:02 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=121.02071189880371
+2025-06-01 01:12:04 [   DEBUG]   ✅ Step 7 completed in 1.49s
+2025-06-01 01:12:04 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 122.53s
+2025-06-01 01:12:04 [ WARNING] ⚠️  Pipeline took 122.5s, no wait time!
+2025-06-01 01:12:04 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:12:04 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:12:04 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:13:33 [   DEBUG]   ✅ Step 1 completed in 89.34s
+2025-06-01 01:13:33 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:13:40 [   DEBUG]   ✅ Step 2 completed in 6.18s
+2025-06-01 01:13:40 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:13:46 [   DEBUG]   ✅ Step 3 completed in 6.64s
+2025-06-01 01:13:46 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:13:51 [   DEBUG]   ✅ Step 4 completed in 5.21s
+2025-06-01 01:13:51 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:13:59 [   DEBUG]   ✅ Step 5 completed in 7.17s
+2025-06-01 01:13:59 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:14:00 [   DEBUG]   ✅ Step 6 completed in 1.47s
+2025-06-01 01:14:00 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:14:00 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=116.01530337333679
+2025-06-01 01:14:01 [   DEBUG]   ✅ Step 7 completed in 1.45s
+2025-06-01 01:14:01 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 117.48s
+2025-06-01 01:14:01 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:14:01 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:14:01 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:15:25 [   DEBUG]   ✅ Step 1 completed in 83.06s
+2025-06-01 01:15:25 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:15:31 [   DEBUG]   ✅ Step 2 completed in 6.02s
+2025-06-01 01:15:31 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:15:37 [   DEBUG]   ✅ Step 3 completed in 5.97s
+2025-06-01 01:15:37 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:15:37 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 01:15:42 [   DEBUG]   ✅ Step 4 completed in 5.15s
+2025-06-01 01:15:42 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 01:15:42 [    INFO] ✅ Pipeline Cycle #9 completed successfully in 100.22s
+2025-06-01 01:15:42 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 01:15:42 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:15:42 [    INFO] 🕐 Uptime: 0.3 hours
+2025-06-01 01:15:42 [    INFO] 🔄 Total Cycles: 9
+2025-06-01 01:15:42 [    INFO] ✅ Successful: 8
+2025-06-01 01:15:42 [    INFO] ❌ Failed: 1
+2025-06-01 01:15:42 [    INFO] 📈 Success Rate: 88.9%
+2025-06-01 01:15:42 [    INFO] ⏱️  Avg Cycle Time: 114.82s
+2025-06-01 01:15:42 [    INFO] 🎯 Matches Processed: 632
+2025-06-01 01:15:42 [    INFO] 🕐 Last Success: 01:14:01
+2025-06-01 01:15:42 [    INFO] ========================
+2025-06-01 01:16:14 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 01:16:14 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 01:16:14 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 01:16:14 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:16:14 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:16:14 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:17:40 [   DEBUG]   ✅ Step 1 completed in 86.02s
+2025-06-01 01:17:40 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:17:47 [   DEBUG]   ✅ Step 2 completed in 6.37s
+2025-06-01 01:17:47 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:17:53 [   DEBUG]   ✅ Step 3 completed in 6.34s
+2025-06-01 01:17:53 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:17:58 [   DEBUG]   ✅ Step 4 completed in 4.94s
+2025-06-01 01:17:58 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:18:02 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 01:18:02 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 01:18:02 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 01:18:02 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:18:02 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:18:02 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:18:05 [   DEBUG]   ✅ Step 5 completed in 7.36s
+2025-06-01 01:18:05 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:18:07 [   DEBUG]   ✅ Step 6 completed in 1.52s
+2025-06-01 01:18:07 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:18:07 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=112.55185389518738
+2025-06-01 01:18:08 [   DEBUG]   ✅ Step 7 completed in 1.47s
+2025-06-01 01:18:08 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 114.03s
+2025-06-01 01:18:08 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:18:08 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:18:08 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:18:34 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 01:18:34 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 01:19:17 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 01:19:17 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 01:19:17 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 01:19:17 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:19:17 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:19:17 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:19:26 [   DEBUG]   ✅ Step 1 completed in 77.40s
+2025-06-01 01:19:26 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 01:19:26 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 77.41s
+2025-06-01 01:19:26 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 01:19:26 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:19:26 [    INFO] 🕐 Uptime: 0.1 hours
+2025-06-01 01:19:26 [    INFO] 🔄 Total Cycles: 2
+2025-06-01 01:19:26 [    INFO] ✅ Successful: 1
+2025-06-01 01:19:26 [    INFO] ❌ Failed: 1
+2025-06-01 01:19:26 [    INFO] 📈 Success Rate: 50.0%
+2025-06-01 01:19:26 [    INFO] ⏱️  Avg Cycle Time: 95.71s
+2025-06-01 01:19:26 [    INFO] 🎯 Matches Processed: 79
+2025-06-01 01:19:26 [    INFO] 🕐 Last Success: 01:18:08
+2025-06-01 01:19:26 [    INFO] ========================
+2025-06-01 01:19:29 [   DEBUG]   ✅ Step 1 completed in 87.55s
+2025-06-01 01:19:29 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 01:19:29 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 87.55s
+2025-06-01 01:19:29 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 01:19:29 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:19:29 [    INFO] 🕐 Uptime: 0.0 hours
+2025-06-01 01:19:29 [    INFO] 🔄 Total Cycles: 1
+2025-06-01 01:19:29 [    INFO] ✅ Successful: 0
+2025-06-01 01:19:29 [    INFO] ❌ Failed: 1
+2025-06-01 01:19:29 [    INFO] 📈 Success Rate: 0.0%
+2025-06-01 01:19:29 [    INFO] ⏱️  Avg Cycle Time: 87.55s
+2025-06-01 01:19:29 [    INFO] 🎯 Matches Processed: 0
+2025-06-01 01:19:29 [    INFO] ========================
+2025-06-01 01:20:37 [   DEBUG]   ✅ Step 1 completed in 80.39s
+2025-06-01 01:20:37 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:20:43 [   DEBUG]   ✅ Step 2 completed in 6.02s
+2025-06-01 01:20:43 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:20:49 [   DEBUG]   ✅ Step 3 completed in 6.21s
+2025-06-01 01:20:49 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:20:55 [   DEBUG]   ✅ Step 4 completed in 5.12s
+2025-06-01 01:20:55 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:21:02 [   DEBUG]   ✅ Step 5 completed in 7.13s
+2025-06-01 01:21:02 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:21:03 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 01:21:03 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:21:03 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=106.35617089271545
+2025-06-01 01:21:05 [   DEBUG]   ✅ Step 7 completed in 1.47s
+2025-06-01 01:21:05 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 107.83s
+2025-06-01 01:21:05 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:21:05 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:21:05 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:21:22 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 01:21:22 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 01:21:22 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 01:21:22 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:21:22 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 01:21:22 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:22:34 [   DEBUG]   ✅ Step 1 completed in 89.49s
+2025-06-01 01:22:34 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:22:40 [   DEBUG]   ✅ Step 2 completed in 6.27s
+2025-06-01 01:22:40 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:22:44 [   DEBUG]   ✅ Step 1 completed in 82.66s
+2025-06-01 01:22:44 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:22:47 [   DEBUG]   ✅ Step 3 completed in 6.95s
+2025-06-01 01:22:47 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:22:51 [   DEBUG]   ✅ Step 2 completed in 6.78s
+2025-06-01 01:22:51 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:22:52 [   DEBUG]   ✅ Step 4 completed in 5.13s
+2025-06-01 01:22:52 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:22:58 [   DEBUG]   ✅ Step 3 completed in 6.57s
+2025-06-01 01:22:58 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:23:00 [   DEBUG]   ✅ Step 5 completed in 7.37s
+2025-06-01 01:23:00 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:23:01 [   DEBUG]   ✅ Step 6 completed in 1.60s
+2025-06-01 01:23:01 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:23:01 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=116.80958938598633
+2025-06-01 01:23:03 [   DEBUG]   ✅ Step 7 completed in 1.62s
+2025-06-01 01:23:03 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 118.45s
+2025-06-01 01:23:03 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:23:03 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:23:03 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:23:03 [   DEBUG]   ✅ Step 4 completed in 5.60s
+2025-06-01 01:23:03 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:23:10 [   DEBUG]   ✅ Step 5 completed in 7.32s
+2025-06-01 01:23:10 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:23:12 [   DEBUG]   ✅ Step 6 completed in 1.59s
+2025-06-01 01:23:12 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:23:12 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=110.51715898513794
+2025-06-01 01:23:14 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 01:23:14 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 112.00s
+2025-06-01 01:23:14 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:23:14 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 01:23:14 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:24:22 [   DEBUG]   ✅ Step 1 completed in 78.69s
+2025-06-01 01:24:22 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:24:28 [   DEBUG]   ✅ Step 2 completed in 6.07s
+2025-06-01 01:24:28 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:24:34 [   DEBUG]   ✅ Step 1 completed in 80.11s
+2025-06-01 01:24:34 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:24:34 [   DEBUG]   ✅ Step 3 completed in 6.14s
+2025-06-01 01:24:34 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:24:39 [   DEBUG]   ✅ Step 4 completed in 5.19s
+2025-06-01 01:24:39 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:24:40 [   DEBUG]   ✅ Step 2 completed in 6.28s
+2025-06-01 01:24:40 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:24:46 [   DEBUG]   ✅ Step 3 completed in 6.54s
+2025-06-01 01:24:46 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:24:47 [   DEBUG]   ✅ Step 5 completed in 7.45s
+2025-06-01 01:24:47 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:24:48 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 01:24:48 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:24:48 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=104.99630618095398
+2025-06-01 01:24:50 [   DEBUG]   ✅ Step 7 completed in 1.47s
+2025-06-01 01:24:50 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 106.49s
+2025-06-01 01:24:50 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:24:50 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:24:50 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:24:51 [   DEBUG]   ✅ Step 4 completed in 5.05s
+2025-06-01 01:24:51 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:24:58 [   DEBUG]   ✅ Step 5 completed in 6.93s
+2025-06-01 01:24:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:25:00 [   DEBUG]   ✅ Step 6 completed in 1.58s
+2025-06-01 01:25:00 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:25:00 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=106.47901201248169
+2025-06-01 01:25:02 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 01:25:02 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 108.01s
+2025-06-01 01:25:02 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:25:02 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 01:25:02 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:26:10 [   DEBUG]   ✅ Step 1 completed in 80.54s
+2025-06-01 01:26:10 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:26:16 [   DEBUG]   ✅ Step 2 completed in 6.26s
+2025-06-01 01:26:16 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:26:18 [   DEBUG]   ✅ Step 1 completed in 76.96s
+2025-06-01 01:26:18 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:26:23 [   DEBUG]   ✅ Step 3 completed in 6.43s
+2025-06-01 01:26:23 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:26:25 [   DEBUG]   ✅ Step 2 completed in 6.45s
+2025-06-01 01:26:25 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:26:28 [   DEBUG]   ✅ Step 4 completed in 5.35s
+2025-06-01 01:26:28 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:26:32 [   DEBUG]   ✅ Step 3 completed in 6.64s
+2025-06-01 01:26:32 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:26:35 [   DEBUG]   ✅ Step 5 completed in 7.31s
+2025-06-01 01:26:35 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:26:37 [   DEBUG]   ✅ Step 6 completed in 1.57s
+2025-06-01 01:26:37 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:26:37 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=107.46275568008423
+2025-06-01 01:26:37 [   DEBUG]   ✅ Step 4 completed in 5.61s
+2025-06-01 01:26:37 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:26:39 [   DEBUG]   ✅ Step 7 completed in 1.60s
+2025-06-01 01:26:39 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 109.08s
+2025-06-01 01:26:39 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:26:39 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:26:39 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:26:45 [   DEBUG]   ✅ Step 5 completed in 7.49s
+2025-06-01 01:26:45 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:26:46 [   DEBUG]   ✅ Step 6 completed in 1.58s
+2025-06-01 01:26:46 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:26:46 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=104.7255790233612
+2025-06-01 01:26:48 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 01:26:48 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 106.31s
+2025-06-01 01:26:48 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:26:48 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 01:26:48 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:27:59 [   DEBUG]   ✅ Step 1 completed in 80.20s
+2025-06-01 01:27:59 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:28:03 [   DEBUG]   ✅ Step 1 completed in 75.64s
+2025-06-01 01:28:03 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:28:06 [   DEBUG]   ✅ Step 2 completed in 7.44s
+2025-06-01 01:28:06 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:28:10 [   DEBUG]   ✅ Step 2 completed in 6.55s
+2025-06-01 01:28:10 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:28:13 [   DEBUG]   ✅ Step 3 completed in 6.40s
+2025-06-01 01:28:13 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:28:16 [   DEBUG]   ✅ Step 3 completed in 6.48s
+2025-06-01 01:28:16 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:28:18 [   DEBUG]   ✅ Step 4 completed in 5.10s
+2025-06-01 01:28:18 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:28:18 [   DEBUG]   ✅ Step 4 completed in 1.91s
+2025-06-01 01:28:18 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:28:25 [   DEBUG]   ✅ Step 5 completed in 6.23s
+2025-06-01 01:28:25 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:28:25 [   DEBUG]   ✅ Step 5 completed in 6.89s
+2025-06-01 01:28:25 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:28:26 [   DEBUG]   ✅ Step 6 completed in 1.55s
+2025-06-01 01:28:26 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:28:26 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=98.35268354415894
+2025-06-01 01:28:26 [   DEBUG]   ✅ Step 6 completed in 1.52s
+2025-06-01 01:28:26 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:28:26 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=107.54986023902893
+2025-06-01 01:28:28 [   DEBUG]   ✅ Step 7 completed in 1.50s
+2025-06-01 01:28:28 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 109.06s
+2025-06-01 01:28:28 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:28:28 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:28:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:28:28 [   DEBUG]   ✅ Step 7 completed in 1.57s
+2025-06-01 01:28:28 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 99.94s
+2025-06-01 01:28:28 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:28:28 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 01:28:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:29:39 [   DEBUG]   ✅ Step 1 completed in 70.85s
+2025-06-01 01:29:39 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:29:43 [   DEBUG]   ✅ Step 1 completed in 75.18s
+2025-06-01 01:29:43 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:29:45 [   DEBUG]   ✅ Step 2 completed in 6.53s
+2025-06-01 01:29:45 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:29:49 [   DEBUG]   ✅ Step 2 completed in 6.50s
+2025-06-01 01:29:49 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:29:52 [   DEBUG]   ✅ Step 3 completed in 6.91s
+2025-06-01 01:29:52 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:29:53 [   DEBUG]   ✅ Step 4 completed in 0.91s
+2025-06-01 01:29:53 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:29:56 [   DEBUG]   ✅ Step 3 completed in 6.82s
+2025-06-01 01:29:56 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:29:57 [   DEBUG]   ✅ Step 4 completed in 1.04s
+2025-06-01 01:29:57 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:29:58 [   DEBUG]   ✅ Step 5 completed in 0.95s
+2025-06-01 01:29:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:29:59 [   DEBUG]   ✅ Step 5 completed in 6.39s
+2025-06-01 01:29:59 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:29:59 [   DEBUG]   ✅ Step 6 completed in 1.19s
+2025-06-01 01:29:59 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:29:59 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=91.68181324005127
+2025-06-01 01:30:01 [   DEBUG]   ✅ Step 7 completed in 1.46s
+2025-06-01 01:30:01 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 93.16s
+2025-06-01 01:30:01 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:30:01 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:30:01 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:30:01 [   DEBUG]   ✅ Step 6 completed in 1.53s
+2025-06-01 01:30:01 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:30:01 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=93.11768865585327
+2025-06-01 01:30:02 [   DEBUG]   ✅ Step 7 completed in 1.49s
+2025-06-01 01:30:02 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 94.63s
+2025-06-01 01:30:02 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:30:02 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 01:30:02 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:31:17 [   DEBUG]   ✅ Step 1 completed in 74.97s
+2025-06-01 01:31:17 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:31:20 [   DEBUG]   ✅ Step 1 completed in 79.10s
+2025-06-01 01:31:20 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:31:24 [   DEBUG]   ✅ Step 2 completed in 6.57s
+2025-06-01 01:31:24 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:31:26 [   DEBUG]   ✅ Step 2 completed in 6.40s
+2025-06-01 01:31:26 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:31:30 [   DEBUG]   ✅ Step 3 completed in 6.31s
+2025-06-01 01:31:30 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:31:31 [   DEBUG]   ✅ Step 4 completed in 0.86s
+2025-06-01 01:31:31 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:31:33 [   DEBUG]   ✅ Step 3 completed in 6.20s
+2025-06-01 01:31:33 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:31:33 [   DEBUG]   ✅ Step 4 completed in 0.87s
+2025-06-01 01:31:33 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:31:34 [   DEBUG]   ✅ Step 5 completed in 0.34s
+2025-06-01 01:31:34 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:31:34 [   DEBUG]   ✅ Step 6 completed in 0.52s
+2025-06-01 01:31:34 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:31:34 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=93.4138331413269
+2025-06-01 01:31:35 [   DEBUG]   ✅ Step 7 completed in 0.56s
+2025-06-01 01:31:35 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 93.99s
+2025-06-01 01:31:35 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:31:35 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:31:35 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:31:38 [   DEBUG]   ✅ Step 5 completed in 6.51s
+2025-06-01 01:31:38 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:31:39 [   DEBUG]   ✅ Step 6 completed in 1.55s
+2025-06-01 01:31:39 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:31:39 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=96.75931286811829
+2025-06-01 01:31:41 [   DEBUG]   ✅ Step 7 completed in 1.67s
+2025-06-01 01:31:41 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 98.45s
+2025-06-01 01:31:41 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:31:41 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 01:31:41 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:32:45 [   DEBUG]   ✅ Step 1 completed in 69.89s
+2025-06-01 01:32:45 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:32:51 [   DEBUG]   ✅ Step 2 completed in 6.35s
+2025-06-01 01:32:51 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:32:53 [   DEBUG]   ✅ Step 1 completed in 72.20s
+2025-06-01 01:32:53 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:32:58 [   DEBUG]   ✅ Step 3 completed in 6.56s
+2025-06-01 01:32:58 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:32:59 [   DEBUG]   ✅ Step 4 completed in 0.86s
+2025-06-01 01:32:59 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:32:59 [   DEBUG]   ✅ Step 2 completed in 6.42s
+2025-06-01 01:32:59 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:33:05 [   DEBUG]   ✅ Step 5 completed in 6.71s
+2025-06-01 01:33:05 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:33:06 [   DEBUG]   ✅ Step 3 completed in 6.62s
+2025-06-01 01:33:06 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:33:07 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 01:33:07 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:33:07 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=91.88761901855469
+2025-06-01 01:33:07 [   DEBUG]   ✅ Step 4 completed in 0.92s
+2025-06-01 01:33:07 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:33:08 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 01:33:08 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 93.38s
+2025-06-01 01:33:08 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:33:08 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:33:08 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:33:13 [   DEBUG]   ✅ Step 5 completed in 6.24s
+2025-06-01 01:33:13 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:33:15 [   DEBUG]   ✅ Step 6 completed in 1.54s
+2025-06-01 01:33:15 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:33:15 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=93.94011497497559
+2025-06-01 01:33:16 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:33:16 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 95.50s
+2025-06-01 01:33:16 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:33:16 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 01:33:16 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:34:19 [   DEBUG]   ✅ Step 1 completed in 70.60s
+2025-06-01 01:34:19 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:34:24 [   DEBUG]   ✅ Step 1 completed in 67.72s
+2025-06-01 01:34:24 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:34:26 [   DEBUG]   ✅ Step 2 completed in 6.67s
+2025-06-01 01:34:26 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:34:31 [   DEBUG]   ✅ Step 2 completed in 6.55s
+2025-06-01 01:34:31 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:34:32 [   DEBUG]   ✅ Step 3 completed in 6.68s
+2025-06-01 01:34:32 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:34:33 [   DEBUG]   ✅ Step 4 completed in 1.07s
+2025-06-01 01:34:33 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:34:38 [   DEBUG]   ✅ Step 3 completed in 7.14s
+2025-06-01 01:34:38 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:34:39 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 01:34:39 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:34:40 [   DEBUG]   ✅ Step 5 completed in 1.31s
+2025-06-01 01:34:40 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:34:41 [   DEBUG]   ✅ Step 5 completed in 7.77s
+2025-06-01 01:34:41 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:34:42 [   DEBUG]   ✅ Step 6 completed in 1.62s
+2025-06-01 01:34:42 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:34:42 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=85.42540264129639
+2025-06-01 01:34:43 [   DEBUG]   ✅ Step 6 completed in 1.70s
+2025-06-01 01:34:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:34:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=94.4937002658844
+2025-06-01 01:34:43 [   DEBUG]   ✅ Step 7 completed in 1.69s
+2025-06-01 01:34:43 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 87.14s
+2025-06-01 01:34:43 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:34:43 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 01:34:43 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:34:45 [   DEBUG]   ✅ Step 7 completed in 1.77s
+2025-06-01 01:34:45 [    INFO] ✅ Pipeline Cycle #9 completed successfully in 96.29s
+2025-06-01 01:34:45 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 01:34:45 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 01:34:45 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:35:57 [   DEBUG]   ✅ Step 1 completed in 72.14s
+2025-06-01 01:35:57 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:36:02 [   DEBUG]   ✅ Step 1 completed in 78.67s
+2025-06-01 01:36:02 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:36:03 [   DEBUG]   ✅ Step 2 completed in 6.67s
+2025-06-01 01:36:03 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:36:08 [   DEBUG]   ✅ Step 2 completed in 6.31s
+2025-06-01 01:36:08 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:36:10 [   DEBUG]   ✅ Step 3 completed in 6.28s
+2025-06-01 01:36:10 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:36:10 [   DEBUG]   ✅ Step 4 completed in 0.86s
+2025-06-01 01:36:10 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:36:15 [   DEBUG]   ✅ Step 3 completed in 6.49s
+2025-06-01 01:36:15 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:36:16 [   DEBUG]   ✅ Step 4 completed in 0.96s
+2025-06-01 01:36:16 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:36:17 [   DEBUG]   ✅ Step 5 completed in 1.38s
+2025-06-01 01:36:17 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:36:17 [   DEBUG]   ✅ Step 5 completed in 6.82s
+2025-06-01 01:36:17 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:36:19 [   DEBUG]   ✅ Step 6 completed in 1.53s
+2025-06-01 01:36:19 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:36:19 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=95.32610368728638
+2025-06-01 01:36:19 [   DEBUG]   ✅ Step 6 completed in 1.63s
+2025-06-01 01:36:19 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:36:19 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=94.39754557609558
+2025-06-01 01:36:20 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:36:20 [    INFO] ✅ Pipeline Cycle #9 completed successfully in 96.88s
+2025-06-01 01:36:20 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 01:36:20 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 01:36:20 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:36:20 [   DEBUG]   ✅ Step 7 completed in 1.50s
+2025-06-01 01:36:20 [    INFO] ✅ Pipeline Cycle #10 completed successfully in 95.91s
+2025-06-01 01:36:20 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:36:20 [    INFO] 🕐 Uptime: 0.3 hours
+2025-06-01 01:36:20 [    INFO] 🔄 Total Cycles: 10
+2025-06-01 01:36:20 [    INFO] ✅ Successful: 10
+2025-06-01 01:36:20 [    INFO] ❌ Failed: 0
+2025-06-01 01:36:20 [    INFO] 📈 Success Rate: 100.0%
+2025-06-01 01:36:20 [    INFO] ⏱️  Avg Cycle Time: 102.35s
+2025-06-01 01:36:20 [    INFO] 🎯 Matches Processed: 711
+2025-06-01 01:36:20 [    INFO] 🕐 Last Success: 01:36:20
+2025-06-01 01:36:20 [    INFO] ========================
+2025-06-01 01:36:20 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 01:36:20 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 01:36:20 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:37:32 [   ERROR]   💥 Step 1 crashed: Expecting ',' delimiter: line 271883 column 16 (char 5211950)
+2025-06-01 01:37:32 [   ERROR] 💥 Pipeline failed at Step 1
+2025-06-01 01:37:32 [    INFO] ✅ Pipeline Cycle #11 completed successfully in 72.02s
+2025-06-01 01:37:32 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 01:37:32 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 01:37:32 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:37:34 [   ERROR]   💥 Step 1 crashed: Extra data: line 1716611 column 2 (char 32416015)
+2025-06-01 01:37:34 [   ERROR] 💥 Pipeline failed at Step 1
+2025-06-01 01:37:34 [    INFO] ✅ Pipeline Cycle #10 completed successfully in 73.29s
+2025-06-01 01:37:34 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:37:34 [    INFO] 🕐 Uptime: 0.3 hours
+2025-06-01 01:37:34 [    INFO] 🔄 Total Cycles: 10
+2025-06-01 01:37:34 [    INFO] ✅ Successful: 9
+2025-06-01 01:37:34 [    INFO] ❌ Failed: 1
+2025-06-01 01:37:34 [    INFO] 📈 Success Rate: 90.0%
+2025-06-01 01:37:34 [    INFO] ⏱️  Avg Cycle Time: 97.20s
+2025-06-01 01:37:34 [    INFO] 🎯 Matches Processed: 711
+2025-06-01 01:37:34 [    INFO] 🕐 Last Success: 01:36:20
+2025-06-01 01:37:34 [    INFO] ========================
+2025-06-01 01:37:34 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 01:37:34 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 01:37:34 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:38:42 [   DEBUG]   ✅ Step 1 completed in 69.81s
+2025-06-01 01:38:42 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:38:48 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 01:38:48 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:38:49 [   DEBUG]   ✅ Step 1 completed in 75.32s
+2025-06-01 01:38:49 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:38:55 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 01:38:55 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:38:55 [   DEBUG]   ✅ Step 2 completed in 6.33s
+2025-06-01 01:38:55 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:38:56 [   DEBUG]   ✅ Step 4 completed in 0.87s
+2025-06-01 01:38:56 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:39:02 [   DEBUG]   ✅ Step 3 completed in 6.57s
+2025-06-01 01:39:02 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:39:02 [   DEBUG]   ✅ Step 5 completed in 6.39s
+2025-06-01 01:39:02 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:39:03 [   DEBUG]   ✅ Step 4 completed in 0.95s
+2025-06-01 01:39:03 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:39:03 [   DEBUG]   ✅ Step 6 completed in 1.60s
+2025-06-01 01:39:03 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:39:03 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=91.0195677280426
+2025-06-01 01:39:05 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 01:39:05 [    INFO] ✅ Pipeline Cycle #12 completed successfully in 92.53s
+2025-06-01 01:39:05 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 01:39:05 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 01:39:05 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:39:09 [   DEBUG]   ✅ Step 5 completed in 6.48s
+2025-06-01 01:39:09 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:39:11 [   DEBUG]   ✅ Step 6 completed in 1.67s
+2025-06-01 01:39:11 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:39:11 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=97.31772041320801
+2025-06-01 01:39:13 [   DEBUG]   ✅ Step 7 completed in 1.58s
+2025-06-01 01:39:13 [    INFO] ✅ Pipeline Cycle #11 completed successfully in 98.90s
+2025-06-01 01:39:13 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 01:39:13 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 01:39:13 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:40:21 [   DEBUG]   ✅ Step 1 completed in 75.87s
+2025-06-01 01:40:21 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:40:27 [   DEBUG]   ✅ Step 2 completed in 6.54s
+2025-06-01 01:40:27 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:40:30 [   DEBUG]   ✅ Step 1 completed in 77.68s
+2025-06-01 01:40:30 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:40:34 [   DEBUG]   ✅ Step 3 completed in 6.70s
+2025-06-01 01:40:34 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:40:35 [   DEBUG]   ✅ Step 4 completed in 0.96s
+2025-06-01 01:40:35 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:40:37 [   DEBUG]   ✅ Step 2 completed in 6.35s
+2025-06-01 01:40:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:40:42 [   DEBUG]   ✅ Step 5 completed in 6.81s
+2025-06-01 01:40:42 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:40:43 [   DEBUG]   ✅ Step 3 completed in 6.26s
+2025-06-01 01:40:43 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:40:43 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 01:40:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:40:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=98.34115958213806
+2025-06-01 01:40:44 [   DEBUG]   ✅ Step 4 completed in 0.97s
+2025-06-01 01:40:44 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:40:45 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:40:45 [    INFO] ✅ Pipeline Cycle #13 completed successfully in 99.90s
+2025-06-01 01:40:45 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 01:40:45 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 01:40:45 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:40:50 [   DEBUG]   ✅ Step 5 completed in 6.17s
+2025-06-01 01:40:50 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:40:52 [   DEBUG]   ✅ Step 6 completed in 1.55s
+2025-06-01 01:40:52 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:40:52 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=98.97355771064758
+2025-06-01 01:40:53 [   DEBUG]   ✅ Step 7 completed in 1.55s
+2025-06-01 01:40:53 [    INFO] ✅ Pipeline Cycle #12 completed successfully in 100.54s
+2025-06-01 01:40:53 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 01:40:53 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 01:40:53 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:41:53 [   DEBUG]   ✅ Step 1 completed in 68.03s
+2025-06-01 01:41:53 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:41:59 [   DEBUG]   ✅ Step 2 completed in 6.28s
+2025-06-01 01:41:59 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:42:05 [   DEBUG]   ✅ Step 1 completed in 71.93s
+2025-06-01 01:42:05 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:42:06 [   DEBUG]   ✅ Step 3 completed in 6.32s
+2025-06-01 01:42:06 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:42:06 [   DEBUG]   ✅ Step 4 completed in 0.92s
+2025-06-01 01:42:06 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:42:11 [   DEBUG]   ✅ Step 2 completed in 6.30s
+2025-06-01 01:42:11 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:42:13 [   DEBUG]   ✅ Step 5 completed in 6.54s
+2025-06-01 01:42:13 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:42:14 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 01:42:14 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:42:14 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=89.57681632041931
+2025-06-01 01:42:16 [   DEBUG]   ✅ Step 7 completed in 1.53s
+2025-06-01 01:42:16 [    INFO] ✅ Pipeline Cycle #14 completed successfully in 91.12s
+2025-06-01 01:42:16 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 01:42:16 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 01:42:16 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:42:18 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 01:42:18 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:42:18 [   DEBUG]   ✅ Step 4 completed in 0.93s
+2025-06-01 01:42:18 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:42:25 [   DEBUG]   ✅ Step 5 completed in 6.08s
+2025-06-01 01:42:25 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:42:26 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 01:42:26 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:42:26 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=92.97084617614746
+2025-06-01 01:42:28 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 01:42:28 [    INFO] ✅ Pipeline Cycle #13 completed successfully in 94.47s
+2025-06-01 01:42:28 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 01:42:28 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 01:42:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:43:28 [   DEBUG]   ✅ Step 1 completed in 71.89s
+2025-06-01 01:43:28 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:43:34 [   DEBUG]   ✅ Step 2 completed in 6.37s
+2025-06-01 01:43:34 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:43:40 [   DEBUG]   ✅ Step 1 completed in 72.00s
+2025-06-01 01:43:40 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:43:41 [   DEBUG]   ✅ Step 3 completed in 6.39s
+2025-06-01 01:43:41 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:43:42 [   DEBUG]   ✅ Step 4 completed in 0.95s
+2025-06-01 01:43:42 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:43:46 [   DEBUG]   ✅ Step 2 completed in 6.70s
+2025-06-01 01:43:46 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:43:48 [   DEBUG]   ✅ Step 5 completed in 6.81s
+2025-06-01 01:43:48 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:43:50 [   DEBUG]   ✅ Step 6 completed in 1.50s
+2025-06-01 01:43:50 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:43:50 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=93.91197681427002
+2025-06-01 01:43:51 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:43:51 [    INFO] ✅ Pipeline Cycle #15 completed successfully in 95.46s
+2025-06-01 01:43:51 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 01:43:51 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 01:43:51 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:43:53 [   DEBUG]   ✅ Step 3 completed in 6.46s
+2025-06-01 01:43:53 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:43:54 [   DEBUG]   ✅ Step 4 completed in 0.92s
+2025-06-01 01:43:54 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:44:00 [   DEBUG]   ✅ Step 5 completed in 6.42s
+2025-06-01 01:44:00 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:44:02 [   DEBUG]   ✅ Step 6 completed in 1.53s
+2025-06-01 01:44:02 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:44:02 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=94.03055596351624
+2025-06-01 01:44:03 [   DEBUG]   ✅ Step 7 completed in 1.50s
+2025-06-01 01:44:03 [    INFO] ✅ Pipeline Cycle #14 completed successfully in 95.55s
+2025-06-01 01:44:03 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 01:44:03 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 01:44:03 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:45:05 [   DEBUG]   ✅ Step 1 completed in 73.59s
+2025-06-01 01:45:05 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:45:10 [   DEBUG]   ✅ Step 1 completed in 66.77s
+2025-06-01 01:45:10 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:45:11 [   DEBUG]   ✅ Step 2 completed in 6.25s
+2025-06-01 01:45:11 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:45:16 [   DEBUG]   ✅ Step 2 completed in 6.23s
+2025-06-01 01:45:16 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:45:18 [   DEBUG]   ✅ Step 3 completed in 6.26s
+2025-06-01 01:45:18 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:45:19 [   DEBUG]   ✅ Step 4 completed in 0.97s
+2025-06-01 01:45:19 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:45:23 [   DEBUG]   ✅ Step 3 completed in 6.53s
+2025-06-01 01:45:23 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:45:24 [   DEBUG]   ✅ Step 4 completed in 0.97s
+2025-06-01 01:45:24 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:45:25 [   DEBUG]   ✅ Step 5 completed in 1.15s
+2025-06-01 01:45:25 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:45:25 [   DEBUG]   ✅ Step 5 completed in 6.68s
+2025-06-01 01:45:25 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:45:26 [   DEBUG]   ✅ Step 6 completed in 1.35s
+2025-06-01 01:45:26 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:45:26 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=83.00971293449402
+2025-06-01 01:45:27 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 01:45:27 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:45:27 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=95.23789167404175
+2025-06-01 01:45:28 [   DEBUG]   ✅ Step 7 completed in 1.57s
+2025-06-01 01:45:28 [    INFO] ✅ Pipeline Cycle #15 completed successfully in 84.59s
+2025-06-01 01:45:28 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 01:45:28 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 01:45:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:45:28 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 01:45:28 [    INFO] ✅ Pipeline Cycle #16 completed successfully in 96.81s
+2025-06-01 01:45:28 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 01:45:28 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 01:45:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:46:32 [   DEBUG]   ✅ Step 1 completed in 63.48s
+2025-06-01 01:46:32 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:46:33 [   DEBUG]   ✅ Step 1 completed in 65.32s
+2025-06-01 01:46:33 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:46:38 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 01:46:38 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:46:39 [   DEBUG]   ✅ Step 2 completed in 6.11s
+2025-06-01 01:46:39 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:46:44 [   DEBUG]   ✅ Step 3 completed in 6.08s
+2025-06-01 01:46:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:46:45 [   DEBUG]   ✅ Step 4 completed in 0.89s
+2025-06-01 01:46:45 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:46:45 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 01:46:45 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:46:46 [   DEBUG]   ✅ Step 4 completed in 0.95s
+2025-06-01 01:46:46 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:46:52 [   DEBUG]   ✅ Step 5 completed in 6.61s
+2025-06-01 01:46:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:46:53 [   DEBUG]   ✅ Step 5 completed in 6.34s
+2025-06-01 01:46:53 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:46:53 [   DEBUG]   ✅ Step 6 completed in 1.52s
+2025-06-01 01:46:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:46:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=84.77346539497375
+2025-06-01 01:46:54 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 01:46:54 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:46:54 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=86.31013011932373
+2025-06-01 01:46:55 [   DEBUG]   ✅ Step 7 completed in 1.47s
+2025-06-01 01:46:55 [    INFO] ✅ Pipeline Cycle #17 completed successfully in 86.26s
+2025-06-01 01:46:55 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 01:46:55 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 01:46:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:46:56 [   DEBUG]   ✅ Step 7 completed in 1.65s
+2025-06-01 01:46:56 [    INFO] ✅ Pipeline Cycle #16 completed successfully in 87.98s
+2025-06-01 01:46:56 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 01:46:56 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 01:46:56 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:47:54 [   DEBUG]   ✅ Step 1 completed in 58.64s
+2025-06-01 01:47:54 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:47:57 [   DEBUG]   ✅ Step 1 completed in 62.50s
+2025-06-01 01:47:57 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:48:01 [   DEBUG]   ✅ Step 2 completed in 6.29s
+2025-06-01 01:48:01 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:48:03 [   DEBUG]   ✅ Step 2 completed in 6.16s
+2025-06-01 01:48:03 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:48:07 [   DEBUG]   ✅ Step 3 completed in 6.12s
+2025-06-01 01:48:07 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:48:08 [   DEBUG]   ✅ Step 4 completed in 0.93s
+2025-06-01 01:48:08 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:48:09 [   DEBUG]   ✅ Step 3 completed in 6.17s
+2025-06-01 01:48:09 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:48:10 [   DEBUG]   ✅ Step 4 completed in 1.02s
+2025-06-01 01:48:10 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:48:11 [   DEBUG]   ✅ Step 5 completed in 0.46s
+2025-06-01 01:48:11 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:48:11 [   DEBUG]   ✅ Step 6 completed in 0.55s
+2025-06-01 01:48:11 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:48:11 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=76.86709308624268
+2025-06-01 01:48:12 [   DEBUG]   ✅ Step 7 completed in 0.73s
+2025-06-01 01:48:12 [    INFO] ✅ Pipeline Cycle #18 completed successfully in 77.61s
+2025-06-01 01:48:12 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 01:48:12 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 01:48:12 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:48:14 [   DEBUG]   ✅ Step 5 completed in 6.25s
+2025-06-01 01:48:14 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:48:15 [   DEBUG]   ✅ Step 6 completed in 1.50s
+2025-06-01 01:48:15 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:48:15 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=79.72410678863525
+2025-06-01 01:48:17 [   DEBUG]   ✅ Step 7 completed in 1.67s
+2025-06-01 01:48:17 [    INFO] ✅ Pipeline Cycle #17 completed successfully in 81.41s
+2025-06-01 01:48:17 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 01:48:17 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 01:48:17 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:49:12 [   DEBUG]   ✅ Step 1 completed in 59.58s
+2025-06-01 01:49:12 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:49:16 [   DEBUG]   ✅ Step 1 completed in 58.56s
+2025-06-01 01:49:16 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:49:18 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 01:49:18 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:49:22 [   DEBUG]   ✅ Step 2 completed in 6.25s
+2025-06-01 01:49:22 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:49:24 [   DEBUG]   ✅ Step 3 completed in 6.25s
+2025-06-01 01:49:24 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:49:25 [   DEBUG]   ✅ Step 4 completed in 0.90s
+2025-06-01 01:49:25 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:49:28 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 01:49:28 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:49:29 [   DEBUG]   ✅ Step 4 completed in 0.94s
+2025-06-01 01:49:29 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:49:30 [   DEBUG]   ✅ Step 5 completed in 0.73s
+2025-06-01 01:49:30 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:49:31 [   DEBUG]   ✅ Step 6 completed in 0.95s
+2025-06-01 01:49:31 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:49:31 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.59611248970032
+2025-06-01 01:49:32 [   DEBUG]   ✅ Step 5 completed in 6.49s
+2025-06-01 01:49:32 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:49:32 [   DEBUG]   ✅ Step 7 completed in 1.29s
+2025-06-01 01:49:32 [    INFO] ✅ Pipeline Cycle #18 completed successfully in 74.90s
+2025-06-01 01:49:32 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 01:49:32 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 01:49:32 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:49:33 [   DEBUG]   ✅ Step 6 completed in 1.44s
+2025-06-01 01:49:33 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:49:33 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.86498284339905
+2025-06-01 01:49:34 [   DEBUG]   ✅ Step 7 completed in 1.40s
+2025-06-01 01:49:34 [    INFO] ✅ Pipeline Cycle #19 completed successfully in 82.28s
+2025-06-01 01:49:34 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 01:49:34 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 01:49:34 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:50:35 [   DEBUG]   ✅ Step 1 completed in 60.58s
+2025-06-01 01:50:35 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:50:38 [   DEBUG]   ✅ Step 1 completed in 65.86s
+2025-06-01 01:50:38 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:50:41 [   DEBUG]   ✅ Step 2 completed in 6.23s
+2025-06-01 01:50:41 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:50:44 [   DEBUG]   ✅ Step 2 completed in 6.43s
+2025-06-01 01:50:44 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:50:47 [   DEBUG]   ✅ Step 3 completed in 6.17s
+2025-06-01 01:50:47 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:50:48 [   DEBUG]   ✅ Step 4 completed in 0.95s
+2025-06-01 01:50:48 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:50:51 [   DEBUG]   ✅ Step 3 completed in 6.37s
+2025-06-01 01:50:51 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:50:52 [   DEBUG]   ✅ Step 4 completed in 1.01s
+2025-06-01 01:50:52 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:50:52 [   DEBUG]   ✅ Step 5 completed in 0.64s
+2025-06-01 01:50:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:50:53 [   DEBUG]   ✅ Step 6 completed in 0.68s
+2025-06-01 01:50:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:50:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.98958325386047
+2025-06-01 01:50:54 [   DEBUG]   ✅ Step 7 completed in 0.93s
+2025-06-01 01:50:54 [    INFO] ✅ Pipeline Cycle #19 completed successfully in 81.93s
+2025-06-01 01:50:54 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 01:50:54 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 01:50:54 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:50:55 [   DEBUG]   ✅ Step 5 completed in 6.72s
+2025-06-01 01:50:55 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:50:57 [   DEBUG]   ✅ Step 6 completed in 1.44s
+2025-06-01 01:50:57 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:50:57 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=82.08280611038208
+2025-06-01 01:50:58 [   DEBUG]   ✅ Step 7 completed in 1.41s
+2025-06-01 01:50:58 [    INFO] ✅ Pipeline Cycle #20 completed successfully in 83.51s
+2025-06-01 01:50:58 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:50:58 [    INFO] 🕐 Uptime: 0.5 hours
+2025-06-01 01:50:58 [    INFO] 🔄 Total Cycles: 20
+2025-06-01 01:50:58 [    INFO] ✅ Successful: 19
+2025-06-01 01:50:58 [    INFO] ❌ Failed: 1
+2025-06-01 01:50:58 [    INFO] 📈 Success Rate: 95.0%
+2025-06-01 01:50:58 [    INFO] ⏱️  Avg Cycle Time: 95.04s
+2025-06-01 01:50:58 [    INFO] 🎯 Matches Processed: 1343
+2025-06-01 01:50:58 [    INFO] 🕐 Last Success: 01:50:58
+2025-06-01 01:50:58 [    INFO] ========================
+2025-06-01 01:50:58 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 01:50:58 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 01:50:58 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:51:49 [   DEBUG]   ✅ Step 1 completed in 55.20s
+2025-06-01 01:51:49 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:51:55 [   DEBUG]   ✅ Step 2 completed in 6.20s
+2025-06-01 01:51:55 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:52:02 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 01:52:02 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:52:02 [   DEBUG]   ✅ Step 1 completed in 64.50s
+2025-06-01 01:52:02 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:52:03 [   DEBUG]   ✅ Step 4 completed in 0.97s
+2025-06-01 01:52:03 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:52:09 [   DEBUG]   ✅ Step 5 completed in 6.19s
+2025-06-01 01:52:09 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:52:09 [   DEBUG]   ✅ Step 2 completed in 6.49s
+2025-06-01 01:52:09 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:52:10 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 01:52:10 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:52:10 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=76.24058794975281
+2025-06-01 01:52:12 [   DEBUG]   ✅ Step 7 completed in 1.44s
+2025-06-01 01:52:12 [    INFO] ✅ Pipeline Cycle #20 completed successfully in 77.69s
+2025-06-01 01:52:12 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 01:52:12 [    INFO] 🕐 Uptime: 0.5 hours
+2025-06-01 01:52:12 [    INFO] 🔄 Total Cycles: 20
+2025-06-01 01:52:12 [    INFO] ✅ Successful: 19
+2025-06-01 01:52:12 [    INFO] ❌ Failed: 1
+2025-06-01 01:52:12 [    INFO] 📈 Success Rate: 95.0%
+2025-06-01 01:52:12 [    INFO] ⏱️  Avg Cycle Time: 92.49s
+2025-06-01 01:52:12 [    INFO] 🎯 Matches Processed: 1343
+2025-06-01 01:52:12 [    INFO] 🕐 Last Success: 01:52:12
+2025-06-01 01:52:12 [    INFO] ========================
+2025-06-01 01:52:12 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 01:52:12 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 01:52:12 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:52:15 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 01:52:15 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:52:16 [   DEBUG]   ✅ Step 4 completed in 0.92s
+2025-06-01 01:52:16 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:52:22 [   DEBUG]   ✅ Step 5 completed in 6.20s
+2025-06-01 01:52:22 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:52:24 [   DEBUG]   ✅ Step 6 completed in 1.40s
+2025-06-01 01:52:24 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:52:24 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=85.73105120658875
+2025-06-01 01:52:25 [   DEBUG]   ✅ Step 7 completed in 1.43s
+2025-06-01 01:52:25 [    INFO] ✅ Pipeline Cycle #21 completed successfully in 87.18s
+2025-06-01 01:52:25 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 01:52:25 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 01:52:25 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:53:14 [   DEBUG]   ✅ Step 1 completed in 62.17s
+2025-06-01 01:53:14 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:53:20 [   DEBUG]   ✅ Step 2 completed in 6.16s
+2025-06-01 01:53:20 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:53:24 [   DEBUG]   ✅ Step 1 completed in 58.48s
+2025-06-01 01:53:24 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:53:26 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 01:53:26 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:53:27 [   DEBUG]   ✅ Step 4 completed in 1.10s
+2025-06-01 01:53:27 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:53:30 [   DEBUG]   ✅ Step 2 completed in 6.15s
+2025-06-01 01:53:30 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:53:33 [   DEBUG]   ✅ Step 5 completed in 6.19s
+2025-06-01 01:53:33 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:53:35 [   DEBUG]   ✅ Step 6 completed in 1.41s
+2025-06-01 01:53:35 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:53:35 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=83.18281388282776
+2025-06-01 01:53:36 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 01:53:36 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:53:36 [   DEBUG]   ✅ Step 7 completed in 1.46s
+2025-06-01 01:53:36 [    INFO] ✅ Pipeline Cycle #21 completed successfully in 84.65s
+2025-06-01 01:53:36 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 01:53:36 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 01:53:36 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:53:37 [   DEBUG]   ✅ Step 4 completed in 0.98s
+2025-06-01 01:53:37 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:53:43 [   DEBUG]   ✅ Step 5 completed in 6.28s
+2025-06-01 01:53:43 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:53:45 [   DEBUG]   ✅ Step 6 completed in 1.43s
+2025-06-01 01:53:45 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:53:45 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=79.4772264957428
+2025-06-01 01:53:46 [   DEBUG]   ✅ Step 7 completed in 1.44s
+2025-06-01 01:53:46 [    INFO] ✅ Pipeline Cycle #22 completed successfully in 80.93s
+2025-06-01 01:53:46 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 01:53:46 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 01:53:46 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:54:38 [   DEBUG]   ✅ Step 1 completed in 61.98s
+2025-06-01 01:54:38 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:54:44 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 01:54:44 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:54:45 [   DEBUG]   ✅ Step 1 completed in 59.02s
+2025-06-01 01:54:45 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:54:51 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 01:54:51 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:54:51 [   DEBUG]   ✅ Step 2 completed in 6.12s
+2025-06-01 01:54:51 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:54:52 [   DEBUG]   ✅ Step 4 completed in 1.07s
+2025-06-01 01:54:52 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:54:58 [   DEBUG]   ✅ Step 3 completed in 6.41s
+2025-06-01 01:54:58 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:54:58 [   DEBUG]   ✅ Step 5 completed in 6.79s
+2025-06-01 01:54:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:54:59 [   DEBUG]   ✅ Step 4 completed in 0.94s
+2025-06-01 01:54:59 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:55:00 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 01:55:00 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:55:00 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=83.6169204711914
+2025-06-01 01:55:01 [   DEBUG]   ✅ Step 7 completed in 1.43s
+2025-06-01 01:55:01 [    INFO] ✅ Pipeline Cycle #22 completed successfully in 85.06s
+2025-06-01 01:55:01 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 01:55:01 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 01:55:01 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:55:05 [   DEBUG]   ✅ Step 5 completed in 6.79s
+2025-06-01 01:55:05 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:55:07 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 01:55:07 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:55:07 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.74808120727539
+2025-06-01 01:55:08 [   DEBUG]   ✅ Step 7 completed in 1.43s
+2025-06-01 01:55:08 [    INFO] ✅ Pipeline Cycle #23 completed successfully in 82.20s
+2025-06-01 01:55:08 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 01:55:08 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 01:55:08 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:56:00 [   DEBUG]   ✅ Step 1 completed in 58.62s
+2025-06-01 01:56:00 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:56:06 [   DEBUG]   ✅ Step 2 completed in 6.38s
+2025-06-01 01:56:06 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:56:07 [   DEBUG]   ✅ Step 1 completed in 59.20s
+2025-06-01 01:56:07 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:56:13 [   DEBUG]   ✅ Step 3 completed in 6.59s
+2025-06-01 01:56:13 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:56:14 [   DEBUG]   ✅ Step 4 completed in 0.93s
+2025-06-01 01:56:14 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:56:14 [   DEBUG]   ✅ Step 2 completed in 6.71s
+2025-06-01 01:56:14 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:56:20 [   DEBUG]   ✅ Step 5 completed in 6.39s
+2025-06-01 01:56:20 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:56:20 [   DEBUG]   ✅ Step 3 completed in 6.13s
+2025-06-01 01:56:20 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:56:21 [   DEBUG]   ✅ Step 4 completed in 0.99s
+2025-06-01 01:56:21 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:56:22 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 01:56:22 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:56:22 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.39906430244446
+2025-06-01 01:56:23 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 01:56:23 [    INFO] ✅ Pipeline Cycle #23 completed successfully in 81.96s
+2025-06-01 01:56:23 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 01:56:23 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 01:56:23 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:56:28 [   DEBUG]   ✅ Step 5 completed in 6.38s
+2025-06-01 01:56:28 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:56:29 [   DEBUG]   ✅ Step 6 completed in 1.52s
+2025-06-01 01:56:29 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:56:29 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.92919397354126
+2025-06-01 01:56:31 [   DEBUG]   ✅ Step 7 completed in 1.57s
+2025-06-01 01:56:31 [    INFO] ✅ Pipeline Cycle #24 completed successfully in 82.51s
+2025-06-01 01:56:31 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 01:56:31 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 01:56:31 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:57:25 [   DEBUG]   ✅ Step 1 completed in 61.82s
+2025-06-01 01:57:25 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:57:31 [   DEBUG]   ✅ Step 2 completed in 6.16s
+2025-06-01 01:57:31 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:57:34 [   DEBUG]   ✅ Step 1 completed in 63.57s
+2025-06-01 01:57:34 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:57:38 [   DEBUG]   ✅ Step 3 completed in 6.52s
+2025-06-01 01:57:38 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:57:39 [   DEBUG]   ✅ Step 4 completed in 1.05s
+2025-06-01 01:57:39 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:57:41 [   DEBUG]   ✅ Step 2 completed in 6.69s
+2025-06-01 01:57:41 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:57:46 [   DEBUG]   ✅ Step 5 completed in 7.14s
+2025-06-01 01:57:46 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:57:47 [   DEBUG]   ✅ Step 6 completed in 1.41s
+2025-06-01 01:57:47 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:57:47 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=84.10146427154541
+2025-06-01 01:57:48 [   DEBUG]   ✅ Step 3 completed in 6.59s
+2025-06-01 01:57:48 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:57:49 [   DEBUG]   ✅ Step 4 completed in 1.01s
+2025-06-01 01:57:49 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:57:49 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 01:57:49 [    INFO] ✅ Pipeline Cycle #24 completed successfully in 85.67s
+2025-06-01 01:57:49 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 01:57:49 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 01:57:49 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:57:55 [   DEBUG]   ✅ Step 5 completed in 6.41s
+2025-06-01 01:57:55 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:57:56 [   DEBUG]   ✅ Step 6 completed in 1.43s
+2025-06-01 01:57:56 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:57:56 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=85.70084547996521
+2025-06-01 01:57:58 [   DEBUG]   ✅ Step 7 completed in 1.39s
+2025-06-01 01:57:58 [    INFO] ✅ Pipeline Cycle #25 completed successfully in 87.11s
+2025-06-01 01:57:58 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 01:57:58 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 01:57:58 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:58:47 [   DEBUG]   ✅ Step 1 completed in 57.96s
+2025-06-01 01:58:47 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:58:53 [   DEBUG]   ✅ Step 2 completed in 6.36s
+2025-06-01 01:58:53 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:58:56 [   DEBUG]   ✅ Step 1 completed in 57.94s
+2025-06-01 01:58:56 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 01:58:59 [   DEBUG]   ✅ Step 3 completed in 6.19s
+2025-06-01 01:58:59 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:59:00 [   DEBUG]   ✅ Step 4 completed in 0.99s
+2025-06-01 01:59:00 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:59:02 [   DEBUG]   ✅ Step 2 completed in 6.33s
+2025-06-01 01:59:02 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 01:59:07 [   DEBUG]   ✅ Step 5 completed in 6.65s
+2025-06-01 01:59:07 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:59:09 [   DEBUG]   ✅ Step 6 completed in 1.45s
+2025-06-01 01:59:09 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:59:09 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=79.59447598457336
+2025-06-01 01:59:09 [   DEBUG]   ✅ Step 3 completed in 6.48s
+2025-06-01 01:59:09 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 01:59:10 [   DEBUG]   ✅ Step 4 completed in 1.11s
+2025-06-01 01:59:10 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 01:59:10 [   DEBUG]   ✅ Step 7 completed in 1.58s
+2025-06-01 01:59:10 [    INFO] ✅ Pipeline Cycle #25 completed successfully in 81.19s
+2025-06-01 01:59:10 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 01:59:10 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 01:59:10 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 01:59:16 [   DEBUG]   ✅ Step 5 completed in 6.42s
+2025-06-01 01:59:16 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 01:59:18 [   DEBUG]   ✅ Step 6 completed in 1.42s
+2025-06-01 01:59:18 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 01:59:18 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=79.70054507255554
+2025-06-01 01:59:19 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 01:59:19 [    INFO] ✅ Pipeline Cycle #26 completed successfully in 81.19s
+2025-06-01 01:59:19 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 01:59:19 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 01:59:19 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:00:10 [   DEBUG]   ✅ Step 1 completed in 59.94s
+2025-06-01 02:00:10 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:00:17 [   DEBUG]   ✅ Step 2 completed in 7.13s
+2025-06-01 02:00:17 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:00:20 [   DEBUG]   ✅ Step 1 completed in 61.24s
+2025-06-01 02:00:20 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:00:24 [   DEBUG]   ✅ Step 3 completed in 7.10s
+2025-06-01 02:00:24 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:00:26 [   DEBUG]   ✅ Step 4 completed in 1.21s
+2025-06-01 02:00:26 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:00:28 [   DEBUG]   ✅ Step 2 completed in 7.37s
+2025-06-01 02:00:28 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:00:33 [   DEBUG]   ✅ Step 5 completed in 7.14s
+2025-06-01 02:00:33 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:00:34 [   DEBUG]   ✅ Step 6 completed in 1.39s
+2025-06-01 02:00:34 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:00:34 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=83.9060571193695
+2025-06-01 02:00:34 [   DEBUG]   ✅ Step 3 completed in 6.76s
+2025-06-01 02:00:34 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:00:35 [   DEBUG]   ✅ Step 7 completed in 1.45s
+2025-06-01 02:00:36 [    INFO] ✅ Pipeline Cycle #26 completed successfully in 85.37s
+2025-06-01 02:00:36 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 02:00:36 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 02:00:36 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:00:36 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 02:00:36 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:00:42 [   DEBUG]   ✅ Step 5 completed in 6.26s
+2025-06-01 02:00:42 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:00:43 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 02:00:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:00:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=84.19777941703796
+2025-06-01 02:00:45 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 02:00:45 [    INFO] ✅ Pipeline Cycle #27 completed successfully in 85.72s
+2025-06-01 02:00:45 [    INFO] 🔄 Starting Pipeline Cycle #28
+2025-06-01 02:00:45 [    INFO] 🔄 Starting Pipeline Cycle #28
+2025-06-01 02:00:45 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:01:29 [   DEBUG]   ✅ Step 1 completed in 53.62s
+2025-06-01 02:01:29 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:01:35 [   DEBUG]   ✅ Step 2 completed in 6.03s
+2025-06-01 02:01:35 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:01:41 [   DEBUG]   ✅ Step 3 completed in 6.01s
+2025-06-01 02:01:41 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:01:42 [   DEBUG]   ✅ Step 4 completed in 0.98s
+2025-06-01 02:01:42 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:01:46 [   DEBUG]   ✅ Step 1 completed in 61.19s
+2025-06-01 02:01:46 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:01:49 [   DEBUG]   ✅ Step 5 completed in 6.66s
+2025-06-01 02:01:49 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:01:50 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:01:50 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:01:50 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=74.75078654289246
+2025-06-01 02:01:52 [   DEBUG]   ✅ Step 7 completed in 1.45s
+2025-06-01 02:01:52 [    INFO] ✅ Pipeline Cycle #27 completed successfully in 76.21s
+2025-06-01 02:01:52 [    INFO] 🔄 Starting Pipeline Cycle #28
+2025-06-01 02:01:52 [    INFO] 🔄 Starting Pipeline Cycle #28
+2025-06-01 02:01:52 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:01:52 [   DEBUG]   ✅ Step 2 completed in 6.26s
+2025-06-01 02:01:52 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:01:58 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 02:01:58 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:02:00 [   DEBUG]   ✅ Step 4 completed in 1.17s
+2025-06-01 02:02:00 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:02:07 [   DEBUG]   ✅ Step 5 completed in 6.93s
+2025-06-01 02:02:07 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:02:08 [   DEBUG]   ✅ Step 6 completed in 1.42s
+2025-06-01 02:02:08 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:02:08 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=83.19318556785583
+2025-06-01 02:02:09 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 02:02:10 [    INFO] ✅ Pipeline Cycle #28 completed successfully in 84.72s
+2025-06-01 02:02:10 [    INFO] 🔄 Starting Pipeline Cycle #29
+2025-06-01 02:02:10 [    INFO] 🔄 Starting Pipeline Cycle #29
+2025-06-01 02:02:10 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:02:47 [   DEBUG]   ✅ Step 1 completed in 55.20s
+2025-06-01 02:02:47 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:02:53 [   DEBUG]   ✅ Step 2 completed in 6.09s
+2025-06-01 02:02:53 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:02:59 [   DEBUG]   ✅ Step 3 completed in 6.32s
+2025-06-01 02:02:59 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:03:00 [   DEBUG]   ✅ Step 4 completed in 0.98s
+2025-06-01 02:03:00 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:03:01 [   DEBUG]   ✅ Step 1 completed in 51.91s
+2025-06-01 02:03:01 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:03:07 [   DEBUG]   ✅ Step 5 completed in 6.54s
+2025-06-01 02:03:07 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:03:08 [   DEBUG]   ✅ Step 2 completed in 6.15s
+2025-06-01 02:03:08 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:03:08 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 02:03:08 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:03:08 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=76.61454129219055
+2025-06-01 02:03:10 [   DEBUG]   ✅ Step 7 completed in 1.44s
+2025-06-01 02:03:10 [    INFO] ✅ Pipeline Cycle #28 completed successfully in 78.07s
+2025-06-01 02:03:10 [    INFO] 🔄 Starting Pipeline Cycle #29
+2025-06-01 02:03:10 [    INFO] 🔄 Starting Pipeline Cycle #29
+2025-06-01 02:03:10 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:03:14 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 02:03:14 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:03:15 [   DEBUG]   ✅ Step 4 completed in 0.99s
+2025-06-01 02:03:15 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:03:21 [   DEBUG]   ✅ Step 5 completed in 6.48s
+2025-06-01 02:03:21 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:03:23 [   DEBUG]   ✅ Step 6 completed in 1.38s
+2025-06-01 02:03:23 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:03:23 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.00659394264221
+2025-06-01 02:03:24 [   DEBUG]   ✅ Step 7 completed in 1.67s
+2025-06-01 02:03:24 [    INFO] ✅ Pipeline Cycle #29 completed successfully in 74.69s
+2025-06-01 02:03:24 [    INFO] 🔄 Starting Pipeline Cycle #30
+2025-06-01 02:03:24 [    INFO] 🔄 Starting Pipeline Cycle #30
+2025-06-01 02:03:24 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:04:14 [   DEBUG]   ✅ Step 1 completed in 64.41s
+2025-06-01 02:04:14 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:04:20 [   DEBUG]   ✅ Step 2 completed in 6.13s
+2025-06-01 02:04:20 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:04:26 [   DEBUG]   ✅ Step 3 completed in 5.88s
+2025-06-01 02:04:26 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:04:27 [   DEBUG]   ✅ Step 4 completed in 1.00s
+2025-06-01 02:04:27 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:04:32 [   DEBUG]   ✅ Step 1 completed in 67.75s
+2025-06-01 02:04:32 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:04:34 [   DEBUG]   ✅ Step 5 completed in 6.49s
+2025-06-01 02:04:34 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:04:35 [   DEBUG]   ✅ Step 6 completed in 1.38s
+2025-06-01 02:04:35 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:04:35 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=85.28334283828735
+2025-06-01 02:04:36 [   DEBUG]   ✅ Step 7 completed in 1.42s
+2025-06-01 02:04:37 [    INFO] ✅ Pipeline Cycle #29 completed successfully in 86.72s
+2025-06-01 02:04:37 [    INFO] 🔄 Starting Pipeline Cycle #30
+2025-06-01 02:04:37 [    INFO] 🔄 Starting Pipeline Cycle #30
+2025-06-01 02:04:37 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:04:38 [   DEBUG]   ✅ Step 2 completed in 6.15s
+2025-06-01 02:04:38 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:04:44 [   DEBUG]   ✅ Step 3 completed in 6.00s
+2025-06-01 02:04:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:04:45 [   DEBUG]   ✅ Step 4 completed in 1.02s
+2025-06-01 02:04:45 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:04:52 [   DEBUG]   ✅ Step 5 completed in 6.43s
+2025-06-01 02:04:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:04:53 [   DEBUG]   ✅ Step 6 completed in 1.38s
+2025-06-01 02:04:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:04:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=88.73489141464233
+2025-06-01 02:04:54 [   DEBUG]   ✅ Step 7 completed in 1.41s
+2025-06-01 02:04:54 [    INFO] ✅ Pipeline Cycle #30 completed successfully in 90.16s
+2025-06-01 02:04:54 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:04:54 [    INFO] 🕐 Uptime: 0.8 hours
+2025-06-01 02:04:54 [    INFO] 🔄 Total Cycles: 30
+2025-06-01 02:04:54 [    INFO] ✅ Successful: 29
+2025-06-01 02:04:54 [    INFO] ❌ Failed: 1
+2025-06-01 02:04:54 [    INFO] 📈 Success Rate: 96.7%
+2025-06-01 02:04:54 [    INFO] ⏱️  Avg Cycle Time: 91.24s
+2025-06-01 02:04:54 [    INFO] 🎯 Matches Processed: 2133
+2025-06-01 02:04:54 [    INFO] 🕐 Last Success: 02:04:54
+2025-06-01 02:04:54 [    INFO] ========================
+2025-06-01 02:04:54 [    INFO] 🔄 Starting Pipeline Cycle #31
+2025-06-01 02:04:54 [    INFO] 🔄 Starting Pipeline Cycle #31
+2025-06-01 02:04:54 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:05:02 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 02:05:02 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 02:05:42 [   DEBUG]   ✅ Step 1 completed in 65.76s
+2025-06-01 02:05:42 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 02:05:42 [    INFO] ✅ Pipeline Cycle #30 completed successfully in 65.77s
+2025-06-01 02:05:42 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:05:42 [    INFO] 🕐 Uptime: 0.7 hours
+2025-06-01 02:05:42 [    INFO] 🔄 Total Cycles: 30
+2025-06-01 02:05:42 [    INFO] ✅ Successful: 28
+2025-06-01 02:05:42 [    INFO] ❌ Failed: 2
+2025-06-01 02:05:42 [    INFO] 📈 Success Rate: 93.3%
+2025-06-01 02:05:42 [    INFO] ⏱️  Avg Cycle Time: 88.68s
+2025-06-01 02:05:42 [    INFO] 🎯 Matches Processed: 2054
+2025-06-01 02:05:42 [    INFO] 🕐 Last Success: 02:04:36
+2025-06-01 02:05:42 [    INFO] ========================
+2025-06-01 02:05:42 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 02:05:42 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:05:42 [    INFO] 🕐 Uptime: 0.7 hours
+2025-06-01 02:05:42 [    INFO] 🔄 Total Cycles: 30
+2025-06-01 02:05:42 [    INFO] ✅ Successful: 28
+2025-06-01 02:05:42 [    INFO] ❌ Failed: 2
+2025-06-01 02:05:42 [    INFO] 📈 Success Rate: 93.3%
+2025-06-01 02:05:42 [    INFO] ⏱️  Avg Cycle Time: 88.68s
+2025-06-01 02:05:42 [    INFO] 🎯 Matches Processed: 2054
+2025-06-01 02:05:42 [    INFO] 🕐 Last Success: 02:04:36
+2025-06-01 02:05:42 [    INFO] ========================
+2025-06-01 02:06:04 [   DEBUG]   ✅ Step 1 completed in 69.54s
+2025-06-01 02:06:04 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 02:06:04 [    INFO] ✅ Pipeline Cycle #31 completed successfully in 69.55s
+2025-06-01 02:06:04 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 02:06:04 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:06:04 [    INFO] 🕐 Uptime: 0.8 hours
+2025-06-01 02:06:04 [    INFO] 🔄 Total Cycles: 31
+2025-06-01 02:06:04 [    INFO] ✅ Successful: 29
+2025-06-01 02:06:04 [    INFO] ❌ Failed: 2
+2025-06-01 02:06:04 [    INFO] 📈 Success Rate: 93.5%
+2025-06-01 02:06:04 [    INFO] ⏱️  Avg Cycle Time: 90.54s
+2025-06-01 02:06:04 [    INFO] 🎯 Matches Processed: 2133
+2025-06-01 02:06:04 [    INFO] 🕐 Last Success: 02:04:54
+2025-06-01 02:06:04 [    INFO] ========================
+2025-06-01 02:30:42 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 02:30:42 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 02:30:42 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 02:30:42 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 02:30:42 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 02:30:42 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:31:31 [   DEBUG]   ✅ Step 1 completed in 48.92s
+2025-06-01 02:31:31 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:31:37 [   DEBUG]   ✅ Step 2 completed in 6.04s
+2025-06-01 02:31:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:31:44 [   DEBUG]   ✅ Step 3 completed in 6.29s
+2025-06-01 02:31:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:31:45 [   DEBUG]   ✅ Step 4 completed in 1.13s
+2025-06-01 02:31:45 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:31:52 [   DEBUG]   ✅ Step 5 completed in 6.84s
+2025-06-01 02:31:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:31:53 [   DEBUG]   ✅ Step 6 completed in 1.56s
+2025-06-01 02:31:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:31:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=70.77311182022095
+2025-06-01 02:31:55 [   DEBUG]   ✅ Step 7 completed in 1.53s
+2025-06-01 02:31:55 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 72.30s
+2025-06-01 02:31:55 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 02:31:55 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 02:31:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:32:38 [   DEBUG]   ✅ Step 1 completed in 43.48s
+2025-06-01 02:32:38 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:32:44 [   DEBUG]   ✅ Step 2 completed in 6.12s
+2025-06-01 02:32:44 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:32:50 [   DEBUG]   ✅ Step 3 completed in 6.14s
+2025-06-01 02:32:50 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:32:52 [   DEBUG]   ✅ Step 4 completed in 1.13s
+2025-06-01 02:32:52 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:32:58 [   DEBUG]   ✅ Step 5 completed in 6.80s
+2025-06-01 02:32:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:33:00 [   DEBUG]   ✅ Step 6 completed in 1.58s
+2025-06-01 02:33:00 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:33:00 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=65.26185774803162
+2025-06-01 02:33:02 [   DEBUG]   ✅ Step 7 completed in 1.59s
+2025-06-01 02:33:02 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 66.86s
+2025-06-01 02:33:02 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 02:33:02 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 02:33:02 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:33:50 [   DEBUG]   ✅ Step 1 completed in 48.72s
+2025-06-01 02:33:50 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:33:57 [   DEBUG]   ✅ Step 2 completed in 6.18s
+2025-06-01 02:33:57 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:34:03 [   DEBUG]   ✅ Step 3 completed in 6.18s
+2025-06-01 02:34:03 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:34:04 [   DEBUG]   ✅ Step 4 completed in 1.09s
+2025-06-01 02:34:04 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:34:10 [   DEBUG]   ✅ Step 5 completed in 6.50s
+2025-06-01 02:34:10 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:34:12 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 02:34:12 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:34:12 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=70.16697669029236
+2025-06-01 02:34:13 [   DEBUG]   ✅ Step 7 completed in 1.55s
+2025-06-01 02:34:13 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 71.73s
+2025-06-01 02:34:13 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 02:34:13 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 02:34:13 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:35:24 [   DEBUG]   ✅ Step 1 completed in 70.22s
+2025-06-01 02:35:24 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:35:30 [   DEBUG]   ✅ Step 2 completed in 5.99s
+2025-06-01 02:35:30 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:35:36 [   DEBUG]   ✅ Step 3 completed in 6.09s
+2025-06-01 02:35:36 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:35:37 [   DEBUG]   ✅ Step 4 completed in 1.09s
+2025-06-01 02:35:37 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:35:43 [   DEBUG]   ✅ Step 5 completed in 6.50s
+2025-06-01 02:35:43 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:35:45 [   DEBUG]   ✅ Step 6 completed in 1.54s
+2025-06-01 02:35:45 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:35:45 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=91.42349362373352
+2025-06-01 02:35:46 [   DEBUG]   ✅ Step 7 completed in 1.64s
+2025-06-01 02:35:46 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 93.07s
+2025-06-01 02:35:46 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 02:35:46 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 02:35:46 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:36:58 [   DEBUG]   ✅ Step 1 completed in 71.65s
+2025-06-01 02:36:58 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:37:04 [   DEBUG]   ✅ Step 2 completed in 6.25s
+2025-06-01 02:37:04 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:37:10 [   DEBUG]   ✅ Step 3 completed in 6.13s
+2025-06-01 02:37:10 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:37:12 [   DEBUG]   ✅ Step 4 completed in 1.10s
+2025-06-01 02:37:12 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:37:18 [   DEBUG]   ✅ Step 5 completed in 6.56s
+2025-06-01 02:37:18 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:37:20 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 02:37:20 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:37:20 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=93.18302702903748
+2025-06-01 02:37:21 [   DEBUG]   ✅ Step 7 completed in 1.61s
+2025-06-01 02:37:21 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 94.80s
+2025-06-01 02:37:21 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 02:37:21 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 02:37:21 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:38:36 [   DEBUG]   ✅ Step 1 completed in 74.93s
+2025-06-01 02:38:36 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:38:42 [   DEBUG]   ✅ Step 2 completed in 6.00s
+2025-06-01 02:38:42 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:38:48 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 02:38:48 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:38:49 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 02:38:49 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:38:56 [   DEBUG]   ✅ Step 5 completed in 6.41s
+2025-06-01 02:38:56 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:38:57 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 02:38:57 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:38:57 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=96.06060290336609
+2025-06-01 02:38:59 [   DEBUG]   ✅ Step 7 completed in 1.52s
+2025-06-01 02:38:59 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 97.58s
+2025-06-01 02:38:59 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 02:38:59 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 02:38:59 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:40:19 [   DEBUG]   ✅ Step 1 completed in 80.23s
+2025-06-01 02:40:19 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:40:25 [   DEBUG]   ✅ Step 2 completed in 5.98s
+2025-06-01 02:40:25 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:40:31 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 02:40:31 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:40:32 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 02:40:32 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:40:39 [   DEBUG]   ✅ Step 5 completed in 6.42s
+2025-06-01 02:40:39 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:40:40 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:40:40 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:40:40 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=101.34244728088379
+2025-06-01 02:40:42 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 02:40:42 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 102.91s
+2025-06-01 02:40:42 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 02:40:42 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 02:40:42 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:42:01 [   DEBUG]   ✅ Step 1 completed in 78.83s
+2025-06-01 02:42:01 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:42:07 [   DEBUG]   ✅ Step 2 completed in 6.22s
+2025-06-01 02:42:07 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:42:13 [   DEBUG]   ✅ Step 3 completed in 6.08s
+2025-06-01 02:42:13 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:42:14 [   DEBUG]   ✅ Step 4 completed in 1.23s
+2025-06-01 02:42:14 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:42:20 [   DEBUG]   ✅ Step 5 completed in 6.26s
+2025-06-01 02:42:20 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:42:22 [   DEBUG]   ✅ Step 6 completed in 1.48s
+2025-06-01 02:42:22 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:42:22 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=100.09446167945862
+2025-06-01 02:42:23 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 02:42:23 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 101.58s
+2025-06-01 02:42:23 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 02:42:23 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 02:42:23 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:43:49 [   DEBUG]   ✅ Step 1 completed in 85.35s
+2025-06-01 02:43:49 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:43:55 [   DEBUG]   ✅ Step 2 completed in 6.15s
+2025-06-01 02:43:55 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:44:01 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 02:44:01 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:44:02 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 02:44:02 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:44:09 [   DEBUG]   ✅ Step 5 completed in 6.74s
+2025-06-01 02:44:09 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:44:10 [   DEBUG]   ✅ Step 6 completed in 1.51s
+2025-06-01 02:44:10 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:44:10 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=106.9368302822113
+2025-06-01 02:44:12 [   DEBUG]   ✅ Step 7 completed in 1.53s
+2025-06-01 02:44:12 [    INFO] ✅ Pipeline Cycle #9 completed successfully in 108.48s
+2025-06-01 02:44:12 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 02:44:12 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 02:44:12 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:45:11 [   DEBUG]   ✅ Step 1 completed in 59.61s
+2025-06-01 02:45:11 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:45:18 [   DEBUG]   ✅ Step 2 completed in 6.20s
+2025-06-01 02:45:18 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:45:24 [   DEBUG]   ✅ Step 3 completed in 6.02s
+2025-06-01 02:45:24 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:45:25 [   DEBUG]   ✅ Step 4 completed in 1.12s
+2025-06-01 02:45:25 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:45:31 [   DEBUG]   ✅ Step 5 completed in 6.25s
+2025-06-01 02:45:31 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:45:32 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:45:32 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:45:32 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.65635895729065
+2025-06-01 02:45:34 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 02:45:34 [    INFO] ✅ Pipeline Cycle #10 completed successfully in 82.23s
+2025-06-01 02:45:34 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:45:34 [    INFO] 🕐 Uptime: 0.2 hours
+2025-06-01 02:45:34 [    INFO] 🔄 Total Cycles: 10
+2025-06-01 02:45:34 [    INFO] ✅ Successful: 10
+2025-06-01 02:45:34 [    INFO] ❌ Failed: 0
+2025-06-01 02:45:34 [    INFO] 📈 Success Rate: 100.0%
+2025-06-01 02:45:34 [    INFO] ⏱️  Avg Cycle Time: 89.15s
+2025-06-01 02:45:34 [    INFO] 🎯 Matches Processed: 790
+2025-06-01 02:45:34 [    INFO] 🕐 Last Success: 02:45:34
+2025-06-01 02:45:34 [    INFO] ========================
+2025-06-01 02:45:34 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 02:45:34 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 02:45:34 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:46:31 [   DEBUG]   ✅ Step 1 completed in 57.17s
+2025-06-01 02:46:31 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:46:37 [   DEBUG]   ✅ Step 2 completed in 6.07s
+2025-06-01 02:46:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:46:43 [   DEBUG]   ✅ Step 3 completed in 6.02s
+2025-06-01 02:46:43 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:46:44 [   DEBUG]   ✅ Step 4 completed in 1.11s
+2025-06-01 02:46:44 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:46:51 [   DEBUG]   ✅ Step 5 completed in 6.43s
+2025-06-01 02:46:51 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:46:52 [   DEBUG]   ✅ Step 6 completed in 1.54s
+2025-06-01 02:46:52 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:46:52 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=78.33607220649719
+2025-06-01 02:46:54 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 02:46:54 [    INFO] ✅ Pipeline Cycle #11 completed successfully in 79.89s
+2025-06-01 02:46:54 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 02:46:54 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 02:46:54 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:47:53 [   DEBUG]   ✅ Step 1 completed in 59.44s
+2025-06-01 02:47:53 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:48:00 [   DEBUG]   ✅ Step 2 completed in 6.35s
+2025-06-01 02:48:00 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:48:06 [   DEBUG]   ✅ Step 3 completed in 6.31s
+2025-06-01 02:48:06 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:48:07 [   DEBUG]   ✅ Step 4 completed in 1.09s
+2025-06-01 02:48:07 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:48:13 [   DEBUG]   ✅ Step 5 completed in 6.37s
+2025-06-01 02:48:13 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:48:15 [   DEBUG]   ✅ Step 6 completed in 1.52s
+2025-06-01 02:48:15 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:48:15 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=81.08730745315552
+2025-06-01 02:48:17 [   DEBUG]   ✅ Step 7 completed in 1.53s
+2025-06-01 02:48:17 [    INFO] ✅ Pipeline Cycle #12 completed successfully in 82.63s
+2025-06-01 02:48:17 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 02:48:17 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 02:48:17 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:49:11 [   DEBUG]   ✅ Step 1 completed in 54.22s
+2025-06-01 02:49:11 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:49:17 [   DEBUG]   ✅ Step 2 completed in 6.06s
+2025-06-01 02:49:17 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:49:23 [   DEBUG]   ✅ Step 3 completed in 6.29s
+2025-06-01 02:49:23 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:49:24 [   DEBUG]   ✅ Step 4 completed in 1.09s
+2025-06-01 02:49:24 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:49:30 [   DEBUG]   ✅ Step 5 completed in 6.26s
+2025-06-01 02:49:30 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:49:32 [   DEBUG]   ✅ Step 6 completed in 1.45s
+2025-06-01 02:49:32 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:49:32 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=75.3568000793457
+2025-06-01 02:49:33 [   DEBUG]   ✅ Step 7 completed in 1.49s
+2025-06-01 02:49:33 [    INFO] ✅ Pipeline Cycle #13 completed successfully in 76.86s
+2025-06-01 02:49:33 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 02:49:33 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 02:49:33 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:50:32 [   DEBUG]   ✅ Step 1 completed in 58.97s
+2025-06-01 02:50:32 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:50:38 [   DEBUG]   ✅ Step 2 completed in 6.06s
+2025-06-01 02:50:38 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:50:44 [   DEBUG]   ✅ Step 3 completed in 5.99s
+2025-06-01 02:50:44 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:50:46 [   DEBUG]   ✅ Step 4 completed in 1.29s
+2025-06-01 02:50:46 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:50:52 [   DEBUG]   ✅ Step 5 completed in 6.56s
+2025-06-01 02:50:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:50:54 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:50:54 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:50:54 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=80.31725001335144
+2025-06-01 02:50:55 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 02:50:55 [    INFO] ✅ Pipeline Cycle #14 completed successfully in 81.89s
+2025-06-01 02:50:55 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 02:50:55 [    INFO] 🔄 Starting Pipeline Cycle #15
+2025-06-01 02:50:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:51:47 [   DEBUG]   ✅ Step 1 completed in 52.16s
+2025-06-01 02:51:47 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:51:54 [   DEBUG]   ✅ Step 2 completed in 6.30s
+2025-06-01 02:51:54 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:52:00 [   DEBUG]   ✅ Step 3 completed in 6.20s
+2025-06-01 02:52:00 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:52:01 [   DEBUG]   ✅ Step 4 completed in 1.15s
+2025-06-01 02:52:01 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:52:08 [   DEBUG]   ✅ Step 5 completed in 6.56s
+2025-06-01 02:52:08 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:52:09 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 02:52:09 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:52:09 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.86537218093872
+2025-06-01 02:52:11 [   DEBUG]   ✅ Step 7 completed in 1.50s
+2025-06-01 02:52:11 [    INFO] ✅ Pipeline Cycle #15 completed successfully in 75.37s
+2025-06-01 02:52:11 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 02:52:11 [    INFO] 🔄 Starting Pipeline Cycle #16
+2025-06-01 02:52:11 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:53:02 [   DEBUG]   ✅ Step 1 completed in 51.22s
+2025-06-01 02:53:02 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:53:08 [   DEBUG]   ✅ Step 2 completed in 6.17s
+2025-06-01 02:53:08 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:53:14 [   DEBUG]   ✅ Step 3 completed in 6.08s
+2025-06-01 02:53:14 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:53:15 [   DEBUG]   ✅ Step 4 completed in 1.09s
+2025-06-01 02:53:15 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:53:22 [   DEBUG]   ✅ Step 5 completed in 6.38s
+2025-06-01 02:53:22 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:53:23 [   DEBUG]   ✅ Step 6 completed in 1.42s
+2025-06-01 02:53:23 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:53:23 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.3482506275177
+2025-06-01 02:53:25 [   DEBUG]   ✅ Step 7 completed in 1.51s
+2025-06-01 02:53:25 [    INFO] ✅ Pipeline Cycle #16 completed successfully in 73.87s
+2025-06-01 02:53:25 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 02:53:25 [    INFO] 🔄 Starting Pipeline Cycle #17
+2025-06-01 02:53:25 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:54:15 [   DEBUG]   ✅ Step 1 completed in 50.85s
+2025-06-01 02:54:15 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:54:21 [   DEBUG]   ✅ Step 2 completed in 6.07s
+2025-06-01 02:54:21 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:54:28 [   DEBUG]   ✅ Step 3 completed in 6.09s
+2025-06-01 02:54:28 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:54:29 [   DEBUG]   ✅ Step 4 completed in 1.06s
+2025-06-01 02:54:29 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:54:35 [   DEBUG]   ✅ Step 5 completed in 6.56s
+2025-06-01 02:54:35 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:54:37 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:54:37 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:54:37 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.10319447517395
+2025-06-01 02:54:38 [   DEBUG]   ✅ Step 7 completed in 1.65s
+2025-06-01 02:54:38 [    INFO] ✅ Pipeline Cycle #17 completed successfully in 73.76s
+2025-06-01 02:54:38 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 02:54:38 [    INFO] 🔄 Starting Pipeline Cycle #18
+2025-06-01 02:54:38 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:55:33 [   DEBUG]   ✅ Step 1 completed in 54.29s
+2025-06-01 02:55:33 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:55:39 [   DEBUG]   ✅ Step 2 completed in 5.98s
+2025-06-01 02:55:39 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:55:45 [   DEBUG]   ✅ Step 3 completed in 6.28s
+2025-06-01 02:55:45 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:55:46 [   DEBUG]   ✅ Step 4 completed in 1.12s
+2025-06-01 02:55:46 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:55:52 [   DEBUG]   ✅ Step 5 completed in 6.52s
+2025-06-01 02:55:52 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:55:54 [   DEBUG]   ✅ Step 6 completed in 1.49s
+2025-06-01 02:55:54 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:55:54 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=75.69116616249084
+2025-06-01 02:55:55 [   DEBUG]   ✅ Step 7 completed in 1.43s
+2025-06-01 02:55:55 [    INFO] ✅ Pipeline Cycle #18 completed successfully in 77.13s
+2025-06-01 02:55:55 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 02:55:55 [    INFO] 🔄 Starting Pipeline Cycle #19
+2025-06-01 02:55:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:56:52 [   DEBUG]   ✅ Step 1 completed in 56.90s
+2025-06-01 02:56:52 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:56:58 [   DEBUG]   ✅ Step 2 completed in 6.06s
+2025-06-01 02:56:58 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:57:05 [   DEBUG]   ✅ Step 3 completed in 6.31s
+2025-06-01 02:57:05 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:57:06 [   DEBUG]   ✅ Step 4 completed in 1.15s
+2025-06-01 02:57:06 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:57:12 [   DEBUG]   ✅ Step 5 completed in 6.41s
+2025-06-01 02:57:12 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:57:14 [   DEBUG]   ✅ Step 6 completed in 1.47s
+2025-06-01 02:57:14 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:57:14 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=78.30167651176453
+2025-06-01 02:57:15 [   DEBUG]   ✅ Step 7 completed in 1.48s
+2025-06-01 02:57:15 [    INFO] ✅ Pipeline Cycle #19 completed successfully in 79.80s
+2025-06-01 02:57:15 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 02:57:15 [    INFO] 🔄 Starting Pipeline Cycle #20
+2025-06-01 02:57:15 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:58:08 [   DEBUG]   ✅ Step 1 completed in 52.48s
+2025-06-01 02:58:08 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:58:14 [   DEBUG]   ✅ Step 2 completed in 6.03s
+2025-06-01 02:58:14 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:58:20 [   DEBUG]   ✅ Step 3 completed in 6.17s
+2025-06-01 02:58:20 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:58:21 [   DEBUG]   ✅ Step 4 completed in 1.30s
+2025-06-01 02:58:21 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:58:28 [   DEBUG]   ✅ Step 5 completed in 6.36s
+2025-06-01 02:58:28 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:58:29 [   DEBUG]   ✅ Step 6 completed in 1.46s
+2025-06-01 02:58:29 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:58:29 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.8046326637268
+2025-06-01 02:58:31 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 02:58:31 [    INFO] ✅ Pipeline Cycle #20 completed successfully in 75.36s
+2025-06-01 02:58:31 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 02:58:31 [    INFO] 🕐 Uptime: 0.5 hours
+2025-06-01 02:58:31 [    INFO] 🔄 Total Cycles: 20
+2025-06-01 02:58:31 [    INFO] ✅ Successful: 20
+2025-06-01 02:58:31 [    INFO] ❌ Failed: 0
+2025-06-01 02:58:31 [    INFO] 📈 Success Rate: 100.0%
+2025-06-01 02:58:31 [    INFO] ⏱️  Avg Cycle Time: 83.40s
+2025-06-01 02:58:31 [    INFO] 🎯 Matches Processed: 1580
+2025-06-01 02:58:31 [    INFO] 🕐 Last Success: 02:58:31
+2025-06-01 02:58:31 [    INFO] ========================
+2025-06-01 02:58:31 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 02:58:31 [    INFO] 🔄 Starting Pipeline Cycle #21
+2025-06-01 02:58:31 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 02:59:25 [   DEBUG]   ✅ Step 1 completed in 54.36s
+2025-06-01 02:59:25 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 02:59:31 [   DEBUG]   ✅ Step 2 completed in 5.98s
+2025-06-01 02:59:31 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 02:59:37 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 02:59:37 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 02:59:38 [   DEBUG]   ✅ Step 4 completed in 1.10s
+2025-06-01 02:59:38 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 02:59:45 [   DEBUG]   ✅ Step 5 completed in 6.79s
+2025-06-01 02:59:45 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 02:59:46 [   DEBUG]   ✅ Step 6 completed in 1.47s
+2025-06-01 02:59:46 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 02:59:46 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=75.7952950000763
+2025-06-01 02:59:48 [   DEBUG]   ✅ Step 7 completed in 1.49s
+2025-06-01 02:59:48 [    INFO] ✅ Pipeline Cycle #21 completed successfully in 77.30s
+2025-06-01 02:59:48 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 02:59:48 [    INFO] 🔄 Starting Pipeline Cycle #22
+2025-06-01 02:59:48 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:00:54 [   DEBUG]   ✅ Step 1 completed in 66.14s
+2025-06-01 03:00:54 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:01:00 [   DEBUG]   ✅ Step 2 completed in 6.06s
+2025-06-01 03:01:00 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:01:06 [   DEBUG]   ✅ Step 3 completed in 6.12s
+2025-06-01 03:01:06 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:01:07 [   DEBUG]   ✅ Step 4 completed in 1.13s
+2025-06-01 03:01:07 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:01:14 [   DEBUG]   ✅ Step 5 completed in 6.59s
+2025-06-01 03:01:14 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:01:15 [   DEBUG]   ✅ Step 6 completed in 1.43s
+2025-06-01 03:01:15 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:01:15 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=87.46737456321716
+2025-06-01 03:01:17 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 03:01:17 [    INFO] ✅ Pipeline Cycle #22 completed successfully in 89.02s
+2025-06-01 03:01:17 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 03:01:17 [    INFO] 🔄 Starting Pipeline Cycle #23
+2025-06-01 03:01:17 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:02:16 [   DEBUG]   ✅ Step 1 completed in 58.63s
+2025-06-01 03:02:16 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:02:22 [   DEBUG]   ✅ Step 2 completed in 6.11s
+2025-06-01 03:02:22 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:02:28 [   DEBUG]   ✅ Step 3 completed in 6.00s
+2025-06-01 03:02:28 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:02:29 [   DEBUG]   ✅ Step 4 completed in 1.08s
+2025-06-01 03:02:29 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:02:35 [   DEBUG]   ✅ Step 5 completed in 6.31s
+2025-06-01 03:02:35 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:02:36 [   DEBUG]   ✅ Step 6 completed in 1.41s
+2025-06-01 03:02:36 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:02:36 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=79.5423014163971
+2025-06-01 03:02:38 [   DEBUG]   ✅ Step 7 completed in 1.42s
+2025-06-01 03:02:38 [    INFO] ✅ Pipeline Cycle #23 completed successfully in 80.98s
+2025-06-01 03:02:38 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 03:02:38 [    INFO] 🔄 Starting Pipeline Cycle #24
+2025-06-01 03:02:38 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:03:31 [   DEBUG]   ✅ Step 1 completed in 52.74s
+2025-06-01 03:03:31 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:03:37 [   DEBUG]   ✅ Step 2 completed in 6.18s
+2025-06-01 03:03:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:03:43 [   DEBUG]   ✅ Step 3 completed in 6.28s
+2025-06-01 03:03:43 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:03:44 [   DEBUG]   ✅ Step 4 completed in 1.17s
+2025-06-01 03:03:44 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:03:51 [   DEBUG]   ✅ Step 5 completed in 6.50s
+2025-06-01 03:03:51 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:03:52 [   DEBUG]   ✅ Step 6 completed in 1.42s
+2025-06-01 03:03:52 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:03:52 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=74.28934383392334
+2025-06-01 03:03:54 [   DEBUG]   ✅ Step 7 completed in 1.46s
+2025-06-01 03:03:54 [    INFO] ✅ Pipeline Cycle #24 completed successfully in 75.76s
+2025-06-01 03:03:54 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 03:03:54 [    INFO] 🔄 Starting Pipeline Cycle #25
+2025-06-01 03:03:54 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:04:43 [   DEBUG]   ✅ Step 1 completed in 49.55s
+2025-06-01 03:04:43 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:04:49 [   DEBUG]   ✅ Step 2 completed in 6.13s
+2025-06-01 03:04:49 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:04:55 [   DEBUG]   ✅ Step 3 completed in 6.00s
+2025-06-01 03:04:55 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:04:57 [   DEBUG]   ✅ Step 4 completed in 1.20s
+2025-06-01 03:04:57 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:05:03 [   DEBUG]   ✅ Step 5 completed in 6.84s
+2025-06-01 03:05:03 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:05:05 [   DEBUG]   ✅ Step 6 completed in 1.43s
+2025-06-01 03:05:05 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:05:05 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=71.14455819129944
+2025-06-01 03:05:06 [   DEBUG]   ✅ Step 7 completed in 1.43s
+2025-06-01 03:05:06 [    INFO] ✅ Pipeline Cycle #25 completed successfully in 72.59s
+2025-06-01 03:05:06 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 03:05:06 [    INFO] 🔄 Starting Pipeline Cycle #26
+2025-06-01 03:05:06 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:05:59 [   DEBUG]   ✅ Step 1 completed in 52.31s
+2025-06-01 03:05:59 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:06:05 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 03:06:05 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:06:11 [   DEBUG]   ✅ Step 3 completed in 6.07s
+2025-06-01 03:06:11 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:06:12 [   DEBUG]   ✅ Step 4 completed in 1.14s
+2025-06-01 03:06:12 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:06:18 [   DEBUG]   ✅ Step 5 completed in 6.28s
+2025-06-01 03:06:18 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:06:20 [   DEBUG]   ✅ Step 6 completed in 1.44s
+2025-06-01 03:06:20 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:06:20 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.42201137542725
+2025-06-01 03:06:21 [   DEBUG]   ✅ Step 7 completed in 1.41s
+2025-06-01 03:06:21 [    INFO] ✅ Pipeline Cycle #26 completed successfully in 74.84s
+2025-06-01 03:06:21 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 03:06:21 [    INFO] 🔄 Starting Pipeline Cycle #27
+2025-06-01 03:06:21 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:06:57 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:07:23 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:07:23 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:07:23 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:07:23 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:07:23 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:07:23 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:08:17 [   DEBUG]   ✅ Step 1 completed in 54.46s
+2025-06-01 03:08:17 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:08:24 [   DEBUG]   ✅ Step 2 completed in 6.28s
+2025-06-01 03:08:24 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:08:30 [   DEBUG]   ✅ Step 3 completed in 6.21s
+2025-06-01 03:08:30 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:08:31 [   DEBUG]   ✅ Step 4 completed in 1.26s
+2025-06-01 03:08:31 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:08:38 [   DEBUG]   ✅ Step 5 completed in 6.51s
+2025-06-01 03:08:38 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:08:39 [   DEBUG]   ✅ Step 6 completed in 1.54s
+2025-06-01 03:08:39 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:08:39 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=76.26924443244934
+2025-06-01 03:08:41 [   DEBUG]   ✅ Step 7 completed in 1.55s
+2025-06-01 03:08:41 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 77.82s
+2025-06-01 03:08:41 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:08:41 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:08:41 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:09:32 [   DEBUG]   ✅ Step 1 completed in 51.63s
+2025-06-01 03:09:32 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:09:38 [   DEBUG]   ✅ Step 2 completed in 6.18s
+2025-06-01 03:09:38 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:09:45 [   DEBUG]   ✅ Step 3 completed in 6.20s
+2025-06-01 03:09:45 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:09:46 [   DEBUG]   ✅ Step 4 completed in 1.30s
+2025-06-01 03:09:46 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:09:53 [   DEBUG]   ✅ Step 5 completed in 6.88s
+2025-06-01 03:09:53 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:09:54 [   DEBUG]   ✅ Step 6 completed in 1.61s
+2025-06-01 03:09:54 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:09:54 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.78840374946594
+2025-06-01 03:09:56 [   DEBUG]   ✅ Step 7 completed in 1.59s
+2025-06-01 03:09:56 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 75.39s
+2025-06-01 03:09:56 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:09:56 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:09:56 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:10:47 [   DEBUG]   ✅ Step 1 completed in 50.90s
+2025-06-01 03:10:47 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:10:53 [   DEBUG]   ✅ Step 2 completed in 6.16s
+2025-06-01 03:10:53 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:10:59 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 03:10:59 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:11:01 [   DEBUG]   ✅ Step 4 completed in 1.26s
+2025-06-01 03:11:01 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:11:07 [   DEBUG]   ✅ Step 5 completed in 6.85s
+2025-06-01 03:11:07 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:11:09 [   DEBUG]   ✅ Step 6 completed in 1.59s
+2025-06-01 03:11:09 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:11:09 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.98548793792725
+2025-06-01 03:11:11 [   DEBUG]   ✅ Step 7 completed in 1.59s
+2025-06-01 03:11:11 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 74.58s
+2025-06-01 03:11:11 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:11:11 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:11:11 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:11:55 [   DEBUG]   ✅ Step 1 completed in 44.87s
+2025-06-01 03:11:55 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:12:02 [   DEBUG]   ✅ Step 2 completed in 6.24s
+2025-06-01 03:12:02 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:12:08 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 03:12:08 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:12:09 [   DEBUG]   ✅ Step 4 completed in 1.19s
+2025-06-01 03:12:09 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:12:16 [   DEBUG]   ✅ Step 5 completed in 6.67s
+2025-06-01 03:12:16 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:12:18 [   DEBUG]   ✅ Step 6 completed in 1.82s
+2025-06-01 03:12:18 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:12:18 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=66.95644545555115
+2025-06-01 03:12:19 [   DEBUG]   ✅ Step 7 completed in 1.64s
+2025-06-01 03:12:19 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 68.61s
+2025-06-01 03:12:19 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:12:19 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:12:19 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:13:07 [   DEBUG]   ✅ Step 1 completed in 48.23s
+2025-06-01 03:13:07 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:13:14 [   DEBUG]   ✅ Step 2 completed in 6.49s
+2025-06-01 03:13:14 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:13:20 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 03:13:20 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:13:21 [   DEBUG]   ✅ Step 4 completed in 1.22s
+2025-06-01 03:13:21 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:13:28 [   DEBUG]   ✅ Step 5 completed in 6.82s
+2025-06-01 03:13:28 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:13:30 [   DEBUG]   ✅ Step 6 completed in 1.56s
+2025-06-01 03:13:30 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:13:30 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=70.47583222389221
+2025-06-01 03:13:31 [   DEBUG]   ✅ Step 7 completed in 1.80s
+2025-06-01 03:13:32 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 72.28s
+2025-06-01 03:13:32 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 03:13:32 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 03:13:32 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:14:14 [   DEBUG]   ✅ Step 1 completed in 42.67s
+2025-06-01 03:14:14 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:14:20 [   DEBUG]   ✅ Step 2 completed in 6.16s
+2025-06-01 03:14:20 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:14:27 [   DEBUG]   ✅ Step 3 completed in 6.18s
+2025-06-01 03:14:27 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:14:28 [   DEBUG]   ✅ Step 4 completed in 1.18s
+2025-06-01 03:14:28 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:14:36 [   DEBUG]   ✅ Step 5 completed in 8.10s
+2025-06-01 03:14:36 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:14:38 [   DEBUG]   ✅ Step 6 completed in 1.85s
+2025-06-01 03:14:38 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:14:38 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=66.14353895187378
+2025-06-01 03:14:40 [   DEBUG]   ✅ Step 7 completed in 2.29s
+2025-06-01 03:14:40 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 68.45s
+2025-06-01 03:14:40 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 03:14:40 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 03:14:40 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:15:27 [   DEBUG]   ✅ Step 1 completed in 46.60s
+2025-06-01 03:15:27 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:15:36 [   DEBUG]   ✅ Step 2 completed in 9.63s
+2025-06-01 03:15:36 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:15:42 [   DEBUG]   ✅ Step 3 completed in 6.08s
+2025-06-01 03:15:42 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:15:43 [   DEBUG]   ✅ Step 4 completed in 1.20s
+2025-06-01 03:15:43 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:15:51 [   DEBUG]   ✅ Step 5 completed in 7.66s
+2025-06-01 03:15:51 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:15:53 [   DEBUG]   ✅ Step 6 completed in 1.67s
+2025-06-01 03:15:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:15:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.83771800994873
+2025-06-01 03:15:55 [   DEBUG]   ✅ Step 7 completed in 1.94s
+2025-06-01 03:15:55 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 74.78s
+2025-06-01 03:15:55 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 03:15:55 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 03:15:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:16:45 [   DEBUG]   ✅ Step 1 completed in 50.45s
+2025-06-01 03:16:45 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:16:51 [   DEBUG]   ✅ Step 2 completed in 6.14s
+2025-06-01 03:16:51 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:16:57 [   DEBUG]   ✅ Step 3 completed in 6.15s
+2025-06-01 03:16:57 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:16:59 [   DEBUG]   ✅ Step 4 completed in 1.20s
+2025-06-01 03:16:59 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:17:06 [   DEBUG]   ✅ Step 5 completed in 6.86s
+2025-06-01 03:17:06 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:17:07 [   DEBUG]   ✅ Step 6 completed in 1.60s
+2025-06-01 03:17:07 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:17:07 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.40816473960876
+2025-06-01 03:17:09 [   DEBUG]   ✅ Step 7 completed in 1.59s
+2025-06-01 03:17:09 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 74.00s
+2025-06-01 03:17:09 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 03:17:09 [    INFO] 🔄 Starting Pipeline Cycle #9
+2025-06-01 03:17:09 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:17:56 [   DEBUG]   ✅ Step 1 completed in 47.41s
+2025-06-01 03:17:56 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:18:03 [   DEBUG]   ✅ Step 2 completed in 6.51s
+2025-06-01 03:18:03 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:18:09 [   DEBUG]   ✅ Step 3 completed in 6.39s
+2025-06-01 03:18:09 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:18:10 [   DEBUG]   ✅ Step 4 completed in 1.33s
+2025-06-01 03:18:10 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:18:17 [   DEBUG]   ✅ Step 5 completed in 7.10s
+2025-06-01 03:18:17 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:18:19 [   DEBUG]   ✅ Step 6 completed in 1.82s
+2025-06-01 03:18:19 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:18:19 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=70.55004048347473
+2025-06-01 03:18:21 [   DEBUG]   ✅ Step 7 completed in 1.54s
+2025-06-01 03:18:21 [    INFO] ✅ Pipeline Cycle #9 completed successfully in 72.10s
+2025-06-01 03:18:21 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 03:18:21 [    INFO] 🔄 Starting Pipeline Cycle #10
+2025-06-01 03:18:21 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:19:03 [   DEBUG]   ✅ Step 1 completed in 41.87s
+2025-06-01 03:19:03 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:19:09 [   DEBUG]   ✅ Step 2 completed in 6.24s
+2025-06-01 03:19:09 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:19:15 [   DEBUG]   ✅ Step 3 completed in 6.46s
+2025-06-01 03:19:15 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:19:17 [   DEBUG]   ✅ Step 4 completed in 1.20s
+2025-06-01 03:19:17 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:19:24 [   DEBUG]   ✅ Step 5 completed in 7.71s
+2025-06-01 03:19:24 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:19:26 [   DEBUG]   ✅ Step 6 completed in 1.90s
+2025-06-01 03:19:26 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:19:26 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=65.38051986694336
+2025-06-01 03:19:28 [   DEBUG]   ✅ Step 7 completed in 1.95s
+2025-06-01 03:19:28 [    INFO] ✅ Pipeline Cycle #10 completed successfully in 67.33s
+2025-06-01 03:19:28 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:19:28 [    INFO] 🕐 Uptime: 0.2 hours
+2025-06-01 03:19:28 [    INFO] 🔄 Total Cycles: 10
+2025-06-01 03:19:28 [    INFO] ✅ Successful: 10
+2025-06-01 03:19:28 [    INFO] ❌ Failed: 0
+2025-06-01 03:19:28 [    INFO] 📈 Success Rate: 100.0%
+2025-06-01 03:19:28 [    INFO] ⏱️  Avg Cycle Time: 72.53s
+2025-06-01 03:19:28 [    INFO] 🎯 Matches Processed: 790
+2025-06-01 03:19:28 [    INFO] 🕐 Last Success: 03:19:28
+2025-06-01 03:19:28 [    INFO] ========================
+2025-06-01 03:19:28 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 03:19:28 [    INFO] 🔄 Starting Pipeline Cycle #11
+2025-06-01 03:19:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:20:09 [   DEBUG]   ✅ Step 1 completed in 41.17s
+2025-06-01 03:20:09 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:20:16 [   DEBUG]   ✅ Step 2 completed in 6.71s
+2025-06-01 03:20:16 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:20:22 [   DEBUG]   ✅ Step 3 completed in 6.02s
+2025-06-01 03:20:22 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:20:23 [   DEBUG]   ✅ Step 4 completed in 1.25s
+2025-06-01 03:20:23 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:20:31 [   DEBUG]   ✅ Step 5 completed in 7.72s
+2025-06-01 03:20:31 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:20:33 [   DEBUG]   ✅ Step 6 completed in 1.62s
+2025-06-01 03:20:33 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:20:33 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=64.48235964775085
+2025-06-01 03:20:34 [   DEBUG]   ✅ Step 7 completed in 1.69s
+2025-06-01 03:20:34 [    INFO] ✅ Pipeline Cycle #11 completed successfully in 66.18s
+2025-06-01 03:20:34 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 03:20:34 [    INFO] 🔄 Starting Pipeline Cycle #12
+2025-06-01 03:20:34 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:21:21 [   DEBUG]   ✅ Step 1 completed in 46.42s
+2025-06-01 03:21:21 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:21:27 [   DEBUG]   ✅ Step 2 completed in 6.14s
+2025-06-01 03:21:27 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:21:33 [   DEBUG]   ✅ Step 3 completed in 6.04s
+2025-06-01 03:21:33 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:21:34 [   DEBUG]   ✅ Step 4 completed in 1.21s
+2025-06-01 03:21:34 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:21:41 [   DEBUG]   ✅ Step 5 completed in 6.81s
+2025-06-01 03:21:41 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:21:43 [   DEBUG]   ✅ Step 6 completed in 1.54s
+2025-06-01 03:21:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:21:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=68.15178418159485
+2025-06-01 03:21:44 [   DEBUG]   ✅ Step 7 completed in 1.69s
+2025-06-01 03:21:44 [    INFO] ✅ Pipeline Cycle #12 completed successfully in 69.85s
+2025-06-01 03:21:44 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 03:21:44 [    INFO] 🔄 Starting Pipeline Cycle #13
+2025-06-01 03:21:44 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:22:30 [   DEBUG]   ✅ Step 1 completed in 46.13s
+2025-06-01 03:22:30 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:22:37 [   DEBUG]   ✅ Step 2 completed in 6.28s
+2025-06-01 03:22:37 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:22:43 [   DEBUG]   ✅ Step 3 completed in 6.20s
+2025-06-01 03:22:43 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:22:44 [   DEBUG]   ✅ Step 4 completed in 1.38s
+2025-06-01 03:22:44 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:22:51 [   DEBUG]   ✅ Step 5 completed in 7.05s
+2025-06-01 03:22:51 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:22:53 [   DEBUG]   ✅ Step 6 completed in 1.70s
+2025-06-01 03:22:53 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:22:53 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=68.73509860038757
+2025-06-01 03:22:55 [   DEBUG]   ✅ Step 7 completed in 1.58s
+2025-06-01 03:22:55 [    INFO] ✅ Pipeline Cycle #13 completed successfully in 70.32s
+2025-06-01 03:22:55 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 03:22:55 [    INFO] 🔄 Starting Pipeline Cycle #14
+2025-06-01 03:22:55 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:23:11 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:23:18 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:23:18 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:23:18 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:23:18 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:23:18 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:23:18 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:23:30 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:23:39 [   DEBUG]   ✅ Step 1 completed in 44.95s
+2025-06-01 03:23:39 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 03:23:39 [    INFO] ✅ Pipeline Cycle #14 completed successfully in 44.96s
+2025-06-01 03:23:39 [    INFO] ⏳ Waiting 15.0s until next cycle...
+2025-06-01 03:23:39 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 03:23:39 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:23:39 [    INFO] 🕐 Uptime: 0.3 hours
+2025-06-01 03:23:39 [    INFO] 🔄 Total Cycles: 14
+2025-06-01 03:23:39 [    INFO] ✅ Successful: 13
+2025-06-01 03:23:39 [    INFO] ❌ Failed: 1
+2025-06-01 03:23:39 [    INFO] 📈 Success Rate: 92.9%
+2025-06-01 03:23:39 [    INFO] ⏱️  Avg Cycle Time: 69.75s
+2025-06-01 03:23:39 [    INFO] 🎯 Matches Processed: 1027
+2025-06-01 03:23:39 [    INFO] 🕐 Last Success: 03:22:55
+2025-06-01 03:23:39 [    INFO] ========================
+2025-06-01 03:23:54 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:23:54 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:23:54 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:23:54 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:23:54 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:23:54 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:24:36 [   DEBUG]   ✅ Step 1 completed in 41.30s
+2025-06-01 03:24:36 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:24:42 [   DEBUG]   ✅ Step 2 completed in 6.23s
+2025-06-01 03:24:42 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:24:48 [   DEBUG]   ✅ Step 3 completed in 6.27s
+2025-06-01 03:24:48 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:24:50 [   DEBUG]   ✅ Step 4 completed in 1.29s
+2025-06-01 03:24:50 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:24:57 [   DEBUG]   ✅ Step 5 completed in 7.11s
+2025-06-01 03:24:57 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:24:58 [   DEBUG]   ✅ Step 6 completed in 1.69s
+2025-06-01 03:24:58 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:24:58 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=63.89206886291504
+2025-06-01 03:25:00 [   DEBUG]   ✅ Step 7 completed in 1.73s
+2025-06-01 03:25:00 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 65.62s
+2025-06-01 03:25:00 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:25:00 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:25:00 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:25:47 [   DEBUG]   ✅ Step 1 completed in 46.39s
+2025-06-01 03:25:47 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:25:53 [   DEBUG]   ✅ Step 2 completed in 6.25s
+2025-06-01 03:25:53 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:25:59 [   DEBUG]   ✅ Step 3 completed in 6.23s
+2025-06-01 03:25:59 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:26:00 [   DEBUG]   ✅ Step 4 completed in 1.39s
+2025-06-01 03:26:00 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:26:08 [   DEBUG]   ✅ Step 5 completed in 7.30s
+2025-06-01 03:26:08 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:26:09 [   DEBUG]   ✅ Step 6 completed in 1.63s
+2025-06-01 03:26:09 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:26:09 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=69.20664238929749
+2025-06-01 03:26:11 [   DEBUG]   ✅ Step 7 completed in 1.69s
+2025-06-01 03:26:11 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 70.90s
+2025-06-01 03:26:11 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:26:11 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:26:11 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:27:01 [   DEBUG]   ✅ Step 1 completed in 50.07s
+2025-06-01 03:27:01 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:27:07 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 03:27:07 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:27:13 [   DEBUG]   ✅ Step 3 completed in 6.17s
+2025-06-01 03:27:13 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:27:15 [   DEBUG]   ✅ Step 4 completed in 1.27s
+2025-06-01 03:27:15 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:27:22 [   DEBUG]   ✅ Step 5 completed in 7.04s
+2025-06-01 03:27:22 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:27:23 [   DEBUG]   ✅ Step 6 completed in 1.57s
+2025-06-01 03:27:23 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:27:23 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.32023906707764
+2025-06-01 03:27:25 [   DEBUG]   ✅ Step 7 completed in 1.77s
+2025-06-01 03:27:25 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 74.10s
+2025-06-01 03:27:25 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:27:25 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:27:25 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:27:39 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:27:46 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:27:46 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:27:46 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:27:46 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:27:46 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:27:46 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:28:14 [   DEBUG]   ✅ Step 1 completed in 48.71s
+2025-06-01 03:28:14 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 03:28:14 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 48.72s
+2025-06-01 03:28:14 [    INFO] ⏳ Waiting 11.3s until next cycle...
+2025-06-01 03:28:14 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 03:28:14 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:28:14 [    INFO] 🕐 Uptime: 0.1 hours
+2025-06-01 03:28:14 [    INFO] 🔄 Total Cycles: 4
+2025-06-01 03:28:14 [    INFO] ✅ Successful: 3
+2025-06-01 03:28:14 [    INFO] ❌ Failed: 1
+2025-06-01 03:28:14 [    INFO] 📈 Success Rate: 75.0%
+2025-06-01 03:28:14 [    INFO] ⏱️  Avg Cycle Time: 64.83s
+2025-06-01 03:28:14 [    INFO] 🎯 Matches Processed: 237
+2025-06-01 03:28:14 [    INFO] 🕐 Last Success: 03:27:25
+2025-06-01 03:28:14 [    INFO] ========================
+2025-06-01 03:28:36 [   DEBUG]   ✅ Step 1 completed in 50.34s
+2025-06-01 03:28:36 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:28:42 [   DEBUG]   ✅ Step 2 completed in 6.04s
+2025-06-01 03:28:42 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:28:48 [   DEBUG]   ✅ Step 3 completed in 6.37s
+2025-06-01 03:28:48 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:28:50 [   DEBUG]   ✅ Step 4 completed in 1.33s
+2025-06-01 03:28:50 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:28:57 [   DEBUG]   ✅ Step 5 completed in 7.11s
+2025-06-01 03:28:57 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:28:59 [   DEBUG]   ✅ Step 6 completed in 1.60s
+2025-06-01 03:28:59 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:28:59 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.80144262313843
+2025-06-01 03:29:00 [   DEBUG]   ✅ Step 7 completed in 1.68s
+2025-06-01 03:29:00 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 74.48s
+2025-06-01 03:29:00 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:29:00 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:29:00 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:29:48 [   DEBUG]   ✅ Step 1 completed in 47.98s
+2025-06-01 03:29:48 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:29:54 [   DEBUG]   ✅ Step 2 completed in 6.29s
+2025-06-01 03:29:54 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:30:01 [   DEBUG]   ✅ Step 3 completed in 6.30s
+2025-06-01 03:30:01 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:30:02 [   DEBUG]   ✅ Step 4 completed in 1.42s
+2025-06-01 03:30:02 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:30:09 [   DEBUG]   ✅ Step 5 completed in 7.29s
+2025-06-01 03:30:09 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:30:11 [   DEBUG]   ✅ Step 6 completed in 1.77s
+2025-06-01 03:30:11 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:30:11 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=71.04975318908691
+2025-06-01 03:30:13 [   DEBUG]   ✅ Step 7 completed in 1.64s
+2025-06-01 03:30:13 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 72.70s
+2025-06-01 03:30:13 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:30:13 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:30:13 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:31:03 [   DEBUG]   ✅ Step 1 completed in 49.97s
+2025-06-01 03:31:03 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:31:09 [   DEBUG]   ✅ Step 2 completed in 6.19s
+2025-06-01 03:31:09 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:31:15 [   DEBUG]   ✅ Step 3 completed in 6.14s
+2025-06-01 03:31:15 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:31:17 [   DEBUG]   ✅ Step 4 completed in 1.30s
+2025-06-01 03:31:17 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:31:24 [   DEBUG]   ✅ Step 5 completed in 7.06s
+2025-06-01 03:31:24 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:31:25 [   DEBUG]   ✅ Step 6 completed in 1.61s
+2025-06-01 03:31:25 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:31:25 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=72.27157664299011
+2025-06-01 03:31:30 [   DEBUG]   ✅ Step 7 completed in 5.15s
+2025-06-01 03:31:30 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 77.43s
+2025-06-01 03:31:30 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:31:30 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:31:30 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:32:14 [   DEBUG]   ✅ Step 1 completed in 43.84s
+2025-06-01 03:32:14 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:32:20 [   DEBUG]   ✅ Step 2 completed in 6.11s
+2025-06-01 03:32:20 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:32:26 [   DEBUG]   ✅ Step 3 completed in 6.06s
+2025-06-01 03:32:26 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:32:28 [   DEBUG]   ✅ Step 4 completed in 1.30s
+2025-06-01 03:32:28 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:32:34 [   DEBUG]   ✅ Step 5 completed in 6.68s
+2025-06-01 03:32:34 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:32:36 [   DEBUG]   ✅ Step 6 completed in 1.56s
+2025-06-01 03:32:36 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:32:36 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=65.56314277648926
+2025-06-01 03:32:37 [   DEBUG]   ✅ Step 7 completed in 1.56s
+2025-06-01 03:32:37 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 67.13s
+2025-06-01 03:32:37 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:32:37 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:32:37 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:33:21 [   DEBUG]   ✅ Step 1 completed in 43.13s
+2025-06-01 03:33:21 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:33:27 [   DEBUG]   ✅ Step 2 completed in 6.21s
+2025-06-01 03:33:27 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:33:33 [   DEBUG]   ✅ Step 3 completed in 6.37s
+2025-06-01 03:33:33 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:33:34 [   DEBUG]   ✅ Step 4 completed in 1.27s
+2025-06-01 03:33:34 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:33:41 [   DEBUG]   ✅ Step 5 completed in 6.61s
+2025-06-01 03:33:41 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:33:43 [   DEBUG]   ✅ Step 6 completed in 1.67s
+2025-06-01 03:33:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:33:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=65.25468301773071
+2025-06-01 03:33:50 [   DEBUG]   ✅ Step 7 completed in 7.53s
+2025-06-01 03:33:50 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 72.79s
+2025-06-01 03:33:50 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 03:33:50 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 03:33:50 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:34:38 [   DEBUG]   ✅ Step 1 completed in 47.94s
+2025-06-01 03:34:38 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:34:45 [   DEBUG]   ✅ Step 2 completed in 6.47s
+2025-06-01 03:34:45 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:34:52 [   DEBUG]   ✅ Step 3 completed in 6.93s
+2025-06-01 03:34:52 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:34:53 [   DEBUG]   ✅ Step 4 completed in 1.60s
+2025-06-01 03:34:53 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:35:00 [   DEBUG]   ✅ Step 5 completed in 7.01s
+2025-06-01 03:35:00 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:35:02 [   DEBUG]   ✅ Step 6 completed in 1.69s
+2025-06-01 03:35:02 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:35:02 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=71.63684868812561
+2025-06-01 03:35:04 [   DEBUG]   ✅ Step 7 completed in 2.10s
+2025-06-01 03:35:04 [    INFO] ✅ Pipeline Cycle #6 completed successfully in 73.75s
+2025-06-01 03:35:04 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 03:35:04 [    INFO] 🔄 Starting Pipeline Cycle #7
+2025-06-01 03:35:04 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:35:50 [   DEBUG]   ✅ Step 1 completed in 46.38s
+2025-06-01 03:35:50 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:35:57 [   DEBUG]   ✅ Step 2 completed in 6.50s
+2025-06-01 03:35:57 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:36:03 [   DEBUG]   ✅ Step 3 completed in 6.26s
+2025-06-01 03:36:03 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:36:04 [   DEBUG]   ✅ Step 4 completed in 1.27s
+2025-06-01 03:36:04 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:36:11 [   DEBUG]   ✅ Step 5 completed in 6.91s
+2025-06-01 03:36:11 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:36:13 [   DEBUG]   ✅ Step 6 completed in 1.73s
+2025-06-01 03:36:13 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:36:13 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=69.05617880821228
+2025-06-01 03:36:15 [   DEBUG]   ✅ Step 7 completed in 2.12s
+2025-06-01 03:36:15 [    INFO] ✅ Pipeline Cycle #7 completed successfully in 71.18s
+2025-06-01 03:36:15 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 03:36:15 [    INFO] 🔄 Starting Pipeline Cycle #8
+2025-06-01 03:36:15 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:36:31 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:36:39 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:36:39 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:36:39 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:36:39 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:36:39 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:36:39 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:37:00 [   DEBUG]   ✅ Step 1 completed in 44.53s
+2025-06-01 03:37:00 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 03:37:00 [    INFO] ✅ Pipeline Cycle #8 completed successfully in 44.54s
+2025-06-01 03:37:00 [    INFO] ⏳ Waiting 15.5s until next cycle...
+2025-06-01 03:37:00 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 03:37:00 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:37:00 [    INFO] 🕐 Uptime: 0.2 hours
+2025-06-01 03:37:00 [    INFO] 🔄 Total Cycles: 8
+2025-06-01 03:37:00 [    INFO] ✅ Successful: 7
+2025-06-01 03:37:00 [    INFO] ❌ Failed: 1
+2025-06-01 03:37:00 [    INFO] 📈 Success Rate: 87.5%
+2025-06-01 03:37:00 [    INFO] ⏱️  Avg Cycle Time: 69.24s
+2025-06-01 03:37:00 [    INFO] 🎯 Matches Processed: 553
+2025-06-01 03:37:00 [    INFO] 🕐 Last Success: 03:36:15
+2025-06-01 03:37:00 [    INFO] ========================
+2025-06-01 03:37:23 [   DEBUG]   ✅ Step 1 completed in 44.22s
+2025-06-01 03:37:23 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:37:30 [   DEBUG]   ✅ Step 2 completed in 6.39s
+2025-06-01 03:37:30 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:37:36 [   DEBUG]   ✅ Step 3 completed in 6.07s
+2025-06-01 03:37:36 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:37:37 [   DEBUG]   ✅ Step 4 completed in 1.32s
+2025-06-01 03:37:37 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:37:44 [   DEBUG]   ✅ Step 5 completed in 6.94s
+2025-06-01 03:37:44 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:37:46 [   DEBUG]   ✅ Step 6 completed in 1.70s
+2025-06-01 03:37:46 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:37:46 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=66.6432740688324
+2025-06-01 03:37:47 [   DEBUG]   ✅ Step 7 completed in 1.66s
+2025-06-01 03:37:47 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 68.30s
+2025-06-01 03:37:47 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:37:47 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:37:47 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:38:27 [   DEBUG]   ✅ Step 1 completed in 40.10s
+2025-06-01 03:38:27 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:38:34 [   DEBUG]   ✅ Step 2 completed in 6.58s
+2025-06-01 03:38:34 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:38:40 [   DEBUG]   ✅ Step 3 completed in 6.16s
+2025-06-01 03:38:40 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:38:42 [   DEBUG]   ✅ Step 4 completed in 1.33s
+2025-06-01 03:38:42 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:38:49 [   DEBUG]   ✅ Step 5 completed in 7.05s
+2025-06-01 03:38:49 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:38:50 [   DEBUG]   ✅ Step 6 completed in 1.71s
+2025-06-01 03:38:50 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:38:50 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=62.92857050895691
+2025-06-01 03:38:52 [   DEBUG]   ✅ Step 7 completed in 1.68s
+2025-06-01 03:38:52 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 64.62s
+2025-06-01 03:38:52 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:38:52 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:38:52 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:39:37 [   DEBUG]   ✅ Step 1 completed in 44.59s
+2025-06-01 03:39:37 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:39:43 [   DEBUG]   ✅ Step 2 completed in 6.20s
+2025-06-01 03:39:43 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:39:49 [   DEBUG]   ✅ Step 3 completed in 6.41s
+2025-06-01 03:39:49 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:39:51 [   DEBUG]   ✅ Step 4 completed in 1.40s
+2025-06-01 03:39:51 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:39:58 [   DEBUG]   ✅ Step 5 completed in 7.19s
+2025-06-01 03:39:58 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:39:59 [   DEBUG]   ✅ Step 6 completed in 1.64s
+2025-06-01 03:39:59 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:39:59 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=67.44027662277222
+2025-06-01 03:40:01 [   DEBUG]   ✅ Step 7 completed in 1.86s
+2025-06-01 03:40:01 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 69.31s
+2025-06-01 03:40:01 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:40:01 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 03:40:01 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:40:44 [   DEBUG]   ✅ Step 1 completed in 42.81s
+2025-06-01 03:40:44 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:40:51 [   DEBUG]   ✅ Step 2 completed in 6.62s
+2025-06-01 03:40:51 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:40:57 [   DEBUG]   ✅ Step 3 completed in 6.67s
+2025-06-01 03:40:57 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:40:59 [   DEBUG]   ✅ Step 4 completed in 1.35s
+2025-06-01 03:40:59 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:41:06 [   DEBUG]   ✅ Step 5 completed in 7.56s
+2025-06-01 03:41:06 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:41:08 [   DEBUG]   ✅ Step 6 completed in 1.61s
+2025-06-01 03:41:08 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:41:08 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=66.62674617767334
+2025-06-01 03:41:10 [   DEBUG]   ✅ Step 7 completed in 1.79s
+2025-06-01 03:41:10 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 68.43s
+2025-06-01 03:41:10 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:41:10 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 03:41:10 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:42:00 [   DEBUG]   ✅ Step 1 completed in 49.84s
+2025-06-01 03:42:00 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:42:06 [   DEBUG]   ✅ Step 2 completed in 6.68s
+2025-06-01 03:42:06 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:42:13 [   DEBUG]   ✅ Step 3 completed in 6.45s
+2025-06-01 03:42:13 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:42:13 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:42:14 [   DEBUG]   ✅ Step 4 completed in 1.42s
+2025-06-01 03:42:14 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 03:42:14 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 64.40s
+2025-06-01 03:42:14 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 03:42:14 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:42:14 [    INFO] 🕐 Uptime: 0.1 hours
+2025-06-01 03:42:14 [    INFO] 🔄 Total Cycles: 5
+2025-06-01 03:42:14 [    INFO] ✅ Successful: 4
+2025-06-01 03:42:14 [    INFO] ❌ Failed: 1
+2025-06-01 03:42:14 [    INFO] 📈 Success Rate: 80.0%
+2025-06-01 03:42:14 [    INFO] ⏱️  Avg Cycle Time: 67.00s
+2025-06-01 03:42:14 [    INFO] 🎯 Matches Processed: 316
+2025-06-01 03:42:14 [    INFO] 🕐 Last Success: 03:41:10
+2025-06-01 03:42:14 [    INFO] ========================
+2025-06-01 03:42:28 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:42:28 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:42:28 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:42:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:42:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:42:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:43:14 [   DEBUG]   ✅ Step 1 completed in 46.46s
+2025-06-01 03:43:14 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:43:21 [   DEBUG]   ✅ Step 2 completed in 6.95s
+2025-06-01 03:43:21 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:43:27 [   DEBUG]   ✅ Step 3 completed in 6.30s
+2025-06-01 03:43:27 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:43:29 [   DEBUG]   ✅ Step 4 completed in 1.37s
+2025-06-01 03:43:29 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:43:36 [   DEBUG]   ✅ Step 5 completed in 7.06s
+2025-06-01 03:43:36 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:43:37 [   DEBUG]   ✅ Step 6 completed in 1.58s
+2025-06-01 03:43:37 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:43:37 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=69.72132205963135
+2025-06-01 03:43:39 [   DEBUG]   ✅ Step 7 completed in 1.70s
+2025-06-01 03:43:39 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 71.42s
+2025-06-01 03:43:39 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:43:39 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:43:39 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:44:24 [   DEBUG]   ✅ Step 1 completed in 45.11s
+2025-06-01 03:44:24 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:44:30 [   DEBUG]   ✅ Step 2 completed in 6.32s
+2025-06-01 03:44:30 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:44:37 [   DEBUG]   ✅ Step 3 completed in 6.15s
+2025-06-01 03:44:37 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:44:38 [   DEBUG]   ✅ Step 4 completed in 1.39s
+2025-06-01 03:44:38 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:44:45 [   DEBUG]   ✅ Step 5 completed in 7.48s
+2025-06-01 03:44:45 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:44:47 [   DEBUG]   ✅ Step 6 completed in 1.75s
+2025-06-01 03:44:47 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:44:47 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=68.18987512588501
+2025-06-01 03:44:56 [   DEBUG]   ✅ Step 7 completed in 9.05s
+2025-06-01 03:44:56 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 77.25s
+2025-06-01 03:44:56 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:44:56 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 03:44:56 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:45:42 [   DEBUG]   ✅ Step 1 completed in 45.70s
+2025-06-01 03:45:42 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:45:48 [   DEBUG]   ✅ Step 2 completed in 6.33s
+2025-06-01 03:45:48 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:45:55 [   DEBUG]   ✅ Step 3 completed in 6.45s
+2025-06-01 03:45:55 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:45:56 [   DEBUG]   ✅ Step 4 completed in 1.46s
+2025-06-01 03:45:56 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:46:01 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 03:46:04 [   DEBUG]   ✅ Step 5 completed in 7.51s
+2025-06-01 03:46:04 [    INFO] 🛑 Shutdown requested, aborting pipeline
+2025-06-01 03:46:04 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 67.45s
+2025-06-01 03:46:04 [    INFO] 🏁 Football Bot Continuous Pipeline stopped
+2025-06-01 03:46:04 [    INFO] 📊 === STATUS REPORT ===
+2025-06-01 03:46:04 [    INFO] 🕐 Uptime: 0.1 hours
+2025-06-01 03:46:04 [    INFO] 🔄 Total Cycles: 3
+2025-06-01 03:46:04 [    INFO] ✅ Successful: 2
+2025-06-01 03:46:04 [    INFO] ❌ Failed: 1
+2025-06-01 03:46:04 [    INFO] 📈 Success Rate: 66.7%
+2025-06-01 03:46:04 [    INFO] ⏱️  Avg Cycle Time: 72.03s
+2025-06-01 03:46:04 [    INFO] 🎯 Matches Processed: 158
+2025-06-01 03:46:04 [    INFO] 🕐 Last Success: 03:44:56
+2025-06-01 03:46:04 [    INFO] ========================
+2025-06-01 03:46:28 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 03:46:28 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 03:46:28 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 03:46:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:46:28 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 03:46:28 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:47:16 [   DEBUG]   ✅ Step 1 completed in 47.86s
+2025-06-01 03:47:16 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:47:22 [   DEBUG]   ✅ Step 2 completed in 6.21s
+2025-06-01 03:47:22 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:47:28 [   DEBUG]   ✅ Step 3 completed in 6.10s
+2025-06-01 03:47:28 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:47:30 [   DEBUG]   ✅ Step 4 completed in 1.43s
+2025-06-01 03:47:30 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:47:36 [   DEBUG]   ✅ Step 5 completed in 6.84s
+2025-06-01 03:47:36 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:47:38 [   DEBUG]   ✅ Step 6 completed in 1.57s
+2025-06-01 03:47:38 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:47:38 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=70.02038049697876
+2025-06-01 03:47:50 [   DEBUG]   ✅ Step 7 completed in 12.39s
+2025-06-01 03:47:50 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 82.41s
+2025-06-01 03:47:50 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:47:50 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 03:47:50 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 03:48:38 [   DEBUG]   ✅ Step 1 completed in 47.22s
+2025-06-01 03:48:38 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 03:48:44 [   DEBUG]   ✅ Step 2 completed in 6.50s
+2025-06-01 03:48:44 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 03:48:50 [   DEBUG]   ✅ Step 3 completed in 6.25s
+2025-06-01 03:48:50 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 03:48:52 [   DEBUG]   ✅ Step 4 completed in 1.40s
+2025-06-01 03:48:52 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 03:49:00 [   DEBUG]   ✅ Step 5 completed in 8.45s
+2025-06-01 03:49:00 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 03:49:02 [   DEBUG]   ✅ Step 6 completed in 1.72s
+2025-06-01 03:49:02 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 03:49:02 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=71.5282974243164
+2025-06-01 04:18:30 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 04:18:47 [    INFO] 🛑 Received SIGTERM, initiating graceful shutdown...
+2025-06-01 04:21:05 [    INFO] 🚀 Football Bot Continuous Orchestrator initialized
+2025-06-01 04:21:05 [    INFO] 🌟 Starting Football Bot Continuous Pipeline
+2025-06-01 04:21:05 [    INFO] ⏰ Smart timing: 60s intervals or immediate if pipeline takes ≥2min
+2025-06-01 04:21:05 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 04:21:05 [    INFO] 🔄 Starting Pipeline Cycle #1
+2025-06-01 04:21:05 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:21:53 [   DEBUG]   ✅ Step 1 completed in 47.35s
+2025-06-01 04:21:53 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:22:00 [   DEBUG]   ✅ Step 2 completed in 6.72s
+2025-06-01 04:22:00 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 04:22:06 [   DEBUG]   ✅ Step 3 completed in 6.76s
+2025-06-01 04:22:06 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 04:22:08 [   DEBUG]   ✅ Step 4 completed in 1.46s
+2025-06-01 04:22:08 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 04:22:15 [   DEBUG]   ✅ Step 5 completed in 7.52s
+2025-06-01 04:22:15 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 04:22:17 [   DEBUG]   ✅ Step 6 completed in 1.62s
+2025-06-01 04:22:17 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 04:22:17 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=71.42624878883362
+2025-06-01 04:22:19 [   DEBUG]   ✅ Step 7 completed in 1.69s
+2025-06-01 04:22:19 [    INFO] ✅ Pipeline Cycle #1 completed successfully in 73.11s
+2025-06-01 04:22:19 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 04:22:19 [    INFO] 🔄 Starting Pipeline Cycle #2
+2025-06-01 04:22:19 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:23:04 [   DEBUG]   ✅ Step 1 completed in 45.68s
+2025-06-01 04:23:04 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:23:11 [   DEBUG]   ✅ Step 2 completed in 6.54s
+2025-06-01 04:23:11 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 04:23:17 [   DEBUG]   ✅ Step 3 completed in 6.51s
+2025-06-01 04:23:17 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 04:23:19 [   DEBUG]   ✅ Step 4 completed in 1.49s
+2025-06-01 04:23:19 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 04:23:26 [   DEBUG]   ✅ Step 5 completed in 7.45s
+2025-06-01 04:23:26 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 04:23:28 [   DEBUG]   ✅ Step 6 completed in 1.65s
+2025-06-01 04:23:28 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 04:23:28 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=69.32744407653809
+2025-06-01 04:23:30 [   DEBUG]   ✅ Step 7 completed in 1.57s
+2025-06-01 04:23:30 [    INFO] ✅ Pipeline Cycle #2 completed successfully in 70.91s
+2025-06-01 04:23:30 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 04:23:30 [    INFO] 🔄 Starting Pipeline Cycle #3
+2025-06-01 04:23:30 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:24:20 [   DEBUG]   ✅ Step 1 completed in 50.37s
+2025-06-01 04:24:20 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:24:26 [   DEBUG]   ✅ Step 2 completed in 6.41s
+2025-06-01 04:24:26 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 04:24:33 [   DEBUG]   ✅ Step 3 completed in 6.39s
+2025-06-01 04:24:33 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 04:24:34 [   DEBUG]   ✅ Step 4 completed in 1.38s
+2025-06-01 04:24:34 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 04:24:42 [   DEBUG]   ✅ Step 5 completed in 7.63s
+2025-06-01 04:24:42 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 04:24:43 [   DEBUG]   ✅ Step 6 completed in 1.76s
+2025-06-01 04:24:43 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 04:24:43 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=73.93330240249634
+2025-06-01 04:24:45 [   DEBUG]   ✅ Step 7 completed in 1.66s
+2025-06-01 04:24:45 [    INFO] ✅ Pipeline Cycle #3 completed successfully in 75.60s
+2025-06-01 04:24:45 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 04:24:45 [    INFO] 🔄 Starting Pipeline Cycle #4
+2025-06-01 04:24:45 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:25:28 [   DEBUG]   ✅ Step 1 completed in 42.88s
+2025-06-01 04:25:28 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:25:35 [   DEBUG]   ✅ Step 2 completed in 6.51s
+2025-06-01 04:25:35 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 04:25:41 [   DEBUG]   ✅ Step 3 completed in 6.22s
+2025-06-01 04:25:41 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 04:25:42 [   DEBUG]   ✅ Step 4 completed in 1.43s
+2025-06-01 04:25:42 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 04:25:50 [   DEBUG]   ✅ Step 5 completed in 7.82s
+2025-06-01 04:25:50 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 04:25:52 [   DEBUG]   ✅ Step 6 completed in 1.66s
+2025-06-01 04:25:52 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 04:25:52 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=66.51517248153687
+2025-06-01 04:25:53 [   DEBUG]   ✅ Step 7 completed in 1.63s
+2025-06-01 04:25:53 [    INFO] ✅ Pipeline Cycle #4 completed successfully in 68.16s
+2025-06-01 04:25:53 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 04:25:53 [    INFO] 🔄 Starting Pipeline Cycle #5
+2025-06-01 04:25:53 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:26:32 [   DEBUG]   ✅ Step 1 completed in 38.85s
+2025-06-01 04:26:32 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:26:39 [   DEBUG]   ✅ Step 2 completed in 6.49s
+2025-06-01 04:26:39 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator
+2025-06-01 04:26:45 [   DEBUG]   ✅ Step 3 completed in 6.41s
+2025-06-01 04:26:45 [   DEBUG]   📋 Executing Step 4: Match Summary Extractor
+2025-06-01 04:26:47 [   DEBUG]   ✅ Step 4 completed in 1.63s
+2025-06-01 04:26:47 [   DEBUG]   📋 Executing Step 5: Odds & Environment Converter
+2025-06-01 04:26:54 [   DEBUG]   ✅ Step 5 completed in 7.55s
+2025-06-01 04:26:54 [   DEBUG]   📋 Executing Step 6: Pretty Print Display
+2025-06-01 04:26:56 [   DEBUG]   ✅ Step 6 completed in 1.61s
+2025-06-01 04:26:56 [   DEBUG]   📋 Executing Step 7: Match Status Filter (2,3,4,5,6,7)
+2025-06-01 04:26:56 [   DEBUG]   🔍 About to call run_status_filter() with pipeline_time=62.54169416427612
+2025-06-01 04:26:57 [   DEBUG]   ✅ Step 7 completed in 1.60s
+2025-06-01 04:26:57 [    INFO] ✅ Pipeline Cycle #5 completed successfully in 64.15s
+2025-06-01 04:26:57 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 04:26:57 [    INFO] 🔄 Starting Pipeline Cycle #6
+2025-06-01 04:26:57 [   DEBUG]   📋 Executing Step 1: Data Fetcher
+2025-06-01 04:27:37 [   DEBUG]   ✅ Step 1 completed in 39.91s
+2025-06-01 04:27:37 [   DEBUG]   📋 Executing Step 2: Data Processor
+2025-06-01 04:27:44 [   DEBUG]   ✅ Step 2 completed in 6.32s
+2025-06-01 04:27:44 [   DEBUG]   📋 Executing Step 3: JSON Summary Generator

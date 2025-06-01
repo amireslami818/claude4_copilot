@@ -16,8 +16,6 @@ IMPORTANT TERMINOLOGY:
 
 import json
 import os
-import fcntl
-import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -184,19 +182,14 @@ def summarize_environment(env):
     return lines or ["No environment data available"]
 
 def save_step5_json(step5_data, output_file="step5.json"):
-    """Save the step5 data to step5.json file with file locking"""
+    """Save the step5 data to step5.json file"""
     path = os.path.join(os.path.dirname(__file__), output_file)
     try:
         data = {"history": []}
-        
-        # Read existing data with file locking
         if os.path.exists(path): 
             with open(path, 'r') as f:
-                fcntl.flock(f.fileno(), fcntl.LOCK_SH)  # Shared lock for reading
                 existing = json.load(f)
                 data = existing if isinstance(existing, dict) and existing.get("history") else {"history": [existing]}
-                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
-        
         data["history"].append(step5_data)
         data.update({
             "last_updated": step5_data["generated_at"], 
@@ -205,15 +198,166 @@ def save_step5_json(step5_data, output_file="step5.json"):
         })
         data["ny_timestamp"] = get_eastern_time()
         
-        # Write with exclusive lock
+        # Add status summary from step 4 data
+        if "statistics" in step5_data and "by_status" in step5_data["statistics"]:
+            data["status_summary"] = step5_data["statistics"]["by_status"]
+        
+        # Add status summary from step 1 data
+        step1_status_counts, step1_total = count_matches_by_status_from_step1()
+        if step1_status_counts:
+            data["status_summary_from_step1"] = step1_status_counts
+            data["total_matches_from_step1"] = step1_total
+        
         with open(path, "w") as f: 
-            fcntl.flock(f.fileno(), fcntl.LOCK_EX)  # Exclusive lock for writing
             json.dump(data, f, indent=2, ensure_ascii=False)
-            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
         return True
     except Exception as e:
         print(f"Error saving step5.json: {e}")
         return False
+
+def get_status_id_mapping():
+    """Get mapping from status descriptions to status IDs"""
+    return {
+        "First half": 2,
+        "Half-time break": 3, 
+        "Second half": 4,
+        "Extra time break": 5,
+        "Extra time": 6,
+        "Finished": 7,
+        "Postponed": 8,
+        "Interrupted": 9,
+        "Cancelled": 10,
+        "To be announced": 11,
+        "Awarded": 12,
+        "Abandoned": 13
+    }
+
+def count_matches_by_status(matches):
+    """Count matches by status and return formatted counts with status IDs"""
+    status_counts = {}
+    
+    # Count matches by status
+    for match_data in matches.values():
+        status = match_data.get("status", "Unknown")
+        status_counts[status] = status_counts.get(status, 0) + 1
+    
+    # Get status ID mapping
+    status_id_map = get_status_id_mapping()
+    
+    # Create formatted results with status IDs
+    formatted_counts = {}
+    for status, count in status_counts.items():
+        status_id = status_id_map.get(status, "Unknown")
+        formatted_counts[status] = {
+            "count": count,
+            "status_id": status_id
+        }
+    
+    return formatted_counts
+
+def print_status_summary(matches):
+    """Print a formatted summary of match counts by status"""
+    total_matches = len(matches)
+    status_counts = count_matches_by_status(matches)
+    
+    print("=" * 80)
+    print("                           STEP 5 - MATCH STATUS SUMMARY                           ")
+    print("=" * 80)
+    print(f"Total Matches: {total_matches}")
+    print("-" * 80)
+    
+    # Sort by count (descending) for better readability
+    sorted_statuses = sorted(status_counts.items(), key=lambda x: x[1]["count"], reverse=True)
+    
+    for status, data in sorted_statuses:
+        count = data["count"]
+        status_id = data["status_id"]
+        if status_id != "Unknown":
+            print(f"{status} (ID: {status_id}): {count} Matches")
+        else:
+            print(f"{status}: {count} Matches")
+    
+    print("=" * 80)
+
+def count_matches_by_status_from_step1():
+    """Count matches by status from step1.json (main fetch data)"""
+    step1_path = BASE_DIR.parent / "step1.json"
+    
+    if not step1_path.exists():
+        return {}, 0
+    
+    try:
+        with open(step1_path, 'r') as f:
+            step1_data = json.load(f)
+        
+        # Check if matches are in live_matches.results
+        if "live_matches" in step1_data and "results" in step1_data["live_matches"]:
+            matches = step1_data["live_matches"]["results"]
+        else:
+            matches = step1_data.get("matches", {})
+        
+        total_matches = len(matches)
+        status_counts = {}
+        
+        # Get status ID to description mapping
+        status_desc_map = {
+            1: "Not started",
+            2: "First half",
+            3: "Half-time break",
+            4: "Second half",
+            5: "Extra time",
+            6: "Penalty shootout",
+            7: "Finished",
+            8: "Finished",
+            9: "Postponed",
+            10: "Canceled",
+            11: "To be announced",
+            12: "Interrupted",
+            13: "Abandoned",
+            14: "Suspended"
+        }
+        
+        # Count matches by status_id
+        if isinstance(matches, list):
+            for match in matches:
+                status_id = match.get("status_id")
+                if status_id is not None:
+                    status_desc = status_desc_map.get(status_id, f"Unknown Status (ID: {status_id})")
+                    status_counts[status_desc] = status_counts.get(status_desc, 0) + 1
+        else:
+            for match in matches.values():
+                status_id = match.get("status_id")
+                if status_id is not None:
+                    status_desc = status_desc_map.get(status_id, f"Unknown Status (ID: {status_id})")
+                    status_counts[status_desc] = status_counts.get(status_desc, 0) + 1
+        
+        return status_counts, total_matches
+        
+    except Exception as e:
+        print(f"Step 5: Error reading step1.json: {e}")
+        return {}, 0
+
+def print_status_summary_from_step1():
+    """Print a formatted summary of match counts by status from step1 data"""
+    status_counts, total_matches = count_matches_by_status_from_step1()
+    
+    if not status_counts:
+        print("Step 5: No step1 data available for status summary")
+        return
+    
+    print("=" * 80)
+    print("                        STEP 5 - STATUS SUMMARY FROM STEP 1                        ")
+    print("=" * 80)
+    print(f"Total Matches: {total_matches}")
+    print("-" * 80)
+    
+    # Sort by count (descending) for better readability
+    sorted_statuses = sorted(status_counts.items(), key=lambda x: x[1], reverse=True)
+    
+    for status, count in sorted_statuses:
+        print(f"{status}: {count} Matches")
+    
+    print("=" * 80)
 
 def odds_environment_converter():
     """Main function to process step4 data and convert odds/environment"""
@@ -330,10 +474,19 @@ def odds_environment_converter():
         
         converted_matches[match_id] = converted_match
     
+    # Generate status summary statistics
+    status_counts = count_matches_by_status(converted_matches)
+    by_status = {}
+    for status, data in status_counts.items():
+        by_status[status] = data["count"]
+    
     # Create step5 output structure
     step5_output = {
         "generated_at": get_eastern_time(),
         "total_matches": len(converted_matches),
+        "statistics": {
+            "by_status": by_status
+        },
         "matches": converted_matches
     }
     
@@ -343,6 +496,9 @@ def odds_environment_converter():
         print(f"Step 5: Successfully processed {len(converted_matches)} matches")
     else:
         print("Step 5: Failed to save JSON file")
+    
+    print_status_summary(converted_matches)
+    print_status_summary_from_step1()
     
     return step5_output
 

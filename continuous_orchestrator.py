@@ -75,13 +75,13 @@ class ContinuousOrchestrator:
         
         # Pipeline step configurations
         self.steps = {
-            1: {"script": "step1.py", "desc": "Data Fetcher"},
+            1: {"script": "step1/step1.py", "desc": "Data Fetcher"},
             2: {"script": "step2/step2.py", "desc": "Data Processor"},
             3: {"script": "step3/step3.py", "desc": "JSON Summary Generator"},
             4: {"script": "step4/step4.py", "desc": "Match Summary Extractor"},
             5: {"script": "step5/step5.py", "desc": "Odds & Environment Converter"},
             6: {"script": "step6/step6.py", "desc": "Pretty Print Display"},
-            7: {"script": "step7.py", "desc": "Match Status Filter (2,3,4,5,6,7)"}
+            7: {"script": "step7/step7.py", "desc": "Match Status Filter (2,3,4,5,6,7)"}
         }
         
         # Performance metrics
