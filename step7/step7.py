@@ -419,6 +419,10 @@ def run_status_filter(pipeline_time=None):
     # Write the main header
     write_main_header(fetch_count, total_filtered, generated_at, pipeline_time)
     
+    # Print status summary for Step 7 filtered matches
+    if total_filtered > 0:
+        print_status_summary(matches)
+    
     if total_filtered == 0:
         log_and_print("No matches found for the given status filter (2-7).")
     else:
@@ -507,6 +511,42 @@ def safe_load_json_with_retry(file_path, max_retries=3, retry_delay=0.5):
             raise
     
     raise Exception(f"Failed to load JSON after {max_retries} attempts")
+
+def print_status_summary(matches: dict):
+    """
+    Print a status summary showing count of matches by status ID
+    Similar to Step 6 but for Step 7's filtered data (statuses 2-7)
+    """
+    if not matches:
+        return
+    
+    # Count matches by status
+    status_counts = {}
+    for match_data in matches.values():
+        status_id = match_data.get("status_id")
+        if status_id is not None:
+            status_counts[status_id] = status_counts.get(status_id, 0) + 1
+    
+    if not status_counts:
+        return
+    
+    # Calculate total matches
+    total_matches = sum(status_counts.values())
+    
+    # Sort by status ID for consistent display
+    sorted_statuses = sorted(status_counts.items())
+    
+    log_and_print("\n" + "="*80)
+    log_and_print("MATCH STATUS SUMMARY".center(80))
+    log_and_print("="*80)
+    log_and_print(f"Total Matches: {total_matches}")
+    log_and_print("-"*80)
+    
+    for status_id, count in sorted_statuses:
+        status_desc = get_status_description(status_id)
+        log_and_print(f"{status_desc} (ID: {status_id}): {count} Match{'es' if count != 1 else ''}")
+    
+    log_and_print("="*80)
 
 def main():
     """Main function to execute the script logic."""
