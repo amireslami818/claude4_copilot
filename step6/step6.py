@@ -506,6 +506,9 @@ def pretty_print_matches(pipeline_time=None):
     
     print(f"\nStep 6: Successfully displayed {total_matches} matches")
     
+    # Write status summary before footer
+    write_status_summary(matches)
+    
     # Write main footer to log
     write_main_footer(fetch_count, total_matches, generated_at, pipeline_time)
     
@@ -539,6 +542,62 @@ def write_status_group_header(status_id, status_description):
     header += f"{'='*80}\n"
     
     match_logger.info(header)
+
+def count_matches_by_status(matches):
+    """Count matches by status ID and return formatted summary"""
+    # Create reverse mapping from description to ID
+    status_map = {
+        "Not started": 1,
+        "First half": 2,
+        "Half-time break": 3,
+        "Second half": 4,
+        "Extra time": 5,
+        "Penalty shootout": 6,
+        "Finished": 7,  # Note: Both 7 and 8 map to "Finished", using 7
+        "Postponed": 9,
+        "Canceled": 10,
+        "To be announced": 11,
+        "Interrupted": 12,
+        "Abandoned": 13,
+        "Suspended": 14
+    }
+    
+    status_counts = {}
+    
+    for match_id, match_data in matches.items():
+        # Extract status from match data (it's stored as a string)
+        status_str = match_data.get('status', '')
+        status_id = status_map.get(status_str)
+            
+        if status_id is not None:
+            status_counts[status_id] = status_counts.get(status_id, 0) + 1
+    
+    return status_counts
+
+def write_status_summary(matches):
+    """Write a summary of match counts by status to the log"""
+    status_counts = count_matches_by_status(matches)
+    
+    if not status_counts:
+        return
+    
+    # Calculate total matches
+    total_matches = sum(status_counts.values())
+    
+    # Sort by status ID for consistent display
+    sorted_statuses = sorted(status_counts.items())
+    
+    log_and_print("\n" + "="*80)
+    log_and_print("MATCH STATUS SUMMARY".center(80))
+    log_and_print("="*80)
+    log_and_print(f"Total Matches: {total_matches}")
+    log_and_print("-"*80)
+    
+    for status_id, count in sorted_statuses:
+        status_desc = get_status_description(status_id)
+        log_and_print(f"{status_desc} (ID: {status_id}): {count} Match{'es' if count != 1 else ''}")
+    
+    log_and_print("="*80)
 
 if __name__ == "__main__":
     pretty_print_matches()
