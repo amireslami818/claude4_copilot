@@ -19,7 +19,7 @@ TZ = ZoneInfo("America/New_York")
 
 # Path constants - using absolute paths to avoid working directory issues
 BASE_DIR = Path(__file__).resolve().parent  # step7 directory for logs
-STEP5_JSON = Path(__file__).resolve().parent.parent / "step5" / "step5.json"  # Go up to Football_bot, then to step5
+STEP1_JSON = Path(__file__).resolve().parent.parent / "step1" / "step1.json"  # Changed to read from step1.json directly
 
 # The new status set: 2,3,4,5,6,7 (First half, Half-time, Second half, Overtime, Overtime (deprecated), Penalty Shoot-out)
 STATUS_FILTER = {2, 3, 4, 5, 6, 7}
@@ -394,6 +394,209 @@ def infer_country_from_teams(match_data):
     # Default fallback
     return "Unknown"
 
+def process_environment_like_step2(env):
+    """Process environment data like step2 does"""
+    import re
+    
+    parsed = {"raw": env}
+    
+    # Weather code mapping
+    wc = env.get("weather")
+    parsed["weather"] = int(wc) if isinstance(wc, str) and wc.isdigit() else wc
+    desc = {1:"Sunny",2:"Partly Cloudy",3:"Cloudy",4:"Overcast",5:"Foggy",6:"Light Rain",7:"Rain",8:"Heavy Rain",9:"Snow",10:"Thunder"}
+    parsed["weather_description"] = desc.get(parsed["weather"], f"Unknown ({parsed['weather']})")
+    
+    # Temperature conversion
+    temp = env.get("temperature")
+    if temp and str(temp).replace("-", "").isdigit():
+        temp_c = int(temp)
+        temp_f = round((temp_c * 9/5) + 32)
+        parsed["temperature"] = f"{temp_c}°C ({temp_f}°F)"
+    else:
+        parsed["temperature"] = str(temp) if temp else "Unknown"
+    
+    # Wind processing
+    wind = env.get("wind")
+    if wind and str(wind).replace(".", "").isdigit():
+        wind_mph = float(wind)
+        if wind_mph < 1:
+            parsed["wind_description"] = "Calm"
+        elif wind_mph < 4:
+            parsed["wind_description"] = "Light Air"
+        elif wind_mph < 8:
+            parsed["wind_description"] = "Light Breeze"
+        elif wind_mph < 13:
+            parsed["wind_description"] = "Gentle Breeze"
+        elif wind_mph < 19:
+            parsed["wind_description"] = "Moderate Breeze"
+        elif wind_mph < 25:
+            parsed["wind_description"] = "Fresh Breeze"
+        elif wind_mph < 32:
+            parsed["wind_description"] = "Strong Breeze"
+        elif wind_mph < 39:
+            parsed["wind_description"] = "Near Gale"
+        elif wind_mph < 47:
+            parsed["wind_description"] = "Gale"
+        elif wind_mph < 55:
+            parsed["wind_description"] = "Strong Gale"
+        elif wind_mph < 64:
+            parsed["wind_description"] = "Storm"
+        elif wind_mph < 73:
+            parsed["wind_description"] = "Violent Storm"
+        else:
+            parsed["wind_description"] = "Hurricane"
+        parsed["wind"] = f"{wind_mph} mph ({parsed['wind_description']})"
+    else:
+        parsed["wind"] = str(wind) if wind else "Unknown"
+    
+    # Pressure and humidity
+    parsed["pressure"] = f"{env.get('pressure', 'Unknown')} hPa"
+    parsed["humidity"] = f"{env.get('humidity', 'Unknown')}%"
+    
+    return parsed
+
+def summarize_environment_step5_style(env_data):
+    """Create environment summary like step5 does"""
+    if not env_data:
+        return "No environment data available"
+    
+    parts = []
+    if "weather_description" in env_data:
+        parts.append(env_data["weather_description"])
+    if "temperature" in env_data:
+        parts.append(env_data["temperature"])
+    if "wind_description" in env_data:
+        parts.append(f"Wind: {env_data['wind_description']}")
+    
+    return ", ".join(parts) if parts else "Environment data available"
+
+def merge_match_data_from_step1(match, match_details, match_odds, team_info, competition_info, countries=None):
+    """
+    Merge raw step1 data like Steps 2-5 do it.
+    This replicates the merging logic from step2.py extract_summary_fields()
+    """
+    match_id = match.get("id")
+    
+    # Get match details
+    match_detail = {}
+    if match_id in match_details:
+        detail_wrap = match_details[match_id]
+        if isinstance(detail_wrap, dict):
+            results = detail_wrap.get("results") or detail_wrap.get("result") or []
+            if isinstance(results, list) and results:
+                match_detail = results[0]
+    
+    # Get team names
+    home_team_name = "Unknown Home Team"
+    away_team_name = "Unknown Away Team"
+    
+    home_team_id = match_detail.get("home_team_id") or match.get("home_team_id")
+    away_team_id = match_detail.get("away_team_id") or match.get("away_team_id")
+    
+    if home_team_id and str(home_team_id) in team_info:
+        team_data = team_info[str(home_team_id)]
+        if isinstance(team_data, dict):
+            results = team_data.get("results") or team_data.get("result") or []
+            if isinstance(results, list) and results:
+                home_team_name = results[0].get("name", "Unknown Home Team")
+    
+    if away_team_id and str(away_team_id) in team_info:
+        team_data = team_info[str(away_team_id)]
+        if isinstance(team_data, dict):
+            results = team_data.get("results") or team_data.get("result") or []
+            if isinstance(results, list) and results:
+                away_team_name = results[0].get("name", "Unknown Away Team")
+    
+    # Get competition name and country
+    competition_name = "Unknown Competition"
+    country_name = "Unknown"
+    competition_id = match_detail.get("competition_id") or match.get("competition_id")
+    
+    if competition_id and str(competition_id) in competition_info:
+        comp_data = competition_info[str(competition_id)]
+        if isinstance(comp_data, dict):
+            results = comp_data.get("results") or comp_data.get("result") or []
+            if isinstance(results, list) and results:
+                comp_result = results[0]
+                competition_name = comp_result.get("name", "Unknown Competition")
+                
+                # Get country name from country_id
+                country_id = comp_result.get("country_id")
+                if country_id and countries and isinstance(countries, dict):
+                    countries_data = countries.get("results", [])
+                    if isinstance(countries_data, list):
+                        for country in countries_data:
+                            if isinstance(country, dict) and country.get("id") == country_id:
+                                country_name = country.get("name", "Unknown")
+                                break
+    
+    # Get status information (same logic as Step 6)
+    status_id = None
+    if "status_id" in match:
+        status_id = match["status_id"]
+    elif "score" in match and isinstance(match["score"], list) and len(match["score"]) > 1:
+        status_id = match["score"][1]
+    
+    # Status mapping
+    status_desc_map = {
+        0: "Abnormal", 1: "Not started", 2: "First half", 3: "Half-time",
+        4: "Second half", 5: "Overtime", 6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out", 8: "End", 9: "Delay", 10: "Interrupt",
+        11: "Cut in half", 12: "Cancel", 13: "To be determined"
+    }
+    
+    # Get current score
+    current_score = "0-0"
+    if "score" in match and isinstance(match["score"], list) and len(match["score"]) >= 4:
+        home_score = match["score"][2]
+        away_score = match["score"][3]
+        if isinstance(home_score, list) and isinstance(away_score, list):
+            try:
+                home_val = home_score[0] if home_score else 0
+                away_val = away_score[0] if away_score else 0
+                current_score = f"{int(home_val)}-{int(away_val)}"
+            except (ValueError, TypeError, IndexError):
+                current_score = "0-0"
+    
+    # Get betting odds
+    betting_odds = {}
+    if match_id in match_odds:
+        odds_data = match_odds[match_id]
+        if isinstance(odds_data, dict) and "results" in odds_data:
+            odds_results = odds_data["results"]
+            if isinstance(odds_results, list):
+                # Filter odds by 3-6 minute time preference like Step 2
+                filtered_odds = filter_odds_by_time(odds_results)
+                betting_odds = process_betting_odds(filtered_odds)
+    
+    # Get environment data
+    environment_data = {}
+    environment_summary = ""
+    if match_detail.get("environment"):
+        environment_data = process_environment_like_step2(match_detail["environment"])
+        environment_summary = summarize_environment_step5_style(environment_data)
+    
+    # Create match data in step7 expected format
+    return {
+        "match_id": match_id,
+        "home_team": home_team_name,
+        "away_team": away_team_name,
+        "score": current_score,
+        "competition": competition_name,
+        "country": country_name,
+        "status": {
+            "id": status_id,
+            "description": status_desc_map.get(status_id, f"Unknown Status (ID: {status_id})")
+        },
+        "full_time_result": betting_odds.get("full_time_result", {}),
+        "spread": betting_odds.get("spread", {}),
+        "over_under": betting_odds.get("over_under", {}),
+        "environment": environment_data,
+        "environment_summary": environment_summary,
+        "raw_match_data": match,
+        "raw_match_details": match_detail
+    }
+
 def process_match(match_data: dict, comp_match_num: int, comp_total_matches: int):
     """
     Given one match's data, print + log its comprehensive details:
@@ -420,8 +623,10 @@ def process_match(match_data: dict, comp_match_num: int, comp_total_matches: int
     comp_line = f"Competition: {match_data.get('competition', 'Unknown')} ({match_data.get('country', 'Unknown')})"
     teams_line = f"Match: {match_data.get('home_team', 'Unknown')} vs {match_data.get('away_team', 'Unknown')}"
     score = match_data.get("score", "N/A")
-    status_id = match_data.get("status_id", None)
-    status_desc = get_status_description(status_id)
+    # Extract status_id from the correct nested structure
+    status_info = match_data.get("status", {})
+    status_id = status_info.get("id", None)
+    status_desc = status_info.get("description", get_status_description(status_id))
     status_line = f"Score: {score}\nStatus: {status_desc} (ID: {status_id})"
     
     log_and_print(comp_line)
@@ -451,31 +656,36 @@ def live_match_filter(pipeline_time=None):
         dict: Contains filtered matches and metadata
     """
     try:
-        # Load step5.json data
-        if not STEP5_JSON.exists():
+        # Load step1.json data
+        if not STEP1_JSON.exists():
             return {
                 "success": False,
-                "error": f"Step5 file not found: {STEP5_JSON}",
+                "error": f"Step1 file not found: {STEP1_JSON}",
                 "filtered_matches": 0,
                 "total_matches": 0
             }
         
-        # Load step5.json data with retry logic
+        # Load step1.json data with retry logic
         try:
-            step5_data = safe_load_json_with_retry(STEP5_JSON)
+            step1_data = safe_load_json_with_retry(STEP1_JSON)
         except Exception as e:
-            log_and_print(f"❌ Error loading step5.json: {e}")
+            log_and_print(f"❌ Error loading step1.json: {e}")
             return {
                 "success": False,
-                "error": f"Failed to load step5.json: {e}",
+                "error": f"Failed to load step1.json: {e}",
                 "filtered_matches": 0,
                 "total_matches": 0
             }
         
-        # Extract matches from step5 data
-        # The matches are in the latest history entry, not at the top level
-        history = step5_data.get("history", [])
-        if not history:
+        # Extract matches from step1 data and convert to step7 format
+        live_matches = step1_data.get("live_matches", {}).get("results", [])
+        match_details = step1_data.get("match_details", {})
+        team_info = step1_data.get("team_info", {})
+        competition_info = step1_data.get("competition_info", {})
+        match_odds = step1_data.get("match_odds", {})
+        countries = step1_data.get("countries", {})
+        
+        if not live_matches:
             return {
                 "success": True,
                 "filtered_matches": 0,
@@ -483,22 +693,19 @@ def live_match_filter(pipeline_time=None):
                 "matches": {}
             }
         
-        # Get the latest entry from history
-        latest_entry = history[-1]
-        matches = latest_entry.get("matches", {})
-        if not matches:
-            return {
-                "success": True,
-                "filtered_matches": 0,
-                "total_matches": 0,
-                "matches": {}
-            }
+        # Convert step1 data to step7 expected format using proper merging
+        matches = {}
+        for match in live_matches:
+            match_id = match.get("id")
+            if match_id:
+                merged_match = merge_match_data_from_step1(match, match_details, match_odds, team_info, competition_info, countries)
+                matches[match_id] = merged_match
         
         # Filter matches by status IDs 2-7
         filtered_matches = {
             match_id: match_data
             for match_id, match_data in matches.items()
-            if match_data.get("status_id") in STATUS_FILTER
+            if match_data.get("status", {}).get("id") in STATUS_FILTER
         }
         
         filtered_count = len(filtered_matches)
@@ -1347,3 +1554,163 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def filter_odds_by_time(odds_entries):
+    """Filter odds entries by time window like step2 does (3-6 minute window)"""
+    import re
+    
+    def _safe_minute(v):
+        if v is None:
+            return None
+        m = re.match(r"(\d+)", str(v))
+        return int(m.group(1)) if m else None
+    
+    # Extract minute from each entry
+    pts = [(_safe_minute(ent[1]), ent) for ent in odds_entries if isinstance(ent, (list, tuple)) and len(ent) > 1]
+    pts = [(m, e) for m, e in pts if m is not None]
+    
+    # Prefer entries in 3-6 minute window
+    in_window = [e for m, e in pts if 3 <= m <= 6]
+    if in_window:
+        return in_window
+    
+    # Fall back to entries under 10 minutes, closest to 4.5
+    under_ten = [(m, e) for m, e in pts if m < 10]
+    if under_ten:
+        return [min(under_ten, key=lambda t: abs(t[0] - 4.5))[1]]
+    
+    return []
+
+def process_betting_odds(filtered_odds):
+    """Process betting odds like step2 does"""
+    betting_odds = {}
+    
+    for odds_entry in filtered_odds:
+        if isinstance(odds_entry, (list, tuple)) and len(odds_entry) > 5:
+            odds_type = odds_entry[0]
+            if odds_type == "1x2":  # Full Time Result
+                betting_odds["full_time_result"] = {
+                    "home": odds_entry[2] if len(odds_entry) > 2 else None,
+                    "draw": odds_entry[3] if len(odds_entry) > 3 else None,
+                    "away": odds_entry[4] if len(odds_entry) > 4 else None,
+                    "time": odds_entry[1] if len(odds_entry) > 1 else "0"
+                }
+            elif odds_type == "ah":  # Asian Handicap (Spread)
+                betting_odds["spread"] = {
+                    "handicap": odds_entry[5] if len(odds_entry) > 5 else None,
+                    "home": odds_entry[2] if len(odds_entry) > 2 else None,
+                    "away": odds_entry[3] if len(odds_entry) > 3 else None,
+                    "time": odds_entry[1] if len(odds_entry) > 1 else "0"
+                }
+            elif odds_type == "ou":  # Over/Under
+                line = odds_entry[5] if len(odds_entry) > 5 else "0"
+                if line not in betting_odds.get("over_under", {}):
+                    if "over_under" not in betting_odds:
+                        betting_odds["over_under"] = {}
+                    betting_odds["over_under"][line] = {
+                        "over": odds_entry[2] if len(odds_entry) > 2 else None,
+                        "line": line,
+                        "under": odds_entry[4] if len(odds_entry) > 4 else None,
+                        "time": odds_entry[1] if len(odds_entry) > 1 else "0"
+                    }
+    return betting_odds
+
+def process_environment_like_step2(env):
+    """Process environment data like step2 does"""
+    import re
+    
+    parsed = {"raw": env}
+    
+    # Weather code mapping
+    wc = env.get("weather")
+    parsed["weather"] = int(wc) if isinstance(wc, str) and wc.isdigit() else wc
+    desc = {1:"Sunny",2:"Partly Cloudy",3:"Cloudy",4:"Overcast",5:"Foggy",6:"Light Rain",7:"Rain",8:"Heavy Rain",9:"Snow",10:"Thunder"}
+    parsed["weather_description"] = desc.get(parsed["weather"], f"Unknown ({parsed['weather']})")
+    
+    # Temperature conversion
+    temp = env.get("temperature")
+    if temp and str(temp).replace("-", "").isdigit():
+        temp_c = int(temp)
+        temp_f = round((temp_c * 9/5) + 32)
+        parsed["temperature"] = f"{temp_c}°C ({temp_f}°F)"
+    else:
+        parsed["temperature"] = str(temp) if temp else "Unknown"
+    
+    # Wind processing
+    wind = env.get("wind")
+    if wind and str(wind).replace(".", "").isdigit():
+        wind_mph = float(wind)
+        if wind_mph < 1:
+            parsed["wind_description"] = "Calm"
+        elif wind_mph < 4:
+            parsed["wind_description"] = "Light Air"
+        elif wind_mph < 8:
+            parsed["wind_description"] = "Light Breeze"
+        elif wind_mph < 13:
+            parsed["wind_description"] = "Gentle Breeze"
+        elif wind_mph < 19:
+            parsed["wind_description"] = "Moderate Breeze"
+        elif wind_mph < 25:
+            parsed["wind_description"] = "Fresh Breeze"
+        elif wind_mph < 32:
+            parsed["wind_description"] = "Strong Breeze"
+        elif wind_mph < 39:
+            parsed["wind_description"] = "Near Gale"
+        elif wind_mph < 47:
+            parsed["wind_description"] = "Gale"
+        elif wind_mph < 55:
+            parsed["wind_description"] = "Strong Gale"
+        elif wind_mph < 64:
+            parsed["wind_description"] = "Storm"
+        elif wind_mph < 73:
+            parsed["wind_description"] = "Violent Storm"
+        else:
+            parsed["wind_description"] = "Hurricane"
+        parsed["wind"] = f"{wind_mph} mph ({parsed['wind_description']})"
+    else:
+        parsed["wind"] = str(wind) if wind else "Unknown"
+    
+    # Pressure and humidity
+    parsed["pressure"] = f"{env.get('pressure', 'Unknown')} hPa"
+    parsed["humidity"] = f"{env.get('humidity', 'Unknown')}%"
+    
+    return parsed
+
+def summarize_environment_step5_style(env_data):
+    """Create environment summary like step5 does"""
+    if not env_data:
+        return "No environment data available"
+    
+    parts = []
+    if "weather_description" in env_data:
+        parts.append(env_data["weather_description"])
+    if "temperature" in env_data:
+        parts.append(env_data["temperature"])
+    if "wind_description" in env_data:
+        parts.append(f"Wind: {env_data['wind_description']}")
+    
+    return ", ".join(parts) if parts else "Environment data available"
+
+def decimal_to_american(decimal_odds):
+    """Convert decimal odds to American format"""
+    if not decimal_odds or decimal_odds == 0:
+        return None
+    try:
+        decimal = float(decimal_odds)
+        if decimal >= 2.0:
+            return f"+{int((decimal - 1) * 100)}"
+        else:
+            return f"-{int(100 / (decimal - 1))}"
+    except (ValueError, ZeroDivisionError):
+        return None
+
+def hk_to_american(hk_odds):
+    """Convert Hong Kong odds to American format"""
+    if not hk_odds:
+        return None
+    try:
+        hk = float(hk_odds)
+        decimal = hk + 1
+        return decimal_to_american(decimal)
+    except (ValueError, TypeError):
+        return None
