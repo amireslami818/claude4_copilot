@@ -16,6 +16,8 @@ IMPORTANT TERMINOLOGY:
 
 import json
 import os
+import fcntl
+import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -182,14 +184,19 @@ def summarize_environment(env):
     return lines or ["No environment data available"]
 
 def save_step5_json(step5_data, output_file="step5.json"):
-    """Save the step5 data to step5.json file"""
+    """Save the step5 data to step5.json file with file locking"""
     path = os.path.join(os.path.dirname(__file__), output_file)
     try:
         data = {"history": []}
+        
+        # Read existing data with file locking
         if os.path.exists(path): 
             with open(path, 'r') as f:
+                fcntl.flock(f.fileno(), fcntl.LOCK_SH)  # Shared lock for reading
                 existing = json.load(f)
                 data = existing if isinstance(existing, dict) and existing.get("history") else {"history": [existing]}
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+        
         data["history"].append(step5_data)
         data.update({
             "last_updated": step5_data["generated_at"], 
@@ -198,8 +205,11 @@ def save_step5_json(step5_data, output_file="step5.json"):
         })
         data["ny_timestamp"] = get_eastern_time()
         
+        # Write with exclusive lock
         with open(path, "w") as f: 
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX)  # Exclusive lock for writing
             json.dump(data, f, indent=2, ensure_ascii=False)
+            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
         return True
     except Exception as e:
         print(f"Error saving step5.json: {e}")
