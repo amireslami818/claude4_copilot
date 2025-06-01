@@ -1,0 +1,1931 @@
+Step 6: Starting pretty print match display...
+Step 6: Received pipeline_time: None
+Step 6: Processing 95 matches for display
+Data generated at: 2025-06-01T12:52:01.258919
+This is fetch #363 for today
+Step 6: About to write header with pipeline_time: None
+
+================================================================================
+                  FOOTBALL BETTING DATA - SUMMARY FETCH: #363                   
+                     Fetch Time: 06/01/2025 09:24:53 AM EDT                     
+                               Total Matches: 95                                
+================================================================================
+
+================================================================================
+                                 MATCH 1 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 23xmvkh63zdlqg8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Finnish Kolmonen (None)
+Match: EPS Reservi vs GrIFK U23
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 2 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 318q66hxo39yqo9                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Jizzax FA vs Sirdaryo FA
+Score: [0, 1]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 3 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4h685jkq86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Sementchi Kuvasoy vs Navbahor Namangan B
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 4 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: jw2r09hklge8rz8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Navoiy FA vs Qumqo rg on FC
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 5 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l7oqdehgn97yr51                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Kattaqo'rg'on vs Qiziriq Football Club
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 6 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7hnw4ljqdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Ukrainian First League (None)
+Match: Metalist 1925 Kharkiv vs FC Livyi Bereh
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 7 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: zp5rzghgjg50q82                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Latvian Cup (None)
+Match: Speks vs FC Riga United
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 8 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7h78znkqdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian Eliteserien (None)
+Match: Fredrikstad vs Sarpsborg 08
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 9 of 95                                  
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: n54qllhn57kpqvy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Uzbekistan Pro League (None)
+Match: Olympic FK Tashkent vs Jayxun
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 10 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dj2ryohlk32eq1z                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: SUI D4 (None)
+Match: FC Altstatten vs Wil 1900 II
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 11 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 1l4rjnh4vnxzm7v                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Malawi Premier League (None)
+Match: Silver Strikers vs Civo United
+Score: [1, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 12 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y39mp1h6389jmoj                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Cup (None)
+Match: Nairobi United vs Mara Sugar FC
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 13 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: k82rekhgvj54rep                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Oktepa vs Ishtixon
+Score: [1, 1]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 14 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 8yomo4h17973q0j                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Macao Liga de Elite (None)
+Match: Chessman Chiba FC vs Hang Sai
+Score: [1, 1]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 15 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4h68vw0q86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: MOFA FC vs Vihiga United
+Score: [1, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 16 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 2y8m4zh53z75ql0                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: SS Assad vs Mombasa Stars
+Score: [0, 1]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 17 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phjk9vym2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: Luanda Villa SC vs Kisumu All Stars
+Score: [1, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 18 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y0or5jh8lg5pqwz                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: MCF FC vs 3K FC
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 19 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y0or5jh8l5x4qwz                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Zimbabwe Premier Soccer League (None)
+Match: Dynamos FC vs Highlanders
+Score: [0, 0]
+Status: {'id': 2, 'description': 'First half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 20 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phz6x20m2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Allsvenskan (None)
+Match: Brommapojkarna vs IFK Goteborg
+Score: [0, 2]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 21 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7h78e0yqdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 1 (None)
+Match: Karlbergs BK vs Tegs SK
+Score: [1, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 22 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 23xmvkh85ylxqg8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Allsvenskan (None)
+Match: Halmstads vs Djurgardens
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 23 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: zp5rzgh5k3d2q82                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Allsvenskan (None)
+Match: Malmo FF vs Hacken
+Score: [2, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 24 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 2y8m4zh53e2jql0                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Czech Fourth Division (None)
+Match: Admira Praha II vs Predni Kopanina
+Score: [2, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 25 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 23xmvkh8nv3gqg8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: IF Floya vs Junkeren
+Score: [0, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 26 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: ednm9wh7j678ryo                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Latvian Higher League (None)
+Match: Super Nova vs BFC Daugavpils
+Score: [3, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 27 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phjkd18m2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Brazilian Youth Championship (None)
+Match: Feirense FC U20 vs Jacobina U20
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 28 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: vjxm8ghe4oyer6o                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Thai League 3 (None)
+Match: Songkhla FC vs North Bangkok University FC
+Score: [2, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 29 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: vjxm8ghlz4g3r6o                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Bjarg vs Asane Fotball B
+Score: [2, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 30 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlhyp7zvryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 2 (None)
+Match: Motala AIF FK vs Lidkopings FK
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 31 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dn1m1gh2w466moe                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Orn-Horten vs Lokomotiv Oslo
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 32 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4hxkezzq86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Stabaek B vs Oppsal
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 33 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y39mp1hz2vewmoj                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Assiden vs Stromsgodset B
+Score: [2, 2]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 34 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: jw2r09h2o4g3rz8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Ull Kisa B vs Kongsvinger IL B
+Score: [1, 4]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 35 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y0or5jh8lde9qwz                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Finnish Kolmonen (None)
+Match: Saaripotku vs KPV/Akatemia
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 36 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: n54qllhn2yx3qvy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Finnish Kolmonen (None)
+Match: EsPa vs ToTe
+Score: [1, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 37 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4jwq2ghezwylm0v                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Poland Liga 2 (None)
+Match: Rekord Bielsko-Biala vs Wisla Pulawy
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 38 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 6ypq3nhv6vw0md7                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: RUS D3A (None)
+Match: FK Chelyabinsk vs Volgar-Gazprom Astrachan
+Score: [2, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 39 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 23xmvkh6vy3yqg8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: RUS D3B (None)
+Match: Nosta Novotroitsk vs FK Ural-2
+Score: [1, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 40 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 1l4rjnh9yn6dm7v                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: RUS D3B (None)
+Match: Sokol Kazan vs Chelyabinsk B
+Score: [1, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 41 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4jwq2ghelgl7m0v                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Ready vs Pors Grenland B
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 42 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l5ergph4ondyr8k                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: Kibera Black Stars vs APS Bomet
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 43 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 8yomo4h1708yq0j                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Kenya Football League (None)
+Match: Nzoia United vs Darajani Gogo
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 44 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4h687k8q86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Switzerland Cup (None)
+Match: FC Biel-Bienne 1896 vs FC Basel 1893
+Score: [0, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 45 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l5ergphwg76dr8k                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Lithuanian I Lyga (None)
+Match: Hegelmann Litauen II vs Transinvest
+Score: [0, 2]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 46 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 965mkyhy6l1jr1g                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Ranheim B vs SK Trygg Lade
+Score: [1, 3]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 47 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l7oqdehgnz13r51                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: SUI D4 (None)
+Match: FC Vernier vs Olympique de Geneve FC
+Score: [1, 1]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 48 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 23xmvkh6v898qg8                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Finnish Ykkonen (None)
+Match: RoPS Rovaniemi vs EPS Espoo
+Score: [1, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 49 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l5ergph408w7r8k                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Belarusian First League (None)
+Match: FK Orsha vs FC Belshina Babruisk
+Score: [0, 0]
+Status: {'id': 3, 'description': 'Half-time'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 50 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 6ypq3nhv0wewmd7                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: CFA Team China Xintai Cup International Tournament Hohhot (None)
+Match: China U16 vs Australia U16
+Score: [2, 1]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 51 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 6ypq3nhv08k3md7                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: German Regionalliga (None)
+Match: Havelse vs FC Lokomotive Leipzig
+Score: [0, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 52 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dn1m1ghl42gjmoe                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Jiangsu City Football League (None)
+Match: Nanjing Team vs Wuxi Team
+Score: [1, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 53 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l7oqdeho59dlr51                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Estonian Premium Liiga (None)
+Match: Parnu JK Vaprus vs FC Kuressaare
+Score: [2, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 54 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 8yomo4h3n9pgq0j                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Football League 2 (None)
+Match: Shenzhen 2028 vs Guangdong Mingtu
+Score: [0, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 55 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7h7d084qdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Football League 2 (None)
+Match: Wuhan Three Towns B vs Guangxi Hengchen Football Club
+Score: [0, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 56 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: vjxm8ghly910r6o                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Football League 2 (None)
+Match: Wenzhou Professional Football Club vs Guangxi Lanhang Football Club
+Score: [1, 2]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 57 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phzlyo9m2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Football League 1 (None)
+Match: Nantong Zhiyun FC vs Dingnan United
+Score: [1, 1]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 58 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 2y8m4zh6oewlql0                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 1 (None)
+Match: Angelholms FF vs Lunds BK
+Score: [1, 2]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 59 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: ednm9wh738k2ryo                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Ulfstind vs Gamle Oslo
+Score: [3, 1]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 60 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y0or5jhnpwn1qwz                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 1 (None)
+Match: FC Rosengard vs Torslanda IK
+Score: [1, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 61 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4jwq2ghno5ewm0v                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Danish 2nd Division (None)
+Match: Naestved vs Skive IK
+Score: [1, 3]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 62 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l5ergph4okyxr8k                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Poland Liga 3 (None)
+Match: Gornik II Zabrze vs Odra Bytom Odrzanski
+Score: [1, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 63 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlh54vxzryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 2.Divisjon (None)
+Match: Alta vs Asker
+Score: [3, 4]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 64 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4hxkz56q86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Lillestrom B vs Lorenskog
+Score: [0, 4]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 65 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlh54vplryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 2.Divisjon (None)
+Match: Sandvikens vs FK Arendal
+Score: [1, 1]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 66 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phjkd0jm2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Poland Liga 3 (None)
+Match: Lech Rypin vs Mustang Ostaszewo
+Score: [1, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 67 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlh56811ryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese Football League 1 (None)
+Match: Shanghai Jiading Huilong vs Dalian K'un City
+Score: [2, 0]
+Status: {'id': 4, 'description': 'Second half'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 68 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlhygl21ryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Ukrainian First League (None)
+Match: FC Vorskla Poltava vs Kudrivka
+Score: [0, 1]
+Status: {'id': 5, 'description': 'Overtime'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 69 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7h78g7jqdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 1 (None)
+Match: Husqvarna vs Oskarshamns AIK
+Score: [0, 2]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 70 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: vjxm8ghl17l8r6o                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 1 (None)
+Match: IFK Skovde FK vs Jonkopings Sodra IF
+Score: [0, 3]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 71 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dj2ryoh1zx37q1z                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 2 (None)
+Match: Onsala BK vs Landvetter IS
+Score: [7, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 72 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y39mp1h63ejemoj                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Danish 4th Division (None)
+Match: Viby IF vs Middelfart G BK U19
+Score: [5, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 73 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y0or5jhn2zjkqwz                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Sweden Division 2 (None)
+Match: Sunnersta AIF vs Jarfalla
+Score: [1, 0]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 74 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: zp5rzghgy3joq82                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: RUS D3B (None)
+Match: Rubin Kazan B vs Uralets Nizhny Tagil
+Score: [3, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 75 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: vjxm8gheve83r6o                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: RUS D3A (None)
+Match: Torpedo Miass vs Rodina Moskva II
+Score: [0, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 76 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dn1m1ghlv029moe                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Belarusian First League (None)
+Match: Dnepr Mogilev vs FK Lida
+Score: [2, 0]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 77 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4hxg5nyq86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Lithuanian I Lyga (None)
+Match: BE1 NFA vs FK Kauno Zalgiris II
+Score: [1, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 78 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: ednm9wh73863ryo                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Norwegian 3.Divisjon (None)
+Match: Nardo FK vs Kvik Trondheim
+Score: [1, 1]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 79 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dn1m1ghl4do1moe                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: HUN D2E W (None)
+Match: FC Nagykanizsa(w) vs Zalaegerszegi TE (w)
+Score: [0, 3]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 80 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 6ypq3nh3j3vymd7                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chilean Primera Division (None)
+Match: Deportes La Serena vs Coquimbo Unido
+Score: [2, 4]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 81 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 3glrw7hnk2n8qdy                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Romanian Cup (None)
+Match: Hermannstadt vs CFR Cluj
+Score: [2, 3]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 82 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 6ypq3nh327zpmd7                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Uruguay Primera Division (None)
+Match: Cerro Montevideo vs Nacional Montevideo
+Score: [0, 4]
+Status: {'id': 8, 'description': 'End'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 83 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: k82rekhgvjydrep                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Danish 4th Division (None)
+Match: Ringkobing vs Tarup Paarup IF
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 84 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4h68o4zq86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese U16 Women's National Games (None)
+Match: Ningxia U16 Women vs Shaanxi U16 Women
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 85 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l5ergph4oleor8k                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese U16 Women's National Games (None)
+Match: Jiangxi U16 Women vs Guangdong U16 Women
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 86 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dj2ryohlkeggq1z                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese U16 Women's National Games (None)
+Match: Liaoning U16 Women vs Jiangsu U16 Women
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 87 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 2y8m4zh53w8zql0                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Chinese U16 Women's National Games (None)
+Match: Shandong U16 Women vs Zhejiang U16 Women
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 88 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: y39mp1h63ex8moj                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Danish 4th Division (None)
+Match: Aarhus Fremad 2 vs Marienlyst
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 89 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: dn1m1ghl4g5jmoe                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: UZB D1B (None)
+Match: Ahmedov vs Zaamin
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 90 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 4wyrn4h68nedq86                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Namibia Premier League (None)
+Match: Blue Boys vs Julinho Sporting
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 91 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: l7oqdehgnk61r51                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Namibia Premier League (None)
+Match: Blue Waters FC vs Cuca Tops
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 92 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: 8yomo4h17okxq0j                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Namibia Premier League (None)
+Match: Eeshoke Chula Chula vs Young Brazilians FC
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 93 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: pxwrxlhygo1xryk                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Namibia Premier League (None)
+Match: KK Palace FC vs Khomas Nampol FC
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 94 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phjkeoxm2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Namibia Premier League (None)
+Match: FC Tigers vs UNAM FC
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+--------------------------------------------------------------------------------
+
+================================================================================
+                                 MATCH 95 of 95                                 
+                      Fetched: 06/01/2025 09:24:53 AM EDT                       
+                           Match ID: x7lm7phzd79om2w                            
+                              Competition ID: N/A                               
+================================================================================
+
+Competition: Danish Reserves League (None)
+Match: Esbjerg FB Reserve vs Odense BK Reserve
+Score: [0, 0]
+Status: {'id': 13, 'description': 'To be determined'}
+
+--- MATCH BETTING ODDS ---
+No betting odds available
+
+--- MATCH ENVIRONMENT ---
+No environment data available
+
+Step 6: Successfully displayed 95 matches
+
+================================================================================
+                              MATCH STATUS SUMMARY                              
+================================================================================
+Total Matches: 95
+--------------------------------------------------------------------------------
+First half (ID: 2): 19 Matches
+Half-time (ID: 3): 30 Matches
+Second half (ID: 4): 18 Matches
+Overtime (ID: 5): 1 Match
+End (ID: 8): 14 Matches
+To be determined (ID: 13): 13 Matches
+================================================================================
+
+================================================================================
+                           END OF SUMMARY FETCH: #363                           
+                     Fetch Time: 06/01/2025 09:24:53 AM EDT                     
+                               Total Matches: 95                                
+================================================================================

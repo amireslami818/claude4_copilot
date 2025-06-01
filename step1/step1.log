@@ -207,3 +207,128 @@
 2025-06-01 04:59:11,297 [    INFO] First half: 2 Matches
 2025-06-01 04:59:11,297 [    INFO] Second half: 1 Matches
 2025-06-01 04:59:11,297 [    INFO] Extra time: 1 Matches
+2025-06-01 12:43:35,435 [    INFO] ================================================================================
+2025-06-01 12:43:35,435 [    INFO] STEP 1 - STARTING DATA FETCH
+2025-06-01 12:43:35,435 [    INFO] ================================================================================
+2025-06-01 12:43:35,435 [    INFO] Fetch started at: 2025-06-01 12:43:35
+2025-06-01 12:43:35,436 [    INFO] Fetching live matches from TheSports API...
+2025-06-01 12:43:35,884 [    INFO] ✓ Live matches API call successful
+2025-06-01 12:43:35,885 [    INFO]   Response time: 0.45 seconds
+2025-06-01 12:43:35,885 [    INFO]   Total matches returned: 100
+2025-06-01 12:43:35,885 [    INFO]   API response code: 0
+2025-06-01 12:43:35,885 [    INFO]   Matches with status info: 100/100
+2025-06-01 12:43:35,885 [    INFO]   Raw API status breakdown:
+2025-06-01 12:43:35,885 [    INFO]     First half (ID: 2): 47 matches
+2025-06-01 12:43:35,885 [    INFO]     Second half (ID: 4): 29 matches
+2025-06-01 12:43:35,885 [    INFO]     Overtime (ID: 5): 1 matches
+2025-06-01 12:43:35,885 [    INFO]     End (ID: 8): 9 matches
+2025-06-01 12:43:35,885 [    INFO]     To be determined (ID: 13): 14 matches
+2025-06-01 12:43:35,885 [    INFO] Starting detailed data fetch for 100 matches...
+2025-06-01 12:45:27,671 [    INFO] ================================================================================
+2025-06-01 12:45:27,671 [    INFO] STEP 1 - FETCH COMPLETED SUCCESSFULLY
+2025-06-01 12:45:27,671 [    INFO] ================================================================================
+2025-06-01 12:45:27,671 [    INFO] Total execution time: 112.24 seconds
+2025-06-01 12:45:27,671 [    INFO] Main API call time: 0.45 seconds
+2025-06-01 12:45:27,671 [    INFO] Detailed data fetch time: 111.79 seconds
+2025-06-01 12:45:27,672 [    INFO] Unique teams fetched: 200
+2025-06-01 12:45:27,672 [    INFO] Unique competitions fetched: 48
+2025-06-01 12:45:27,672 [    INFO] Match details fetched: 100
+2025-06-01 12:45:27,672 [    INFO] Match odds fetched: 100
+2025-06-01 12:45:27,672 [    INFO] ================================================================================
+2025-06-01 12:45:29,085 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 12:45:29,085 [    INFO] Total Matches: 100
+2025-06-01 12:45:29,085 [    INFO] First half: 47 Matches
+2025-06-01 12:45:29,085 [    INFO] Second half: 29 Matches
+2025-06-01 12:45:29,085 [    INFO] To be determined: 14 Matches
+2025-06-01 12:45:29,085 [    INFO] End: 9 Matches
+2025-06-01 12:45:29,085 [    INFO] Overtime: 1 Matches
+2025-06-01 12:52:01,258 [    INFO] ================================================================================
+2025-06-01 12:52:01,258 [    INFO] STEP 1 - STARTING DATA FETCH
+2025-06-01 12:52:01,258 [    INFO] ================================================================================
+2025-06-01 12:52:01,258 [    INFO] Fetch started at: 2025-06-01 12:52:01
+2025-06-01 12:52:01,259 [    INFO] Fetching live matches from TheSports API...
+2025-06-01 12:52:01,865 [    INFO] ✓ Live matches API call successful
+2025-06-01 12:52:01,865 [    INFO]   Response time: 0.61 seconds
+2025-06-01 12:52:01,865 [    INFO]   Total matches returned: 95
+2025-06-01 12:52:01,865 [    INFO]   API response code: 0
+2025-06-01 12:52:01,866 [    INFO]   Matches with status info: 95/95
+2025-06-01 12:52:01,866 [    INFO]   Raw API status breakdown:
+2025-06-01 12:52:01,866 [    INFO]     First half (ID: 2): 19 matches
+2025-06-01 12:52:01,866 [    INFO]     Half-time (ID: 3): 29 matches
+2025-06-01 12:52:01,866 [    INFO]     Second half (ID: 4): 22 matches
+2025-06-01 12:52:01,866 [    INFO]     Overtime (ID: 5): 1 matches
+2025-06-01 12:52:01,866 [    INFO]     End (ID: 8): 11 matches
+2025-06-01 12:52:01,866 [    INFO]     To be determined (ID: 13): 13 matches
+2025-06-01 12:52:01,866 [    INFO] Starting detailed data fetch for 95 matches...
+2025-06-01 12:53:49,725 [    INFO] ================================================================================
+2025-06-01 12:53:49,725 [    INFO] STEP 1 - FETCH COMPLETED SUCCESSFULLY
+2025-06-01 12:53:49,725 [    INFO] ================================================================================
+2025-06-01 12:53:49,725 [    INFO] Total execution time: 108.47 seconds
+2025-06-01 12:53:49,725 [    INFO] Main API call time: 0.61 seconds
+2025-06-01 12:53:49,725 [    INFO] Detailed data fetch time: 107.86 seconds
+2025-06-01 12:53:49,725 [    INFO] Unique teams fetched: 190
+2025-06-01 12:53:49,725 [    INFO] Unique competitions fetched: 44
+2025-06-01 12:53:49,725 [    INFO] Match details fetched: 95
+2025-06-01 12:53:49,725 [    INFO] Match odds fetched: 95
+2025-06-01 12:53:49,725 [    INFO] ================================================================================
+2025-06-01 12:53:51,110 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 12:53:51,110 [    INFO] Total Matches: 95
+2025-06-01 12:53:51,110 [    INFO] Half-time: 30 Matches
+2025-06-01 12:53:51,110 [    INFO] First half: 19 Matches
+2025-06-01 12:53:51,110 [    INFO] Second half: 18 Matches
+2025-06-01 12:53:51,110 [    INFO] End: 14 Matches
+2025-06-01 12:53:51,110 [    INFO] To be determined: 13 Matches
+2025-06-01 12:53:51,111 [    INFO] Overtime: 1 Matches
+2025-06-01 14:04:41,450 [    INFO] ================================================================================
+2025-06-01 14:04:41,450 [    INFO] STEP 1 - STARTING DATA FETCH
+2025-06-01 14:04:41,450 [    INFO] ================================================================================
+2025-06-01 14:04:41,450 [    INFO] Fetch started at: 2025-06-01 14:04:41
+2025-06-01 14:04:41,450 [    INFO] Fetching live matches from TheSports API...
+2025-06-01 14:04:41,994 [    INFO] ✓ Live matches API call successful
+2025-06-01 14:04:41,994 [    INFO]   Response time: 0.54 seconds
+2025-06-01 14:04:41,994 [    INFO]   Total matches returned: 169
+2025-06-01 14:04:41,994 [    INFO]   API response code: 0
+2025-06-01 14:04:41,994 [    INFO]   Matches with status info: 169/169
+2025-06-01 14:04:41,994 [    INFO]   Raw API status breakdown:
+2025-06-01 14:04:41,995 [    INFO]     First half (ID: 2): 42 matches
+2025-06-01 14:04:41,995 [    INFO]     Half-time (ID: 3): 31 matches
+2025-06-01 14:04:41,995 [    INFO]     Second half (ID: 4): 49 matches
+2025-06-01 14:04:41,995 [    INFO]     Overtime (ID: 5): 1 matches
+2025-06-01 14:04:41,995 [    INFO]     End (ID: 8): 39 matches
+2025-06-01 14:04:41,995 [    INFO]     To be determined (ID: 13): 7 matches
+2025-06-01 14:04:41,995 [    INFO] Starting detailed data fetch for 169 matches...
+2025-06-01 14:11:43,913 [    INFO] ================================================================================
+2025-06-01 14:11:43,913 [    INFO] STEP 1 - STARTING DATA FETCH
+2025-06-01 14:11:43,913 [    INFO] ================================================================================
+2025-06-01 14:11:43,913 [    INFO] Fetch started at: 2025-06-01 14:11:43
+2025-06-01 14:11:43,913 [    INFO] Fetching live matches from TheSports API...
+2025-06-01 14:11:44,286 [    INFO] ✓ Live matches API call successful
+2025-06-01 14:11:44,287 [    INFO]   Response time: 0.37 seconds
+2025-06-01 14:11:44,287 [    INFO]   Total matches returned: 165
+2025-06-01 14:11:44,288 [    INFO]   API response code: 0
+2025-06-01 14:11:44,288 [    INFO]   Matches with status info: 165/165
+2025-06-01 14:11:44,288 [    INFO]   Raw API status breakdown:
+2025-06-01 14:11:44,288 [    INFO]     First half (ID: 2): 44 matches
+2025-06-01 14:11:44,288 [    INFO]     Half-time (ID: 3): 5 matches
+2025-06-01 14:11:44,288 [    INFO]     Second half (ID: 4): 75 matches
+2025-06-01 14:11:44,288 [    INFO]     End (ID: 8): 28 matches
+2025-06-01 14:11:44,288 [    INFO]     To be determined (ID: 13): 13 matches
+2025-06-01 14:11:44,288 [    INFO] Starting detailed data fetch for 165 matches...
+2025-06-01 14:15:07,307 [    INFO] ================================================================================
+2025-06-01 14:15:07,307 [    INFO] STEP 1 - FETCH COMPLETED SUCCESSFULLY
+2025-06-01 14:15:07,307 [    INFO] ================================================================================
+2025-06-01 14:15:07,307 [    INFO] Total execution time: 203.39 seconds
+2025-06-01 14:15:07,307 [    INFO] Main API call time: 0.37 seconds
+2025-06-01 14:15:07,307 [    INFO] Detailed data fetch time: 203.02 seconds
+2025-06-01 14:15:07,307 [    INFO] Unique teams fetched: 330
+2025-06-01 14:15:07,307 [    INFO] Unique competitions fetched: 78
+2025-06-01 14:15:07,308 [    INFO] Match details fetched: 165
+2025-06-01 14:15:07,308 [    INFO] Match odds fetched: 165
+2025-06-01 14:15:07,308 [    INFO] ================================================================================
+2025-06-01 14:15:08,975 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 14:15:08,975 [    INFO] Total Matches: 165
+2025-06-01 14:15:08,975 [    INFO] Second half: 76 Matches
+2025-06-01 14:15:08,975 [    INFO] First half: 43 Matches
+2025-06-01 14:15:08,975 [    INFO] End: 28 Matches
+2025-06-01 14:15:08,975 [    INFO] To be determined: 13 Matches
+2025-06-01 14:15:08,976 [    INFO] Half-time: 5 Matches

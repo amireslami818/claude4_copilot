@@ -90,23 +90,35 @@ def extract_step1_status(step1_file):
         total_matches = len(results)
         timestamp = data.get("timestamp", "Unknown")
         
-        # Count matches by status_id
+        # Count matches by status_id - check both locations where status might be stored
         status_counts = {}
         for match in results:
-            # Extract status_id from the match data structure
-            # Step 1 structure: match contains "score" array where index 1 is status_id
-            if "score" in match and isinstance(match["score"], list) and len(match["score"]) > 1:
+            status_id = None
+            
+            # First, check if status_id is directly in the match (added by our processing)
+            if "status_id" in match:
+                status_id = match["status_id"]
+            # Otherwise, extract from score array (raw API structure)
+            elif "score" in match and isinstance(match["score"], list) and len(match["score"]) > 1:
                 status_id = match["score"][1]
+            
+            if status_id is not None:
                 if status_id in status_counts:
                     status_counts[status_id] += 1
                 else:
                     status_counts[status_id] = 1
         
+        # Also get comprehensive summary if available
+        comprehensive_summary = data.get("comprehensive_status_summary", {})
+        detailed_status_mapping = data.get("detailed_status_mapping", {})
+        
         return {
             "total_matches": total_matches,
             "timestamp": timestamp,
             "status": "Raw API data",
-            "status_counts": status_counts
+            "status_counts": status_counts,
+            "comprehensive_summary": comprehensive_summary,
+            "detailed_status_mapping": detailed_status_mapping
         }
     except Exception as e:
         return {"error": f"Error reading Step 1: {str(e)}"}
@@ -320,6 +332,16 @@ Status: {step1_data.get('status', step1_data.get('error', 'Unknown'))}"""
     # Add Step 1 status breakdown if available
     if 'status_counts' in step1_data and step1_data['status_counts']:
         log_entry += f"\nStatus Breakdown:\n{format_status_breakdown(step1_data['status_counts'])}"
+    
+    # Add comprehensive summary info if available
+    if 'comprehensive_summary' in step1_data and step1_data['comprehensive_summary']:
+        comp_sum = step1_data['comprehensive_summary']
+        if 'in_play_matches' in comp_sum:
+            log_entry += f"\nIN-PLAY MATCHES: {comp_sum['in_play_matches']}"
+        if 'matches_with_status' in comp_sum and 'matches_without_status' in comp_sum:
+            log_entry += f"\nMatches with status: {comp_sum['matches_with_status']}"
+            if comp_sum['matches_without_status'] > 0:
+                log_entry += f"\nMatches without status: {comp_sum['matches_without_status']}"
 
     log_entry += f"""
 
