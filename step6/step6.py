@@ -86,22 +86,22 @@ def get_daily_fetch_count():
     return fetch_count
 
 def get_status_description(status_id):
-    """Convert status ID to human readable description"""
+    """Convert status ID to human readable description - Official API mapping"""
     status_map = {
+        0: "Abnormal (suggest hiding)",
         1: "Not started",
         2: "First half",
-        3: "Half-time break",
+        3: "Half-time",
         4: "Second half",
-        5: "Extra time",
-        6: "Penalty shootout",
-        7: "Finished",
-        8: "Finished",
-        9: "Postponed",
-        10: "Canceled",
-        11: "To be announced",
-        12: "Interrupted",
-        13: "Abandoned",
-        14: "Suspended"
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
     }
     return status_map.get(status_id, f"Unknown ({status_id})")
 
@@ -393,20 +393,22 @@ def process_match(match, match_num, total_matches):
     for line in summarize_environment(env_data):
         log_and_print(line)
 
-# Status priority mapping for sorting (lower number = higher priority)
+# Status priority mapping for sorting (lower number = higher priority) - Updated for official API
 STATUS_PRIORITY = {
     2: 1,   # First half (most urgent)
-    3: 2,   # Half-time break 
+    3: 2,   # Half-time 
     4: 3,   # Second half
-    5: 4,   # Extra time first half
-    6: 5,   # Extra time break
-    7: 6,   # Extra time second half
-    11: 7,  # Penalty shootout
-    1: 8,   # Not started
-    8: 9,   # Finished
-    9: 10,  # Postponed
-    13: 11, # Abandoned
-    10: 12, # Cancelled
+    5: 4,   # Overtime
+    7: 5,   # Penalty Shoot-out
+    6: 6,   # Overtime (deprecated)
+    1: 7,   # Not started
+    8: 8,   # End
+    9: 9,   # Delay
+    10: 10, # Interrupt
+    11: 11, # Cut in half
+    12: 12, # Cancel
+    13: 13, # To be determined
+    0: 14,  # Abnormal (suggest hiding) - lowest priority
 }
 
 def sort_matches_by_priority(matches):
@@ -521,18 +523,20 @@ def pretty_print_matches(pipeline_time=None):
 def write_status_group_header(status_id, status_description):
     """Write a status group header to separate matches by status"""
     status_groups = {
-        2: "🔴 LIVE - FIRST HALF",
-        3: "⏸️  HALF-TIME BREAK", 
-        4: "🔴 LIVE - SECOND HALF",
-        5: "⚡ EXTRA TIME - FIRST HALF",
-        6: "⏸️  EXTRA TIME BREAK",
-        7: "⚡ EXTRA TIME - SECOND HALF", 
-        11: "🥅 PENALTY SHOOTOUT",
+        0: "❌ ABNORMAL (SUGGEST HIDING)",
         1: "⏰ NOT STARTED",
-        8: "✅ FINISHED",
-        9: "📅 POSTPONED",
-        13: "❌ ABANDONED",
-        10: "🚫 CANCELLED"
+        2: "🔴 LIVE - FIRST HALF",
+        3: "⏸️  HALF-TIME", 
+        4: "🔴 LIVE - SECOND HALF",
+        5: "⚡ OVERTIME",
+        6: "⚡ OVERTIME (DEPRECATED)",
+        7: "🥅 PENALTY SHOOT-OUT",
+        8: "✅ END",
+        9: "⏰ DELAY",
+        10: "� INTERRUPT",
+        11: "❌ CUT IN HALF",
+        12: "🚫 CANCEL",
+        13: "📅 TO BE DETERMINED"
     }
     
     group_name = status_groups.get(status_id, f"STATUS {status_id}")
@@ -545,21 +549,22 @@ def write_status_group_header(status_id, status_description):
 
 def count_matches_by_status(matches):
     """Count matches by status ID and return formatted summary"""
-    # Create reverse mapping from description to ID
+    # Create reverse mapping from description to ID - Official API mapping
     status_map = {
+        "Abnormal (suggest hiding)": 0,
         "Not started": 1,
         "First half": 2,
-        "Half-time break": 3,
+        "Half-time": 3,
         "Second half": 4,
-        "Extra time": 5,
-        "Penalty shootout": 6,
-        "Finished": 7,  # Note: Both 7 and 8 map to "Finished", using 7
-        "Postponed": 9,
-        "Canceled": 10,
-        "To be announced": 11,
-        "Interrupted": 12,
-        "Abandoned": 13,
-        "Suspended": 14
+        "Overtime": 5,
+        "Overtime (deprecated)": 6,
+        "Penalty Shoot-out": 7,
+        "End": 8,
+        "Delay": 9,
+        "Interrupt": 10,
+        "Cut in half": 11,
+        "Cancel": 12,
+        "To be determined": 13
     }
     
     status_counts = {}

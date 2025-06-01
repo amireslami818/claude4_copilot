@@ -39,6 +39,7 @@ sys.path.append(str(PROJECT_ROOT / 'step4'))
 sys.path.append(str(PROJECT_ROOT / 'step5'))
 sys.path.append(str(PROJECT_ROOT / 'step6'))
 sys.path.append(str(PROJECT_ROOT / 'step7'))
+sys.path.append(str(PROJECT_ROOT / 'step8'))
 
 # Import step functions
 from step2 import extract_merge_summarize
@@ -47,6 +48,10 @@ from step4 import match_extracts
 from step5 import odds_environment_converter
 from step6 import pretty_print_matches
 from step7 import run_status_filter
+from step8.step8 import run_status_filter as run_step8
+
+# Import main status logger
+from main_status_logger import log_consolidated_status
 
 class ContinuousOrchestrator:
     """
@@ -156,78 +161,105 @@ class ContinuousOrchestrator:
             
             result_data = None
             
-            if step_num == 1:
-                # Step 1: Run as subprocess (API fetcher)
-                script_path = self.project_root / step_info["script"]
-                process = await asyncio.create_subprocess_exec(
-                    sys.executable, str(script_path),
-                    stdout=asyncio.subprocess.PIPE,
-                    stderr=asyncio.subprocess.PIPE,
-                    cwd=str(self.project_root)
-                )
-                stdout, stderr = await process.communicate()
-                
-                if process.returncode != 0:
-                    raise Exception(f"Step 1 failed: {stderr.decode('utf-8')}")
+            try:
+                if step_num == 1:
+                    # Step 1: Run as subprocess (API fetcher)
+                    script_path = self.project_root / step_info["script"]
+                    process = await asyncio.create_subprocess_exec(
+                        sys.executable, str(script_path),
+                        stdout=asyncio.subprocess.PIPE,
+                        stderr=asyncio.subprocess.PIPE,
+                        cwd=str(self.project_root)
+                    )
+                    stdout, stderr = await process.communicate()
                     
-                # Load step1 data for next steps
-                step1_file = self.project_root / "step1.json"
-                if step1_file.exists():
-                    with open(step1_file, 'r') as f:
-                        result_data = json.load(f)
+                    if process.returncode != 0:
+                        raise Exception(f"Step 1 failed: {stderr.decode('utf-8')}")
                         
-            elif step_num == 2:
-                # Step 2: Data processor
-                result_data = await extract_merge_summarize(step_data)
+                    # Load step1 data for next steps
+                    step1_file = self.project_root / "step1.json"
+                    if step1_file.exists():
+                        with open(step1_file, 'r') as f:
+                            result_data = json.load(f)
+                            
+                elif step_num == 2:
+                    # Step 2: Data processor
+                    result_data = await extract_merge_summarize(step_data)
+                    
+                elif step_num == 3:
+                    # Step 3: JSON summary generator
+                    result_data = await json_summary(step_data)
+                    
+                elif step_num == 4:
+                    # Step 4: Match summary extractor
+                    result_data = await match_extracts(step_data)
+                    
+                elif step_num == 5:
+                    # Step 5: Odds & environment converter
+                    result_data = odds_environment_converter()
+                    
+                elif step_num == 6:
+                    # Step 6: Pretty print display with pipeline timing
+                    pipeline_time = None
+                    if pipeline_start_time is not None:
+                        pipeline_time = time.time() - pipeline_start_time
+                    result_data = pretty_print_matches(pipeline_time)
+                    
+                elif step_num == 7:
+                    # Step 7: Match Status Filter - Only matches with status_id 2,3,4,5,6,7 (actively playing)
+                    pipeline_time = None
+                    if pipeline_start_time is not None:
+                        pipeline_time = time.time() - pipeline_start_time
+                    self.logger.debug(f"  🔍 About to call run_status_filter() with pipeline_time={pipeline_time}")
+                    result_data = run_status_filter(pipeline_time)
                 
-            elif step_num == 3:
-                # Step 3: JSON summary generator
-                result_data = await json_summary(step_data)
+                elif step_num == 8:
+                    # Step 8: Additional Status Filter - Same as Step 7 logic but separate processing
+                    pipeline_time = None
+                    if pipeline_start_time is not None:
+                        pipeline_time = time.time() - pipeline_start_time
+                    self.logger.debug(f"  🔍 About to call run_step8() with pipeline_time={pipeline_time}")
+                    result_data = run_step8(pipeline_time)
                 
-            elif step_num == 4:
-                # Step 4: Match summary extractor
-                result_data = await match_extracts(step_data)
+                execution_time = time.time() - start_time
+                self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
                 
-            elif step_num == 5:
-                # Step 5: Odds & environment converter
-                result_data = odds_environment_converter()
-                
-            elif step_num == 6:
-                # Step 6: Pretty print display with pipeline timing
-                pipeline_time = None
-                if pipeline_start_time is not None:
-                    pipeline_time = time.time() - pipeline_start_time
-                result_data = pretty_print_matches(pipeline_time)
-                
-            elif step_num == 7:
-                # Step 7: Match Status Filter - Only matches with status_id 2,3,4,5,6,7 (actively playing)
-                pipeline_time = None
-                if pipeline_start_time is not None:
-                    pipeline_time = time.time() - pipeline_start_time
-                self.logger.debug(f"  🔍 About to call run_status_filter() with pipeline_time={pipeline_time}")
-                result_data = run_status_filter(pipeline_time)
+                return {
+                    "success": True,
+                    "step": step_num,
+                    "execution_time": execution_time,
+                    "data": result_data,
+                    "stdout": f"Step {step_num} completed successfully",
+                    "stderr": ""
+                }
             
-            execution_time = time.time() - start_time
-            self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
-            
-            return {
-                "success": True,
-                "step": step_num,
-                "execution_time": execution_time,
-                "data": result_data,
-                "stdout": f"Step {step_num} completed successfully",
-                "stderr": ""
-            }
+            except Exception as e:
+                execution_time = time.time() - start_time
+                error_msg = f"Step {step_num} failed: {str(e)}"
+                self.logger.error(f"  🚨 {error_msg}")
+                self.logger.debug(f"  📊 Step {step_num} error after {execution_time:.2f}s")
+                
+                return {
+                    "success": False,
+                    "step": step_num,
+                    "execution_time": execution_time,
+                    "error": error_msg,
+                    "data": None,
+                    "stdout": "",
+                    "stderr": str(e)
+                }
                 
         except Exception as e:
             execution_time = time.time() - start_time
-            self.logger.error(f"  💥 Step {step_num} crashed: {str(e)}")
+            error_msg = f"Step {step_num} failed: {str(e)}"
+            self.logger.error(f"  🚨 {error_msg}")
+            self.logger.debug(f"  📊 Step {step_num} error after {execution_time:.2f}s")
+            
             return {
                 "success": False,
                 "step": step_num,
                 "execution_time": execution_time,
-                "exception": str(e),
-                "traceback": traceback.format_exc(),
+                "error": error_msg,
                 "data": None,
                 "stdout": "",
                 "stderr": str(e)
@@ -255,7 +287,7 @@ class ContinuousOrchestrator:
         # Execute steps sequentially, passing data between them
         step_data = None
         
-        for step_num in range(1, 8):
+        for step_num in range(1, 9):
             if not self.running:
                 self.logger.info("🛑 Shutdown requested, aborting pipeline")
                 break
@@ -347,6 +379,13 @@ class ContinuousOrchestrator:
                     results = await self.execute_full_pipeline()
                     cycle_time = time.time() - cycle_start_time
                     self.logger.info(f"✅ Pipeline Cycle #{self.cycle_count} completed successfully in {cycle_time:.2f}s")
+                    
+                    # Log consolidated status from all pipeline steps
+                    try:
+                        log_consolidated_status()
+                        self.logger.info("📊 Main status summary logged")
+                    except Exception as status_error:
+                        self.logger.error(f"❌ Failed to log main status: {status_error}")
                     
                     # Smart timing logic
                     if cycle_time >= 120:  # 2 minutes or more

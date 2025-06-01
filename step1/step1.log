@@ -160,3 +160,50 @@
 2025-05-28 17:29:18,187 - Fetched odds for match ID: zp5rzgh537gdq82
 2025-05-28 17:29:18,402 - Fetched info for home team ID: zp5rzghjzwvq82w
 2025-05-28 17:29:18,571 - Process completed at 05/28/2025 01:29:18 PM
+2025-06-01 04:46:11,955 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:46:11,955 [    INFO] Total Matches: 34
+2025-06-01 04:46:11,955 [    INFO] First half: 16 Matches
+2025-06-01 04:46:11,955 [    INFO] Finished: 8 Matches
+2025-06-01 04:46:11,955 [    INFO] Second half: 7 Matches
+2025-06-01 04:46:11,955 [    INFO] Abandoned: 2 Matches
+2025-06-01 04:46:11,955 [    INFO] Extra time: 1 Matches
+2025-06-01 04:47:03,863 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:47:03,864 [    INFO] Total Matches: 34
+2025-06-01 04:47:03,864 [    INFO] First half: 14 Matches
+2025-06-01 04:47:03,864 [    INFO] Finished: 8 Matches
+2025-06-01 04:47:03,864 [    INFO] Second half: 7 Matches
+2025-06-01 04:47:03,864 [    INFO] Abandoned: 2 Matches
+2025-06-01 04:47:03,864 [    INFO] Half-time break: 2 Matches
+2025-06-01 04:47:03,864 [    INFO] Extra time: 1 Matches
+2025-06-01 04:54:30,275 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:54:30,276 [    INFO] Total Matches: 35
+2025-06-01 04:54:30,276 [    INFO] Half-time break: 14 Matches
+2025-06-01 04:54:30,276 [    INFO] Finished: 14 Matches
+2025-06-01 04:54:30,276 [    INFO] First half: 3 Matches
+2025-06-01 04:54:30,276 [    INFO] Abandoned: 2 Matches
+2025-06-01 04:54:30,276 [    INFO] Second half: 1 Matches
+2025-06-01 04:54:30,276 [    INFO] Extra time: 1 Matches
+2025-06-01 04:57:07,063 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:57:07,063 [    INFO] Total Matches: 31
+2025-06-01 04:57:07,063 [    INFO] Half-time break: 15 Matches
+2025-06-01 04:57:07,063 [    INFO] Finished: 10 Matches
+2025-06-01 04:57:07,063 [    INFO] First half: 2 Matches
+2025-06-01 04:57:07,063 [    INFO] Abandoned: 2 Matches
+2025-06-01 04:57:07,063 [    INFO] Second half: 1 Matches
+2025-06-01 04:57:07,063 [    INFO] Extra time: 1 Matches
+2025-06-01 04:58:03,209 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:58:03,209 [    INFO] Total Matches: 30
+2025-06-01 04:58:03,209 [    INFO] Half-time break: 15 Matches
+2025-06-01 04:58:03,209 [    INFO] Finished: 9 Matches
+2025-06-01 04:58:03,209 [    INFO] First half: 2 Matches
+2025-06-01 04:58:03,209 [    INFO] Abandoned: 2 Matches
+2025-06-01 04:58:03,209 [    INFO] Second half: 1 Matches
+2025-06-01 04:58:03,209 [    INFO] Extra time: 1 Matches
+2025-06-01 04:59:11,296 [    INFO] STEP 1 - MATCH STATUS SUMMARY
+2025-06-01 04:59:11,296 [    INFO] Total Matches: 31
+2025-06-01 04:59:11,297 [    INFO] Half-time break: 15 Matches
+2025-06-01 04:59:11,297 [    INFO] Finished: 9 Matches
+2025-06-01 04:59:11,297 [    INFO] Abandoned: 3 Matches
+2025-06-01 04:59:11,297 [    INFO] First half: 2 Matches
+2025-06-01 04:59:11,297 [    INFO] Second half: 1 Matches
+2025-06-01 04:59:11,297 [    INFO] Extra time: 1 Matches

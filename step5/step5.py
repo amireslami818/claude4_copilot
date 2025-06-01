@@ -216,20 +216,22 @@ def save_step5_json(step5_data, output_file="step5.json"):
         return False
 
 def get_status_id_mapping():
-    """Get mapping from status descriptions to status IDs"""
+    """Get mapping from status descriptions to status IDs - Official API mapping"""
     return {
+        "Abnormal (suggest hiding)": 0,
+        "Not started": 1,
         "First half": 2,
-        "Half-time break": 3, 
+        "Half-time": 3,
         "Second half": 4,
-        "Extra time break": 5,
-        "Extra time": 6,
-        "Finished": 7,
-        "Postponed": 8,
-        "Interrupted": 9,
-        "Cancelled": 10,
-        "To be announced": 11,
-        "Awarded": 12,
-        "Abandoned": 13
+        "Overtime": 5,
+        "Overtime (deprecated)": 6,
+        "Penalty Shoot-out": 7,
+        "End": 8,
+        "Delay": 9,
+        "Interrupt": 10,
+        "Cut in half": 11,
+        "Cancel": 12,
+        "To be determined": 13
     }
 
 def count_matches_by_status(matches):
@@ -299,22 +301,22 @@ def count_matches_by_status_from_step1():
         total_matches = len(matches)
         status_counts = {}
         
-        # Get status ID to description mapping
+        # Official status ID to description mapping
         status_desc_map = {
+            0: "Abnormal (suggest hiding)",
             1: "Not started",
             2: "First half",
-            3: "Half-time break",
+            3: "Half-time",
             4: "Second half",
-            5: "Extra time",
-            6: "Penalty shootout",
-            7: "Finished",
-            8: "Finished",
-            9: "Postponed",
-            10: "Canceled",
-            11: "To be announced",
-            12: "Interrupted",
-            13: "Abandoned",
-            14: "Suspended"
+            5: "Overtime",
+            6: "Overtime (deprecated)",
+            7: "Penalty Shoot-out",
+            8: "End",
+            9: "Delay",
+            10: "Interrupt",
+            11: "Cut in half",
+            12: "Cancel",
+            13: "To be determined"
         }
         
         # Count matches by status_id

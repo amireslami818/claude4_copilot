@@ -21,7 +21,7 @@ TZ = ZoneInfo("America/New_York")
 BASE_DIR = Path(__file__).resolve().parent  # step7 directory for logs
 STEP5_JSON = Path(__file__).resolve().parent.parent / "step5" / "step5.json"  # Go up to Football_bot, then to step5
 
-# The new status set: 2,3,4,5,6,7 (First half, Half-time break, Second half, Extra time, Penalty shootout, Finished)
+# The new status set: 2,3,4,5,6,7 (First half, Half-time, Second half, Overtime, Overtime (deprecated), Penalty Shoot-out)
 STATUS_FILTER = {2, 3, 4, 5, 6, 7}
 
 def setup_logger():
@@ -74,22 +74,22 @@ def get_daily_fetch_count() -> int:
         return 1
 
 def get_status_description(status_id: int) -> str:
-    """Map numeric status_id → human‐readable description."""
+    """Map numeric status_id → human‐readable description - Official API mapping."""
     status_map = {
+        0: "Abnormal (suggest hiding)",
         1: "Not started",
         2: "First half",
-        3: "Half-time break",
+        3: "Half-time",
         4: "Second half",
-        5: "Extra time",
-        6: "Penalty shootout",
-        7: "Finished",
-        8: "Finished",      # (just in case, but 8 is not in our filter)
-        9: "Postponed",
-        10: "Canceled",
-        11: "To be announced",
-        12: "Interrupted",
-        13: "Abandoned",
-        14: "Suspended",
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
     }
     return status_map.get(status_id, f"Unknown ({status_id})")
 
@@ -125,7 +125,7 @@ def write_main_header(fetch_count: int, total: int, generated_at: str, pipeline_
     for h in match_logger.handlers:
         h.flush()
 
-def write_main_footer(fetch_count: int, total: int, generated_at: str, pipeline_time=None):
+def write_main_footer(fetch_count: int, total: int, generated_at: str, pipeline_time=None, matches=None):
     """Write the footer block at the bottom of step7_matches.log."""
     footer = (
         f"\n{'='*80}\n"
@@ -137,6 +137,33 @@ def write_main_footer(fetch_count: int, total: int, generated_at: str, pipeline_
         f"{'='*80}\n"
     )
     match_logger.info(footer)
+    
+    # Add status summary at the end if matches data is available
+    if matches and total > 0:
+        # Count matches by status
+        status_counts = {}
+        for match_data in matches.values():
+            status_id = match_data.get("status_id")
+            if status_id in STATUS_FILTER:
+                status_counts[status_id] = status_counts.get(status_id, 0) + 1
+        
+        # Write status summary footer
+        summary_footer = (
+            f"\nSTEP 7 - STATUS SUMMARY\n"
+            f"{'='*60}\n"
+        )
+        
+        # Write simple status lines
+        for status_id in sorted(status_counts.keys()):
+            count = status_counts[status_id]
+            desc = get_status_description(status_id)
+            summary_footer += f"{desc} (ID: {status_id}): {count}\n"
+        
+        summary_footer += f"Total: {total}\n"
+        summary_footer += f"{'='*60}\n"
+        
+        match_logger.info(summary_footer)
+    
     for h in match_logger.handlers:
         h.flush()
 
@@ -334,7 +361,16 @@ def live_match_filter(pipeline_time=None):
             }
         
         # Load step5.json data with retry logic
-        step5_data = safe_load_json_with_retry(STEP5_JSON)
+        try:
+            step5_data = safe_load_json_with_retry(STEP5_JSON)
+        except Exception as e:
+            log_and_print(f"❌ Error loading step5.json: {e}")
+            return {
+                "success": False,
+                "error": f"Failed to load step5.json: {e}",
+                "filtered_matches": 0,
+                "total_matches": 0
+            }
         
         # Extract matches from step5 data
         # The matches are in the latest history entry, not at the top level
@@ -410,7 +446,7 @@ def run_status_filter(pipeline_time=None):
         log_and_print(f"❌ Error: {result.get('error', 'Unknown error')}")
         write_main_header(fetch_count, 0, generated_at, pipeline_time)
         log_and_print("No matches found due to error.")
-        write_main_footer(fetch_count, 0, generated_at, pipeline_time)
+        write_main_footer(fetch_count, 0, generated_at, pipeline_time, None)
         return result
     
     matches = result.get("matches", {})
@@ -418,10 +454,6 @@ def run_status_filter(pipeline_time=None):
     
     # Write the main header
     write_main_header(fetch_count, total_filtered, generated_at, pipeline_time)
-    
-    # Print status summary for Step 7 filtered matches
-    if total_filtered > 0:
-        print_status_summary(matches)
     
     if total_filtered == 0:
         log_and_print("No matches found for the given status filter (2-7).")
@@ -456,8 +488,8 @@ def run_status_filter(pipeline_time=None):
             match_num += 1
             process_match(match_data, match_num, total_filtered)
     
-    # Write the main footer
-    write_main_footer(fetch_count, total_filtered, generated_at, pipeline_time)
+    # Write the main footer with status summary
+    write_main_footer(fetch_count, total_filtered, generated_at, pipeline_time, matches)
     
     return result
 
@@ -502,55 +534,718 @@ def safe_load_json_with_retry(file_path, max_retries=3, retry_delay=0.5):
                 log_and_print(f"⚠️ {error_msg}, retrying in {retry_delay}s...")
                 time.sleep(retry_delay)
                 continue
-            raise Exception(f"JSON parsing failed after {max_retries} attempts: {e}")
+            # Don't raise exception, return empty data instead
+            log_and_print(f"❌ JSON parsing failed after {max_retries} attempts: {e}")
+            return {}
         except Exception as e:
             if attempt < max_retries - 1:
                 log_and_print(f"⚠️ File access error (attempt {attempt + 1}/{max_retries}): {e}, retrying...")
                 time.sleep(retry_delay)
                 continue
-            raise
+            # Don't raise exception, return empty data instead  
+            log_and_print(f"❌ File access failed after {max_retries} attempts: {e}")
+            return {}
     
-    raise Exception(f"Failed to load JSON after {max_retries} attempts")
+    # If we get here, all retries failed
+    log_and_print(f"❌ Failed to load JSON after {max_retries} attempts, returning empty data")
+    return {}
 
-def print_status_summary(matches: dict):
+def create_step7_status_summary(filtered_matches: dict) -> dict:
     """
-    Print a status summary showing count of matches by status ID
-    Similar to Step 6 but for Step 7's filtered data (statuses 2-7)
+    Create a status summary for Step 7 filtered matches (status IDs 2, 3, 4, 5, 6, 7).
+    Returns formatted summary similar to Step 1 but only for the filtered status IDs.
     """
-    if not matches:
-        return
+    if not filtered_matches:
+        return {
+            "total_filtered_matches": 0,
+            "status_breakdown": {},
+            "formatted_summary": [],
+            "step7_filter_ids": list(STATUS_FILTER)
+        }
+    
+    # Count matches by status_id (only for our filtered statuses)
+    status_counts = {}
+    total_matches = len(filtered_matches)
+    
+    for match_id, match_data in filtered_matches.items():
+        status_id = match_data.get("status_id")
+        if status_id in STATUS_FILTER:  # Only count our filtered status IDs
+            status_desc = get_status_description(status_id)
+            if status_id not in status_counts:
+                status_counts[status_id] = {
+                    "description": status_desc,
+                    "count": 0
+                }
+            status_counts[status_id]["count"] += 1
+    
+    # Create formatted summary lines like "First half (ID: 2): 23"
+    formatted_summary = []
+    status_breakdown = {}
+    
+    # Sort by status ID for consistent ordering
+    for status_id in sorted(status_counts.keys()):
+        data = status_counts[status_id]
+        description = data["description"]
+        count = data["count"]
+        
+        # Create formatted line
+        formatted_line = f"{description} (ID: {status_id}): {count}"
+        formatted_summary.append(formatted_line)
+        
+        # Store in structured format
+        status_breakdown[f"status_{status_id}"] = {
+            "id": status_id,
+            "description": description,
+            "count": count,
+            "formatted": formatted_line
+        }
+    
+    # Calculate total in-play matches (all matches with status IDs 2-7)
+    total_in_play = sum(data["count"] for data in status_counts.values())
+    
+    # Add total in-play matches line
+    formatted_summary.append(f"Total In-Play Matches: {total_in_play}")
+    
+    # Add total filtered matches line
+    formatted_summary.append(f"Total Filtered Matches: {total_matches}")
+    
+    return {
+        "total_filtered_matches": total_matches,
+        "total_in_play_matches": total_in_play,
+        "status_breakdown": status_breakdown,
+        "formatted_summary": formatted_summary,
+        "step7_filter_ids": list(STATUS_FILTER)
+    }
+
+def write_step7_status_summary(filtered_matches: dict):
+    """Write Step 7 status summary to both console and log file"""
+    summary = create_step7_status_summary(filtered_matches)
+    
+    if summary["total_filtered_matches"] == 0:
+        message = "No matches found for Step 7 status filter"
+        log_and_print(message)
+        return summary
+    
+    # Write simple, clean status summary
+    log_and_print(f"\n{'='*60}")
+    log_and_print("STEP 7 - STATUS SUMMARY")
+    log_and_print(f"{'='*60}")
     
     # Count matches by status
     status_counts = {}
-    for match_data in matches.values():
+    for match_data in filtered_matches.values():
         status_id = match_data.get("status_id")
-        if status_id is not None:
+        if status_id in STATUS_FILTER:
             status_counts[status_id] = status_counts.get(status_id, 0) + 1
     
+    # Write simple status lines
+    for status_id in sorted(status_counts.keys()):
+        count = status_counts[status_id]
+        desc = get_status_description(status_id)
+        log_and_print(f"{desc} (ID: {status_id}): {count}")
+    
+    total = len(filtered_matches)
+    log_and_print(f"Total: {total}")
+    log_and_print(f"{'='*60}\n")
+    
+    return summary
+
+def write_enhanced_status_visualization(summary: dict):
+    """Write enhanced visual status distribution with ASCII charts"""
+    if not summary.get("status_breakdown"):
+        return
+    
+    # Extract counts for visualization
+    status_counts = {}
+    for status_key, data in summary["status_breakdown"].items():
+        status_id = data["id"]
+        count = data["count"]
+        status_counts[status_id] = count
+    
+    # Write visual distribution chart
+    log_and_print("\n" + "="*80)
+    log_and_print("                     VISUAL STATUS DISTRIBUTION                     ")
+    log_and_print("="*80)
+    
+    # Generate horizontal bar chart
+    if status_counts:
+        max_count = max(status_counts.values())
+        total_matches = sum(status_counts.values())
+        
+        for status_id in sorted(status_counts.keys()):
+            count = status_counts[status_id]
+            desc = get_status_description(status_id)
+            percentage = (count / total_matches) * 100 if total_matches > 0 else 0
+            
+            # Create visual bar (scaled to 50 characters max)
+            bar_length = int((count / max_count) * 50) if max_count > 0 else 0
+            bar = "█" * bar_length
+            
+            # Format with emoji indicators
+            status_emojis = {
+                2: "🔴", 3: "⏸️", 4: "🔴", 5: "⚡", 6: "⚡", 7: "🥅"
+            }
+            emoji = status_emojis.get(status_id, "⚽")
+            
+            log_and_print(f"{emoji} Status {status_id}: {desc}")
+            log_and_print(f"   {bar} {count} matches ({percentage:.1f}%)")
+            log_and_print("")
+    
+    # Add status timing insights
+    write_status_timing_insights(status_counts)
+
+def write_status_timing_insights(status_counts: dict):
+    """Provide insights about match timing based on status distribution"""
     if not status_counts:
         return
     
-    # Calculate total matches
+    log_and_print("="*80)
+    log_and_print("                        TIMING INSIGHTS                            ")
+    log_and_print("="*80)
+    
     total_matches = sum(status_counts.values())
     
-    # Sort by status ID for consistent display
-    sorted_statuses = sorted(status_counts.items())
+    # Calculate in-play statistics
+    first_half = status_counts.get(2, 0)
+    half_time = status_counts.get(3, 0)
+    second_half = status_counts.get(4, 0)
+    overtime = status_counts.get(5, 0) + status_counts.get(6, 0)
+    penalty = status_counts.get(7, 0)
     
-    log_and_print("\n" + "="*80)
-    log_and_print("MATCH STATUS SUMMARY".center(80))
+    regular_time = first_half + half_time + second_half
+    extended_time = overtime + penalty
+    
+    log_and_print(f"📊 MATCH FLOW ANALYSIS:")
+    log_and_print(f"   Regular Time Matches: {regular_time} ({(regular_time/total_matches)*100:.1f}%)")
+    log_and_print(f"   Extended Time Matches: {extended_time} ({(extended_time/total_matches)*100:.1f}%)")
+    log_and_print("")
+    
+    if first_half > 0:
+        log_and_print(f"⚽ {first_half} matches currently in FIRST HALF")
+    if half_time > 0:
+        log_and_print(f"☕ {half_time} matches at HALF-TIME (break)")
+    if second_half > 0:
+        log_and_print(f"⚽ {second_half} matches currently in SECOND HALF")
+    if overtime > 0:
+        log_and_print(f"⚡ {overtime} matches in OVERTIME/EXTRA TIME")
+    if penalty > 0:
+        log_and_print(f"🥅 {penalty} matches in PENALTY SHOOTOUT")
+    
+    log_and_print("")
+    
+    # Add peak activity indicator
+    peak_status = max(status_counts.items(), key=lambda x: x[1])
+    peak_desc = get_status_description(peak_status[0])
+    log_and_print(f"🔥 PEAK ACTIVITY: {peak_desc} ({peak_status[1]} matches)")
+
+def write_match_timeline_projection(status_counts: dict):
+    """Project when matches might finish based on current status"""
+    if not status_counts:
+        return
+    
     log_and_print("="*80)
-    log_and_print(f"Total Matches: {total_matches}")
-    log_and_print("-"*80)
+    log_and_print("                      TIMELINE PROJECTION                          ")
+    log_and_print("="*80)
     
-    for status_id, count in sorted_statuses:
-        status_desc = get_status_description(status_id)
-        log_and_print(f"{status_desc} (ID: {status_id}): {count} Match{'es' if count != 1 else ''}")
+    # Estimated remaining time for each status (in minutes)
+    time_estimates = {
+        2: "20-45 minutes",  # First half
+        3: "50-75 minutes",  # Half-time + second half
+        4: "0-45 minutes",   # Second half only
+        5: "0-30 minutes",   # Overtime
+        6: "0-30 minutes",   # Overtime (deprecated)
+        7: "0-15 minutes"    # Penalty shootout
+    }
+    
+    for status_id in sorted(status_counts.keys()):
+        count = status_counts[status_id]
+        if count > 0:
+            desc = get_status_description(status_id)
+            estimate = time_estimates.get(status_id, "Unknown")
+            log_and_print(f"⏱️  {count} matches in {desc}: ~{estimate} remaining")
+
+def create_status_trend_analysis(filtered_matches: dict) -> dict:
+    """Analyze status trends and provide insights"""
+    if not filtered_matches:
+        return {}
+    
+    # Group by competition to analyze patterns
+    competition_analysis = {}
+    
+    for match_id, match_data in filtered_matches.items():
+        comp_name = match_data.get("competition", "Unknown")
+        status_id = match_data.get("status_id")
+        
+        if comp_name not in competition_analysis:
+            competition_analysis[comp_name] = {
+                "total_matches": 0,
+                "status_distribution": {},
+                "country": match_data.get("country", "Unknown")
+            }
+        
+        competition_analysis[comp_name]["total_matches"] += 1
+        
+        if status_id not in competition_analysis[comp_name]["status_distribution"]:
+            competition_analysis[comp_name]["status_distribution"][status_id] = 0
+        competition_analysis[comp_name]["status_distribution"][status_id] += 1
+    
+    return competition_analysis
+
+def write_competition_analysis(filtered_matches: dict):
+    """Write detailed analysis by competition"""
+    analysis = create_status_trend_analysis(filtered_matches)
+    
+    if not analysis:
+        return
     
     log_and_print("="*80)
+    log_and_print("                     COMPETITION BREAKDOWN                         ")
+    log_and_print("="*80)
+    
+    # Sort competitions by total matches (descending)
+    sorted_comps = sorted(analysis.items(), key=lambda x: x[1]["total_matches"], reverse=True)
+    
+    for comp_name, data in sorted_comps:
+        total = data["total_matches"]
+        country = data["country"]
+        status_dist = data["status_distribution"]
+        
+        log_and_print(f"🏆 {comp_name} ({country}): {total} matches")
+        
+        # Show status breakdown for this competition
+        for status_id in sorted(status_dist.keys()):
+            count = status_dist[status_id]
+            desc = get_status_description(status_id)
+            percentage = (count / total) * 100
+            log_and_print(f"   └─ {desc}: {count} ({percentage:.0f}%)")
+        log_and_print("")
+
+def write_status_key_reference():
+    """Write a reference guide for status ID meanings at the top of the log"""
+    status_key = (
+        f"\n{'='*80}\n"
+        f"                      STEP 7 - STATUS ID REFERENCE KEY                      \n"
+        f"{'='*80}\n"
+        f"0: Abnormal (suggest hiding)     ⟹ NOT INCLUDED\n"
+        f"1: Not started                   ⟹ NOT INCLUDED\n" 
+        f"2: First half                    ⟹ INCLUDED (IN-PLAY)\n"
+        f"3: Half-time                     ⟹ INCLUDED (IN-PLAY)\n"
+        f"4: Second half                   ⟹ INCLUDED (IN-PLAY)\n"
+        f"5: Overtime                      ⟹ INCLUDED (IN-PLAY)\n"
+        f"6: Overtime (deprecated)         ⟹ INCLUDED (IN-PLAY)\n"
+        f"7: Penalty Shoot-out             ⟹ INCLUDED (IN-PLAY)\n"
+        f"8: End                           ⟹ NOT INCLUDED\n"
+        f"9: Delay                         ⟹ NOT INCLUDED\n"
+        f"10: Interrupt                    ⟹ NOT INCLUDED\n"
+        f"11: Cut in half                  ⟹ NOT INCLUDED\n"
+        f"12: Cancel                       ⟹ NOT INCLUDED\n"
+        f"13: To be determined             ⟹ NOT INCLUDED\n"
+        f"{'='*80}\n"
+        f"NOTE: Status IDs 2-7 are considered 'IN-PLAY' matches and are included in Step 7 output\n"
+        f"{'='*80}\n"
+    )
+    log_and_print(status_key)
+
+class StatusMonitor:
+    """Monitor status changes and provide alerts"""
+    
+    def __init__(self):
+        self.previous_status = {}
+        self.status_history = {}
+        self.alert_thresholds = {
+            'mass_transition': 5,  # Alert if 5+ matches change status at once
+            'unusual_status': [0, 9, 10, 11, 12, 13],  # Alert on unusual statuses
+            'extended_time': [5, 6, 7]  # Alert on overtime/penalties
+        }
+    
+    def check_status_changes(self, current_matches: dict) -> dict:
+        """
+        Check for status changes and generate alerts
+        
+        Returns:
+            dict: Contains alerts and status change information
+        """
+        alerts = []
+        changes = []
+        
+        current_time = get_eastern_time()
+        
+        for match_id, match_data in current_matches.items():
+            current_status = match_data.get("status_id")
+            competition = match_data.get("competition", "Unknown")
+            teams = f"{match_data.get('home_team', 'Unknown')} vs {match_data.get('away_team', 'Unknown')}"
+            
+            # Check if we've seen this match before
+            if match_id in self.previous_status:
+                prev_status = self.previous_status[match_id]
+                
+                if current_status != prev_status:
+                    change_info = {
+                        'match_id': match_id,
+                        'competition': competition,
+                        'teams': teams,
+                        'from_status': prev_status,
+                        'to_status': current_status,
+                        'from_desc': get_status_description(prev_status),
+                        'to_desc': get_status_description(current_status),
+                        'timestamp': current_time
+                    }
+                    changes.append(change_info)
+                    
+                    # Track in history
+                    if match_id not in self.status_history:
+                        self.status_history[match_id] = []
+                    self.status_history[match_id].append(change_info)
+                    
+                    # Generate specific alerts
+                    if current_status in self.alert_thresholds['extended_time']:
+                        alerts.append({
+                            'type': 'extended_time',
+                            'message': f"🚨 EXTENDED TIME: {teams} ({competition}) moved to {get_status_description(current_status)}",
+                            'match_info': change_info
+                        })
+                    
+                    if current_status in self.alert_thresholds['unusual_status']:
+                        alerts.append({
+                            'type': 'unusual_status',
+                            'message': f"⚠️ UNUSUAL STATUS: {teams} ({competition}) moved to {get_status_description(current_status)}",
+                            'match_info': change_info
+                        })
+            
+            # Update previous status
+            self.previous_status[match_id] = current_status
+        
+        # Check for mass transitions
+        if len(changes) >= self.alert_thresholds['mass_transition']:
+            alerts.append({
+                'type': 'mass_transition',
+                'message': f"📊 MASS STATUS CHANGE: {len(changes)} matches changed status simultaneously",
+                'change_count': len(changes)
+            })
+        
+        return {
+            'alerts': alerts,
+            'changes': changes,
+            'total_changes': len(changes),
+            'timestamp': current_time
+        }
+    
+    def get_status_summary_report(self) -> str:
+        """Generate a summary report of all status changes"""
+        if not self.status_history:
+            return "No status changes recorded yet."
+        
+        report = f"\n{'='*80}\n"
+        report += "                    STATUS CHANGE HISTORY REPORT                   \n"
+        report += f"{'='*80}\n"
+        
+        # Count transitions by type
+        transition_counts = {}
+        for match_id, history in self.status_history.items():
+            for change in history:
+                transition_key = f"{change['from_desc']} → {change['to_desc']}"
+                transition_counts[transition_key] = transition_counts.get(transition_key, 0) + 1
+        
+        report += "Most Common Status Transitions:\n"
+        for transition, count in sorted(transition_counts.items(), key=lambda x: x[1], reverse=True):
+            report += f"  • {transition}: {count} times\n"
+        
+        report += f"\nTotal Matches Tracked: {len(self.status_history)}\n"
+        report += f"Total Status Changes: {sum(len(h) for h in self.status_history.values())}\n"
+        report += f"{'='*80}\n"
+        
+        return report
+
+def write_status_alerts(monitor_result: dict):
+    """Write status alerts to log if any are present"""
+    if not monitor_result.get('alerts'):
+        return
+    
+    log_and_print("="*80)
+    log_and_print("                         STATUS ALERTS                             ")
+    log_and_print("="*80)
+    
+    for alert in monitor_result['alerts']:
+        log_and_print(alert['message'])
+        if 'match_info' in alert:
+            match_info = alert['match_info']
+            log_and_print(f"   Match: {match_info['teams']}")
+            log_and_print(f"   Competition: {match_info['competition']}")
+            log_and_print(f"   Status Change: {match_info['from_desc']} → {match_info['to_desc']}")
+        log_and_print("")
+
+def create_detailed_statistics_report(filtered_matches: dict) -> dict:
+    """Create comprehensive statistics about the filtered matches"""
+    if not filtered_matches:
+        return {}
+    
+    stats = {
+        'total_matches': len(filtered_matches),
+        'by_status': {},
+        'by_competition': {},
+        'by_country': {},
+        'score_analysis': {
+            'draws': 0,
+            'home_leading': 0,
+            'away_leading': 0,
+            'high_scoring': 0  # 3+ goals
+        },
+        'betting_analysis': {
+            'with_odds': 0,
+            'without_odds': 0
+        }
+    }
+    
+    for match_id, match_data in filtered_matches.items():
+        # Status breakdown
+        status_id = match_data.get("status_id")
+        if status_id not in stats['by_status']:
+            stats['by_status'][status_id] = {
+                'count': 0,
+                'description': get_status_description(status_id)
+            }
+        stats['by_status'][status_id]['count'] += 1
+        
+        # Competition breakdown
+        competition = match_data.get("competition", "Unknown")
+        stats['by_competition'][competition] = stats['by_competition'].get(competition, 0) + 1
+        
+        # Country breakdown
+        country = match_data.get("country", "Unknown")
+        stats['by_country'][country] = stats['by_country'].get(country, 0) + 1
+        
+        # Score analysis
+        score = match_data.get("score", "")
+        if " - " in score:
+            try:
+                home_score, away_score = score.split(" - ")
+                # Extract just the current score (before HT info)
+                if "(" in home_score:
+                    home_score = home_score.split("(")[0].strip()
+                if "(" in away_score:
+                    away_score = away_score.split("(")[0].strip()
+                
+                home_goals = int(home_score)
+                away_goals = int(away_score)
+                
+                if home_goals == away_goals:
+                    stats['score_analysis']['draws'] += 1
+                elif home_goals > away_goals:
+                    stats['score_analysis']['home_leading'] += 1
+                else:
+                    stats['score_analysis']['away_leading'] += 1
+                
+                if (home_goals + away_goals) >= 3:
+                    stats['score_analysis']['high_scoring'] += 1
+                    
+            except (ValueError, IndexError):
+                pass  # Skip malformed scores
+        
+        # Betting analysis
+        if match_data.get("full_time_result") or match_data.get("spread") or match_data.get("over_under"):
+            stats['betting_analysis']['with_odds'] += 1
+        else:
+            stats['betting_analysis']['without_odds'] += 1
+    
+    return stats
+
+def write_detailed_statistics_report(filtered_matches: dict):
+    """Write comprehensive statistics report"""
+    stats = create_detailed_statistics_report(filtered_matches)
+    
+    if not stats:
+        return
+    
+    log_and_print("="*80)
+    log_and_print("                      DETAILED STATISTICS REPORT                   ")
+    log_and_print("="*80)
+    
+    total = stats['total_matches']
+    
+    # Geographic distribution
+    log_and_print("🌍 GEOGRAPHIC DISTRIBUTION:")
+    for country, count in sorted(stats['by_country'].items(), key=lambda x: x[1], reverse=True)[:5]:
+        percentage = (count / total) * 100
+        log_and_print(f"   {country}: {count} matches ({percentage:.1f}%)")
+    log_and_print("")
+    
+    # Score analysis
+    score_stats = stats['score_analysis']
+    log_and_print("⚽ SCORE ANALYSIS:")
+    log_and_print(f"   Draws: {score_stats['draws']} ({(score_stats['draws']/total)*100:.1f}%)")
+    log_and_print(f"   Home Leading: {score_stats['home_leading']} ({(score_stats['home_leading']/total)*100:.1f}%)")
+    log_and_print(f"   Away Leading: {score_stats['away_leading']} ({(score_stats['away_leading']/total)*100:.1f}%)")
+    log_and_print(f"   High Scoring (3+ goals): {score_stats['high_scoring']} ({(score_stats['high_scoring']/total)*100:.1f}%)")
+    log_and_print("")
+    
+    # Betting coverage
+    betting_stats = stats['betting_analysis']
+    log_and_print("💰 BETTING ODDS COVERAGE:")
+    log_and_print(f"   Matches with odds: {betting_stats['with_odds']} ({(betting_stats['with_odds']/total)*100:.1f}%)")
+    log_and_print(f"   Matches without odds: {betting_stats['without_odds']} ({(betting_stats['without_odds']/total)*100:.1f}%)")
+
+def generate_live_dashboard_summary(filtered_matches: dict) -> str:
+    """Generate a compact live dashboard summary for real-time monitoring"""
+    if not filtered_matches:
+        return "📊 LIVE DASHBOARD: No active matches"
+    
+    total = len(filtered_matches)
+    status_counts = {}
+    
+    for match_data in filtered_matches.values():
+        status_id = match_data.get("status_id")
+        if status_id in STATUS_FILTER:
+            status_counts[status_id] = status_counts.get(status_id, 0) + 1
+    
+    # Create compact dashboard
+    dashboard = f"📊 LIVE DASHBOARD ({get_eastern_time()})\n"
+    dashboard += f"{'='*60}\n"
+    dashboard += f"🔥 Total Active Matches: {total}\n"
+    
+    # Status breakdown with emojis
+    status_emojis = {2: "🔴", 3: "⏸️", 4: "🔴", 5: "⚡", 6: "⚡", 7: "🥅"}
+    for status_id in sorted(status_counts.keys()):
+        count = status_counts[status_id]
+        emoji = status_emojis.get(status_id, "⚽")
+        desc = get_status_description(status_id)
+        dashboard += f"{emoji} {desc}: {count}\n"
+    
+    dashboard += f"{'='*60}"
+    return dashboard
+
+def create_exportable_summary(filtered_matches: dict) -> dict:
+    """Create a structured summary suitable for export/API consumption"""
+    current_time = get_eastern_time()
+    
+    summary = {
+        "generated_at": current_time,
+        "step": "7",
+        "filter_criteria": {
+            "status_ids": list(STATUS_FILTER),
+            "description": "In-play matches (First half, Half-time, Second half, Overtime, Penalty shootout)"
+        },
+        "totals": {
+            "filtered_matches": len(filtered_matches),
+            "active_competitions": len(set(m.get("competition", "Unknown") for m in filtered_matches.values())),
+            "active_countries": len(set(m.get("country", "Unknown") for m in filtered_matches.values()))
+        },
+        "status_breakdown": {},
+        "competition_summary": {},
+        "insights": {}
+    }
+    
+    # Status breakdown
+    for match_data in filtered_matches.values():
+        status_id = match_data.get("status_id")
+        if status_id not in summary["status_breakdown"]:
+            summary["status_breakdown"][status_id] = {
+                "description": get_status_description(status_id),
+                "count": 0,
+                "percentage": 0
+            }
+        summary["status_breakdown"][status_id]["count"] += 1
+    
+    # Calculate percentages
+    total = len(filtered_matches)
+    if total > 0:
+        for status_data in summary["status_breakdown"].values():
+            status_data["percentage"] = (status_data["count"] / total) * 100
+    
+    # Competition summary
+    comp_counts = {}
+    for match_data in filtered_matches.values():
+        comp = match_data.get("competition", "Unknown")
+        comp_counts[comp] = comp_counts.get(comp, 0) + 1
+    
+    summary["competition_summary"] = {
+        comp: {"match_count": count, "percentage": (count/total)*100 if total > 0 else 0}
+        for comp, count in comp_counts.items()
+    }
+    
+    # Generate insights
+    if summary["status_breakdown"]:
+        peak_status = max(summary["status_breakdown"].items(), key=lambda x: x[1]["count"])
+        summary["insights"]["peak_activity_status"] = {
+            "status_id": peak_status[0],
+            "description": peak_status[1]["description"],
+            "count": peak_status[1]["count"]
+        }
+    
+    if comp_counts:
+        busiest_comp = max(comp_counts.items(), key=lambda x: x[1])
+        summary["insights"]["busiest_competition"] = {
+            "name": busiest_comp[0],
+            "match_count": busiest_comp[1]
+        }
+    
+    return summary
+
+def save_summary_to_json(filtered_matches: dict):
+    """Save structured summary to JSON file for external consumption"""
+    try:
+        summary = create_exportable_summary(filtered_matches)
+        
+        # Save to step7 directory
+        json_file = BASE_DIR / "step7_summary.json"
+        with open(json_file, "w", encoding="utf-8") as f:
+            json.dump(summary, f, indent=2, ensure_ascii=False)
+        
+        log_and_print(f"📄 Summary exported to: {json_file}")
+        return True
+        
+    except Exception as e:
+        log_and_print(f"❌ Failed to save summary JSON: {e}")
+        return False
+
+def run_batch_analysis(filtered_matches: dict):
+    """Run a comprehensive batch analysis of all filtered matches"""
+    if not filtered_matches:
+        return
+    
+    log_and_print("="*80)
+    log_and_print("                       BATCH ANALYSIS REPORT                       ")
+    log_and_print("="*80)
+    
+    # Generate live dashboard
+    dashboard = generate_live_dashboard_summary(filtered_matches)
+    log_and_print(dashboard)
+    log_and_print("")
+    
+    # Save exportable summary
+    save_summary_to_json(filtered_matches)
+    
+    # Generate status monitoring report
+    if hasattr(status_monitor, 'status_history') and status_monitor.status_history:
+        history_report = status_monitor.get_status_summary_report()
+        log_and_print(history_report)
+
+def write_performance_metrics(start_time: float, filtered_matches: dict):
+    """Write performance metrics for the filtering operation"""
+    end_time = time.time()
+    processing_time = end_time - start_time
+    
+    total_matches = len(filtered_matches)
+    
+    log_and_print("="*80)
+    log_and_print("                      PERFORMANCE METRICS                          ")
+    log_and_print("="*80)
+    log_and_print(f"⏱️  Processing Time: {processing_time:.3f} seconds")
+    log_and_print(f"📊 Matches Processed: {total_matches}")
+    if total_matches > 0:
+        log_and_print(f"🚀 Processing Rate: {total_matches/processing_time:.1f} matches/second")
+    log_and_print(f"💾 Memory Footprint: Estimated {total_matches * 2}KB")
+    log_and_print(f"📁 Output Files Generated: step7_matches.log, step7_summary.json")
+
+# Global status monitor instance
+status_monitor = StatusMonitor()
 
 def main():
     """Main function to execute the script logic."""
     log_and_print(f"🚀 Starting Step 7: Status Filter (2-7) at {get_eastern_time()}")
+    
+    # Write status key reference at the top for clarity
+    write_status_key_reference()
+    
     result = run_status_filter()
     
     if result.get("success", False):

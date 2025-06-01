@@ -141,22 +141,22 @@ def count_matches_by_status(live_matches_data):
     
     print(f"DEBUG: Found {total_matches} matches to analyze")
     
-    # Get status ID to description mapping
+    # Official status ID to description mapping
     status_desc_map = {
+        0: "Abnormal (suggest hiding)",
         1: "Not started",
         2: "First half",
-        3: "Half-time break",
+        3: "Half-time",
         4: "Second half",
-        5: "Extra time",
-        6: "Penalty shootout",
-        7: "Finished",
-        8: "Finished",
-        9: "Postponed",
-        10: "Canceled",
-        11: "To be announced",
-        12: "Interrupted",
-        13: "Abandoned",
-        14: "Suspended"
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
     }
     
     # Count matches by status_id
@@ -174,6 +174,150 @@ def count_matches_by_status(live_matches_data):
     print(f"DEBUG: Status counts: {status_counts}")
     
     return status_counts, total_matches
+
+def create_detailed_status_mapping(live_matches_data):
+    """Create detailed status mapping with match IDs for JSON output"""
+    if not live_matches_data or "results" not in live_matches_data:
+        return {}
+    
+    matches = live_matches_data["results"]
+    
+    # Official Status ID to description mapping
+    status_desc_map = {
+        0: "Abnormal (suggest hiding)",
+        1: "Not started",
+        2: "First half",
+        3: "Half-time",
+        4: "Second half",
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
+    }
+    
+    # Group matches by status
+    status_groups = {}
+    for match in matches:
+        match_id = match.get("id", "NO_ID")
+        status_id = match.get("status_id")
+        
+        if status_id is not None:
+            status_desc = status_desc_map.get(status_id, f"Unknown Status (ID: {status_id})")
+            
+            if status_desc not in status_groups:
+                status_groups[status_desc] = {
+                    "status_id": status_id,
+                    "count": 0,
+                    "match_ids": []
+                }
+            
+            status_groups[status_desc]["count"] += 1
+            status_groups[status_desc]["match_ids"].append(match_id)
+    
+    return status_groups
+
+def create_comprehensive_status_summary(live_matches_data):
+    """Create a comprehensive status summary with formatted descriptions and IDs"""
+    if not live_matches_data or "results" not in live_matches_data:
+        return {
+            "total_matches_fetched": 0,
+            "status_breakdown": {},
+            "formatted_summary": [],
+            "status_counts_with_ids": {}
+        }
+    
+    matches = live_matches_data["results"]
+    total_matches = len(matches)
+    
+    # Official status mapping based on API documentation
+    status_desc_map = {
+        0: "Abnormal (suggest hiding)",
+        1: "Not started",
+        2: "First half",
+        3: "Half-time",
+        4: "Second half",
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
+    }
+    
+    # Count matches by status_id
+    status_counts = {}
+    matches_with_status = 0
+    matches_without_status = 0
+    
+    for match in matches:
+        status_id = match.get("status_id")
+        if status_id is not None:
+            matches_with_status += 1
+            status_desc = status_desc_map.get(status_id, f"Unknown Status")
+            if status_id not in status_counts:
+                status_counts[status_id] = {
+                    "description": status_desc,
+                    "count": 0
+                }
+            status_counts[status_id]["count"] += 1
+        else:
+            matches_without_status += 1
+    
+    # Create formatted summary lines
+    formatted_summary = []
+    status_counts_with_ids = {}
+    
+    # Sort by status ID for consistent ordering
+    for status_id in sorted(status_counts.keys()):
+        data = status_counts[status_id]
+        description = data["description"]
+        count = data["count"]
+        
+        # Create formatted line like "Half-Time (ID: 3): 15"
+        formatted_line = f"{description} (ID: {status_id}): {count}"
+        formatted_summary.append(formatted_line)
+        
+        # Also store in a structured format
+        status_counts_with_ids[f"status_{status_id}"] = {
+            "id": status_id,
+            "description": description,
+            "count": count,
+            "formatted": formatted_line
+        }
+    
+    # Calculate IN-PLAY matches based on official status mapping
+    # IN-PLAY: First half (2), Half-time (3), Second half (4), Overtime (5), Penalty Shoot-out (7)
+    in_play_status_ids = [2, 3, 4, 5, 7]  # Active match statuses
+    in_play_count = 0
+    
+    for status_id in in_play_status_ids:
+        if status_id in status_counts:
+            in_play_count += status_counts[status_id]["count"]
+    
+    # Add IN-PLAY matches line
+    formatted_summary.append(f"IN-PLAY MATCHES: {in_play_count}")
+    
+    # Add summary totals
+    if matches_without_status > 0:
+        formatted_summary.append(f"Matches without Status ID: {matches_without_status}")
+    
+    return {
+        "total_matches_fetched": total_matches,
+        "matches_with_status": matches_with_status,
+        "matches_without_status": matches_without_status,
+        "in_play_matches": in_play_count,
+        "status_breakdown": status_counts_with_ids,
+        "formatted_summary": formatted_summary,
+        "status_counts_with_ids": status_counts_with_ids
+    }
 
 def print_status_summary(live_matches_data):
     """Print and log a formatted summary of match counts by status"""
@@ -224,13 +368,21 @@ if __name__ == "__main__":
         # Generate status summary
         status_counts, total_matches = count_matches_by_status(result.get("live_matches", {}))
         
+        # Create detailed status mapping
+        detailed_status_mapping = create_detailed_status_mapping(result.get("live_matches", {}))
+        
+        # Create comprehensive status summary with formatted breakdown
+        comprehensive_summary = create_comprehensive_status_summary(result.get("live_matches", {}))
+        
         # Add New York Eastern time timestamp to data
         ny_time = datetime.now(ZoneInfo("America/New_York"))
         result["ny_timestamp"] = ny_time.strftime("%m/%d/%Y %I:%M:%S %p")
         
-        # Add status summary to JSON
+        # Add all status summaries to JSON
         result["status_summary"] = status_counts
         result["total_matches_fetched"] = total_matches
+        result["detailed_status_mapping"] = detailed_status_mapping
+        result["comprehensive_status_summary"] = comprehensive_summary
         
         # Save to standard pipeline filename for compatibility
         save_to_json(result, 'step1.json')
@@ -240,6 +392,15 @@ if __name__ == "__main__":
         
         # Print status summary
         print_status_summary(result.get("live_matches", {}))
+        
+        # Print comprehensive summary with formatted breakdown
+        print("\n" + "="*80)
+        print("                    COMPREHENSIVE STATUS BREAKDOWN                    ")
+        print("="*80)
+        for line in comprehensive_summary["formatted_summary"]:
+            print(line)
+        print(f"Total Matches Fetched: {comprehensive_summary['total_matches_fetched']}")
+        print("="*80)
         
     except Exception as e:
         print(f"An error occurred: {str(e)}")

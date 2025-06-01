@@ -63,22 +63,22 @@ def extract_match_summary(match_id, match_data):
     status_info = match_info.get("status", {})
     status_id = status_info.get("id", 0)
     
-    # Determine status based on ID using comprehensive mapping
+    # Official status mapping based on API documentation
     status_mapping = {
+        0: "Abnormal (suggest hiding)",
         1: "Not started",
-        2: "First half", 
-        3: "Half-time break",
+        2: "First half",
+        3: "Half-time",
         4: "Second half",
-        5: "Extra time",
-        6: "Penalty shootout",
-        7: "Finished",
-        8: "Finished", 
-        9: "Postponed",
-        10: "Canceled",
-        11: "To be announced",
-        12: "Interrupted",
-        13: "Abandoned",
-        14: "Suspended"
+        5: "Overtime",
+        6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out",
+        8: "End",
+        9: "Delay",
+        10: "Interrupt",
+        11: "Cut in half",
+        12: "Cancel",
+        13: "To be determined"
     }
     
     status = status_mapping.get(status_id, "Unknown")
