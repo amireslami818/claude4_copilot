@@ -93,19 +93,56 @@ def get_status_description(status_id: int) -> str:
     }
     return status_map.get(status_id, f"Unknown ({status_id})")
 
-def sort_matches_by_competition_and_status(matches: dict) -> list[tuple[str, dict]]:
+def sort_matches_by_competition_and_time(matches: dict) -> dict:
     """
-    Sort matches first by competition name (alphabetically),
-    then by status_id ascending, then by match_id to stabilize.
+    Group matches by competition and sort within each competition by 
+    most recently started (Status 2) to longest running (Status 7).
+    
+    Returns dict: {competition: [list of (match_id, match_data) tuples]}
     """
-    def keyfn(item):
-        _match_id, data = item
-        comp = data.get("competition", "ZZZ_Unknown")
-        st   = data.get("status_id", 99)
-        mid  = data.get("match_id", "")
-        return (comp, st, mid)
-
-    return sorted(matches.items(), key=keyfn)
+    # Group matches by competition
+    competition_groups = {}
+    
+    for match_id, match_data in matches.items():
+        comp = match_data.get("competition", "Unknown Competition")
+        # PRIMARY: Use the country field from JSON data
+        country = match_data.get("country", "Unknown") or "Unknown"  # Handle None values
+        
+        # FALLBACK: If country is Unknown/None, try to infer from team names as backup
+        if country in ["Unknown", "None", None]:
+            country = infer_country_from_teams(match_data)
+        
+        # Create a sorting key that includes country for alphabetization
+        # but still group by the original competition name
+        if comp not in competition_groups:
+            competition_groups[comp] = {
+                'country': country,
+                'matches': []
+            }
+        competition_groups[comp]['matches'].append((match_id, match_data))
+    
+    # Sort each competition group by status (most recent to longest running)
+    # Status 2 (First half) = most recent, Status 7 (Penalty) = longest running
+    status_order = {2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6}
+    
+    for comp in competition_groups:
+        competition_groups[comp]['matches'].sort(key=lambda item: (
+            status_order.get(item[1].get("status_id", 99), 99),  # Status progression
+            item[1].get("match_id", "")  # Stabilize sort
+        ))
+    
+    # Sort competitions alphabetically by country first, then by competition name
+    sorted_competitions = sorted(
+        competition_groups.items(),
+        key=lambda item: (item[1]['country'] or "Unknown", item[0])  # Sort by country first, then competition
+    )
+    
+    # Convert back to the expected format: {competition: [matches]}
+    result = {}
+    for comp, data in sorted_competitions:
+        result[comp] = data['matches']
+    
+    return result
 
 def write_main_header(fetch_count: int, total: int, generated_at: str, pipeline_time=None):
     """Write the header block at the top of step7_matches.log."""
@@ -167,36 +204,23 @@ def write_main_footer(fetch_count: int, total: int, generated_at: str, pipeline_
     for h in match_logger.handlers:
         h.flush()
 
-def write_competition_group_header(competition: str, country: str):
-    """Write a competition‐level separator header to both console + log."""
+def write_competition_group_header(competition: str, country: str, match_count: int):
+    """Write a competition‐level header with match count to both console + log."""
+    # Center the competition info within 100-character borders
+    comp_line = f"🏆 {competition.upper()}"
+    info_line = f"📍 {country} | 📊 {match_count} Matches"
+    
     header = (
-        f"\n{'#'*80}\n"
-        f"🏆 {competition.upper()}\n"
-        f"📍 {country}\n"
-        f"{'#'*80}\n"
+        f"\n{'='*100}\n"
+        f"{'='*100}\n"
+        f"{comp_line.center(100)}\n"
+        f"{info_line.center(100)}\n"
+        f"{'='*100}\n"
+        f"{'='*100}\n"
     )
     log_and_print(header)
 
-def write_status_group_header(status_id: int, status_desc: str):
-    """
-    Write a status group header (e.g. "FIRST HALF", "FINISHED") 
-    above the matches of that status within a competition.
-    """
-    status_groups = {
-        2: "🔴 FIRST HALF",
-        3: "⏸️  HALF-TIME BREAK",
-        4: "🔴 SECOND HALF",
-        5: "⚡ EXTRA TIME",
-        6: "🥅 PENALTY SHOOTOUT",
-        7: "✅ FINISHED",
-    }
-    group_name = status_groups.get(status_id, f"STATUS {status_id}")
-    header = (
-        f"\n{'='*80}\n"
-        f"                    {group_name}\n"
-        f"{'='*80}\n"
-    )
-    log_and_print(header)
+
 
 def format_american_odds(odds_value):
     """Format odds value for display with proper +/- prefix"""
@@ -297,22 +321,98 @@ def format_environment_data(match_data: dict) -> str:
     
     return f"Weather: {weather}\nTemperature: {temp_display}\nWind: {wind_display}"
 
-def process_match(match_data: dict, match_num: int, total_matches: int):
+def infer_country_from_teams(match_data):
+    """
+    FALLBACK ONLY: Infer country from team names when the country field is None/missing.
+    This function is only used when the primary JSON country field is not available.
+    
+    Args:
+        match_data: Match dictionary containing team names
+        
+    Returns:
+        str: Inferred country name or "International" for mixed/unknown countries
+    """
+    home_team = match_data.get('home_team', '').lower()
+    away_team = match_data.get('away_team', '').lower()
+    competition = match_data.get('competition', '').lower()
+    
+    # Country indicators in team names
+    country_indicators = {
+        'australia': ['australia', 'aussie', 'socceroos', 'matildas'],
+        'argentina': ['argentina', 'boca', 'river plate', 'racing club'],
+        'brazil': ['brazil', 'sao paulo', 'flamengo', 'corinthians', 'palmeiras'],
+        'england': ['england', 'manchester', 'liverpool', 'chelsea', 'arsenal', 'tottenham'],
+        'spain': ['spain', 'real madrid', 'barcelona', 'atletico', 'sevilla', 'valencia'],
+        'germany': ['germany', 'bayern', 'borussia', 'schalke', 'hamburg'],
+        'france': ['france', 'psg', 'marseille', 'lyon', 'monaco', 'saint-etienne'],
+        'italy': ['italy', 'juventus', 'inter', 'milan', 'roma', 'napoli', 'lazio'],
+        'netherlands': ['netherlands', 'ajax', 'psv', 'feyenoord'],
+        'portugal': ['portugal', 'porto', 'benfica', 'sporting'],
+        'mexico': ['mexico', 'america', 'guadalajara', 'cruz azul', 'pumas'],
+        'usa': ['usa', 'united states', 'la galaxy', 'seattle sounders', 'new york'],
+        'south korea': ['korea', 'seoul', 'busan', 'daegu'],
+        'japan': ['japan', 'tokyo', 'osaka', 'yokohama', 'kashima'],
+        'china': ['china', 'beijing', 'shanghai', 'guangzhou'],
+        'russia': ['russia', 'moscow', 'spartak', 'cska', 'dynamo', 'zenit'],
+        'norway': ['norway', 'oslo', 'bergen'],
+        'czech republic': ['czech', 'praha', 'prague', 'brno'],
+        'austria': ['austria', 'vienna', 'salzburg']
+    }
+    
+    # Check if this is an international friendly with multiple countries
+    if 'international' in competition and 'friendly' in competition:
+        home_countries = []
+        away_countries = []
+        
+        # Look for country indicators in team names
+        for country, indicators in country_indicators.items():
+            for indicator in indicators:
+                if indicator in home_team:
+                    home_countries.append(country)
+                if indicator in away_team:
+                    away_countries.append(country)
+        
+        # If teams are from different countries, mark as International
+        if home_countries and away_countries and home_countries[0] != away_countries[0]:
+            return "International"
+        
+        # If only one team has identifiable country, use that
+        if home_countries and not away_countries:
+            return home_countries[0].title()
+        elif away_countries and not home_countries:
+            return away_countries[0].title()
+        elif home_countries and away_countries and home_countries[0] == away_countries[0]:
+            return home_countries[0].title()
+    
+    # For non-international competitions, try to infer from team names
+    team_text = f"{home_team} {away_team}"
+    for country, indicators in country_indicators.items():
+        for indicator in indicators:
+            if indicator in team_text:
+                return country.title()
+    
+    # Default fallback
+    return "Unknown"
+
+def process_match(match_data: dict, comp_match_num: int, comp_total_matches: int):
     """
     Given one match's data, print + log its comprehensive details:
     - competition, teams, score, status
     - competition ID
     - betting odds (ML, Spread, O/U)
     - match environment (Weather, Temperature, Wind)
+    
+    Args:
+        match_data: Dictionary containing match information
+        comp_match_num: Match number within this competition group (1, 2, 3, etc.)
+        comp_total_matches: Total matches in this competition group
     """
-    # Match header
+    # Match header - make match numbering more prominent
     blk = (
-        f"\n{'='*80}\n"
-        f"                                 MATCH {match_num} of {total_matches}\n"
-        f"                      Filtered: {get_eastern_time()}\n"
-        f"                           Match ID: {match_data.get('match_id', 'N/A')}\n"
-        f"                        Competition ID: {match_data.get('competition_id', 'N/A')}\n"
-        f"{'='*80}\n"
+        f"\n{'-'*60}\n"
+        f"⚽ *** MATCH {comp_match_num} of {comp_total_matches} *** ⚽ | {get_eastern_time()}\n"
+        f"Match ID: {match_data.get('match_id', 'N/A')}\n"
+        f"{'-'*60}"
     )
     log_and_print(blk)
 
@@ -460,33 +560,21 @@ def run_status_filter(pipeline_time=None):
     else:
         log_and_print(f"Processing {total_filtered} matches with statuses {sorted(STATUS_FILTER)}...\n")
         
-        # Sort matches by competition and status for organized output
-        sorted_matches = sort_matches_by_competition_and_status(matches)
+        # Group matches by competition and sort within each competition
+        competition_groups = sort_matches_by_competition_and_time(matches)
         
-        current_competition = None
-        current_status = None
-        match_num = 0
-        
-        for match_id, match_data in sorted_matches:
-            # Check if we need a new competition header
-            competition = match_data.get("competition", "Unknown")
-            country = match_data.get("country", "Unknown")
-            if competition != current_competition:
-                if current_competition is not None:
-                    log_and_print("")  # Blank line between competitions
-                write_competition_group_header(competition, country)
-                current_competition = competition
-                current_status = None  # Reset status tracking for new competition
+        # Process each competition group
+        for competition, competition_matches in competition_groups.items():
+            # Get country from first match in the competition
+            country = competition_matches[0][1].get("country", "Unknown") if competition_matches else "Unknown"
+            match_count = len(competition_matches)
             
-            # Check if we need a new status header
-            status_id = match_data.get("status_id")
-            if status_id != current_status:
-                write_status_group_header(status_id, get_status_description(status_id))
-                current_status = status_id
+            # Write competition header with match count
+            write_competition_group_header(competition, country, match_count)
             
-            # Process the individual match
-            match_num += 1
-            process_match(match_data, match_num, total_filtered)
+            # Process matches in this competition with competition-specific numbering
+            for comp_match_num, (match_id, match_data) in enumerate(competition_matches, 1):
+                process_match(match_data, comp_match_num, match_count)
     
     # Write the main footer with status summary
     write_main_footer(fetch_count, total_filtered, generated_at, pipeline_time, matches)

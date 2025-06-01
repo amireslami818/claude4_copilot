@@ -39,7 +39,7 @@ sys.path.append(str(PROJECT_ROOT / 'step4'))
 sys.path.append(str(PROJECT_ROOT / 'step5'))
 sys.path.append(str(PROJECT_ROOT / 'step6'))
 sys.path.append(str(PROJECT_ROOT / 'step7'))
-sys.path.append(str(PROJECT_ROOT / 'step8'))
+
 
 # Import step functions
 from step2 import extract_merge_summarize
@@ -48,7 +48,7 @@ from step4 import match_extracts
 from step5 import odds_environment_converter
 from step6 import pretty_print_matches
 from step7 import run_status_filter
-from step8.step8 import run_status_filter as run_step8
+
 
 # Import main status logger
 from main_status_logger import log_consolidated_status
@@ -213,13 +213,7 @@ class ContinuousOrchestrator:
                     self.logger.debug(f"  🔍 About to call run_status_filter() with pipeline_time={pipeline_time}")
                     result_data = run_status_filter(pipeline_time)
                 
-                elif step_num == 8:
-                    # Step 8: Additional Status Filter - Same as Step 7 logic but separate processing
-                    pipeline_time = None
-                    if pipeline_start_time is not None:
-                        pipeline_time = time.time() - pipeline_start_time
-                    self.logger.debug(f"  🔍 About to call run_step8() with pipeline_time={pipeline_time}")
-                    result_data = run_step8(pipeline_time)
+
                 
                 execution_time = time.time() - start_time
                 self.logger.debug(f"  ✅ Step {step_num} completed in {execution_time:.2f}s")
@@ -287,7 +281,7 @@ class ContinuousOrchestrator:
         # Execute steps sequentially, passing data between them
         step_data = None
         
-        for step_num in range(1, 9):
+        for step_num in range(1, 8):
             if not self.running:
                 self.logger.info("🛑 Shutdown requested, aborting pipeline")
                 break
