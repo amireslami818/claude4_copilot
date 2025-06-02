@@ -18,6 +18,7 @@ TZ = ZoneInfo("America/New_York")
 BASE_DIR = Path(__file__).resolve().parent  # Football_bot directory
 MAIN_STATUS_LOG = BASE_DIR / "Main_Status.log"
 STEP1_JSON = BASE_DIR / "step1" / "step1.json"
+STEP2_JSON = BASE_DIR / "step2" / "step2.json"
 STEP5_JSON = BASE_DIR / "step5" / "step5.json"
 STEP6_LOG = BASE_DIR / "step6" / "step6_matches.log"
 STEP7_LOG = BASE_DIR / "step7" / "step7_matches.log"
@@ -122,6 +123,68 @@ def extract_step1_status(step1_file):
         }
     except Exception as e:
         return {"error": f"Error reading Step 1: {str(e)}"}
+
+def extract_step2_status(step2_file):
+    """Extract status information from Step 2 JSON"""
+    try:
+        if not step2_file.exists():
+            return {"error": "Step 2 file not found"}
+        
+        with open(step2_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Get the latest batch from history
+        history = data.get("history", [])
+        if not history:
+            return {"error": "No history in Step 2 data"}
+        
+        latest_batch = history[-1]
+        total_matches = latest_batch.get("total_matches", 0)
+        timestamp = latest_batch.get("timestamp", "Unknown")
+        matches = latest_batch.get("matches", {})
+        
+        # Count matches by status_id and calculate in-play matches
+        status_counts = {}
+        in_play_matches = 0
+        matches_with_status = 0
+        matches_without_status = 0
+        
+        for match_id, match_data in matches.items():
+            status_id = None
+            
+            # Check for status_id directly or in nested status object
+            if "status_id" in match_data:
+                status_id = match_data["status_id"]
+            elif "status" in match_data and isinstance(match_data["status"], dict):
+                status_id = match_data["status"].get("id")
+            
+            if status_id is not None:
+                status_counts[status_id] = status_counts.get(status_id, 0) + 1
+                matches_with_status += 1
+                
+                # Count in-play matches (status 2,3,4,5,6)
+                if status_id in [2, 3, 4, 5, 6]:
+                    in_play_matches += 1
+            else:
+                matches_without_status += 1
+        
+        # Create comprehensive summary
+        comprehensive_summary = {
+            "in_play_matches": in_play_matches,
+            "matches_with_status": matches_with_status,
+            "matches_without_status": matches_without_status
+        }
+        
+        return {
+            "total_matches": total_matches,
+            "timestamp": timestamp,
+            "status": "Processed and summarized data",
+            "status_counts": status_counts,
+            "comprehensive_summary": comprehensive_summary
+        }
+        
+    except Exception as e:
+        return {"error": f"Error reading Step 2: {str(e)}"}
 
 def extract_step5_status(step5_file):
     """Extract status information from Step 5 JSON"""
@@ -311,6 +374,7 @@ def log_consolidated_status():
     
     # Extract data from all steps
     step1_data = extract_step1_status(STEP1_JSON)
+    step2_data = extract_step2_status(STEP2_JSON)
     step5_data = extract_step5_status(STEP5_JSON)
     step6_data = extract_step6_status(STEP6_LOG)
     step7_data = extract_step7_status(STEP7_LOG)
@@ -336,6 +400,28 @@ Status: {step1_data.get('status', step1_data.get('error', 'Unknown'))}"""
     # Add comprehensive summary info if available
     if 'comprehensive_summary' in step1_data and step1_data['comprehensive_summary']:
         comp_sum = step1_data['comprehensive_summary']
+        if 'in_play_matches' in comp_sum:
+            log_entry += f"\nIN-PLAY MATCHES: {comp_sum['in_play_matches']}"
+        if 'matches_with_status' in comp_sum and 'matches_without_status' in comp_sum:
+            log_entry += f"\nMatches with status: {comp_sum['matches_with_status']}"
+            if comp_sum['matches_without_status'] > 0:
+                log_entry += f"\nMatches without status: {comp_sum['matches_without_status']}"
+
+    log_entry += f"""
+
+STEP 2 - PROCESSED AND SUMMARIZED
+{'─'*40}
+Total Matches: {step2_data.get('total_matches', 'Error')}
+Timestamp: {step2_data.get('timestamp', 'Error')}
+Status: {step2_data.get('status', step2_data.get('error', 'Unknown'))}"""
+
+    # Add Step 2 status breakdown if available
+    if 'status_counts' in step2_data and step2_data['status_counts']:
+        log_entry += f"\nStatus Breakdown:\n{format_status_breakdown(step2_data['status_counts'])}"
+    
+    # Add Step 2 comprehensive summary info if available
+    if 'comprehensive_summary' in step2_data and step2_data['comprehensive_summary']:
+        comp_sum = step2_data['comprehensive_summary']
         if 'in_play_matches' in comp_sum:
             log_entry += f"\nIN-PLAY MATCHES: {comp_sum['in_play_matches']}"
         if 'matches_with_status' in comp_sum and 'matches_without_status' in comp_sum:
